@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class Keukske extends Controller
 {
     public function matchCode(Request $request) {
-       dd($request);
+       return($request);
     }
 }
