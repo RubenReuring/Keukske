@@ -8,9 +8,9 @@ class Keukske extends Controller
 {
     public function matchCode(Request $request) {
         $request->validate([
-            'Naam' => 'required',
-            'Email' => 'required',
-            'Code' => 'required'
+            'naam' => 'required',
+            'mail' => 'required',
+            'code' => 'required'
         ]);
 
         return($request->Naam);

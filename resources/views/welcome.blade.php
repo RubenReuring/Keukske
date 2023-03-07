@@ -13,9 +13,9 @@
     </head>
     <body class="antialiased">
     <form action="/keukske-actie" method="get">
-        <input name='Naam' type="text">
-        <input name='Mail' type="text">
-        <input name='Code' type="text">
+        <input name='naam' type="text">
+        <input name='mail' type="text">
+        <input name='code' type="text">
         <button type="submit">Submit</button>
     </form>
     </body>
