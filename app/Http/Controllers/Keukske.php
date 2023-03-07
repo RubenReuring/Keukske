@@ -13,6 +13,6 @@ class Keukske extends Controller
             'code' => 'required'
         ]);
 
-        return($request->Naam);
+        return($request->naam);
     }
 }
