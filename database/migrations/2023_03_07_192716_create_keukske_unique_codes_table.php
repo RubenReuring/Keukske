@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('keukske_unique_codes', function (Blueprint $table) {
             $table->id();
+            $table->string('uniqueCode');
             $table->timestamps();
         });
     }
