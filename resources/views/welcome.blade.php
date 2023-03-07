@@ -16,6 +16,7 @@
         <input name='Naam' type="text">
         <input name='Mail' type="text">
         <input name='Code' type="text">
+        <button type="submit">Submit</button>
     </form>
     </body>
 </html>
