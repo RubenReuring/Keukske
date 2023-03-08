@@ -22,9 +22,6 @@ $('.cookie-form').submit(function (){
         dataType: 'json',
         success: function (xhr){
             console.log(xhr)
-        },
-        complete: function (xhr){
-            console.log(xhr)
         }
     })
 
