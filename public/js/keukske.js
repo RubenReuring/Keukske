@@ -4,7 +4,8 @@ $('.submit').on('click', function (){
     $.ajax({
         method: "GET",
         url: "/keukske-actie",
-        data: { naam: "", mail: "ruben@reuring.studio", code: "" },
+        data: $(this).serialize(),
+        dataType: 'json',
         success: function (data){
             console.log(data);
         }
