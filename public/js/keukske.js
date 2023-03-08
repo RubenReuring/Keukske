@@ -29,7 +29,7 @@ $('.cookie-form').submit(function (){
             }
         },
         complete: function (xhr, status, data){
-            console.log(xhr.responseJSON)
+            console.log(data)
         }
     })
 
