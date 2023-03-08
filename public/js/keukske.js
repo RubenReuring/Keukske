@@ -24,10 +24,8 @@ $('.cookie-form').submit(function (){
             console.log(data);
         },
         error: function(xhr, status, data) {
-                console.log(xhr.responseJSON.errors);
-                let errors = xhr.responseJSON.errors;
-                let arr = $.parseJSON(errors)
-                $(arr).each(function(){ console.log(this) })
+                console.log(xhr.responseJSON.errors.naam);
+
         },
         complete: function (data){
             console.log(data);
