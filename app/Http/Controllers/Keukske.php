@@ -17,6 +17,6 @@ class Keukske extends Controller
         // Retrieve errors message bag
         $errors = $validator->errors();
 
-        return($request->naam);
+        return($errors);
     }
 }
