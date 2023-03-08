@@ -24,5 +24,4 @@ $('.cookie-form').submit(function (){
             console.log(xhr)
         }
     })
-
 })
