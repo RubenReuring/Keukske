@@ -24,25 +24,26 @@ $('.cookie-form').submit(function (){
             //
         },
         error: function(xhr, status, data) {
-            if(xhr.responseJSON.errors.naam){
-                console.log(xhr.responseJSON.errors.naam);
+            if(xhr.responseJSON.errors) {
+                if (xhr.responseJSON.errors.naam) {
+                    console.log(xhr.responseJSON.errors.naam);
+                }
+                if (xhr.responseJSON.errors.mail) {
+                    console.log(xhr.responseJSON.errors.mail);
+                }
+                if (xhr.responseJSON.errors.code1) {
+                    console.log(xhr.responseJSON.errors.code1);
+                }
+                if (xhr.responseJSON.errors.code2) {
+                    console.log(xhr.responseJSON.errors.code2);
+                }
+                if (xhr.responseJSON.errors.code2) {
+                    console.log(xhr.responseJSON.errors.code2);
+                }
+                if (xhr.responseJSON.errors.code2) {
+                    console.log(xhr.responseJSON.errors.code2);
+                }
             }
-            if(xhr.responseJSON.errors.mail){
-                console.log(xhr.responseJSON.errors.mail);
-            }
-            if(xhr.responseJSON.errors.code1){
-                console.log(xhr.responseJSON.errors.code1);
-            }
-            if(xhr.responseJSON.errors.code2){
-                console.log(xhr.responseJSON.errors.code2);
-            }
-            if(xhr.responseJSON.errors.code2){
-                console.log(xhr.responseJSON.errors.code2);
-            }
-            if(xhr.responseJSON.errors.code2){
-                console.log(xhr.responseJSON.errors.code2);
-            }
-
         },
         complete: function (data){
             //
