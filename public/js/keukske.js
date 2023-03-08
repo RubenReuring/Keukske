@@ -32,4 +32,7 @@ $('.codeInput').keyup(function(e) {
         let next = $(this).data('next');
         $('#n' + next).focus();
     }
+    if (e.which == 8 && this.value.length == 0) {
+        $(this).prev('.inputs').focus();
+    }
 });
