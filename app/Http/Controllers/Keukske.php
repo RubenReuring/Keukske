@@ -13,7 +13,7 @@ class Keukske extends Controller
         $totalCode = '1b4y';
         $codeMatch = DB::table('keukske_unique_codes')->where('uniqueCode', $totalCode)->value('id');
 
-        dd($codeMatch);
+        return $codeMatch;
 //        return response()->json(['formatCode'=>$codeMatch]);
     }
 }
