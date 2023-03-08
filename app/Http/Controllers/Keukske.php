@@ -17,8 +17,8 @@ class Keukske extends Controller
         ]);
 
         $totalCode = strtoupper($tempCode= $request->code1 . $request->code2 . $request->code3 . $request->code4);
+        $codeMatch = DB::table('keukske_unique_codes')->where('uniqueCode', $totalCode)->value('id');
 
-
-        return response()->json(['formatCode'=>$totalCode]);
+        return response()->json(['formatCode'=>$codeMatch]);
     }
 }
