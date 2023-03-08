@@ -13,15 +13,6 @@ class Keukske extends Controller
             'code' => 'required'
         ]);
 
-        // Check validation failure
-        if ($validator->fails()) {
-            // [...]
-        }
-
-        // Check validation success
-        if ($validator->passes()) {
-            // [...]
-        }
 
         // Retrieve errors message bag
         $errors = $validator->errors();
