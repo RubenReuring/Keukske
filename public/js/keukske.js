@@ -21,32 +21,15 @@ $('.cookie-form').submit(function (){
         data: $(this).serialize(),
         dataType: 'json',
         success: function (data){
-            //
+            console.log(xhr.responseJSON)
         },
         error: function(xhr, status, data) {
             if(xhr.responseJSON.errors) {
-                if (xhr.responseJSON.errors.naam) {
-                    console.log(xhr.responseJSON.errors.naam);
-                }
-                if (xhr.responseJSON.errors.mail) {
-                    console.log(xhr.responseJSON.errors.mail);
-                }
-                if (xhr.responseJSON.errors.code1) {
-                    console.log(xhr.responseJSON.errors.code1);
-                }
-                if (xhr.responseJSON.errors.code2) {
-                    console.log(xhr.responseJSON.errors.code2);
-                }
-                if (xhr.responseJSON.errors.code2) {
-                    console.log(xhr.responseJSON.errors.code2);
-                }
-                if (xhr.responseJSON.errors.code2) {
-                    console.log(xhr.responseJSON.errors.code2);
-                }
+                console.log(xhr.responseJSON.errors)
             }
         },
         complete: function (data){
-            //
+            console.log(xhr.responseJSON)
         }
     })
 
