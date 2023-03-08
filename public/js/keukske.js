@@ -1,4 +1,5 @@
 $('.submit').on('click', function (){
+    console.log($(this).serialize());
     console.log('hello');
     event.preventDefault();
     $.ajax({
