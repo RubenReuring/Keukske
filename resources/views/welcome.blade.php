@@ -13,7 +13,7 @@
     </head>
     <body class="antialiased">
 {{--    <button class="test">Button</button>--}}
-    <form>
+    <form class="cookie-form">
         <input name='naam' type="text">
         <input name='mail' type="text">
         <input name='code' type="text">
