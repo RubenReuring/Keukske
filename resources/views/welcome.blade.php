@@ -12,11 +12,12 @@
 
     </head>
     <body class="antialiased">
-    <form action="/keukske-actie" method="get">
-        <input name='naam' type="text">
-        <input name='mail' type="text">
-        <input name='code' type="text">
-        <button type="submit">Submit</button>
+    <button class="test"></button>
+{{--    <form action="/keukske-actie" method="get">--}}
+{{--        <input name='naam' type="text">--}}
+{{--        <input name='mail' type="text">--}}
+{{--        <input name='code' type="text">--}}
+{{--        <button type="submit">Submit</button>--}}
 {{--        @if ($errors->any())--}}
 {{--            <div class="alert alert-danger">--}}
 {{--                <ul>--}}
@@ -26,6 +27,7 @@
 {{--                </ul>--}}
 {{--            </div>--}}
 {{--        @endif--}}
-    </form>
+{{--    </form>--}}
+    <script src="keukske.js"></script>
     </body>
 </html>
