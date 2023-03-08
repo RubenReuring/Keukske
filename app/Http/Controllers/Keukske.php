@@ -16,7 +16,7 @@ class Keukske extends Controller
             'code4' => 'required',
         ]);
 
-        $totalCode = $request->code1 . $request->code2 . $request->code3 . $request->code4;
+        $totalCode = 'test';
 
 
         return response($totalCode)->json($validator);
