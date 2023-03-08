@@ -27,12 +27,27 @@ $('.cookie-form').submit(function (){
     })
 })
 
-$('.codeInput').keyup(function(e) {
-    if (this.value.length === this.maxLength) {
-        let next = $(this).data('next');
-        $('#n' + next).focus();
-    }
+// $('.codeInput').keyup(function(e) {
+//
+//     if (e.which == 8 && this.value.length == 0) {
+//         $(this).prev('.inputs').focus();
+//     }
+//
+//     if (this.value.length === this.maxLength) {
+//         let next = $(this).data('next');
+//         $('#n' + next).focus();
+//     }
+//
+// });
+
+
+$(".codeInput").keydown(function(e) {
     if (e.which == 8 && this.value.length == 0) {
-        $(this).prev('.inputs').focus();
+        $(this).prev('.codeInput').focus();
+    }
+}).keyup (function () {
+    if (this.value.length >= charLimit) {
+        $(this).next('.codeInput').focus();
+        return false;
     }
 });
