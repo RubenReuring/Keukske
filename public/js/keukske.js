@@ -1,4 +1,4 @@
-$('.test').on('click', function (){
+$('.submit').on('click', function (){
     console.log('hello');
 
     $.ajax({

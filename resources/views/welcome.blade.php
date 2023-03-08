@@ -12,22 +12,13 @@
 
     </head>
     <body class="antialiased">
-    <button class="test">Button</button>
-{{--    <form action="/keukske-actie" method="get">--}}
-{{--        <input name='naam' type="text">--}}
-{{--        <input name='mail' type="text">--}}
-{{--        <input name='code' type="text">--}}
-{{--        <button type="submit">Submit</button>--}}
-{{--        @if ($errors->any())--}}
-{{--            <div class="alert alert-danger">--}}
-{{--                <ul>--}}
-{{--                    @foreach ($errors->all() as $error)--}}
-{{--                        <li>{{ $error }}</li>--}}
-{{--                    @endforeach--}}
-{{--                </ul>--}}
-{{--            </div>--}}
-{{--        @endif--}}
-{{--    </form>--}}
+{{--    <button class="test">Button</button>--}}
+    <form action="/keukske-actie" method="get">
+        <input name='naam' type="text">
+        <input name='mail' type="text">
+        <input name='code' type="text">
+        <button class="submit" type="submit">Submit</button>
+    </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="/js/keukske.js"></script>
