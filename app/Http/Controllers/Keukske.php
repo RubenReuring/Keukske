@@ -19,6 +19,6 @@ class Keukske extends Controller
         $totalCode = 'test';
 
 
-        return response($totalCode);
+        return response()->json($validator, ['code'=>$totalCode]);
     }
 }
