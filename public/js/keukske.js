@@ -27,19 +27,6 @@ $('.cookie-form').submit(function (){
     })
 })
 
-// $('.codeInput').keyup(function(e) {
-//
-//     if (e.which == 8 && this.value.length == 0) {
-//         $(this).prev('.inputs').focus();
-//     }
-//
-//     if (this.value.length === this.maxLength) {
-//         let next = $(this).data('next');
-//         $('#n' + next).focus();
-//     }
-//
-// });
-
 let charLimit = 1;
 $(".codeInput").keydown(function(e) {
 
