@@ -42,6 +42,7 @@ $('.cookie-form').submit(function (){
 
 
 $(".codeInput").keydown(function(e) {
+    var charLimit = 1;
     if (e.which == 8 && this.value.length == 0) {
         $(this).prev('.codeInput').focus();
     }
