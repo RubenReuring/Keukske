@@ -12,7 +12,7 @@
 
     </head>
     <body class="antialiased">
-    <button class="test"></button>
+    <button class="test">Button</button>
 {{--    <form action="/keukske-actie" method="get">--}}
 {{--        <input name='naam' type="text">--}}
 {{--        <input name='mail' type="text">--}}
