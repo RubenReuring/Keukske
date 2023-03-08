@@ -10,7 +10,7 @@ class Keukske extends Controller
 {
     public function matchCode(Request $request) {
         $totalCode = strtoupper($request->code1 . $request->code2 . $request->code3 . $request->code4);
-//        $totalCode = 'XIGU';
+
         $codeMatch = DB::table('keukske_unique_codes')->where('uniqueCode', $totalCode)->first();
         if ($codeMatch === null) {
             $result = 'Oei, verkeerde code';
@@ -20,8 +20,6 @@ class Keukske extends Controller
             $result = 'Standaard prijs gewonnen';
         }
 
-
-//        return $codeMatch;
         return response()->json(['result'=>$result]);
     }
 }

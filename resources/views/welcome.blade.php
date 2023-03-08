@@ -34,10 +34,10 @@
         <input required name='naam' type="text" placeholder="naam">
         <input required name='mail' type="email" placeholder="mail">
         <div class="codewrapper">
-            <input maxlength="1" required name='code1' type="text" placeholder="code1">
-            <input maxlength="1" required name='code2' type="text" placeholder="code2">
-            <input maxlength="1" required name='code3' type="text" placeholder="code3">
-            <input maxlength="1" required name='code4' type="text" placeholder="code4">
+            <input class="codeInput" id="n0" maxlength="1" required name='code1' type="text" placeholder="code1">
+            <input class="codeInput" id="n1" maxlength="1" required name='code2' type="text" placeholder="code2">
+            <input class="codeInput" id="n2" maxlength="1" required name='code3' type="text" placeholder="code3">
+            <input class="codeInput" id="n3" maxlength="1" required name='code4' type="text" placeholder="code4">
         </div>
 
         <button class="submit" type="submit">Submit</button>
