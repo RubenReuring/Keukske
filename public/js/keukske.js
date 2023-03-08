@@ -20,18 +20,13 @@ $('.cookie-form').submit(function (){
         url: "/keukske-actie",
         data: $(this).serialize(),
         dataType: 'json',
-        success: function (xhr, status, data){
-            console.log(xhr.responseJSON)
-        },
-        error: function(xhr, status, data) {
-            if(xhr.responseJSON.errors) {
-                console.log(xhr.responseJSON.errors)
-            }
-        },
-        complete: function (xhr, status, data, response){
+        success: function (xhr, data){
             console.log(data)
-            console.log(response)
-            console.log(status)
+            console.log(xhr)
+        },
+        complete: function (xhr, data){
+            console.log(data)
+            console.log(xhr)
         }
     })
 
