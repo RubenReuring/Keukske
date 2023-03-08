@@ -23,10 +23,11 @@ $('.cookie-form').submit(function (){
         success: function (data){
             console.log(data);
         },
-        error: function(xhr, status, data)
-            {console.log(xhr.responseJSON.errors);
+        error: function(xhr, status, data) {
+                console.log(xhr.responseJSON.errors);
                 let errors = xhr.responseJSON.errors;
-                $(errors).each(function(){ console.log(this) })
+                let arr = $.parseJSON(errors)
+                $(arr).each(function(){ console.log(this) })
         },
         complete: function (data){
             console.log(data);
