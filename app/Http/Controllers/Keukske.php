@@ -12,10 +12,10 @@ class Keukske extends Controller
         $totalCode = strtoupper($request->code1 . $request->code2 . $request->code3 . $request->code4);
 //        $totalCode = 'XIGU';
         $codeMatch = DB::table('keukske_unique_codes')->where('uniqueCode', $totalCode)->first();
-        if($codeMatch === null){
-            $result = 'Helaas, niet gewonnen';
-        } else {
+        if($codeMatch !== null){
             $result = $codeMatch->prize;
+        } else {
+            $result = 'Helaas, niet gewonnen';
         }
 //        return $codeMatch;
         return response()->json(['result'=>$result]);
