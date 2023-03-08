@@ -10,8 +10,21 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         <style>
-            body { display: flex; align-content: center; justify-content: center; }
-            form { display: flex; flex-direction: vertical; gap: 0 1em;}
+            body {
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 1em 1em;
+            }
+            .codewrapper {
+                display: flex;
+                gap: .5em .5em;
+            }
         </style>
 
     </head>
@@ -20,10 +33,13 @@
     <form class="cookie-form">
         <input required name='naam' type="text" placeholder="naam">
         <input required name='mail' type="email" placeholder="mail">
-        <input maxlength="1" required name='code1' type="text" placeholder="code1">
-        <input maxlength="1" required name='code2' type="text" placeholder="code2">
-        <input maxlength="1" required name='code3' type="text" placeholder="code3">
-        <input maxlength="1" required name='code4' type="text" placeholder="code4">
+        <div class="codewrapper">
+            <input maxlength="1" required name='code1' type="text" placeholder="code1">
+            <input maxlength="1" required name='code2' type="text" placeholder="code2">
+            <input maxlength="1" required name='code3' type="text" placeholder="code3">
+            <input maxlength="1" required name='code4' type="text" placeholder="code4">
+        </div>
+
         <button class="submit" type="submit">Submit</button>
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
