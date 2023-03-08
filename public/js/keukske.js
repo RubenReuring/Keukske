@@ -26,8 +26,8 @@ $('.cookie-form').submit(function (){
         error: function(xhr, status, data)
             {console.log(xhr.responseJSON.errors);
         },
-        complete: function (xhr){
-            console.log(xhr);
+        complete: function (data){
+            console.log(data);
         }
     })
 
