@@ -7,13 +7,11 @@ use Illuminate\Http\Request;
 class Keukske extends Controller
 {
     public function matchCode(Request $request) {
-        $validator = $request->validate([
+        $validator = $request->validateWithBag([
             'naam' => 'required',
             'mail' => 'required',
             'code' => 'required'
         ]);
-
-
 
         return($validator);
     }
