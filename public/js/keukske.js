@@ -24,8 +24,10 @@ $('.cookie-form').submit(function (){
             console.log(data);
         },
         error: function(xhr, status, data)
-            { console.log(xhr.responseJSON.errors);
+            {console.log(xhr.responseJSON.errors);
         }
-    })
+    }).done(function() {
+        console.log(data);
+    });
 
 })
