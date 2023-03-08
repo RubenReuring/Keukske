@@ -28,10 +28,10 @@ $('.cookie-form').submit(function (){
                 console.log(xhr.responseJSON.errors.naam);
             }
             if(xhr.responseJSON.errors.mail){
-                console.log(xhr.responseJSON.errors.naam);
+                console.log(xhr.responseJSON.errors.mail);
             }
             if(xhr.responseJSON.errors.code){
-                console.log(xhr.responseJSON.errors.naam);
+                console.log(xhr.responseJSON.errors.code);
             }
         },
         complete: function (data){
