@@ -23,8 +23,8 @@ $('.cookie-form').submit(function (){
         success: function (data){
             console.log(data);
         },
-        error: function (data){
-            console.log(data.errors);
+        error: function (){
+            console.log(response.errors);
         },
     })
 
