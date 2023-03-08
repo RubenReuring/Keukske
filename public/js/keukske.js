@@ -14,7 +14,7 @@
 // })
 
 $('.cookie-form').submit(function (){
-
+    event.preventDefault();
     $.ajax({
         method: "GET",
         url: "/keukske-actie",
