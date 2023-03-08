@@ -1,6 +1,6 @@
 $('.submit').on('click', function (){
     console.log('hello');
-
+    event.preventDefault();
     $.ajax({
         method: "GET",
         url: "/keukske-actie",
