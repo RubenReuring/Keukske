@@ -21,7 +21,7 @@ $('.cookie-form').submit(function (){
         data: $(this).serialize(),
         dataType: 'json',
         success: function (data){
-            console.log(data);
+            //
         },
         error: function(xhr, status, data) {
             if(xhr.responseJSON.errors.naam){
@@ -35,7 +35,7 @@ $('.cookie-form').submit(function (){
             }
         },
         complete: function (data){
-            console.log(data);
+            //
         }
     })
 
