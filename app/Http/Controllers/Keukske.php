@@ -16,8 +16,7 @@ class Keukske extends Controller
             $result = 'Bijzondere prijs gewonnen';
         }elseif ($codeMatch->prize === null) {
             $result = 'Standaard prijs gewonnen';
-        }
-        if ($codeMatch === null){
+        }elseif ($codeMatch === null){
             $result = 'Oei, verkeerde code';
         }
 
