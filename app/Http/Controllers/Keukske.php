@@ -16,9 +16,9 @@ class Keukske extends Controller
             'code4' => 'required',
         ]);
 
-        $totalCode = $request->code1 . $request->code2 . $request->code3 . $request->code4;
+        $totalCode = strtoupper($tempCode= $request->code1 . $request->code2 . $request->code3 . $request->code4);
 
 
-        return $totalCode;
+        return response()->json(['formatCode'=>$totalCode]);
     }
 }
