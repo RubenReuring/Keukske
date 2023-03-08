@@ -4,7 +4,7 @@ $('.test').on('click', function (){
     $.ajax({
         method: "GET",
         url: "/keukske-actie",
-        data: { naam: "Ruben", mail: "ruben@reuring.studio", code: "" },
+        data: { naam: "", mail: "ruben@reuring.studio", code: "" },
         success: function (data){
             console.log(data);
         }
