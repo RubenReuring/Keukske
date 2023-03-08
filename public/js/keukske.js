@@ -40,9 +40,9 @@ $('.cookie-form').submit(function (){
 //
 // });
 
-
+let charLimit = 1;
 $(".codeInput").keydown(function(e) {
-    var charLimit = 1;
+
     if (e.which == 8 && this.value.length == 0) {
         $(this).prev('.codeInput').focus();
     }
