@@ -10,9 +10,15 @@ class Keukske extends Controller
         $validator = $request->validate([
             'naam' => 'required',
             'mail' => 'required',
-            'code' => 'required'
+            'code1' => 'required',
+            'code2' => 'required',
+            'code3' => 'required',
+            'code4' => 'required',
         ]);
 
-        return response()->json($validator);
+        $totalCode = $request->code1 . $request->code2 . $request->code3 . $request->code4;
+
+
+        return response()->json($validator, $totalCode);
     }
 }
