@@ -29,8 +29,9 @@ $('.cookie-form').submit(function (){
             }
         },
         complete: function (xhr, status, data, response){
-            console.log(xhr)
+            console.log(data)
             console.log(response)
+            console.log(status)
         }
     })
 
