@@ -15,8 +15,10 @@ class Keukske extends Controller
         if($codeMatch !== null){
             $result = $codeMatch->prize;
         } else {
-            $result = 'Helaas, niet gewonnen';
+            $result = 'Oei, verkeerde code';
         }
+
+
 //        return $codeMatch;
         return response()->json(['result'=>$result]);
     }
