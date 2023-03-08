@@ -14,8 +14,8 @@ class Keukske extends Controller
         $codeMatch = DB::table('keukske_unique_codes')->where('uniqueCode', $totalCode)->first();
         if($codeMatch === null){
             $result = 'Helaas, niet gewonnen';
-        } elseif ($codeMatch){
-            $result = 'Helaas, niet gewonnen';
+        } else {
+            $result = $codeMatch->prize;
         }
 //        return $codeMatch;
         return response()->json(['result'=>$result]);
