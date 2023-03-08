@@ -13,6 +13,6 @@ class Keukske extends Controller
             'code' => 'required'
         ]);
 
-        dd($validator);
+        return('Hello');
     }
 }
