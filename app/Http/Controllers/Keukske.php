@@ -13,6 +13,6 @@ class Keukske extends Controller
             'code' => 'required'
         ]);
 
-        return redirect('welcome')->withErrors($validator, 'code');
+        return redirect('/')->withErrors($validator, 'code');
     }
 }
