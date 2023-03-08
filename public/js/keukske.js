@@ -20,12 +20,10 @@ $('.cookie-form').submit(function (){
         url: "/keukske-actie",
         data: $(this).serialize(),
         dataType: 'json',
-        success: function (xhr, data){
-            console.log(data)
+        success: function (xhr){
             console.log(xhr)
         },
-        complete: function (xhr, data){
-            console.log(data)
+        complete: function (xhr){
             console.log(xhr)
         }
     })
