@@ -28,6 +28,6 @@
 {{--            </div>--}}
 {{--        @endif--}}
 {{--    </form>--}}
-    <script src="keukske.js"></script>
+    <script src="/js/keukske.js"></script>
     </body>
 </html>
