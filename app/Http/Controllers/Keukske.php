@@ -11,12 +11,12 @@ class Keukske extends Controller
     public function matchCode(Request $request) {
         $totalCode = strtoupper($request->code1 . $request->code2 . $request->code3 . $request->code4);
 //        $totalCode = 'XIGU';
-        $codeMatch = DB::table('keukske_unique_codes')->where('uniqueCode', $totalCode);
-//        if($codeMatch === null){
-//            $result = 'Helaas, niet gewonnen';
-//        } elseif ($codeMatch){
-//            $result = 'Helaas, niet gewonnen';
-//        }
+        $codeMatch = DB::table('keukske_unique_codes')->where('uniqueCode', $totalCode)->first();
+        if($codeMatch === null){
+            $result = 'Helaas, niet gewonnen';
+        } elseif ($codeMatch){
+            $result = 'Helaas, niet gewonnen';
+        }
 //        return $codeMatch;
         return response()->json(['result'=>$result]);
     }
