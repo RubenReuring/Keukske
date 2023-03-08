@@ -21,7 +21,7 @@ $('.cookie-form').submit(function (){
         data: $(this).serialize(),
         dataType: 'json',
         success: function (data){
-            console.log(data);
+            console.log(data.errors);
         }
     })
 
