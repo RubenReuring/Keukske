@@ -24,9 +24,15 @@ $('.cookie-form').submit(function (){
             console.log(data);
         },
         error: function(xhr, status, data) {
-                if(xhr.responseJSON.errors.naam){
-                    console.log(xhr.responseJSON.errors.naam);
-                }
+            if(xhr.responseJSON.errors.naam){
+                console.log(xhr.responseJSON.errors.naam);
+            }
+            if(xhr.responseJSON.errors.mail){
+                console.log(xhr.responseJSON.errors.naam);
+            }
+            if(xhr.responseJSON.errors.code){
+                console.log(xhr.responseJSON.errors.naam);
+            }
         },
         complete: function (data){
             console.log(data);
