@@ -17,7 +17,7 @@ return [
 
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
 
-    'allowed_methods' => ['*'],
+    'allowed_methods' => ['get'],
 
     'allowed_origins' => ['https://tkeukse.webflow.io'],
 
