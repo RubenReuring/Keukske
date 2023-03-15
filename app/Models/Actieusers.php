@@ -17,6 +17,6 @@ class Actieusers extends Model
      */
     protected $table = 'keukske_actie_users';
     protected $primaryKey = 'id';
-    protected $timestamps = false;
+    public $timestamps = false;
 
 }
