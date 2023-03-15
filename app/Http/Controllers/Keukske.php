@@ -17,14 +17,14 @@ class Keukske extends Controller
         } elseif($codeMatch->prize !== null){
             $result = $codeMatch->prize;
             $actieuser = new Actieusers();
-            $actieuser->name = $request->name;
+            $actieuser->name = $request->naam;
             $actieuser->email = $request->mail;
             $actieuser->actie_code = $totalCode;
             $actieuser->save();
         } elseif ($codeMatch->prize === null) {
             $result = "You've won 10% off your next purchase!";
             $actieuser = new Actieusers();
-            $actieuser->name = $request->name;
+            $actieuser->name = $request->naam;
             $actieuser->email = $request->mail;
             $actieuser->actie_code = $totalCode;
             $actieuser->save();
