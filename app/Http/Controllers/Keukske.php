@@ -18,6 +18,7 @@ class Keukske extends Controller
         $actieuser->actie_code = $totalCode;
         $actieuser->save();
 
+
         $codeMatch = DB::table('keukske_unique_codes')->where('uniqueCode', $totalCode)->first();
         if ($codeMatch === null) {
             $result = "wrong-code";
