@@ -16,5 +16,6 @@ class Actieusers extends Authenticatable
      * @var string
      */
     protected $table = 'keukske_actie_users';
+    protected $primaryKey = 'id';
 
 }
