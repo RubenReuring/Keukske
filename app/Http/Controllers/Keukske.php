@@ -13,11 +13,11 @@ class Keukske extends Controller
 
         $codeMatch = DB::table('keukske_unique_codes')->where('uniqueCode', $totalCode)->first();
         if ($codeMatch === null) {
-            $result = 'Oei, verkeerde code';
+            $result = "wrong-code";
         } elseif($codeMatch->prize !== null){
-            $result = 'Exclusieve prijs gewonnen';
+            $result = $codeMatch->prize;
         } elseif ($codeMatch->prize === null) {
-            $result = 'Standaard prijs gewonnen';
+            $result = "You've won 10% off your next purchase!";
         }
 
         return response()->json(['result'=>$result]);
