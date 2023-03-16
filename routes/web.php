@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/keukske-verify', function () {
     return view('welcome');
 });
 
 Route::get('/keukske-actie', [\App\Http\Controllers\Keukske::class, 'matchCode']);
+Route::get('/keukske-verifycode', [\App\Http\Controllers\Keukske::class, 'checkCode']);

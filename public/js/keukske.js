@@ -17,7 +17,7 @@ $('.cookie-form').submit(function (){
     event.preventDefault();
     $.ajax({
         method: "GET",
-        url: "/keukske-actie",
+        url: "/keukske-verifycode",
         data: $(this).serialize(),
         dataType: 'json',
         success: function (xhr){

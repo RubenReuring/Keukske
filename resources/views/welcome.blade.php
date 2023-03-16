@@ -31,16 +31,14 @@
     <body class="antialiased">
 {{--    <button class="test">Button</button>--}}
     <form class="cookie-form">
-        <input required name='naam' type="text" placeholder="naam">
-        <input required name='mail' type="email" placeholder="mail">
         <div class="codewrapper">
-            <input class="codeInput" id="n0" maxlength="1" required name='code1' type="text" placeholder="code1" data-next="1">
-            <input class="codeInput" id="n1" maxlength="1" required name='code2' type="text" placeholder="code2" data-next="2">
-            <input class="codeInput" id="n2" maxlength="1" required name='code3' type="text" placeholder="code3" data-next="3">
-            <input class="codeInput" id="n3" maxlength="1" required name='code4' type="text" placeholder="code4" data-next="4">
+            <input class="codeInput" id="n0" maxlength="1" required name='code1' type="text" placeholder="X" data-next="1">
+            <input class="codeInput" id="n1" maxlength="1" required name='code2' type="text" placeholder="C" data-next="2">
+            <input class="codeInput" id="n2" maxlength="1" required name='code3' type="text" placeholder="Q" data-next="3">
+            <input class="codeInput" id="n3" maxlength="1" required name='code4' type="text" placeholder="E" data-next="4">
         </div>
 
-        <button class="submit" type="submit">Submit</button>
+        <button class="submit" type="submit">Verify Code</button>
     </form>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
