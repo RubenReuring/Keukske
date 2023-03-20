@@ -41,7 +41,7 @@ class Keukske extends Controller
         } elseif($codeMatch->prize !== null){
             $result = $codeMatch->prize;
 
-        } elseif ($codeMatch->prize === null || 'none') {
+        } elseif ($codeMatch->prize === null ) {
             $result = "You've won 10% off your next purchase!";
         }
 
