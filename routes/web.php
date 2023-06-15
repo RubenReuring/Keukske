@@ -19,4 +19,4 @@ Route::get('/keukske-verify', function () {
 
 Route::get('/keukske-actie', [\App\Http\Controllers\Keukske::class, 'matchCode']);
 Route::get('/keukske-verifycode', [\App\Http\Controllers\Keukske::class, 'checkCode']);
-Route::get('/ama-group/2K23-QR-001', function () { return redirect('http:/google.com'); });
+Route::get('/ama-group/2K23-QR-001', function () { return redirect('http://google.com'); });
