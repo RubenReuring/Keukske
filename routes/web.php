@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/keukske-verify', function () {
-    return view('welcome');
+Route::get('/', function () {
+    return view('landing');
 });
+Route::get('/keukske-verify', function () { return redirect('https://reuring.studio'); });
 
 Route::get('/keukske-actie', [\App\Http\Controllers\Keukske::class, 'matchCode']);
 Route::get('/keukske-verifycode', [\App\Http\Controllers\Keukske::class, 'checkCode']);
