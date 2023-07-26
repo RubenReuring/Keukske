@@ -1,19 +1,4 @@
 
-@php
-$allowed_domains = array(
-    'goapply.nl',
-    'another-nice-one.org',
-);
-$allowed = false;
-@endphp
-@foreach ($allowed_domains as $domain)
-    @if(preg_match("@https?://$domain/.*@", $_SERVER['HTTP_REFERER']))
-        @php
-        $allowed = true;
-        @endphp
-    @endif
-@endforeach
-@if ($allowed)
 <!DOCTYPE html><!--  Last Published: Wed Jul 26 2023 14:20:40 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64c12511563b2b75278a04b1" data-wf-site="64be6439dcf898bf389bbc80">
 <head>
@@ -468,6 +453,3 @@ $allowed = false;
 <script src="/spherestory/js/flexibility-limburg/pagescript.js" type="text/javascript"></script>
 </body>
 </html>
-@else
-    Access denied
-@endif
