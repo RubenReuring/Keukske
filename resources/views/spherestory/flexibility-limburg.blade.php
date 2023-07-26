@@ -444,11 +444,11 @@
     </div>
 </div>
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64be6439dcf898bf389bbc80" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="spherestory/js/flexibility-limburg/apply-360.js" type="text/javascript"></script>
+<script src="/spherestory/js/flexibility-limburg/apply-360.js" type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/npm/video.js@8.3.0/dist/video.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js" integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="spherestory/js/flexibility-limburg/pagescript.js" type="text/javascript"></script>
+<script src="/spherestory/js/flexibility-limburg/pagescript.js" type="text/javascript"></script>
 </body>
 </html>
