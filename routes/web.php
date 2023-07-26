@@ -26,4 +26,4 @@ Route::get('/ama-group/2K23-QR-001', function () { return redirect('https://www.
 Route::get('/ama-group/2K23-QR-002', function () { return redirect('https://www.ama-group.info/ama-projecten/dotterbloem-10'); });
 
 // 360 Experience
-Route::get('/spherestory/flexibility-limburg', function () { return view('/spherestory/flexbility-limburg'); });
+Route::get('/spherestory/flexibility-limburg', function () { return view('spherestory/flexbility-limburg'); });
