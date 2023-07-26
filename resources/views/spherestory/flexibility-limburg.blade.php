@@ -271,7 +271,7 @@
 <div class="hotspot-wrapper demo">
     <div id="ch-wrapper_location" class="ch-wrapper">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="images/Flexibility-limburg_1Flexibility-limburg.png" loading="lazy" alt="" class="avatar"></div>
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/flexibility-limburg/Flexibility-limburg_1Flexibility-limburg.png" loading="lazy" alt="" class="avatar"></div>
             <div class="ch-details">
                 <div class="ch-details-title">
                     <p class="ch_p20-r">Flexibility Limburg</p>
@@ -284,7 +284,7 @@
     </div>
     <div id="ch-wrapper_lunchroom" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="images/Avatar-Paul_1Avatar-Paul.png" loading="lazy" alt="" class="avatar">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/flexibility-limburg/Avatar-Paul_1Avatar-Paul.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
                     <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
@@ -305,7 +305,7 @@
     </div>
     <div id="ch-wrapper_office_1" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="images/Avatar-Paul_1Avatar-Paul.png" loading="lazy" alt="" class="avatar">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/flexibility-limburg/Avatar-Paul_1Avatar-Paul.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
                     <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
@@ -326,7 +326,7 @@
     </div>
     <div id="ch-wrapper_office_2" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="images/Evy_Gulikers-Memoji_1Evy_Gulikers-Memoji.png" loading="lazy" alt="" class="avatar">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/flexibility-limburg/Evy_Gulikers-Memoji_1Evy_Gulikers-Memoji.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
                     <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
@@ -347,7 +347,7 @@
     </div>
     <div id="ch-wrapper_meetingroom" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="images/Sieske_Haan-Memoji_1Sieske_Haan-Memoji.png" loading="lazy" alt="" class="avatar">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/flexibility-limburg/Sieske_Haan-Memoji_1Sieske_Haan-Memoji.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
                     <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
@@ -368,7 +368,7 @@
     </div>
     <div id="ch-wrapper_office_facts" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="images/Avatar-Paul_1Avatar-Paul.png" loading="lazy" alt="" class="avatar">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/flexibility-limburg/Avatar-Paul_1Avatar-Paul.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
                     <p class="ch_p14-b">i</p>
                 </div>
@@ -387,7 +387,7 @@
     </div>
     <div id="ch-wrapper_office_spot" class="ch-wrapper">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="images/Flexibility-limburg_1Flexibility-limburg.png" loading="lazy" alt="" class="avatar"></div>
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/flexibility-limburg/Flexibility-limburg_1Flexibility-limburg.png" loading="lazy" alt="" class="avatar"></div>
             <div class="ch-details">
                 <div class="ch-details-title">
                     <p class="ch_p20-r">Flexibility Limburg</p>
@@ -400,7 +400,7 @@
     </div>
     <div id="ch-wrapper_football" class="ch-wrapper">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="images/Avatar-Paul_1Avatar-Paul.png" loading="lazy" alt="" class="avatar"></div>
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/flexibility-limburg/Avatar-Paul_1Avatar-Paul.png" loading="lazy" alt="" class="avatar"></div>
             <div class="ch-details">
                 <div class="ch-details-title">
                     <p class="ch_p20-r">Paul Bergs</p>
