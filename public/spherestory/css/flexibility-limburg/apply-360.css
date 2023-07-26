@@ -879,28 +879,28 @@ p {
 }
 @font-face {
   font-family: 'Silka';
-  src: url('../fonts/Silka-Regular.woff') format('woff');
+  src: url('../spherestory/fonts/Silka-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Silka';
-  src: url('../fonts/Silka-SemiBold.otf') format('opentype');
+  src: url('../spherestory/fonts/Silka-SemiBold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Montreal';
-  src: url('../fonts/PPNeueMontreal-Medium.otf') format('opentype');
+  src: url('../spherestory/fonts/PPNeueMontreal-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Montreal';
-  src: url('../fonts/PPNeueMontreal-Regular.otf') format('opentype');
+  src: url('../spherestory/fonts/PPNeueMontreal-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
