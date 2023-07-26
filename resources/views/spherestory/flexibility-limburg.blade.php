@@ -7,10 +7,10 @@
     <meta content="Flexibility Limburg" property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <link href="spherestory/css/flexibility-limburg/normalize.css" rel="stylesheet" type="text/css">
-    <link href="spherestory/css/flexibility-limburg/components.css" rel="stylesheet" type="text/css">
-    <link href="spherestory/css/flexibility-limburg/apply-360.css" rel="stylesheet" type="text/css">
-    <link href="spherestory/css/flexibility-limburg/pagecode.css" rel="stylesheet" type="text/css">
+    <link href="/spherestory/css/flexibility-limburg/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/spherestory/css/flexibility-limburg/components.css" rel="stylesheet" type="text/css">
+    <link href="/spherestory/css/flexibility-limburg/apply-360.css" rel="stylesheet" type="text/css">
+    <link href="/spherestory/css/flexibility-limburg/pagecode.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
