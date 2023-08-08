@@ -158,7 +158,7 @@
     </div>
 </div>
 <div class="hotspot-wrapper demo">
-    <div id="ch-wrapper_location" class="ch-wrapper">
+    <div id="ch-wrapper_company" class="ch-wrapper">
         <div class="ch-inner">
             <div class="ch-avatar-wrap"><img src="/spherestory/assets/flexibility-limburg/Flexibility-limburg_1Flexibility-limburg.png" loading="lazy" alt="" class="avatar"></div>
             <div class="ch-details">
@@ -171,7 +171,7 @@
             </div>
         </div>
     </div>
-    <div id="ch-wrapper_lunchroom" class="ch-wrapper clickable">
+    <div id="ch-wrapper_video-1" class="ch-wrapper clickable">
         <div class="ch-inner">
             <div class="ch-avatar-wrap"><img src="/spherestory/assets/flexibility-limburg/Avatar-Paul_1Avatar-Paul.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
@@ -192,7 +192,7 @@
         <div class="ch-clickable_tint animate"></div>
         <div class="ch-clickable_tint hover"></div>
     </div>
-    <div id="ch-wrapper_office_1" class="ch-wrapper clickable">
+    <div id="ch-wrapper_video-2" class="ch-wrapper clickable">
         <div class="ch-inner">
             <div class="ch-avatar-wrap"><img src="/spherestory/assets/flexibility-limburg/Avatar-Paul_1Avatar-Paul.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
