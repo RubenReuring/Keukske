@@ -206,7 +206,7 @@
                     <p class="ch_p20-r">Medewerker 02</p>
                 </div>
                 <div class="ch-details-desc">
-                    <p class="ch_p14-m">Medewerker 01 korte tekst</p>
+                    <p class="ch_p14-m">Medewerker 02 korte tekst</p>
                 </div>
             </div>
         </div>
