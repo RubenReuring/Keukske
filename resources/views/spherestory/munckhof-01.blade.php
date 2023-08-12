@@ -30,8 +30,8 @@
         <div class="room-videos inactive">
             <div class="_360videocontainer">
                 <div class="_360vc_inner">
-                    <div class="_360videoembed w-embed"><video id="flexibility-hotspot_meetingroom" poster="https://uploads-ssl.webflow.com/63dcc9351dd74501c9a884ef/64b05b108e6f7af1532b19b0_meeting.webp" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="https://reuring.club/flexibility_videos/Flexibility-Sieske_Haan.mp4" type="video/mp4">
+                    <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-1" class="video-js vjs-16-9" playsinline="" preload="auto">
+                            <source src="/spherestory/assets/munckhof-01/munckhof-01-01.mp4" type="video/mp4">
                         </video></div>
                     <div class="_360videocontrols">
                         <div class="_360vc-cb play videocontrolinactive">
@@ -60,68 +60,8 @@
             </div>
             <div class="_360videocontainer">
                 <div class="_360vc_inner">
-                    <div class="_360videoembed w-embed"><video id="flexibility-hotspot_office_1" poster-="https://uploads-ssl.webflow.com/63dcc9351dd74501c9a884ef/64b05b1081d27459e3e6b924_office_1.webp" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="https://reuring.club/flexibility_videos/Flexibility-Paul_Bergs.mp4" type="video/mp4">
-                        </video></div>
-                    <div class="_360videocontrols">
-                        <div class="_360vc-cb play videocontrolinactive">
-                            <div class="playiconembed w-embed"><svg class="playbtn-icon" width="16" height="18" viewbox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.5 8.13398C16.1667 8.51888 16.1667 9.48113 15.5 9.86603L2 17.6603C1.33334 18.0452 0.500001 17.564 0.500001 16.7942L0.500002 1.20577C0.500002 0.435972 1.33334 -0.0451547 2 0.339746L15.5 8.13398Z" fill="white" fill-opacity="0.75"></path>
-                                </svg></div>
-                        </div>
-                    </div>
-                    <div class="_360vc-subcontrols">
-                        <div class="_360vc-cb pause">
-                            <div class="pauzeiconembed w-embed"><svg class="pauzebtn-icon" width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                    <rect x="9" width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                </svg></div>
-                        </div>
-                        <div class="_360vc_close">
-                            <p class="ch_p16-m">Sluiten</p>
-                        </div>
-                    </div>
-                    <div class="_360vc-cta_wrap">
-                        <a target="_parent" href="https://reuring-app.webflow.io/testing#formulier" class="_360vc_btn w-inline-block">
-                            <p class="ch_p16-m">Solliciteer direct</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="_360videocontainer">
-                <div class="_360vc_inner">
-                    <div class="_360videoembed w-embed"><video id="flexibility-hotspot_lunchroom" poster="https://uploads-ssl.webflow.com/63dcc9351dd74501c9a884ef/64b05b10178a686af82b350e_kantine.webp" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="https://reuring.club/flexibility_videos/Flexibility_Kantine.mp4" type="video/mp4">
-                        </video></div>
-                    <div class="_360videocontrols">
-                        <div class="_360vc-cb play videocontrolinactive">
-                            <div class="playiconembed w-embed"><svg class="playbtn-icon" width="16" height="18" viewbox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.5 8.13398C16.1667 8.51888 16.1667 9.48113 15.5 9.86603L2 17.6603C1.33334 18.0452 0.500001 17.564 0.500001 16.7942L0.500002 1.20577C0.500002 0.435972 1.33334 -0.0451547 2 0.339746L15.5 8.13398Z" fill="white" fill-opacity="0.75"></path>
-                                </svg></div>
-                        </div>
-                    </div>
-                    <div class="_360vc-subcontrols">
-                        <div class="_360vc-cb pause">
-                            <div class="pauzeiconembed w-embed"><svg class="pauzebtn-icon" width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                    <rect x="9" width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                </svg></div>
-                        </div>
-                        <div class="_360vc_close">
-                            <p class="ch_p16-m">Sluiten</p>
-                        </div>
-                    </div>
-                    <div class="_360vc-cta_wrap">
-                        <a target="_parent" href="https://reuring-app.webflow.io/testing#formulier" class="_360vc_btn w-inline-block">
-                            <p class="ch_p16-m">Solliciteer direct</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="_360videocontainer">
-                <div class="_360vc_inner">
-                    <div class="_360videoembed w-embed"><video id="flexibility-hotspot_office_2" poster="https://uploads-ssl.webflow.com/63dcc9351dd74501c9a884ef/64b05b10497441335f8e0665_office_2.webp" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="https://reuring.club/flexibility_videos/Flexibility-Evy_Gulikers.mp4" type="video/mp4">
+                    <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-2" class="video-js vjs-16-9" playsinline="" preload="auto">
+                            <source src="/spherestory/assets/munckhof-01/munckhof-01-02.mp4" type="video/mp4">
                         </video></div>
                     <div class="_360videocontrols">
                         <div class="_360vc-cb play videocontrolinactive">
@@ -182,10 +122,10 @@
             </div>
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">Medewerker 01</p>
+                    <p class="ch_p20-r">Rick de Oude</p>
                 </div>
                 <div class="ch-details-desc">
-                    <p class="ch_p14-m">Medewerker 01 korte tekst</p>
+                    <p class="ch_p14-m">Bedrijfsleider</p>
                 </div>
             </div>
         </div>
@@ -203,10 +143,10 @@
             </div>
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">Medewerker 02</p>
+                    <p class="ch_p20-r">Cyril Hunte</p>
                 </div>
                 <div class="ch-details-desc">
-                    <p class="ch_p14-m">Medewerker 02 korte tekst</p>
+                    <p class="ch_p14-m">Chauffeur</p>
                 </div>
             </div>
         </div>

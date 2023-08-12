@@ -60,7 +60,7 @@ let viewer = pannellum.viewer("panorama", {
     default: {
         firstScene: "main",
         sceneFadeDuration: 1000,
-        //hotSpotDebug: true,
+        hotSpotDebug: true,
         mouseZoom: false,
         keyboardZoom: false
     },
@@ -81,7 +81,7 @@ let viewer = pannellum.viewer("panorama", {
                     pitch: -3,
                     yaw: 181.5,
                     type: "info",
-                    cssClass: "custom-hotspot flexibility-hotspot_company"
+                    cssClass: "custom-hotspot sphere-hotspot_company"
                 },
                 {
                     pitch: 0.95,
@@ -89,7 +89,7 @@ let viewer = pannellum.viewer("panorama", {
                     type: "info",
                     cssClass: "custom-hotspot flexibility-hotspot_video-1",
                     clickHandlerFunc: hotspotAction,
-                    clickHandlerArgs: {hotspot: "flexibility-hotspot_video-1", type: "video-modal"}
+                    clickHandlerArgs: {hotspot: "sphere-hotspot_video-1", type: "video-modal"}
                 },
                 {
                     pitch: 0.95,
@@ -97,7 +97,7 @@ let viewer = pannellum.viewer("panorama", {
                     type: "info",
                     cssClass: "custom-hotspot flexibility-hotspot_video-2",
                     clickHandlerFunc: hotspotAction,
-                    clickHandlerArgs: {hotspot: "flexibility-hotspot_video-2", type: "video-modal"}
+                    clickHandlerArgs: {hotspot: "sphere-hotspot_video-2", type: "video-modal"}
                 }
             ]
         }
