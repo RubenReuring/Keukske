@@ -117,9 +117,9 @@ mm.add("(max-width: 768px)", function() {
     })
 });
 viewer.on("load", function () {
-    $("#ch-wrapper_company").clone().appendTo(".flexibility-hotspot_company");
-    $("#ch-wrapper_video-1").clone().appendTo(".flexibility-hotspot_video-1");
-    $("#ch-wrapper_video-2").clone().appendTo(".flexibility-hotspot_video-2");
+    $("#ch-wrapper_company").clone().appendTo(".spherestory-hotspot_company");
+    $("#ch-wrapper_video-1").clone().appendTo(".spherestory-hotspot_video-1");
+    $("#ch-wrapper_video-2").clone().appendTo(".spherestory-hotspot_video-2");
     let currentScene = viewer.getScene();
 });
 $('.compass-icon').clone().appendTo('.pnlm-orientation-button');
