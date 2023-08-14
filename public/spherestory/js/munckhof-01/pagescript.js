@@ -78,8 +78,8 @@ let viewer = pannellum.viewer("panorama", {
             maxHfov: 90,
             hotSpots: [
                 {
-                    pitch: -3,
-                    yaw: 181.5,
+                    pitch: -4.5,
+                    yaw: -90.3,
                     type: "info",
                     cssClass: "custom-hotspot sphere-hotspot_company"
                 },
