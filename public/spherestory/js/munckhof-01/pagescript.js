@@ -87,7 +87,7 @@ let viewer = pannellum.viewer("panorama", {
                     pitch: 0.4,
                     yaw: 81.29,
                     type: "info",
-                    cssClass: "custom-hotspot flexibility-hotspot_video-1",
+                    cssClass: "custom-hotspot sphere-hotspot_video-1",
                     clickHandlerFunc: hotspotAction,
                     clickHandlerArgs: {hotspot: "sphere-hotspot_video-1", type: "video-modal"}
                 },
@@ -95,7 +95,7 @@ let viewer = pannellum.viewer("panorama", {
                     pitch: -3.51,
                     yaw: -31.2,
                     type: "info",
-                    cssClass: "custom-hotspot flexibility-hotspot_video-2",
+                    cssClass: "custom-hotspot sphere-hotspot_video-2",
                     clickHandlerFunc: hotspotAction,
                     clickHandlerArgs: {hotspot: "sphere-hotspot_video-2", type: "video-modal"}
                 }
@@ -117,9 +117,9 @@ mm.add("(max-width: 768px)", function() {
     })
 });
 viewer.on("load", function () {
-    $("#ch-wrapper_company").clone().appendTo(".spherestory-hotspot_company");
-    $("#ch-wrapper_video-1").clone().appendTo(".spherestory-hotspot_video-1");
-    $("#ch-wrapper_video-2").clone().appendTo(".spherestory-hotspot_video-2");
+    $("#ch-wrapper_company").clone().appendTo(".sphere-hotspot_company");
+    $("#ch-wrapper_video-1").clone().appendTo(".sphere-hotspot_video-1");
+    $("#ch-wrapper_video-2").clone().appendTo(".sphere-hotspot_video-2");
     let currentScene = viewer.getScene();
 });
 $('.compass-icon').clone().appendTo('.pnlm-orientation-button');
