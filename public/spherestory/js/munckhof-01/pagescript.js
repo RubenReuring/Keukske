@@ -72,8 +72,8 @@ let viewer = pannellum.viewer("panorama", {
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
-            pitch: -3.1,
-            yaw: 201.6,
+            pitch: 0.4,
+            yaw: 81.29,
             hfov: 90,
             maxHfov: 90,
             hotSpots: [
