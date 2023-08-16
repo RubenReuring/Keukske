@@ -32,7 +32,7 @@
             <div class="_360videocontainer">
                 <div class="_360vc_inner">
                     <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-1" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="/spherestory/assets/munckhof-01/Munckhof-01-02.mp4" type="video/mp4">
+                            <source src="/spherestory/assets/janssen-01/Janssen-01-02.mp4" type="video/mp4">
                         </video></div>
                     <div class="_360videocontrols">
                         <div class="_360vc-cb play videocontrolinactive">
@@ -62,7 +62,7 @@
             <div class="_360videocontainer">
                 <div class="_360vc_inner">
                     <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-2" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="/spherestory/assets/munckhof-01/Munckhof-01-01.mp4" type="video/mp4">
+                            <source src="/spherestory/assets/janssen-01/Janssen-01-01.mp4" type="video/mp4">
                         </video></div>
                     <div class="_360videocontrols">
                         <div class="_360vc-cb play videocontrolinactive">
@@ -101,7 +101,7 @@
 <div class="hotspot-wrapper demo">
     <div id="ch-wrapper_company" class="ch-wrapper">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="/spherestory/assets/janssen-01/Janssen-Logo.jpg" loading="lazy" alt="" class="avatar"></div>
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/janssen-01/Janssen-logo.png" loading="lazy" alt="" class="avatar"></div>
             <div class="ch-details">
                 <div class="ch-details-title">
                     <p class="ch_p20-r">Munckhof</p>
@@ -114,7 +114,7 @@
     </div>
     <div id="ch-wrapper_video-1" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="/spherestory/assets/janssen-01/Janssen-Logo.jpg" loading="lazy" alt="" class="avatar">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/janssen-01/Janssen-logo.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
                     <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
@@ -123,10 +123,10 @@
             </div>
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">Rick de Oude</p>
+                    <p class="ch_p20-r">Rogier Reubsaet</p>
                 </div>
                 <div class="ch-details-desc">
-                    <p class="ch_p14-m">Bedrijfsleider</p>
+                    <p class="ch_p14-m">Machinist</p>
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
     </div>
     <div id="ch-wrapper_video-2" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="/spherestory/assets/janssen-01/Janssen-Logo.jpg" loading="lazy" alt="" class="avatar">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/janssen-01/Janssen-logo.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
                     <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
@@ -144,10 +144,10 @@
             </div>
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">Cyril Hunte</p>
+                    <p class="ch_p20-r">Kay Mommers</p>
                 </div>
                 <div class="ch-details-desc">
-                    <p class="ch_p14-m">Chauffeur</p>
+                    <p class="ch_p14-m">Uitvoerder</p>
                 </div>
             </div>
         </div>
@@ -161,6 +161,6 @@
 <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js" integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="/spherestory/js/munckhof-01/pagescript.js" type="text/javascript"></script>
+<script src="/spherestory/js/janssen-01/pagescript.js" type="text/javascript"></script>
 </body>
 </html>

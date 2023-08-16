@@ -28,4 +28,4 @@ Route::get('/ama-group/2K23-QR-002', function () { return redirect('https://www.
 // 360 Experience
 Route::get('/spherestory/flexibility-limburg', function () { return view('spherestory/flexibility-limburg'); });
 Route::get('/spherestory/munckhof-01', function () { return view('spherestory/munckhof-01'); });
-Route::get('/spherestory/janssengroep', function () { return view('spherestory/janssen-01'); });
+Route::get('/spherestory/janssengroep-01', function () { return view('spherestory/janssen-01'); });
