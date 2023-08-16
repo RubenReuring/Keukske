@@ -72,8 +72,8 @@ let viewer = pannellum.viewer("panorama", {
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
-            pitch: -1.8,
-            yaw: -4.9,
+            pitch: -8.1,
+            yaw: -11.7,
             hfov: 90,
             maxHfov: 90,
             hotSpots: [
@@ -111,8 +111,8 @@ mm.add("(max-width: 768px)", function() {
         viewer.setHfov(55, animTime);
         let currentScene  = viewer.getScene()
         if(currentScene === 'main'){
-            viewer.setPitch(-3.54, animTime)
-            viewer.setYaw(-31, animTime)
+            viewer.setPitch(-3, animTime)
+            viewer.setYaw(-102, animTime)
         }
     })
 });
