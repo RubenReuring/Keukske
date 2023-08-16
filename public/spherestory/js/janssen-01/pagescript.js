@@ -111,8 +111,8 @@ mm.add("(max-width: 768px)", function() {
         viewer.setHfov(55, animTime);
         let currentScene  = viewer.getScene()
         if(currentScene === 'main'){
-            viewer.setPitch(-3, animTime)
-            viewer.setYaw(-102, animTime)
+            viewer.setPitch(-6.4, animTime)
+            viewer.setYaw(-23, animTime)
         }
     })
 });
