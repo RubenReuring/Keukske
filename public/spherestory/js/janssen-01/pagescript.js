@@ -108,7 +108,7 @@ let mm = gsap.matchMedia();
 mm.add("(max-width: 768px)", function() {
     let animTime = 1750;
     viewer.on("load", function (){
-        viewer.setHfov(55, animTime);
+        viewer.setHfov(45, animTime);
         let currentScene  = viewer.getScene()
         if(currentScene === 'main'){
             viewer.setPitch(-6.4, animTime)
