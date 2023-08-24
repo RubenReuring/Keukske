@@ -104,7 +104,7 @@
             <div class="ch-avatar-wrap"><img src="/spherestory/assets/janssen-01/Janssen-Logo.png" loading="lazy" alt="" class="avatar"></div>
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">Munckhof</p>
+                    <p class="ch_p20-r">Janssen Group</p>
                 </div>
                 <div class="ch-details-desc">
                     <p class="ch_p14-m">Wordt dit jouw nieuwe werkplek?</p>
