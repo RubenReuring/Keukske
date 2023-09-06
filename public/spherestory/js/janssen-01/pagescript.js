@@ -60,7 +60,7 @@ let viewer = pannellum.viewer("panorama", {
     default: {
         firstScene: "main",
         sceneFadeDuration: 1000,
-        hotSpotDebug: true,
+        //hotSpotDebug: true,
         mouseZoom: false,
         keyboardZoom: false
     },
