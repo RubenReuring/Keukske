@@ -144,7 +144,7 @@
             </div>
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">Kay Mommers</p>
+                    <p class="ch_p20-r">Kay Mommer</p>
                 </div>
                 <div class="ch-details-desc">
                     <p class="ch_p14-m">Uitvoerder</p>
