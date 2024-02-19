@@ -168,8 +168,8 @@ $(document).ready(function () {
             });
         $(innerText).wrapInner("<div class='link-paragraph__inner' style='position: relative; overflow: hidden;'></div>");
 
-        let hoverText = $(this).find('.link-paragraph').children();
-        console.log(hoverText)
+        let hoverText = $(this).find('.link-paragraph__inner').children();
+
         $(hoverText).each(function () {
             let linkAnimation = gsap.to(this.children, {
                 x: "+=100%",
