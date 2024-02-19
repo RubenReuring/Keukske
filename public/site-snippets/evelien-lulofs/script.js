@@ -174,10 +174,10 @@ $(document).ready(function () {
                 x: "+=100%",
                 paused: true,
                 ease: "power1.inOut",
-                duration: 0.2,
-                // stagger: {
-                //     amount: 1,
-                // },
+                //duration: 0.2,
+                stagger: {
+                    amount: .1,
+                },
             });
             $(this)
                 .parents(".link12-12-sb-test")
