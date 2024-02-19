@@ -174,9 +174,9 @@ $(document).ready(function () {
                 x: "+=100%",
                 paused: true,
                 ease: "power1.inOut",
-                duration: 0.35,
+                //duration: 0.35,
                 stagger: {
-                    amount: 0.175,
+                    amount: 1,
                 },
             });
             $(this)
