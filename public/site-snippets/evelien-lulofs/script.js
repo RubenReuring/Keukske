@@ -27,7 +27,7 @@ $(document).ready(function () {
         }
         console.log(i);
         const accordionTimeline = gsap
-            .timeline({ reversed: true, paused: true })
+            .timeline({reversed: true, paused: true})
             .to($(this).find(".hws-si__accordion-body"), {
                 height: "auto",
                 duration: 1,
@@ -37,6 +37,7 @@ $(document).ready(function () {
             .find(".hws-si__ah-trigger")
             .on("click", () => toggleAccordion(accordionTimeline));
     });
+
     function toggleAccordion(timeline) {
         timeline.reversed() ? timeline.play() : timeline.reverse();
     }
@@ -109,74 +110,63 @@ $(document).ready(function () {
     );
     heroTextLoad.fromTo(
         heroTextSpanTargets,
-        { y: "125%" },
-        { y: "0%", stagger: 0.1, duration: 1, ease: "power3.out" }
+        {y: "125%"},
+        {y: "0%", stagger: 0.1, duration: 1, ease: "power3.out"}
     );
     heroTextLoad.fromTo(
         ".hhm-top__label",
-        { y: "15%", opacity: 0 },
-        { y: "0%", opacity: 1, duration: 0.75, ease: "power1.out" },
+        {y: "15%", opacity: 0},
+        {y: "0%", opacity: 1, duration: 0.75, ease: "power1.out"},
         0.8
     );
     heroTextLoad.fromTo(
         ".hhm-bottom",
-        { y: "25%", opacity: 0 },
-        { y: "0%", opacity: 1, duration: 0.75, ease: "power1.out" },
+        {y: "25%", opacity: 0},
+        {y: "0%", opacity: 1, duration: 0.75, ease: "power1.out"},
         1.1
     );
     heroTextLoad.fromTo(
         $(".home-hero__scroll").children(),
-        { opacity: 0 },
-        { opacity: 1, stagger: 0.2, duration: 0.75, ease: "power1.out" },
+        {opacity: 0},
+        {opacity: 1, stagger: 0.2, duration: 0.75, ease: "power1.out"},
         1.6
     );
     heroTextLoad.to(
         ".home-visual__overlay",
-        { x: "-=105vw", duration: 2.25, ease: "power4.out" },
+        {x: "-=105vw", duration: 2.25, ease: "power4.out"},
         0.4
     );
     heroTextLoad.fromTo(
         ".navbar-menu",
-        { y: "15%", opacity: 0 },
-        { y: "0%", opacity: 1, duration: 1, ease: "power2.out" },
+        {y: "15%", opacity: 0},
+        {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
         0.4
     );
     heroTextLoad.fromTo(
         ".navbar-home",
-        { y: "15%", opacity: 0 },
-        { y: "0%", opacity: 1, duration: 1, ease: "power2.out" },
+        {y: "15%", opacity: 0},
+        {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
         1.6
     );
     heroTextLoad.fromTo(
         ".navbar-contact",
-        { y: "15%", opacity: 0 },
-        { y: "0%", opacity: 1, duration: 1, ease: "power2.out" },
+        {y: "15%", opacity: 0},
+        {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
         0.4
     );
 
     heroTextLoad.delay(1);
     /// GSAP Link Hover
-    let text = new SplitText(".link-paragraph", { type: "chars" });
+    let text = new SplitText(".link-paragraph", {type: "chars"});
 
     $(".link12-12-sb-test").each(function () {
         let innerText = $(this).find(".link-paragraph").children();
-        $(this)
-            .find(".link-paragraph")
-            .children()
-            .each(function () {
+        $(this).find(".link-paragraph").children().each(function () {
                 let innerLetter = $(this).text();
-                $(this).wrapInner("<span></span>");
-                $(
-                    '<span style="position: absolute; left: -100%;">' +
-                    innerLetter +
-                    "</span>"
-                ).appendTo($(this));
-                console.log($(this).text());
+                $(this).wrapInner("<span class='link-paragraph__inner--visible' style='position: relative;'></span>");
+                $('<span class="link-paragraph__inner--hidden" style="position: absolute; left: -100%;">' + innerLetter + "</span>").appendTo($(this));
             });
-
-        $(innerText).wrapInner(
-            "<div class='link-paragraph__inner' style='position: relative; overflow: hidden;'></div>"
-        );
+        $(innerText).wrapInner("<div class='link-paragraph__inner' style='position: relative; overflow: hidden;'></div>");
     });
 
     $(".link12-12-sb").each(function () {
@@ -211,11 +201,11 @@ $(document).ready(function () {
     const buttons = gsap.utils.toArray(".main-button");
     buttons.forEach((item) => {
         let span = item.querySelector("span");
-        let tl = gsap.timeline({ paused: true });
+        let tl = gsap.timeline({paused: true});
 
-        tl.to(span, { duration: 0.3, yPercent: -150, ease: "power2.in" });
-        tl.set(span, { yPercent: 150 });
-        tl.to(span, { duration: 0.3, yPercent: 0 });
+        tl.to(span, {duration: 0.3, yPercent: -150, ease: "power2.in"});
+        tl.set(span, {yPercent: 150});
+        tl.to(span, {duration: 0.3, yPercent: 0});
 
         item.addEventListener("mouseenter", () => tl.play(0));
     });
