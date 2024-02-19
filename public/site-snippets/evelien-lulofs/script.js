@@ -164,12 +164,12 @@ $(document).ready(function () {
         $(this).find(".link-paragraph").children().each(function () {
                 let innerLetter = $(this).text();
                 $(this).wrapInner("<span class='link-paragraph__inner--visible' style='position: relative;'></span>");
-                $('<span class="link-paragraph__inner--hidden" style="position: absolute; left: -100%;">' + innerLetter + "</span>").appendTo($(this));
+                //$('<span class="link-paragraph__inner--hidden" style="position: absolute; left: -100%;">' + innerLetter + "</span>").appendTo($(this));
             });
         //$(innerText).wrapInner("<div class='link-paragraph__inner' style='position: relative; overflow: hidden;'></div>");
 
         let hoverText = $(this).find('.link-paragraph').children();
-
+        console.log(hoverText)
         $(hoverText).each(function () {
             let linkAnimation = gsap.to(this.children, {
                 x: "+=100%",
