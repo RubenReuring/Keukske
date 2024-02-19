@@ -163,8 +163,8 @@ $(document).ready(function () {
         let innerText = $(this).find(".link-paragraph").children();
         $(this).find(".link-paragraph").children().each(function () {
                 let innerLetter = $(this).text();
-                $(this).wrapInner("<span class='link-paragraph__inner--visible' style='position: relative;'></span>");
-                //$('<span class="link-paragraph__inner--hidden" style="position: absolute; left: -100%;">' + innerLetter + "</span>").appendTo($(this));
+                $(this).wrapInner("<div class='link-paragraph__inner--visible' style='position: relative;'></div>");
+                $('<div class="link-paragraph__inner--hidden" style="position: absolute; left: -100%;">' + innerLetter + "</div>").appendTo($(this));
             });
         //$(innerText).wrapInner("<div class='link-paragraph__inner' style='position: relative; overflow: hidden;'></div>");
 
