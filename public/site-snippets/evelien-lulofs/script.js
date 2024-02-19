@@ -173,7 +173,6 @@ $(document).ready(function () {
             let linkAnimation = gsap.to(this.children, {
                 x: "+=100%",
                 paused: true,
-                invalidateOnRefresh: true,
                 ease: "power1.inOut",
                 duration: 0.35,
                 stagger: {
@@ -199,7 +198,6 @@ $(document).ready(function () {
             let linkAnimation = gsap.to(this.children, {
                 y: "-=100%",
                 paused: true,
-                invalidateOnRefresh: true,
                 ease: "power1.inOut",
                 duration: 0.35,
                 stagger: {
