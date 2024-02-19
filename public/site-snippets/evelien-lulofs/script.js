@@ -167,7 +167,7 @@ $(document).ready(function () {
                 $('<span class="link-paragraph__inner--hidden" style="display: inline-block; position: absolute; left: -100%;">' + innerLetter + "</span>").appendTo($(this));
             });
 
-        let hoverText = $(this).find('.link-paragraph').find('.link-paragraph__inner').children();
+        let hoverText = $(this).find('.link-paragraph').children();
         console.log(hoverText)
         $(hoverText).each(function () {
             let linkAnimation = gsap.to(this.children, {
