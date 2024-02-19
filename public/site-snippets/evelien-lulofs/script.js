@@ -179,6 +179,7 @@ $(document).ready(function () {
                     amount: .1,
                 },
             });
+
             $(this)
                 .parents(".link12-12-sb-test")
                 .on("mouseenter", function () {
