@@ -166,7 +166,6 @@ $(document).ready(function () {
                 $(this).wrapInner("<span class='link-paragraph__inner--visible' style='display: inline-block; position: relative;'></span>");
                 $('<span class="link-paragraph__inner--hidden" style="display: inline-block; position: absolute; left: -100%;">' + innerLetter + "</span>").appendTo($(this));
             });
-        $(innerText).wrapInner("<div class='link-paragraph__inner' style='position: relative; overflow: hidden;'></div>");
 
         let hoverText = $(this).find('.link-paragraph').find('.link-paragraph__inner').children();
         console.log(hoverText)
