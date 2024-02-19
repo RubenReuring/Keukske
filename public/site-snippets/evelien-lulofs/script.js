@@ -167,6 +167,30 @@ $(document).ready(function () {
                 $('<span class="link-paragraph__inner--hidden" style="position: absolute; left: -100%;">' + innerLetter + "</span>").appendTo($(this));
             });
         $(innerText).wrapInner("<div class='link-paragraph__inner' style='position: relative; overflow: hidden;'></div>");
+
+        let hoverText = $(this).find('.link-paragraph').children();
+        $(hoverText).each(function () {
+            let linkAnimation = gsap.to(this.children, {
+                x: "+=100%",
+                paused: true,
+                invalidateOnRefresh: true,
+                ease: "power1.inOut",
+                duration: 0.35,
+                stagger: {
+                    amount: 0.175,
+                },
+            });
+            $(this)
+                .parents(".link12-12-sb-test")
+                .on("mouseenter", function () {
+                    linkAnimation.play();
+                });
+            $(this)
+                .parents(".link12-12-sb-test")
+                .on("mouseleave", function () {
+                    linkAnimation.reverse();
+                });
+        });
     });
 
     $(".link12-12-sb").each(function () {
