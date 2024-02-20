@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-    let navbarTransition = gsap.timeline();
+    let navbarTransition = gsap.timeline({paused: true,});
     let navbarWordArray = $('.hln-word__secondary');
     let navbarWordWrapArray = $('.hln-word__secondary--wrap');
     navbarTransition.to(
@@ -29,11 +29,11 @@ $(document).ready(function() {
         return $(window).scrollTop() === 0;
     }
     function collapsNav() {
-
+        navbarTransition.play();
     }
 
     if (isAtTop()) {
-        console.log("Page is at the top!");
+        collapsNav()
     } else {
         console.log("Page is not at the top!");
     }
