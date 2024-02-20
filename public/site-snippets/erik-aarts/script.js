@@ -2,9 +2,9 @@ let navbarTransition = gsap.timeline();
 let navbarWordArray = $('.hln-word__secondary');
 navbarTransition.to(
     navbarWordArray,
-    {y: "100%", stagger: 0.1, duration: .75, ease: "power3.out"}
+    {y: "100%", stagger: 0.1, duration: .65, ease: "power3.out"}
 );
 navbarTransition.to(
     navbarWordArray,
-    {width: "0", stagger: 0.1, duration: .75, ease: "power4.out"}
+    {width: "0", stagger: 0.1, duration: 1, ease: "power4.out"}
 );
