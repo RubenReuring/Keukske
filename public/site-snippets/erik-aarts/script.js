@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-    let navbarTransition = gsap.timeline();
+    let navbarTransition = gsap.timeline({ paused: true, });
     let navbarWordArray = $('.hln-word__secondary');
     let navbarWordWrapArray = $('.hln-word__secondary--wrap');
     navbarTransition.to(
@@ -27,6 +27,9 @@ $(document).ready(function() {
 
     function isAtTop() {
         return $(window).scrollTop() === 0;
+    }
+    function collapsNav() {
+
     }
 
     if (isAtTop()) {
