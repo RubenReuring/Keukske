@@ -22,7 +22,7 @@ $(document).ready(function() {
         '.navbar',
         {backgroundColor: 'rgba(255,255,255,0)'},
         {paddingTop: "1em", paddingBottom: "1em", backgroundColor: 'rgba(255,255,255,1)',duration: .8, ease: "power4.out"},
-        .65
+        .35
     );
 
 
