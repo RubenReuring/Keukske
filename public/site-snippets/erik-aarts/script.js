@@ -11,17 +11,17 @@ $(document).ready(function() {
     navbarTransition.to(
         navbarWordWrapArray,
         {width: "0", duration: .8, ease: "power4.out"},
-        .8
+        .2
     );
     navbarTransition.to(
         '.home-link__name',
         {gridColumnGap: "0.075em", duration: .9, ease: "power4.out"},
-        .8
+        .2
     );
     navbarTransition.to(
         '.navbar',
-        {paddingTop: "1em", paddingBottom: "1em", backgroundColor: 'var(--white)',duration: .4, ease: "power2.out"},
-        .8
+        {paddingTop: "1em", paddingBottom: "1em", backgroundColor: 'var(--white)',duration: .8, ease: "power4.out"},
+        .2
     );
 
 
