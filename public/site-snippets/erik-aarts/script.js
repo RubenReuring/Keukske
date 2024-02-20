@@ -7,7 +7,7 @@ navbarTransition.to(
 );
 navbarTransition.to(
     navbarWordWrapArray,
-    {width: "0", duration: 1, ease: "power2.out"},
+    {width: "0", duration: .9, ease: "power2.out"},
     .65
 );
 
