@@ -6,22 +6,22 @@ $(document).ready(function() {
     let navbarWordWrapArray = $('.hln-word__secondary--wrap');
     navbarTransition.to(
         navbarWordArray,
-        {y: "100%", stagger: 0.075, duration: 1, ease: "power4.out"}
+        {y: "100%", stagger: 0.075, duration: .8, ease: "power4.inOut"}
     );
     navbarTransition.to(
         navbarWordWrapArray,
-        {width: "0", duration: .8, ease: "power4.out"},
-        .2
+        {width: "0", duration: .8, ease: "power4.inOut"},
+        .75
     );
     navbarTransition.to(
         '.home-link__name',
-        {gridColumnGap: "0.075em", duration: .9, ease: "power4.out"},
-        .2
+        {gridColumnGap: "0.075em", duration: .9, ease: "power4.inOut"},
+        .75
     );
     navbarTransition.to(
         '.navbar',
         {paddingTop: "1em", paddingBottom: "1em", backgroundColor: 'var(--white)',duration: .8, ease: "power4.out"},
-        .2
+        .75
     );
 
 
