@@ -18,8 +18,8 @@ navbarTransition.to(
 navbarTransition.fromTo(
     '.hlt-inner',
     {y: "-105%"},
-    {y: "0%", duration: .8, ease: "power3.out"},
-    1.1
+    {y: "0%", duration: .7, ease: "power3.out"},
+    1.3
 );
 
 
