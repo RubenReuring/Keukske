@@ -7,5 +7,5 @@ navbarTransition.to(
 navbarTransition.to(
     navbarWordArray,
     {width: "0", stagger: 0.1, duration: 1, ease: "power4.out"},
-    .5
+    .3
 );
