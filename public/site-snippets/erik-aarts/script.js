@@ -18,9 +18,10 @@ $(document).ready(function() {
         {gridColumnGap: "0.075em", duration: .9, ease: "power4.inOut"},
         .75
     );
-    navbarTransition.to(
+    navbarTransition.fromTo(
         '.navbar',
-        {paddingTop: "1em", paddingBottom: "1em", backgroundColor: '#ffffff',duration: .8, ease: "power4.out"},
+        {backgroundColor: 'rgba(255,255,255,0)'},
+        {paddingTop: "1em", paddingBottom: "1em", backgroundColor: 'rgba(255,255,255,1)',duration: .8, ease: "power4.out"},
         .75
     );
 
