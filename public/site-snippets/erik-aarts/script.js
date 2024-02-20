@@ -20,7 +20,7 @@ $(document).ready(function() {
     );
     navbarTransition.to(
         '.navbar',
-        {paddingTop: "1em", paddingBottom: "1em", backgroundColor: 'var(--white)',duration: .8, ease: "power4.out"},
+        {paddingTop: "1em", paddingBottom: "1em", backgroundColor: '#ffffff',duration: .8, ease: "power4.out"},
         .75
     );
 
