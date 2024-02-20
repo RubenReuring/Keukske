@@ -18,12 +18,12 @@ $(document).ready(function() {
         {gridColumnGap: "0.075em", duration: .9, ease: "power4.out"},
         .8
     );
-    navbarTransition.fromTo(
-        '.hlt-inner',
-        {y: "-105%"},
-        {y: "0%", duration: .7, ease: "power3.out"},
-        1.3
+    navbarTransition.to(
+        '.navbar',
+        {paddingTop: "1em", paddingBottom: "1em", backgroundColor: 'var(--white)',duration: .4, ease: "power2.out"},
+        .8
     );
+
 
     function isAtTop() {
         return $(window).scrollTop() === 0;
