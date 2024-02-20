@@ -8,6 +8,7 @@ navbarTransition.to(
 navbarTransition.to(
     navbarWordWrapArray,
     {width: "0", duration: .8, ease: "power4.out"},
+    .8
 );
 navbarTransition.to(
     '.home-link__name',
