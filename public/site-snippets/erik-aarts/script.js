@@ -6,6 +6,6 @@ navbarTransition.to(
 );
 navbarTransition.to(
     navbarWordArray,
-    {width: "0", stagger: 0.1, duration: 1, ease: "power4.out"},
+    {width: "0", stagger: 0.1, duration: .9, ease: "power3.out"},
     .3
 );
