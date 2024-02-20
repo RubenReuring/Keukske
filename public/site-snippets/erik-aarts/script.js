@@ -33,16 +33,16 @@ $(document).ready(function() {
     }
 
     if (isAtTop()) {
-        collapsNav()
+        navbarTransition.reverse();
     } else {
-        console.log("Page is not at the top!");
+        navbarTransition.play();
     }
 
     $(window).scroll(function() {
         if (isAtTop()) {
-            console.log("Page is at the top!");
+            navbarTransition.reverse();
         } else {
-            console.log("Page is not at the top!");
+            navbarTransition.play();
         }
     });
 });
