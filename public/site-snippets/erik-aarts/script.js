@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-    let navbarTransition = gsap.timeline({ paused: true, });
+    let navbarTransition = gsap.timeline();
     let navbarWordArray = $('.hln-word__secondary');
     let navbarWordWrapArray = $('.hln-word__secondary--wrap');
     navbarTransition.to(
