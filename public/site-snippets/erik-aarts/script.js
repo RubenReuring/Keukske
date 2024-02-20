@@ -15,4 +15,10 @@ navbarTransition.to(
     {gridColumnGap: "0.075em", duration: .9, ease: "power4.out"},
     .8
 );
+navbarTransition.to(
+    '.hlt-inner',
+    {y: "0", duration: .5, ease: "power3.out"},
+    1.2
+);
+
 
