@@ -17,8 +17,8 @@ navbarTransition.to(
 );
 navbarTransition.to(
     '.hlt-inner',
-    {y: "0", duration: .5, ease: "power3.out"},
-    1.2
+    {y: "0", duration: .8, ease: "power3.out"},
+    1.1
 );
 
 
