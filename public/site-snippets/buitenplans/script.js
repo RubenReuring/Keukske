@@ -31,13 +31,13 @@ loader.fromTo(
 loader.fromTo(
     '.loader__inner',
     {opacity: '1',},
-    {opacity: "0", duration: .4, ease: "power2.inOut"},
+    {opacity: "0", duration: .6, ease: "power2.inOut"},
     1.75
 );
 loader.fromTo(
     '.loader',
     {y: '0%',},
-    {y: "-100%", duration: 1, ease: "power4.inOut"},
-    1.95
+    {y: "-100%", duration: 1.2, ease: "power4.inOut"},
+    2.1
 );
 
