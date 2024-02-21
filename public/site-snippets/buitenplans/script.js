@@ -22,3 +22,9 @@ loader.fromTo(
     {y: "0%", duration: .7, ease: "power4.inOut"},
     1
 );
+loader.fromTo(
+    '.lcw-tag__inner',
+    {y: '0%',},
+    {y: "-100%", duration: 1, ease: "power4.inOut"},
+    1.25
+);
