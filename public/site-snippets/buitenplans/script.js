@@ -6,4 +6,5 @@ loader.to(
 loader.to(
     '.loader-logo__embed.fill',
     {top: "100%", duration: 1.5, ease: "power4.inOut"},
+    1.5
 );
