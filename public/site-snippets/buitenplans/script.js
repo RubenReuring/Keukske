@@ -2,7 +2,7 @@ let loader = gsap.timeline();
 loader.fromTo(
     '.loader__inner',
     {opacity: '0',},
-    {opacity: "100", duration: .3, ease: "power2.inOut"},
+    {opacity: "1", duration: .3, ease: "power2.inOut"},
 );
 loader.fromTo(
     '.ll-center__mask',
