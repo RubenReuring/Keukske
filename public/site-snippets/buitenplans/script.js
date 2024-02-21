@@ -7,7 +7,7 @@ loader.fromTo(
 loader.fromTo(
     '.loader-logo__embed.fill',
     {y: "-100%",},
-    {y: "0%", duration: 2.5, ease: "power4.inOut"},
+    {y: "0%", duration: 2, ease: "power4.inOut"},
     0
 );
 loader.fromTo(
