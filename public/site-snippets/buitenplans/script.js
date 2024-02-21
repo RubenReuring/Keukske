@@ -14,11 +14,11 @@ loader.fromTo(
     '.lcw-title__inner',
     {y: '105%',},
     {y: "0%", duration: .55, ease: "power3.inOut"},
-    1.75
+    1
 );
 loader.fromTo(
     '.lcw-tag__inner',
     {y: '105%',},
     {y: "0%", duration: .55, ease: "power3.inOut"},
-    1.9
+    1.15
 );
