@@ -31,7 +31,7 @@ loader.fromTo(
 loader.fromTo(
     '.loader__inner',
     {opacity: '1',},
-    {opacity: "0", duration: .5, ease: "ease.inOut"},
+    {opacity: "0", duration: .35, ease: "ease.inOut"},
 );
 loader.fromTo(
     '.loader',
