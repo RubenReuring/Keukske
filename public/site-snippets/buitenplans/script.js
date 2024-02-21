@@ -8,12 +8,13 @@ loader.fromTo(
     '.ll-center__mask',
     {y: '100%',},
     {y: "0%", duration: 2, ease: "power4.inOut"},
+    .3
 );
 loader.fromTo(
     '.loader-logo__embed.fill',
     {y: "-100%",},
     {y: "0%", duration: 2, ease: "power4.inOut"},
-    0
+    0.3
 );
 loader.fromTo(
     '.lcw-title__inner',
