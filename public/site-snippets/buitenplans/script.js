@@ -1,5 +1,10 @@
 let loader = gsap.timeline();
 loader.fromTo(
+    '.loader-inner',
+    {opacity: '0',},
+    {opacity: "100", duration: .3, ease: "power2.inOut"},
+);
+loader.fromTo(
     '.ll-center__mask',
     {y: '100%',},
     {y: "0%", duration: 2, ease: "power4.inOut"},
