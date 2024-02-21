@@ -1,6 +1,6 @@
 let loader = gsap.timeline();
 loader.fromTo(
-    '.loader-inner',
+    '.loader__inner',
     {opacity: '0',},
     {opacity: "100", duration: .3, ease: "power2.inOut"},
 );
