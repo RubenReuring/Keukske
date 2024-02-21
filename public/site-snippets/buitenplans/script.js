@@ -26,5 +26,5 @@ loader.fromTo(
     '.loader',
     {y: '0%',},
     {y: "-100%", duration: 1, ease: "power4.inOut"},
-    1.25
+    1.75
 );
