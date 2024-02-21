@@ -10,3 +10,15 @@ loader.fromTo(
     {y: "0%", duration: 2.5, ease: "power4.inOut"},
     0
 );
+loader.fromTo(
+    '.lcw-title__inner',
+    {y: '105%',},
+    {y: "0%", duration: .5, ease: "power3.inOut"},
+    0
+);
+loader.fromTo(
+    '.lcw-tag__inner',
+    {y: '105%',},
+    {y: "0%", duration: .5, ease: "power3.inOut"},
+    0
+);
