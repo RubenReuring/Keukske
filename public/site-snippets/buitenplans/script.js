@@ -12,13 +12,13 @@ loader.fromTo(
 );
 loader.fromTo(
     '.lcw-title__inner',
-    {y: '105%',},
-    {y: "0%", duration: .5, ease: "power4.inOut"},
+    {y: '100%',},
+    {y: "0%", duration: .7, ease: "power4.inOut"},
     .9
 );
 loader.fromTo(
     '.lcw-tag__inner',
-    {y: '105%',},
-    {y: "0%", duration: .5, ease: "power4.inOut"},
+    {y: '100%',},
+    {y: "0%", duration: .7, ease: "power4.inOut"},
     1
 );
