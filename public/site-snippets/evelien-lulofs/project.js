@@ -35,5 +35,12 @@ $(document).ready(function(){
 });
 
 $('.pdi-lg__rte').children('p').each(function(){
-    console.log($(this).text())
+
+    if($(this).text().trim() === '') {
+        // If <p> has no text or is empty
+        console.log('empty');
+    } else {
+        // If <p> has text
+        console.log($(this));
+    }
 })
