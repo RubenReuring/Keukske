@@ -40,7 +40,15 @@ $('.pdi-lg__rte').children('p').each(function(){
     if(paragraphText.length <= 1) {
         return
     } else {
-        // If <p> has text
+        $(
+            '<div className="pdi-detail">' +
+            '<div className="pdi-detail__titlewrap">' +
+            '<div className="pdi-detail__dot"></div>' +
+            '<p className="p12-12-sb">Opgave</p></div>' +
+            '<div className="pdi-detail__desc"><p className="p12-18-reg">Concept, interieurontwerp en projectbegeleiding</p></div>' +
+            '</div>'
+        ).appendTo('.pdi-left__grid');
+
         console.log($(this).text());
     }
 })
