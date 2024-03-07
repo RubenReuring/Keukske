@@ -42,6 +42,6 @@ $('.pdi-lg__rte').children('p').each(function(){
         console.log('empty');
     } else {
         // If <p> has text
-        console.log(ParagraphText.length);
+        console.log(paragraphText.length);
     }
 })
