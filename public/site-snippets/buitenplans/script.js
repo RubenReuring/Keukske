@@ -17,18 +17,6 @@ loader.fromTo(
     .7
 );
 loader.fromTo(
-    '.lcw-title__inner',
-    {y: '100%',},
-    {y: "0%", duration: .7, ease: "power4.inOut"},
-    1.1
-);
-loader.fromTo(
-    '.lcw-tag__inner',
-    {y: '100%',},
-    {y: "0%", duration: .7, ease: "power4.inOut"},
-    1.3
-);
-loader.fromTo(
     '.loader__inner',
     {opacity: '1',},
     {opacity: "0", duration: .35, ease: "ease.inOut"},
