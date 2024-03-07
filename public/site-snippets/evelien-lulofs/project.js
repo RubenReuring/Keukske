@@ -35,5 +35,5 @@ $(document).ready(function(){
 });
 
 $('.pdi-lg__rte').children('p').each(function(){
-    console.log(this)
+    console.log($(this))
 })
