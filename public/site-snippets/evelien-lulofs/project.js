@@ -41,6 +41,6 @@ $('.pdi-lg__rte').children('p').each(function(){
         console.log('empty');
     } else {
         // If <p> has text
-        console.log($(this));
+        console.log($(this).text());
     }
 })
