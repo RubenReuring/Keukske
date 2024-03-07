@@ -38,10 +38,9 @@ $('.pdi-lg__rte').children('p').each(function(){
 
     var paragraphText = $(this).text().trim();
     if(paragraphText.length <= 1) {
-        // If <p> has no text or is empty
-        console.log('empty');
+        return
     } else {
         // If <p> has text
-        console.log(paragraphText.length);
+        console.log($(this).text());
     }
 })
