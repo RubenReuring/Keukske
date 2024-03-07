@@ -41,11 +41,11 @@ $('.pdi-lg__rte').children('p').each(function(){
         return
     } else {
         $(
-            '<div className="pdi-detail">' +
-            '<div className="pdi-detail__titlewrap">' +
-            '<div className="pdi-detail__dot"></div>' +
-            '<p className="p12-12-sb">Opgave</p></div>' +
-            '<div className="pdi-detail__desc"><p className="p12-18-reg">Concept, interieurontwerp en projectbegeleiding</p></div>' +
+            '<div class="pdi-detail">' +
+            '<div class="pdi-detail__titlewrap">' +
+            '<div class="pdi-detail__dot"></div>' +
+            '<p class="p12-12-sb">Opgave</p></div>' +
+            '<div class="pdi-detail__desc"><p class="p12-18-reg">Concept, interieurontwerp en projectbegeleiding</p></div>' +
             '</div>'
         ).appendTo('.pdi-left__grid');
 
