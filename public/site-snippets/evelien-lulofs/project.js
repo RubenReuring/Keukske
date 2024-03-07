@@ -36,7 +36,8 @@ $(document).ready(function(){
 
 $('.pdi-lg__rte').children('p').each(function(){
 
-    if($(this).text().trim() === '') {
+    var paragraphText = $(this).text().trim();
+    if(paragraphText === '' || paragraphText === '&zwj;') {
         // If <p> has no text or is empty
         console.log('empty');
     } else {
