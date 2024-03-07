@@ -40,12 +40,25 @@ $('.pdi-lg__rte').children('p').each(function(){
     if(paragraphText.length <= 1) {
         return
     } else {
+        var inputString = $(this).text();
+        var regex = /\[(.*?)\]/;
+        var match = inputString.match(regex);
+        var k = match ? match[1] : null;
+        var v = null;
+        var lastIndex = inputString.lastIndexOf(']');
+        if (lastIndex !== -1 && lastIndex < inputString.length - 1) {
+            v = inputString.substring(lastIndex + 1).trim();
+        }
+        console.log("k:", k);
+        console.log("v:", v);
+
+
         $(
             '<div class="pdi-detail">' +
             '<div class="pdi-detail__titlewrap">' +
             '<div class="pdi-detail__dot"></div>' +
-            '<p class="p12-12-sb">Opgave</p></div>' +
-            '<div class="pdi-detail__desc"><p class="p12-18-reg">Concept, interieurontwerp en projectbegeleiding</p></div>' +
+            '<p class="p12-12-sb">' + k + '</p></div>' +
+            '<div class="pdi-detail__desc"><p class="p12-18-reg">' + v + '</p></div>' +
             '</div>'
         ).appendTo('.pdi-left__grid');
 
