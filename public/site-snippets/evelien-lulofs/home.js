@@ -83,7 +83,7 @@ $(document).ready(function () {
             scrub: true,
             //markers: true,
             invalidateOnRefresh: true,
-            onPin: function() {
+            onEnter: function() {
                 // Call st.refresh() when pinning starts
                 st.refresh();
             }
