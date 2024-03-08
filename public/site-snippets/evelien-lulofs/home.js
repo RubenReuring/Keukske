@@ -73,19 +73,19 @@ $(document).ready(function () {
         maskedImage.css("mask-position", maskX + "% " + maskY + "%");
     });
     // Werkwijze intro scaling
-    let werkwijze = gsap.to(".hwi-wrapper", {
-        scale: 1,
-        ease: Power2.easeOut,
-        scrollTrigger: {
-            trigger: ".home-werkwijze__intro",
-            pin: true,
-            start: "top top",
-            end: "+=400%",
-            scrub: true,
-            //markers: true,
-            invalidateOnRefresh: true,
-        },
-    });
+    // let werkwijze = gsap.to(".hwi-wrapper", {
+    //     scale: 1,
+    //     ease: Power2.easeOut,
+    //     scrollTrigger: {
+    //         trigger: ".home-werkwijze__intro",
+    //         pin: true,
+    //         start: "top top",
+    //         end: "+=400%",
+    //         scrub: true,
+    //         //markers: true,
+    //         invalidateOnRefresh: true,
+    //     },
+    // });
     // Werkwijze background fading
     let werkwijzebg = gsap.to(".hwi-background", {
         opacity: 0,
@@ -176,7 +176,7 @@ $(document).ready(function () {
                 ease: "power1.inOut",
                 //duration: 0.2,
                 stagger: {
-                    amount: .065,
+                    // amount: .065,
                 },
             });
 

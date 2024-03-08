@@ -4,7 +4,7 @@ let lightNavElems = $('.home-visual, .home-werkwijze')
 $(lightNavElems).each(function(){
     ScrollTrigger.create({
         trigger: this,
-        start: 'top top',
+        start: 'top bottom',
         end: 'bottom bottom',
         markers : true
     });
