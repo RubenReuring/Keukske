@@ -25,7 +25,6 @@ $(document).ready(function () {
         } else {
             $(this).find(".hws-si__number").find("p").text(stepNumber);
         }
-        console.log(i);
         const accordionTimeline = gsap
             .timeline({reversed: true, paused: true})
             .to($(this).find(".hws-si__accordion-body"), {
@@ -168,7 +167,6 @@ $(document).ready(function () {
             });
 
         let hoverText = $(this).find('.link-paragraph').children();
-        console.log(hoverText)
         $(hoverText).each(function () {
             let linkAnimation = gsap.to(this.children, {
                 x: "+=100%",
