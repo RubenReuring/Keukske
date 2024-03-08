@@ -176,7 +176,7 @@ $(document).ready(function () {
                 ease: "power1.inOut",
                 //duration: 0.2,
                 stagger: {
-                    amount: .1,
+                    amount: .075,
                 },
             });
 
