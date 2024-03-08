@@ -83,6 +83,10 @@ $(document).ready(function () {
             scrub: true,
             //markers: true,
             invalidateOnRefresh: true,
+            onPin: function() {
+                // Call st.refresh() when pinning starts
+                st.refresh();
+            }
         },
     });
     // Werkwijze background fading
@@ -263,6 +267,3 @@ $(document).ready(function () {
     });
 });
 
-
-
-st.refresh();
