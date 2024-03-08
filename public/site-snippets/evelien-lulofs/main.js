@@ -11,6 +11,5 @@ let st;
             markers : true
         });
     });
-$(document).ready(function() {
-    st.refresh();
-});
+
+
