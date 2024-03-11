@@ -1,6 +1,13 @@
 console.log($('.home-visual, .home-werkwijze'))
 let lightNavElems = $('.home-visual, .home-werkwijze')
 
+function toggleNavLight(turnOn) {
+    if (turnOn) {
+        $('.navbar').addClass('navbar-light')
+    } else {
+        $('.navbar').removeClass('navbar-light')
+    }
+}
 
     let st;
     $(lightNavElems).each(function(){
@@ -10,16 +17,16 @@ let lightNavElems = $('.home-visual, .home-werkwijze')
             end: 'bottom top',
             markers : true,
             onEnter: function(){
-                console.log('Light Nav')
+                toggleNavLight(true);
             },
             onEnterBack: function(){
-                console.log('Light Nav')
+                toggleNavLight(true);
             },
             onLeave: function(){
-                console.log('Normal Nav')
+                toggleNavLight(false);
             },
             onLeaveBack: function(){
-                console.log('Normal Nav')
+                toggleNavLight(false);
             }
         });
     });
