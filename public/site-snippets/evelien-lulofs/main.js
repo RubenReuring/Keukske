@@ -31,6 +31,8 @@ function toggleNavLight(turnOn) {
     });
 
 function handleResize() {
-    st.refresh();
+    st.each(function(){
+        $(this).refresh();
+    })
 }
 window.addEventListener('resize', handleResize);
