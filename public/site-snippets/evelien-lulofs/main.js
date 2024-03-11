@@ -11,7 +11,7 @@ function toggleNavLight(turnOn) {
     $(lightNavElems).each(function(){
         st = ScrollTrigger.create({
             trigger: this,
-            start: 'top top',
+            start: 'top' + ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 )),
             end: 'bottom top',
             markers : true,
             onEnter: function(){
@@ -29,5 +29,5 @@ function toggleNavLight(turnOn) {
         });
     });
 
-console.log(($('.navbar').outerHeight() - ( $('.navbar').height() / 2 )))
+console.log()
 
