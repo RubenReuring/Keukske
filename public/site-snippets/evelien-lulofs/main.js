@@ -12,6 +12,7 @@ let centerNav = ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ));
 function handleResize() {
     centerNav = ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ));
     st.refresh();
+    console.log(centerNav)
 }
 window.addEventListener('resize', handleResize);
 
@@ -20,7 +21,7 @@ window.addEventListener('resize', handleResize);
     $(lightNavElems).each(function(){
         st = ScrollTrigger.create({
             trigger: this,
-            start: () => `+=${($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ))}`,
+            start: () => 'top ' + centerNav,
             end: 'bottom top',
             markers : true,
             invalidateOnRefresh: true,
