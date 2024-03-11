@@ -174,8 +174,8 @@ $(document).ready(function(){
         }
     });
     function yourFunction() {
-        console.log('Function fired on scroll');
         if($('.menu-button').hasClass('nav-menu-active')){
+            console.log('Function fired on scroll');
             $('.menu-button').click();
             scrollFired = false
         }
