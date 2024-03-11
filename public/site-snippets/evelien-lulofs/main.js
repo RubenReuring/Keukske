@@ -70,25 +70,26 @@ $(document).ready(function(){
     loaderTimeline.fromTo(
         loaderSloganTargets,
         {y: "125%"},
-        {y: "0%", stagger: 0.15, duration: 1.35, ease: "power3.out"}
+        {y: "0%", stagger: 0.15, duration: 1.35, ease: "power3.out"},
+        .4
     );
     loaderTimeline.fromTo(
         '.loader-woordmerk__wrap',
         {opacity: "0"},
         {opacity: "1", duration: .3, ease: "power1.inOut"},
-        .6
+        .8
     );
     loaderTimeline.fromTo(
         '.loader-beeldmerk__wrap',
         {opacity: "0"},
         {opacity: "1", duration: .3, ease: "power1.inOut"},
-        .6
+        .8
     );
     loaderTimeline.fromTo(
         '.loader-inner',
         {opacity: "1"},
         {opacity: "0", duration: .3, ease: "power1.inOut"},
-        1.45
+        2
     );
     // loaderTimeline.fromTo(
     //     '.loader',
