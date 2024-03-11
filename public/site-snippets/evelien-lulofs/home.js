@@ -107,7 +107,8 @@ $(document).ready(function () {
         linesClass: "hero-line-mask",
     });
     $(".hhm-top__title").find("h1").children("div").wrapInner("<span></span>");
-    let heroTextLoad = gsap.timeline({delay: 3});
+    let heroTextLoad = gsap.timeline();
+    heroTextLoad.delay(3);
     let heroTextSpanTargets = gsap.utils.toArray(
         $(".hhm-top__title").find("span")
     );
