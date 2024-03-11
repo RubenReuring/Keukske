@@ -137,7 +137,7 @@ $(document).ready(function () {
     );
     heroTextLoad.to(
         ".home-visual__overlay",
-        {x: "-=105vw", duration: 2.25, ease: "power4.out"},
+        {x: "-=105vw", duration: 2.85, ease: "power4.out"},
         2.2
     );
     heroTextLoad.fromTo(
