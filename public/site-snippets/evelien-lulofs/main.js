@@ -46,3 +46,24 @@
         });
     })
 
+// Loader
+$(document).ready(function(){
+    // fade creme to orange
+    // splittext slide slogan
+    // logo's fade in
+    // fade out everything
+    // slide up orange
+    let heroTitleSplit = new SplitText($(".ls-inner").find("p"), {
+        type: "lines",
+        linesClass: "ls-line-mask",
+    });
+    let loaderTimeline = gsap.timeline();
+    let loaderSloganTargets = gsap.utils.toArray(
+        $(".ls-inner").find("span")
+    );
+    loaderTimeline.fromTo(
+        loaderSloganTargets,
+        {y: "125%"},
+        {y: "0%", stagger: 0.1, duration: 1, ease: "power3.out"}
+    );
+})
