@@ -64,8 +64,8 @@ $(document).ready(function(){
     );
     loaderTimeline.fromTo(
         '.loader',
-        {backgroundColor: "var(--creme-1)"},
-        {backgroundColor: "var(--soft-orange-1)", duration: .3, ease: "power1.inOut"}
+        {backgroundColor: "#fff"},
+        {backgroundColor: "#000", duration: .3, ease: "power1.inOut"}
     );
     loaderTimeline.fromTo(
         loaderSloganTargets,
