@@ -20,7 +20,7 @@ window.addEventListener('resize', handleResize);
         st = ScrollTrigger.create({
             trigger: this,
             start: () => 'top ' + centerNav,
-            end: 'bottom top',
+            end: () => 'bottom ' + centerNav,
             markers : true,
             invalidateOnRefresh: true,
             onEnter: function(){
