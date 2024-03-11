@@ -125,37 +125,38 @@ $(document).ready(function(){
     );
 })
 
-// Menu Link List Show/Hide
-var clickCount = 0;
-    let menuTargets = $('.nm-link__mask').find('.nm-link')
-console.log(menuTargets)
-$('.menu-button').click(function() {
-    clickCount++;
-    if (clickCount === 1) {
-        gsap.fromTo(
-            menuTargets,
-            {
-                y: "100%"
-            },
-            {
-                y: "0%",
-                stagger: 0.1,
-                duration: .35,
-                ease: "power3.out"
-            }
-        )
-    } else if (clickCount === 2) {
-        gsap.to(
-            menuTargets,
-            {
-                y: "100%",
-                stagger: 0.1,
-                duration: .35,
-                ease: "power3.out"
-            }
-        )
-    }
-    if (clickCount >= 2) {
-        clickCount = 0;
-    }
-});
+    // Menu Link List Show/Hide
+    var clickCount = 0;
+    let menuTargets = $('.nm-link__mask').find('.nm-link');
+    gsap.set(menuTargets, { y: "100%" })
+    console.log(menuTargets)
+    $('.menu-button').click(function() {
+        clickCount++;
+        if (clickCount === 1) {
+            gsap.fromTo(
+                menuTargets,
+                {
+                    y: "100%"
+                },
+                {
+                    y: "0%",
+                    stagger: 0.1,
+                    duration: .35,
+                    ease: "power3.out"
+                }
+            )
+        } else if (clickCount === 2) {
+            gsap.to(
+                menuTargets,
+                {
+                    y: "100%",
+                    stagger: 0.1,
+                    duration: .35,
+                    ease: "power3.out"
+                }
+            )
+        }
+        if (clickCount >= 2) {
+            clickCount = 0;
+        }
+    });
