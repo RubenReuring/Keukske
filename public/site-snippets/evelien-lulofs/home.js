@@ -159,7 +159,10 @@ $(document).ready(function () {
         2.2
     );
 
-    heroTextLoad.onComplete(function(){ console.log('Done!')});
+    heroTextLoad.eventCallback("onComplete", function(){
+        console.log('Done!')
+    }
+    );
     /// GSAP Link Hover
     let text = new SplitText(".link-paragraph", {type: "chars"});
 
