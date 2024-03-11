@@ -31,7 +31,7 @@ function toggleNavLight(turnOn) {
     });
 
 function handleResize() {
-    st.each(function(){
+    $(st).each(function(){
         $(this).refresh();
     })
 }
