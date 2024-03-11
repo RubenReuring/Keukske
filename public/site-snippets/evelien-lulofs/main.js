@@ -88,7 +88,7 @@ $(document).ready(function(){
     loaderTimeline.fromTo(
         '.loader-inner',
         {opacity: "1"},
-        {opacity: "0", duration: .45, ease: "power1.inOut"},
+        {opacity: "0", duration: .55, ease: "power1.inOut"},
         1.65
     );
     // loaderTimeline.fromTo(
