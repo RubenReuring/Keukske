@@ -138,13 +138,13 @@ $(document).ready(function () {
     heroTextLoad.to(
         ".home-visual__overlay",
         {x: "-=105vw", duration: 2.25, ease: "power4.out"},
-        3.4
+        2.4
     );
     heroTextLoad.fromTo(
         ".navbar-menu",
         {y: "15%", opacity: 0},
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
-        3.4
+        2.4
     );
     heroTextLoad.fromTo(
         ".navbar-home",
@@ -156,7 +156,7 @@ $(document).ready(function () {
         ".navbar-contact",
         {y: "15%", opacity: 0},
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
-        3.4
+        2.4
     );
 
     heroTextLoad.delay(1);
