@@ -140,10 +140,20 @@ $('.menu-button').click(function() {
             {
                 y: "0%",
                 stagger: 0.1,
+                duration: .35,
+                ease: "power3.out"
             }
         )
     } else if (clickCount === 2) {
-        console.log('Second click');
+        gsap.to(
+            menuTargets,
+            {
+                y: "100%",
+                stagger: 0.1,
+                duration: .35,
+                ease: "power3.out"
+            }
+        )
     }
     if (clickCount >= 2) {
         clickCount = 0;
