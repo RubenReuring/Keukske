@@ -127,10 +127,20 @@ $(document).ready(function(){
 
 // Menu Link List Show/Hide
 var clickCount = 0;
+    let menuTargets = $('.nm-link__mask').find('.nm-link')
 $('.menu-button').click(function() {
     clickCount++;
     if (clickCount === 1) {
-        console.log('First click');
+        gsap.fromTo(
+            menuTargets,
+            {
+                y: "100%"
+            },
+            {
+                y: "0%",
+                stagger: 0.1,
+            }
+        )
     } else if (clickCount === 2) {
         console.log('Second click');
     }
