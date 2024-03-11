@@ -1,20 +1,17 @@
-let lightNavElems = $('.home-visual, .home-werkwijze')
-function toggleNavLight(turnOn) {
-    if (turnOn) {
-        $('.navbar').addClass('navbar-light')
-    } else {
-        $('.navbar').removeClass('navbar-light')
+// Nav Coloring
+    let lightNavElems = $('.home-visual, .home-werkwijze')
+    function toggleNavLight(turnOn) {
+        if (turnOn) {
+            $('.navbar').addClass('navbar-light')
+        } else {
+            $('.navbar').removeClass('navbar-light')
+        }
     }
-}
-
-
-let centerNav = ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ));
-function handleResize() {
-    centerNav = ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ));
-}
-window.addEventListener('resize', handleResize);
-
-
+    let centerNav = ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ));
+    function handleResize() {
+        centerNav = ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ));
+    }
+    window.addEventListener('resize', handleResize);
     let st;
     $(lightNavElems).each(function(){
         st = ScrollTrigger.create({
@@ -38,4 +35,14 @@ window.addEventListener('resize', handleResize);
         });
     });
 
+// Custom Cursor Hovering
+    let cursorArrowHover = $('.hpg-project__imagewrap')
+    $(cursorArrowHover).each(function(){
+        $(this).mouseenter(function() {
+            $('.cursor-large__arrow').click();
+        });
+        $(this).mouseleave(function() {
+            $('.cursor-large__arrow').click();
+        });
+    })
 
