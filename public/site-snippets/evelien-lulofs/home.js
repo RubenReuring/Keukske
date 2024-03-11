@@ -275,7 +275,7 @@ $(document).ready(function () {
         invalidateOnRefresh: true,
         onEnter: function(){
             $('.navbar-home__link').addClass('hidden');
-            st.refresh();
+            werkwijzeSection.refresh();
         },
         onEnterBack: function(){
             $('.navbar-home__link').addClass('hidden');
