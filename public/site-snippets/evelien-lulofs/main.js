@@ -30,5 +30,7 @@ function toggleNavLight(turnOn) {
         });
     });
 
-console.log()
-
+function handleResize() {
+    st.refresh();
+}
+window.addEventListener('resize', handleResize);
