@@ -14,6 +14,7 @@ function toggleNavLight(turnOn) {
             start: 'top ' + ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 )),
             end: 'bottom top',
             markers : true,
+            invalidateOnRefresh: true,
             onEnter: function(){
                 toggleNavLight(true);
             },
