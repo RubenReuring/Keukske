@@ -57,13 +57,14 @@ $(document).ready(function(){
         type: "lines",
         linesClass: "ls-line-mask",
     });
+    $(".ls-inner").find("p").children("div").wrapInner("<span></span>");
     let loaderTimeline = gsap.timeline();
     let loaderSloganTargets = gsap.utils.toArray(
-        $(".ls-inner").find("span")
+        $(".ls-inner").find('span')
     );
-    // loaderTimeline.fromTo(
-    //     loaderSloganTargets,
-    //     {y: "125%"},
-    //     {y: "0%", stagger: 0.1, duration: 1, ease: "power3.out"}
-    // );
+    loaderTimeline.fromTo(
+        loaderSloganTargets,
+        {y: "125%"},
+        {y: "0%", stagger: 0.1, duration: 1, ease: "power3.out"}
+    );
 })
