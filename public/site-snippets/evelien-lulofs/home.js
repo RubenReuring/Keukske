@@ -109,6 +109,7 @@ $(document).ready(function () {
     });
     $(".hhm-top__title").find("h1").children("div").wrapInner("<span></span>");
     let heroTextLoad = gsap.timeline();
+    heroTextLoad.paused(true)
     let heroTextSpanTargets = gsap.utils.toArray(
         $(".hhm-top__title").find("span")
     );
@@ -159,7 +160,7 @@ $(document).ready(function () {
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
         2.2
     );
-    heroTextLoad.paused(true)
+
     heroTextLoad.eventCallback("onComplete", function(){ smoother.paused(false); });
     /// GSAP Link Hover
     let text = new SplitText(".link-paragraph", {type: "chars"});
