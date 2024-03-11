@@ -1,5 +1,5 @@
 // Nav Coloring
-    let lightNavElems = $('.home-visual, .home-werkwijze, .project-hero')
+    let lightNavElems = $('.home-visual, .home-werkwijze, .project-hero, .project-next')
     function toggleNavLight(turnOn) {
         if (turnOn) {
             $('.navbar').addClass('navbar-light')
