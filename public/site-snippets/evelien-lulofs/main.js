@@ -91,10 +91,10 @@ $(document).ready(function(){
         {opacity: "0", duration: .55, ease: "power1.inOut"},
         1.65
     );
-    // loaderTimeline.fromTo(
-    //     '.loader',
-    //     {y: "0%"},
-    //     {y: "-100%", duration: .3, ease: "power1.inOut"},
-    //     3
-    // );
+    loaderTimeline.fromTo(
+        '.loader',
+        {y: "0%"},
+        {y: "-100%", duration: .3, ease: "power1.inOut"},
+        1.95
+    );
 })
