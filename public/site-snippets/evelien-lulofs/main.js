@@ -20,8 +20,8 @@ window.addEventListener('resize', handleResize);
     $(lightNavElems).each(function(){
         st = ScrollTrigger.create({
             trigger: this,
-            start: `top top`,
-            end: `bottom bottom`,
+            start: () => `+=${($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ))}`,
+            end: 'bottom top',
             markers : true,
             invalidateOnRefresh: true,
             onEnter: function(){
