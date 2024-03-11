@@ -65,7 +65,7 @@ $(document).ready(function(){
     loaderTimeline.fromTo(
         '.loader',
         {backgroundColor: "#faf8f2"},
-        {backgroundColor: "#fe9963", duration: .3, ease: "power1.inOut"}
+        {backgroundColor: "#fe9963", duration: .5, ease: "power1.inOut"}
     );
     loaderTimeline.fromTo(
         loaderSloganTargets,
@@ -76,24 +76,24 @@ $(document).ready(function(){
         '.loader-woordmerk__wrap',
         {opacity: "0"},
         {opacity: "1", duration: .3, ease: "power1.inOut"},
-        .4
+        .6
     );
     loaderTimeline.fromTo(
         '.loader-beeldmerk__wrap',
         {opacity: "0"},
         {opacity: "1", duration: .3, ease: "power1.inOut"},
-        .4
+        .6
     );
     loaderTimeline.fromTo(
         '.loader-inner',
         {opacity: "1"},
         {opacity: "0", duration: .3, ease: "power1.inOut"},
-        1.25
+        1.45
     );
-    loaderTimeline.fromTo(
-        '.loader',
-        {y: "0%"},
-        {y: "-100%", duration: .3, ease: "power1.inOut"},
-        2
-    );
+    // loaderTimeline.fromTo(
+    //     '.loader',
+    //     {y: "0%"},
+    //     {y: "-100%", duration: .3, ease: "power1.inOut"},
+    //     3
+    // );
 })
