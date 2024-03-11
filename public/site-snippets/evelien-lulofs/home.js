@@ -108,55 +108,55 @@ $(document).ready(function () {
     });
     $(".hhm-top__title").find("h1").children("div").wrapInner("<span></span>");
     let heroTextLoad = gsap.timeline();
-    heroTextLoad.delay(3);
     let heroTextSpanTargets = gsap.utils.toArray(
         $(".hhm-top__title").find("span")
     );
     heroTextLoad.fromTo(
         heroTextSpanTargets,
         {y: "125%"},
-        {y: "0%", stagger: 0.1, duration: 1, ease: "power3.out"}
+        {y: "0%", stagger: 0.1, duration: 1, ease: "power3.out"},
+        2
     );
     heroTextLoad.fromTo(
         ".hhm-top__label",
         {y: "15%", opacity: 0},
         {y: "0%", opacity: 1, duration: 0.75, ease: "power1.out"},
-        0.8
+        2.8
     );
     heroTextLoad.fromTo(
         ".hhm-bottom",
         {y: "25%", opacity: 0},
         {y: "0%", opacity: 1, duration: 0.75, ease: "power1.out"},
-        1.1
+        3.1
     );
     heroTextLoad.fromTo(
         $(".home-hero__scroll").children(),
         {opacity: 0},
         {opacity: 1, stagger: 0.2, duration: 0.75, ease: "power1.out"},
-        1.6
+        3.6
     );
     heroTextLoad.to(
         ".home-visual__overlay",
         {x: "-=105vw", duration: 2.25, ease: "power4.out"},
-        0.4
+        3.4
     );
     heroTextLoad.fromTo(
         ".navbar-menu",
         {y: "15%", opacity: 0},
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
-        0.4
+        3.4
     );
     heroTextLoad.fromTo(
         ".navbar-home",
         {y: "15%", opacity: 0},
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
-        1.6
+        3.6
     );
     heroTextLoad.fromTo(
         ".navbar-contact",
         {y: "15%", opacity: 0},
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
-        0.4
+        3.4
     );
 
     heroTextLoad.delay(1);
