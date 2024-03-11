@@ -133,6 +133,7 @@ $(document).ready(function(){
     $('.menu-button').click(function() {
         clickCount++;
         if (clickCount === 1) {
+            $(this).addClass('nav-menu-active')
             $('.nav-menu').removeClass('menu-hidden');
             gsap.fromTo(
                 menuTargets,
@@ -147,7 +148,7 @@ $(document).ready(function(){
                 }
             )
         } else if (clickCount === 2) {
-
+            $(this).removeClass('nav-menu-active')
             gsap.to(
                 menuTargets,
                 {
