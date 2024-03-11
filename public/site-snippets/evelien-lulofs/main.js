@@ -128,6 +128,7 @@ $(document).ready(function(){
 // Menu Link List Show/Hide
 var clickCount = 0;
     let menuTargets = $('.nm-link__mask').find('.nm-link')
+console.log(menuTargets)
 $('.menu-button').click(function() {
     clickCount++;
     if (clickCount === 1) {
