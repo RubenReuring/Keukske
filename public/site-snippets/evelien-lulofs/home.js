@@ -265,5 +265,27 @@ $(document).ready(function () {
             $(".navbar-home__link-trigger").click();
         },
     });
+
+
+    let werkwijzeSection = ScrollTrigger.create({
+        trigger: $('.home-werkwijze'),
+        start: () => 'top ' + centerNav,
+        end: () => 'bottom ' + centerNav,
+        markers : true,
+        invalidateOnRefresh: true,
+        onEnter: function(){
+            $('.navbar-home__link').addClass('hidden');
+            st.refresh();
+        },
+        onEnterBack: function(){
+            $('.navbar-home__link').addClass('hidden');
+        },
+        onLeave: function(){
+            $('.navbar-home__link').removeClass('hidden');
+        },
+        onLeaveBack: function(){
+            $('.navbar-home__link').removeClass('hidden');
+        }
+    });
 });
 
