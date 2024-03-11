@@ -94,7 +94,7 @@ $(document).ready(function(){
     loaderTimeline.fromTo(
         '.loader',
         {y: "0%"},
-        {y: "-100%", duration: .3, ease: "power1.inOut"},
+        {y: "-100%", duration: .65, ease: "power3.in"},
         1.95
     );
 })
