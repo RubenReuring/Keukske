@@ -115,48 +115,48 @@ $(document).ready(function () {
         heroTextSpanTargets,
         {y: "125%"},
         {y: "0%", stagger: 0.1, duration: 1, ease: "power3.out"},
-        2
+        1.8
     );
     heroTextLoad.fromTo(
         ".hhm-top__label",
         {y: "15%", opacity: 0},
         {y: "0%", opacity: 1, duration: 0.75, ease: "power1.out"},
-        2.8
+        2.6
     );
     heroTextLoad.fromTo(
         ".hhm-bottom",
         {y: "25%", opacity: 0},
         {y: "0%", opacity: 1, duration: 0.75, ease: "power1.out"},
-        3.1
+        2.9
     );
     heroTextLoad.fromTo(
         $(".home-hero__scroll").children(),
         {opacity: 0},
         {opacity: 1, stagger: 0.2, duration: 0.75, ease: "power1.out"},
-        3.6
+        3.4
     );
     heroTextLoad.to(
         ".home-visual__overlay",
         {x: "-=105vw", duration: 2.25, ease: "power4.out"},
-        2.4
+        2.2
     );
     heroTextLoad.fromTo(
         ".navbar-menu",
         {y: "15%", opacity: 0},
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
-        2.4
+        2.2
     );
     heroTextLoad.fromTo(
         ".navbar-home",
         {y: "15%", opacity: 0},
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
-        3.6
+        3.4
     );
     heroTextLoad.fromTo(
         ".navbar-contact",
         {y: "15%", opacity: 0},
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
-        2.4
+        2.2
     );
 
     heroTextLoad.delay(1);
