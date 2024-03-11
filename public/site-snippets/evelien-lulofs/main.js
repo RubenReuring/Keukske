@@ -175,8 +175,6 @@ $(document).ready(function(){
     });
     function yourFunction() {
         console.log('Function fired on scroll');
-        $('.menu-button').click(function (){
-            event.preventDefault()
-        })
+        $('.menu-button').click();
     }
 
