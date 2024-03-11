@@ -32,7 +32,7 @@ function toggleNavLight(turnOn) {
 
 function handleResize() {
     $(st).each(function(){
-        $(this).refresh();
+        this.refresh();
     })
 }
 window.addEventListener('resize', handleResize);
