@@ -159,7 +159,7 @@ $(document).ready(function () {
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
         2.2
     );
-
+    heroTextLoad.delay(4)
     heroTextLoad.eventCallback("onComplete", function(){ smoother.paused(false); });
     /// GSAP Link Hover
     let text = new SplitText(".link-paragraph", {type: "chars"});
