@@ -133,7 +133,7 @@ $(document).ready(function(){
     $('.menu-button').click(function() {
         clickCount++;
         if (clickCount === 1) {
-            $('.nav-menu').removeClass('menu-hide');
+            $('.nav-menu').removeClass('menu-hidden');
             gsap.fromTo(
                 menuTargets,
                 {
@@ -156,7 +156,7 @@ $(document).ready(function(){
                     duration: .35,
                     ease: "power3.out",
                     onComplete: function(){
-                        $('.nav-menu').addClass('menu-hide');
+                        $('.nav-menu').addClass('menu-hidden');
                     }
                 }
             )
