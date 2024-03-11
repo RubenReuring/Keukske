@@ -109,7 +109,7 @@ $(document).ready(function () {
     });
     $(".hhm-top__title").find("h1").children("div").wrapInner("<span></span>");
     let heroTextLoad = gsap.timeline();
-    heroTextLoad.delay(5)
+    heroTextLoad.delay(.5)
     let heroTextSpanTargets = gsap.utils.toArray(
         $(".hhm-top__title").find("span")
     );
