@@ -166,3 +166,17 @@ $(document).ready(function(){
             clickCount = 0;
         }
     });
+    var scrollFired = false;
+    $(window).scroll(function() {
+        if (!scrollFired) {
+            yourFunction();
+            scrollFired = true;
+        }
+    });
+    function yourFunction() {
+        console.log('Function fired on scroll');
+        $('.menu-button').click(function (){
+            event.preventDefault()
+        })
+    }
+
