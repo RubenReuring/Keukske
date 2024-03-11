@@ -57,7 +57,7 @@ $(document).ready(function(){
         type: "lines",
         linesClass: "ls-line-mask",
     });
-    $(".ls-inner").find("p").children("div").wrapInner("<span></span>");
+    $(".ls-inner").find("p").children("div").wrapInner('<span style="display: block; text-align: center; position: relative;"></span>');
     let loaderTimeline = gsap.timeline();
     let loaderSloganTargets = gsap.utils.toArray(
         $(".ls-inner").find('span')
