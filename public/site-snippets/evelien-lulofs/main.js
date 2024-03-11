@@ -65,18 +65,18 @@ $(document).ready(function(){
     loaderTimeline.fromTo(
         loaderSloganTargets,
         {y: "125%"},
-        {y: "0%", stagger: 0.1, duration: 1, ease: "power3.out"}
+        {y: "0%", stagger: 0.15, duration: 1.35, ease: "power3.out"}
     );
     loaderTimeline.fromTo(
         '.loader-woordmerk__wrap',
         {opacity: "0"},
         {opacity: "1", stagger: 0.1, duration: .3, ease: "power1.inOut"},
-        .2
+        .4
     );
     loaderTimeline.fromTo(
         '.loader-beeldmerk__wrap',
         {opacity: "0"},
         {opacity: "1", stagger: 0.1, duration: .3, ease: "power1.inOut"},
-        .2
+        .4
     );
 })
