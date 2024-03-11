@@ -44,7 +44,7 @@ console.log(smoother)
             trigger: this,
             start: () => 'top ' + centerNav,
             end: () => 'bottom ' + centerNav,
-            markers : true,
+            //markers : true,
             invalidateOnRefresh: true,
             onEnter: function(){
                 toggleNavLight(true);
