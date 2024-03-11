@@ -5,6 +5,7 @@ function mapValue(value, fromMin, fromMax, toMin, toMax) {
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 $(document).ready(function () {
+    smoother.paused(true);
     //Total number of steps
     let totalSteps = $(".hws-step__item").length;
     if (totalSteps < 10) {
@@ -159,10 +160,7 @@ $(document).ready(function () {
         2.2
     );
 
-    heroTextLoad.eventCallback("onComplete", function(){
-        console.log('Done!')
-    }
-    );
+    heroTextLoad.eventCallback("onComplete", function(){ smoother.paused(false); });
     /// GSAP Link Hover
     let text = new SplitText(".link-paragraph", {type: "chars"});
 
