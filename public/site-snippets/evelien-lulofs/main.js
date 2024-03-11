@@ -63,6 +63,11 @@ $(document).ready(function(){
         $(".ls-inner").find('span')
     );
     loaderTimeline.fromTo(
+        '.loader',
+        {backgroundColor: "var(--creme-1)"},
+        {backgroundColor: "var(--soft-orange-1)", duration: .3, ease: "power1.inOut"}
+    );
+    loaderTimeline.fromTo(
         loaderSloganTargets,
         {y: "125%"},
         {y: "0%", stagger: 0.15, duration: 1.35, ease: "power3.out"}
@@ -70,19 +75,25 @@ $(document).ready(function(){
     loaderTimeline.fromTo(
         '.loader-woordmerk__wrap',
         {opacity: "0"},
-        {opacity: "1", stagger: 0.1, duration: .3, ease: "power1.inOut"},
+        {opacity: "1", duration: .3, ease: "power1.inOut"},
         .4
     );
     loaderTimeline.fromTo(
         '.loader-beeldmerk__wrap',
         {opacity: "0"},
-        {opacity: "1", stagger: 0.1, duration: .3, ease: "power1.inOut"},
+        {opacity: "1", duration: .3, ease: "power1.inOut"},
         .4
     );
     loaderTimeline.fromTo(
         '.loader-inner',
         {opacity: "1"},
-        {opacity: "0", stagger: 0.1, duration: .3, ease: "power1.inOut"},
+        {opacity: "0", duration: .3, ease: "power1.inOut"},
+        1.25
+    );
+    loaderTimeline.fromTo(
+        '.loader',
+        {y: "0%"},
+        {y: "-100%", duration: .3, ease: "power1.inOut"},
         1.25
     );
 })
