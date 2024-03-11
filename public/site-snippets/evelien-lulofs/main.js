@@ -175,9 +175,10 @@ $(document).ready(function(){
     });
     function yourFunction() {
         if($('.menu-button').hasClass('nav-menu-active')){
+            scrollFired = false
             console.log('Function fired on scroll');
             $('.menu-button').click();
-            scrollFired = false
+
         }
     }
 
