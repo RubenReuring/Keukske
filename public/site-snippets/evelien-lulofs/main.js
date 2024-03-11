@@ -10,7 +10,7 @@ function toggleNavLight(turnOn) {
 
 let centerNav = ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ));
 function handleResize() {
-    centerNav = ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ));
+    //centerNav = ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ));
 }
 window.addEventListener('resize', handleResize);
 
