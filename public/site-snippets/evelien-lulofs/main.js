@@ -7,7 +7,7 @@ let lightNavElems = $('.home-visual, .home-werkwijze')
         st = ScrollTrigger.create({
             trigger: this,
             start: 'top top',
-            end: 'bottom bottom',
+            end: 'bottom top',
             markers : true,
             onEnter: function(){
                 console.log('Light Nav')
