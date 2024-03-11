@@ -20,8 +20,8 @@ window.addEventListener('resize', handleResize);
     $(lightNavElems).each(function(){
         st = ScrollTrigger.create({
             trigger: this,
-            start: `top +={centerNav}`,
-            end: `bottom +={centerNav}`,
+            start: `top top`,
+            end: `bottom bottom`,
             markers : true,
             invalidateOnRefresh: true,
             onEnter: function(){
