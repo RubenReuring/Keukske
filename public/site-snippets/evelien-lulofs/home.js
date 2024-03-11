@@ -274,7 +274,7 @@ $(document).ready(function () {
         trigger: $('.home-werkwijze'),
         start: () => 'top ' + centerNav,
         end: () => 'bottom ' + centerNav,
-        markers : true,
+        //markers : true,
         invalidateOnRefresh: true,
         onEnter: function(){
             $('.navbar-home__link').addClass('hidden');
