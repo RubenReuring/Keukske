@@ -79,4 +79,10 @@ $(document).ready(function(){
         {opacity: "1", stagger: 0.1, duration: .3, ease: "power1.inOut"},
         .4
     );
+    loaderTimeline.fromTo(
+        '.loader-inner',
+        {opacity: "1"},
+        {opacity: "0", stagger: 0.1, duration: .3, ease: "power1.inOut"},
+        1.25
+    );
 })
