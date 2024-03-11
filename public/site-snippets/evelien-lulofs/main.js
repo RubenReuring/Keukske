@@ -7,12 +7,21 @@ function toggleNavLight(turnOn) {
     }
 }
 
+
+let centerNav = ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ));
+function handleResize() {
+    centerNav = ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 ));
+    st.refresh();
+}
+window.addEventListener('resize', handleResize);
+
+
     let st;
     $(lightNavElems).each(function(){
         st = ScrollTrigger.create({
             trigger: this,
-            start: 'top ' + ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 )),
-            end: 'bottom ' + ($('.navbar').outerHeight() - ( $('.navbar').height() / 2 )),
+            start: `top +={centerNav}`,
+            end: `bottom +={centerNav}`,
             markers : true,
             invalidateOnRefresh: true,
             onEnter: function(){
@@ -30,9 +39,4 @@ function toggleNavLight(turnOn) {
         });
     });
 
-function handleResize() {
-    $(st).each(function(){
-        this.refresh();
-    })
-}
-window.addEventListener('resize', handleResize);
+
