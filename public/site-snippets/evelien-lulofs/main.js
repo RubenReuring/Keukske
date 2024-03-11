@@ -8,7 +8,19 @@ let lightNavElems = $('.home-visual, .home-werkwijze')
             trigger: this,
             start: 'top bottom',
             end: 'bottom bottom',
-            markers : true
+            markers : true,
+            onEnter: function(){
+                console.log('Light Nav')
+            },
+            onEnterBack: function(){
+                console.log('Light Nav')
+            },
+            onLeave: function(){
+                console.log('Normal Nav')
+            },
+            onLeaveBack: function(){
+                console.log('Normal Nav')
+            }
         });
     });
 
