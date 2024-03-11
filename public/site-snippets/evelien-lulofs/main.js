@@ -124,3 +124,17 @@ $(document).ready(function(){
         1.95
     );
 })
+
+// Menu Link List Show/Hide
+var clickCount = 0;
+$('.menu-button').click(function() {
+    clickCount++;
+    if (clickCount === 1) {
+        console.log('First click');
+    } else if (clickCount === 2) {
+        console.log('Second click');
+    }
+    if (clickCount >= 2) {
+        clickCount = 0;
+    }
+});
