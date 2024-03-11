@@ -1,6 +1,8 @@
 console.log($('.home-visual, .home-werkwijze'))
 let lightNavElems = $('.home-visual, .home-werkwijze')
 
+console.log(($('.navbar').outerHeight() - ( $('.navbar').height() / 2 )))
+
 function toggleNavLight(turnOn) {
     if (turnOn) {
         $('.navbar').addClass('navbar-light')
