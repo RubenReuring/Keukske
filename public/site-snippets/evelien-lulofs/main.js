@@ -61,9 +61,9 @@ $(document).ready(function(){
     let loaderSloganTargets = gsap.utils.toArray(
         $(".ls-inner").find("span")
     );
-    loaderTimeline.fromTo(
-        loaderSloganTargets,
-        {y: "125%"},
-        {y: "0%", stagger: 0.1, duration: 1, ease: "power3.out"}
-    );
+    // loaderTimeline.fromTo(
+    //     loaderSloganTargets,
+    //     {y: "125%"},
+    //     {y: "0%", stagger: 0.1, duration: 1, ease: "power3.out"}
+    // );
 })
