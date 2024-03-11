@@ -166,19 +166,10 @@ $(document).ready(function(){
             clickCount = 0;
         }
     });
-    var scrollFired = false;
-    $(window).scroll(function() {
-        if (!scrollFired) {
-            yourFunction();
-            scrollFired = true;
-        }
-    });
-    function yourFunction() {
-        if($('.menu-button').hasClass('nav-menu-active')){
-            scrollFired = false
-            console.log('Function fired on scroll');
-            $('.menu-button').click();
 
-        }
+$(window).scroll(function() {
+    if($('.menu-button').hasClass('nav-menu-active')){
+        $('.menu-button').click();
     }
+});
 
