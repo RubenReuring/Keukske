@@ -88,8 +88,8 @@ $(document).ready(function(){
     loaderTimeline.fromTo(
         '.loader-inner',
         {opacity: "1"},
-        {opacity: "0", duration: .4, ease: "power1.inOut"},
-        2
+        {opacity: "0", duration: .45, ease: "power1.inOut"},
+        1.65
     );
     // loaderTimeline.fromTo(
     //     '.loader',
