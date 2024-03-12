@@ -167,4 +167,20 @@ $(window).scroll(function() {
     }
 });
 
+
+    if($('.body').hasClass('bodyscroll-off')){
+        $('.menu-button').click();
+        $('.mobile-menu__button--reset').click();
+    }
+
+});
+
+mm.add("(max-width: 991px)", () => {
+    $('.menu-button').on('click', function(){
+        if(!$('.body').hasClass('bodyscroll-off')){
+            $('.body').addClass('bodyscroll-off');
+        } else if ($('.body').hasClass('bodyscroll-off')){
+            $('.body').removeClass('bodyscroll-off');
+        }
+    });
 });
