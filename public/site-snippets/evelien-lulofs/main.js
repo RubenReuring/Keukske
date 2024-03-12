@@ -188,3 +188,16 @@ mm.add("(max-width: 991px)", () => {
         }
     })
 });
+
+
+$("a").on("click", function (e) {
+    if ($(this).prop("hostname") == window.location.host && $(this).attr("href").indexOf("#") === -1 &&
+        !$(this).hasClass(excludedClass) && $(this).attr("target") !== "_blank" && transitionTrigger.length > 0) {
+        e.preventDefault();
+        let transitionURL = $(this).attr("href");
+        transitionTrigger.click();
+        setTimeout(function () {window.location = transitionURL;}, 350);
+    }
+});
+// On Back Button Tap
+window.onpageshow = function(event) {if (event.persisted) {window.location.reload()}};
