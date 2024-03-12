@@ -195,7 +195,7 @@ $("a").on("click", function (e) {
         !$(this).hasClass(excludedClass) && $(this).attr("target") !== "_blank" && transitionTrigger.length > 0) {
         e.preventDefault();
         let transitionURL = $(this).attr("href");
-        transitionTrigger.click();
+        $('.transition-trigger').click();
         setTimeout(function () {window.location = transitionURL;}, 350);
     }
 });
