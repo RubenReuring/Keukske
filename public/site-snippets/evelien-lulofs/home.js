@@ -303,7 +303,27 @@ $(document).ready(function () {
             $('.navbar-home__link').removeClass('hidden');
         }
     });
-
+    mm.add("(max-width: 768px)", () => {
+        let werkwijzeSectionMobile = ScrollTrigger.create({
+            trigger: $('.home-werkwijze'),
+            start: () => 'top ' + centerNav,
+            end: () => 'bottom ' + centerNav,
+            //markers : true,
+            invalidateOnRefresh: true,
+            onEnter: function(){
+                $('.navbar').hide();
+            },
+            onEnterBack: function(){
+                $('.navbar').hide();
+            },
+            onLeave: function(){
+                $('.navbar').show();
+            },
+            onLeaveBack: function(){
+                $('.navbar').show();
+            }
+        });
+    });
     $('.hws-si__accordion-head').on('click', function(){
         werkwijzeSection.refresh();
         st.refresh();
