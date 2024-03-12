@@ -78,7 +78,7 @@ $(document).ready(function () {
 
 
     // Werkwijze intro scaling
-    mm.add("(min-width: 768px)", () => {
+    mm.add("(min-width: 992px)", () => {
 
         let werkwijze = gsap.to(".hwi-wrapper", {
             scale: 1,
