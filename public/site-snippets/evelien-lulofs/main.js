@@ -183,6 +183,8 @@ mm.add("(max-width: 991px)", () => {
     $('.fm-link.first, .fm-link.second').on('click', function(){
         if($('.body').hasClass('bodyscroll-off')){
             $('.menu-button--reset').click();
+            $('.body').removeClass('bodyscroll-off');
+            $('.navbar').removeClass('fm-active')
         }
     })
 });
