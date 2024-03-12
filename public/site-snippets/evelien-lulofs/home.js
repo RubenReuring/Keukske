@@ -323,10 +323,11 @@ $(document).ready(function () {
                 $('.navbar').show();
             }
         });
-        $('.hws-si__accordion-head').on('click', function(){
+
+
+        $( ".body" ).on( "scroll", function() {
             werkwijzeSectionMobile.refresh();
-            alert('test')
-        })
+        } );
     });
     $('.hws-si__accordion-head').on('click', function(){
         werkwijzeSection.refresh();
