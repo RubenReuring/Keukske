@@ -70,54 +70,6 @@ $(document).ready(function() {
         });
     })
 
-// Loader
-$(document).ready(function(){
-    let heroTitleSplit = new SplitText($(".ls-inner").find("p"), {
-        type: "lines",
-        linesClass: "ls-line-mask",
-    });
-    $(".ls-inner").find("p").children("div").wrapInner('<span style="display: block; text-align: center; position: relative;"></span>');
-    let loaderTimeline = gsap.timeline();
-    let loaderSloganTargets = gsap.utils.toArray(
-        $(".ls-inner").find('span')
-    );
-    loaderTimeline.fromTo(
-        '.loader',
-        {backgroundColor: "#faf8f2"},
-        {backgroundColor: "#fe9963", duration: .75, ease: "power1.inOut"}
-    );
-    loaderTimeline.fromTo(
-        loaderSloganTargets,
-        {y: "125%"},
-        {y: "0%", stagger: 0.15, duration: 1.35, ease: "power3.out"},
-        .4
-    );
-    loaderTimeline.fromTo(
-        '.loader-woordmerk__wrap',
-        {opacity: "0"},
-        {opacity: "1", duration: .3, ease: "power1.inOut"},
-        .8
-    );
-    loaderTimeline.fromTo(
-        '.loader-beeldmerk__wrap',
-        {opacity: "0"},
-        {opacity: "1", duration: .3, ease: "power1.inOut"},
-        .8
-    );
-    loaderTimeline.fromTo(
-        '.loader-inner',
-        {opacity: "1"},
-        {opacity: "0", duration: .55, ease: "power1.inOut"},
-        1.65
-    );
-    loaderTimeline.fromTo(
-        '.loader',
-        {y: "0%"},
-        {y: "-100%", duration: .65, ease: "power3.in"},
-        1.95
-    );
-})
-
 mm.add("(min-width: 992px)", () => {
     // Menu Link List Show/Hide
     var clickCount = 0;
