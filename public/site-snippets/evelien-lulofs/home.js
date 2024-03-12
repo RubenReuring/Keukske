@@ -303,5 +303,10 @@ $(document).ready(function () {
             $('.navbar-home__link').removeClass('hidden');
         }
     });
+
+    $('.hws-si__accordion-head').on('click', function(){
+        werkwijzeSection.refresh();
+        st.refresh();
+    })
 });
 
