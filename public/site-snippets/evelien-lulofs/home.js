@@ -329,8 +329,10 @@ $(document).ready(function () {
         })
     });
     $('.hws-si__accordion-head').on('click', function(){
-        werkwijzeSection.refresh();
-        st.refresh();
+        setTimeout(function(){
+            werkwijzeSection.refresh();
+            st.refresh();
+        },1000)
     })
 });
 
