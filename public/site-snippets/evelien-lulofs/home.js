@@ -2,6 +2,9 @@
 function mapValue(value, fromMin, fromMax, toMin, toMax) {
     return toMin + ((value - fromMin) * (toMax - toMin)) / (fromMax - fromMin);
 }
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 $(document).ready(function () {
