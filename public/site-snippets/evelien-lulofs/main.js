@@ -192,7 +192,7 @@ mm.add("(max-width: 991px)", () => {
 
 $("a").on("click", function (e) {
     if ($(this).prop("hostname") == window.location.host && $(this).attr("href").indexOf("#") === -1 &&
-        !$(this).hasClass(excludedClass) && $(this).attr("target") !== "_blank" && transitionTrigger.length > 0) {
+        !$(this).hasClass('no-transition') && $(this).attr("target") !== "_blank" && $('.transition-trigger').length > 0) {
         e.preventDefault();
         let transitionURL = $(this).attr("href");
         $('.transition-trigger').click();
