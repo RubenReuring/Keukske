@@ -6,7 +6,7 @@ function mapValue(value, fromMin, fromMax, toMin, toMax) {
 gsap.registerPlugin(SplitText, ScrollTrigger);
 $(document).ready(function () {
     mm.add("(min-width: 768px)", () => {
-        smoother.paused(true);
+        //smoother.paused(true);
     });
     //Total number of steps
     let totalSteps = $(".hws-step__item").length;
@@ -163,7 +163,7 @@ $(document).ready(function () {
         2.2
     );
     mm.add("(min-width: 768px)", () => {
-        heroTextLoad.eventCallback("onComplete", function(){ smoother.paused(false); });
+        //heroTextLoad.eventCallback("onComplete", function(){ smoother.paused(false); });
     });
 
     /// GSAP Link Hover
