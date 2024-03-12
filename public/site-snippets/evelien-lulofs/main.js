@@ -127,7 +127,6 @@ $(document).ready(function(){
     var clickCount = 0;
     let menuTargets = $('.nm-link__mask').find('.nm-link');
     gsap.set(menuTargets, { y: "100%" })
-    console.log(menuTargets)
     $('.menu-button').click(function() {
         clickCount++;
         if (clickCount === 1) {
