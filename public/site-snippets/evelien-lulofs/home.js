@@ -160,9 +160,7 @@ $(document).ready(function () {
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
         2.2
     );
-    mm.add("(min-width: 768px)", () => {
-        heroTextLoad.eventCallback("onComplete", function(){ $('.body').removeClass('bodyscroll-off') });
-    });
+    heroTextLoad.eventCallback("onComplete", function(){ $('.body').removeClass('bodyscroll-off') });
 
     /// GSAP Link Hover
     let text = new SplitText(".link-paragraph", {type: "chars"});
