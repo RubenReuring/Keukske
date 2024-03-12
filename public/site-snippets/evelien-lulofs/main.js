@@ -60,7 +60,7 @@ $(document).ready(function() {
     });
 
 // Custom Cursor Hovering
-    let cursorArrowHover = $('.hpg-project__imagewrap')
+    let cursorArrowHover = $('.hpg-project__imagewrap, .project-next')
     $(cursorArrowHover).each(function(){
         $(this).mouseenter(function() {
             $('.cursor-large__arrow').click();
