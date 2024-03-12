@@ -323,13 +323,13 @@ $(document).ready(function () {
                 $('.navbar').show();
             }
         });
+        $('.hws-si__accordion-head').on('click', function(){
+            werkwijzeSectionMobile.refresh();
+        })
     });
     $('.hws-si__accordion-head').on('click', function(){
         werkwijzeSection.refresh();
         st.refresh();
-        mm.add("(max-width: 768px)", () => {
-            werkwijzeSectionMobile.refresh();
-        });
     })
 });
 
