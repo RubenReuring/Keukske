@@ -181,6 +181,8 @@ mm.add("(max-width: 991px)", () => {
     });
 
     $('.fm-link.first, .fm-link.second').on('click', function(){
-        $('.menu-button').click();
+        if($('.body').hasClass('bodyscroll-off')){
+            $('.menu-button--reset').click();
+        }
     })
 });
