@@ -72,11 +72,6 @@ $(document).ready(function() {
 
 // Loader
 $(document).ready(function(){
-    // fade creme to orange
-    // splittext slide slogan
-    // logo's fade in
-    // fade out everything
-    // slide up orange
     let heroTitleSplit = new SplitText($(".ls-inner").find("p"), {
         type: "lines",
         linesClass: "ls-line-mask",
@@ -123,10 +118,12 @@ $(document).ready(function(){
     );
 })
 
+mm.add("(min-width: 992px)", () => {
     // Menu Link List Show/Hide
     var clickCount = 0;
     let menuTargets = $('.nm-link__mask').find('.nm-link');
     gsap.set(menuTargets, { y: "100%" })
+
     $('.menu-button').click(function() {
         clickCount++;
         if (clickCount === 1) {
@@ -170,3 +167,4 @@ $(window).scroll(function() {
     }
 });
 
+});
