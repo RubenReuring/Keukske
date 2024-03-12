@@ -179,4 +179,8 @@ mm.add("(max-width: 991px)", () => {
             $('.navbar').removeClass('fm-active')
         }
     });
+
+    $('.fm-link.first, .fm-link.second').on('click', function(){
+        $('.menu-button').click();
+    })
 });
