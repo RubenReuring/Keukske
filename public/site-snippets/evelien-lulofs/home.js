@@ -8,6 +8,8 @@ window.onbeforeunload = function () {
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 $(document).ready(function () {
+    window.scrollTo(0, 0);
+
     $('.body').addClass('bodyscroll-off')
     //Total number of steps
     let totalSteps = $(".hws-step__item").length;
