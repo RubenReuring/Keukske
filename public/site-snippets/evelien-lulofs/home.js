@@ -75,36 +75,46 @@ $(document).ready(function () {
         );
         maskedImage.css("mask-position", maskX + "% " + maskY + "%");
     });
+
+
     // Werkwijze intro scaling
-    let werkwijze = gsap.to(".hwi-wrapper", {
-        scale: 1,
-        ease: Power2.easeOut,
-        scrollTrigger: {
-            trigger: ".home-werkwijze__intro",
-            pin: true,
-            start: "top top",
-            end: "+=400%",
-            scrub: true,
-            //markers: true,
-            invalidateOnRefresh: true,
-            onEnter: function() {
-                // Call st.refresh() when pinning starts
-                st.refresh();
-            }
-        },
+    mm.add("(min-width: 768px)", () => {
+
+        let werkwijze = gsap.to(".hwi-wrapper", {
+            scale: 1,
+            ease: Power2.easeOut,
+            scrollTrigger: {
+                trigger: ".home-werkwijze__intro",
+                pin: true,
+                start: "top top",
+                end: "+=400%",
+                scrub: true,
+                //markers: true,
+                invalidateOnRefresh: true,
+                onEnter: function() {
+                    // Call st.refresh() when pinning starts
+                    st.refresh();
+                }
+            },
+        });
+        // Werkwijze background fading
+        let werkwijzebg = gsap.to(".hwi-background", {
+            opacity: 0,
+            ease: Power1.easeOut,
+            scrollTrigger: {
+                trigger: ".home-werkwijze__intro",
+                start: "top top",
+                end: "+=300%",
+                scrub: true,
+                invalidateOnRefresh: true,
+            },
+        });
+
     });
-    // Werkwijze background fading
-    let werkwijzebg = gsap.to(".hwi-background", {
-        opacity: 0,
-        ease: Power1.easeOut,
-        scrollTrigger: {
-            trigger: ".home-werkwijze__intro",
-            start: "top top",
-            end: "+=300%",
-            scrub: true,
-            invalidateOnRefresh: true,
-        },
-    });
+
+
+
+
     //Hero Load timeline
     let heroTitleSplit = new SplitText($(".hhm-top__title").find("h1"), {
         type: "lines",
