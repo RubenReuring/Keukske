@@ -170,7 +170,7 @@ $(window).scroll(function() {
 
     if($('.body').hasClass('bodyscroll-off')){
         $('.menu-button').click();
-        $('.mobile-menu__button--reset').click();
+        $('.menu-button--reset').click();
     }
 
 });
