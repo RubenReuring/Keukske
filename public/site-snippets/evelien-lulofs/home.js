@@ -324,10 +324,9 @@ $(document).ready(function () {
             }
         });
 
-
-        $( ".body" ).on( "scroll", function() {
-            werkwijzeSectionMobile.refresh();
-        } );
+        $('.hws-si__accordion-head').on('click', function(){
+            setTimeout(function(){ werkwijzeSectionMobile.refresh(); },1000)
+        })
     });
     $('.hws-si__accordion-head').on('click', function(){
         werkwijzeSection.refresh();
