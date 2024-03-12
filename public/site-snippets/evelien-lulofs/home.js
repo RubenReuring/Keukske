@@ -9,7 +9,6 @@ $(document).ready(function () {
         $('body').scrollTop(0);
     });
 
-    $('.body').addClass('bodyscroll-off')
     //Total number of steps
     let totalSteps = $(".hws-step__item").length;
     if (totalSteps < 10) {
@@ -164,7 +163,7 @@ $(document).ready(function () {
         {y: "0%", opacity: 1, duration: 1, ease: "power2.out"},
         2.2
     );
-    heroTextLoad.eventCallback("onComplete", function(){ $('.body').removeClass('bodyscroll-off') });
+    heroTextLoad.eventCallback("onComplete", function(){  });
 
     /// GSAP Link Hover
     let text = new SplitText(".link-paragraph", {type: "chars"});
