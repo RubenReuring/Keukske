@@ -325,6 +325,7 @@ $(document).ready(function () {
         });
         $('.hws-si__accordion-head').on('click', function(){
             werkwijzeSectionMobile.refresh();
+            alert('test')
         })
     });
     $('.hws-si__accordion-head').on('click', function(){
