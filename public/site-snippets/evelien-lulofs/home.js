@@ -161,7 +161,7 @@ $(document).ready(function () {
         2.2
     );
     mm.add("(min-width: 768px)", () => {
-        heroTextLoad.eventCallback("onComplete", function(){ $('.body').addClass('bodyscroll-off') });
+        heroTextLoad.eventCallback("onComplete", function(){ $('.body').removeClass('bodyscroll-off') });
     });
 
     /// GSAP Link Hover
