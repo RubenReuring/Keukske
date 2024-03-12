@@ -5,20 +5,20 @@ $(document).ready(function() {
         //console.log('Editor is loaded: do not load custom js');
     } else {
         //console.log('Editor is not loaded: load custom js...');
-        gsap.registerPlugin(ScrollSmoother);
-        ScrollTrigger.normalizeScroll(true);
-        mm.add("(min-width: 768px)", () => {
-            smoother = ScrollSmoother.create({
-                smooth: 1,
-                effects: true,
-                smoothTouch: 0.1,
-                // normalizeScroll: true,
-                ignoreMobileResize: true,
-                allowNestedScroll: true,
-            });
-            ScrollSmoother.create({ smooth: 1, effects: true, smoothTouch: 0.1, });
-            return () => smoother.kill();
-        });
+        // gsap.registerPlugin(ScrollSmoother);
+        // ScrollTrigger.normalizeScroll(true);
+        // mm.add("(min-width: 768px)", () => {
+        //     smoother = ScrollSmoother.create({
+        //         smooth: 1,
+        //         effects: true,
+        //         smoothTouch: 0.1,
+        //         // normalizeScroll: true,
+        //         ignoreMobileResize: true,
+        //         allowNestedScroll: true,
+        //     });
+        //     ScrollSmoother.create({ smooth: 1, effects: true, smoothTouch: 0.1, });
+        //     return () => smoother.kill();
+        // });
     }
 })
 
