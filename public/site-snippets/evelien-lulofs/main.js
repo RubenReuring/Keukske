@@ -167,12 +167,6 @@ $(window).scroll(function() {
     }
 });
 
-
-    if($('.body').hasClass('bodyscroll-off')){
-        $('.menu-button').click();
-        $('.menu-button--reset').click();
-    }
-
 });
 
 mm.add("(max-width: 991px)", () => {
