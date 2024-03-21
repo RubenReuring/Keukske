@@ -287,7 +287,7 @@ $(document).ready(function () {
             let linkAnimation = gsap.to(this.children, {
                 y: "-=100%",
                 paused: true,
-                ease: "power3.inOut",
+                ease: "power2.inOut",
                 duration: 0.35,
             });
             $(this).on("mouseenter", function () { linkAnimation.play(); });
