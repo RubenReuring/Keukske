@@ -224,7 +224,7 @@ $(document).ready(function () {
     heroTextLoad.eventCallback("onComplete", function(){  });
 
     /// GSAP Link Hover
-    let text = new SplitText(".link-paragraph", {type: "chars"});
+    //let text = new SplitText(".link-paragraph", {type: "chars"});
 
     // $(".link12-12-sb-test").each(function () {
     //     let innerText = $(this).find(".link-paragraph").children();
@@ -259,6 +259,30 @@ $(document).ready(function () {
     //     });
     // });
 
+    // $(".link12-12-sb").each(function () {
+    //     let hoverText = $(this).children();
+    //     $(hoverText).each(function () {
+    //         let linkAnimation = gsap.to(this.children, {
+    //             y: "-=100%",
+    //             paused: true,
+    //             ease: "power1.inOut",
+    //             duration: 0.35,
+    //             stagger: {
+    //                 amount: 0.175,
+    //             },
+    //         });
+    //         $(this)
+    //             .parents(".link12-12-sb")
+    //             .on("mouseenter", function () {
+    //                 linkAnimation.play();
+    //             });
+    //         $(this)
+    //             .parents(".link12-12-sb")
+    //             .on("mouseleave", function () {
+    //                 linkAnimation.reverse();
+    //             });
+    //     });
+    // });
     $(".link12-12-sb").each(function () {
         let hoverText = $(this).children();
         $(hoverText).each(function () {
