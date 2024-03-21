@@ -284,7 +284,6 @@ $(document).ready(function () {
     //     });
     // });
     $(".link12-12-sb").each(function () {
-
             let linkAnimation = gsap.to(this.children, {
                 y: "-=100%",
                 paused: true,
@@ -294,16 +293,8 @@ $(document).ready(function () {
                     amount: 0.175,
                 },
             });
-            $(this)
-                .parents(".link12-12-sb")
-                .on("mouseenter", function () {
-                    linkAnimation.play();
-                });
-            $(this)
-                .parents(".link12-12-sb")
-                .on("mouseleave", function () {
-                    linkAnimation.reverse();
-                });
+            $(this).on("mouseenter", function () { linkAnimation.play(); });
+            $(this).on("mouseleave", function () { linkAnimation.reverse(); });
     });
     /// GSAP Button hover
     $(".main-button").each(function () {
