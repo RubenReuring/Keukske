@@ -284,9 +284,8 @@ $(document).ready(function () {
     //     });
     // });
     $(".link12-12-sb").each(function () {
-        let hoverText = $(this).children();
 
-            let linkAnimation = gsap.to(hoverText, {
+            let linkAnimation = gsap.to(this.children, {
                 y: "-=100%",
                 paused: true,
                 ease: "power1.inOut",
