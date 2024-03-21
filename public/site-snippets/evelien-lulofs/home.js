@@ -285,8 +285,8 @@ $(document).ready(function () {
     // });
     $(".link12-12-sb").each(function () {
         let hoverText = $(this).children();
-        $(hoverText).each(function () {
-            let linkAnimation = gsap.to(this.children, {
+
+            let linkAnimation = gsap.to(hoverText, {
                 y: "-=100%",
                 paused: true,
                 ease: "power1.inOut",
@@ -305,7 +305,6 @@ $(document).ready(function () {
                 .on("mouseleave", function () {
                     linkAnimation.reverse();
                 });
-        });
     });
     /// GSAP Button hover
     $(".main-button").each(function () {
