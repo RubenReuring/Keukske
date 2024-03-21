@@ -1,3 +1,6 @@
+let loaderText = $('.loader-data-text').text();
+$('.ls-inner').find('p').text(loaderText);
+
 let mm = gsap.matchMedia();
 let smoother;
 $(document).ready(function() {
