@@ -287,11 +287,8 @@ $(document).ready(function () {
             let linkAnimation = gsap.to(this.children, {
                 y: "-=100%",
                 paused: true,
-                ease: "power1.inOut",
+                ease: "power3.inOut",
                 duration: 0.35,
-                stagger: {
-                    amount: 0.175,
-                },
             });
             $(this).on("mouseenter", function () { linkAnimation.play(); });
             $(this).on("mouseleave", function () { linkAnimation.reverse(); });
