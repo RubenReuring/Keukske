@@ -162,7 +162,7 @@ $('.hpg-project__item').each(function(){
             toggleActions: 'restart none none none',
             start: 'top bottom',
             end: 'bottom top',
-            markers : true,
+            //markers : true,
             invalidateOnRefresh: true,
         }
     })
