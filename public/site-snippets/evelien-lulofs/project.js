@@ -77,7 +77,7 @@ $(document).ready(function() {
                 nextItem = $(this).parents('.pnd-list').children().first();
             }
             nextItemTitle = nextItem.text()
-            nextItemUrl = nextItem.attr('href')
+            nextItemUrl = nextItem.find('a').attr('href')
             console.log(nextItemTitle, nextItemUrl)
         }
     });
