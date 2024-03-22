@@ -155,15 +155,15 @@ $("a").on("click", function (e) {
 });
 
 $('.hpg-project__item').each(function(){
-    gsap.to(this, {
-        opacity: "0",
-        duration: .5,
-        scrollTrigger: {
-                trigger: this,
-                start: 'top top',
-                end: 'bottom bottom',
-                markers : true,
-                invalidateOnRefresh: true,
+    gsap.fromTo(this,
+        { opacity: 0 },
+        { opacity: 1,  duration: .5, scrollTrigger: {
+            trigger: this,
+            toggleActions: 'restart none none none',
+            start: 'top bottom',
+            end: 'bottom top',
+            markers : true,
+            invalidateOnRefresh: true,
         }
     })
 
