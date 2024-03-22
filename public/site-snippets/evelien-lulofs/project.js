@@ -87,14 +87,10 @@ $(document).ready(function() {
         type: 'GET',
         dataType: 'text',
         success: function(data) {
-            // Parse the returned data as a jQuery object
             var $html = $(data);
-
-            // Find elements with a specific class inside the parsed HTML
             let nextBackgroundImage = $html.find('.project-hero__background').find('img').attr('src');
-
-            // Log the found elements
-            console.log(nextBackgroundImage);
+            $('.project-next').find('img').attr('src', nextBackgroundImage)
+            //console.log(nextBackgroundImage);
         },
         error: function(jqXHR, textStatus, errorThrown) {
             console.error('AJAX Error:', textStatus, errorThrown);
