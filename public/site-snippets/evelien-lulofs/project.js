@@ -70,7 +70,7 @@ $('.pdi-lg__rte').children('p').each(function(){
 $.ajax({
     url: '/projects/t-trefhuus',
     type: 'GET',
-    dataType: 'json',
+    dataType: 'text',
     success: function(data) {
         console.log(data);
     },
