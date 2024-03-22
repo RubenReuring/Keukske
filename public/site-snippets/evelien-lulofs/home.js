@@ -181,13 +181,13 @@ $(document).ready(function () {
         1.8
     );
     heroTextLoad.fromTo(
-        ".hhm-top__label",
+        ".hmm-top__label-tag",
         {y: "15%", opacity: 0},
         {y: "0%", opacity: 1, duration: 0.75, ease: "power1.out"},
         2.6
     );
     heroTextLoad.fromTo(
-        ".hmm-top__label-tag",
+        ".hhm-top__label",
         {y: "25%", opacity: 0},
         {y: "0%", opacity: 1, duration: 0.75, ease: "power1.out"},
         2.9
