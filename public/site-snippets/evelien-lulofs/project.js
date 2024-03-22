@@ -75,7 +75,7 @@ $(document).ready(function() {
             let nextItem = $(this).parent().next();
             if (nextItem.length === 0) {
                 // If there is no next item, select the first item in the list
-                nextItem = $(this).parents('.pnd-list').first();
+                nextItem = $(this).parent().first();
             }
             console.log(nextItem)
         }
