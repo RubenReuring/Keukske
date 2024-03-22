@@ -68,16 +68,17 @@ $('.pdi-lg__rte').children('p').each(function(){
 
 $(document).ready(function() {
     var currentPath = window.location.pathname;
+    let linkPath, nextItem, nextItemTitle, nextItemUrl;
     $('.pnd-item__link').each(function() {
-        var linkPath = $(this).attr('href');
+        linkPath = $(this).attr('href');
         if (currentPath === linkPath) {
-            $(this).addClass('current-item')
-            let nextItem = $(this).parent().next();
+            nextItem = $(this).parent().next();
             if (nextItem.length === 0) {
-                // If there is no next item, select the first item in the list
                 nextItem = $(this).parents('.pnd-list').children().first();
             }
-            console.log(nextItem)
+            nextItemTitle = nextItem.text()
+            nextItemUrl = nextItem.attr('href')
+            console.log(nextItemTitle, nextItemUrl)
         }
     });
 });
