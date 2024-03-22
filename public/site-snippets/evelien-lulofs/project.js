@@ -91,10 +91,10 @@ $(document).ready(function() {
             var $html = $(data);
 
             // Find elements with a specific class inside the parsed HTML
-            var $foundElements = $html.find('.h70-70-reg').text();
+            let nextBackgroundImage = $html.find('.project-hero__background').find('img').attr('src');
 
             // Log the found elements
-            console.log($foundElements);
+            console.log(nextBackgroundImage);
         },
         error: function(jqXHR, textStatus, errorThrown) {
             console.error('AJAX Error:', textStatus, errorThrown);
