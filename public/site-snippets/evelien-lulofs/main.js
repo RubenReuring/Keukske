@@ -155,8 +155,8 @@ $("a").on("click", function (e) {
 });
 
 $('.hpg-project__item').each(function(){
-    gsap.fromTo(this,
-        { opacity: 0 },
+    gsap.set(this, { opacity: 0 });
+    gsap.to(this,
         { opacity: 1,  duration: 1, delay: .1, scrollTrigger: {
             trigger: this,
             toggleActions: 'restart none none none',
