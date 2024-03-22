@@ -65,3 +65,16 @@ $('.pdi-lg__rte').children('p').each(function(){
         console.log($(this).text());
     }
 })
+
+
+$.ajax({
+    url: '/projects/t-trefhuus',
+    type: 'GET',
+    dataType: 'json',
+    success: function(data) {
+        console.log(data);
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+        console.error('AJAX Error:', textStatus, errorThrown);
+    }
+});
