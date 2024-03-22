@@ -157,7 +157,7 @@ $("a").on("click", function (e) {
 $('.hpg-project__item').each(function(){
     gsap.to(this, {
         y: "-5%",
-        duration: 2,
+        duration: 5,
     })
 
     // st = ScrollTrigger.create({
