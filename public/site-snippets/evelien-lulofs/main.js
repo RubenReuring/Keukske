@@ -158,15 +158,16 @@ $('.hpg-project__item').each(function(){
     gsap.to(this, {
         y: "-5%",
         duration: 5,
+        scrollTrigger: {
+                trigger: this,
+                start: 'top top',
+                end: 'bottom bottom',
+                markers : true,
+                invalidateOnRefresh: true,
+        }
     })
 
-    // st = ScrollTrigger.create({
-    //     trigger: this,
-    //     start: 'top top',
-    //     end: 'bottom bottom',
-    //     markers : true,
-    //     invalidateOnRefresh: true,
-    // });
+
 });
 
 // On Back Button Tap
