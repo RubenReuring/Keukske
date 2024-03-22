@@ -88,10 +88,12 @@ $(document).ready(function() {
         dataType: 'text',
         success: function(data) {
             var $html = $(data);
-            let nextBackgroundSrc= $html.find('.project-hero__background').find('img').attr('src');
-            let nextBackgroundSrcSet= $html.find('.project-hero__background').find('img').attr('srcset');
+            let nextBackgroundSrc = $html.find('.project-hero__background').find('img').attr('src');
+            let nextBackgroundSrcSet = $html.find('.project-hero__background').find('img').attr('srcset');
+            let nextProjectDesc = $html.find('.phc-center__desc').find('p').text();
             $('.project-next').find('img').attr('src', nextBackgroundSrc)
             $('.project-next').find('img').attr('srcset', nextBackgroundSrcSet)
+            $('.project-next').find('.phc-center__desc').find('p').text(nextProjectDesc)
             //console.log(nextBackgroundImage);
         },
         error: function(jqXHR, textStatus, errorThrown) {
