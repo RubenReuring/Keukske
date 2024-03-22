@@ -81,25 +81,24 @@ $(document).ready(function() {
             console.log(nextItemTitle, nextItemUrl)
         }
     });
+
+    $.ajax({
+        url: nextItemUrl,
+        type: 'GET',
+        dataType: 'text',
+        success: function(data) {
+            // Parse the returned data as a jQuery object
+            var $html = $(data);
+
+            // Find elements with a specific class inside the parsed HTML
+            var $foundElements = $html.find('.h70-70-reg').text();
+
+            // Log the found elements
+            console.log($foundElements);
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.error('AJAX Error:', textStatus, errorThrown);
+        }
+    });
 });
 
-$('')
-
-$.ajax({
-    url: '/projects/flinker',
-    type: 'GET',
-    dataType: 'text',
-    success: function(data) {
-        // Parse the returned data as a jQuery object
-        var $html = $(data);
-
-        // Find elements with a specific class inside the parsed HTML
-        var $foundElements = $html.find('.h70-70-reg').text();
-
-        // Log the found elements
-        console.log($foundElements);
-    },
-    error: function(jqXHR, textStatus, errorThrown) {
-        console.error('AJAX Error:', textStatus, errorThrown);
-    }
-});
