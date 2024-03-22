@@ -153,5 +153,24 @@ $("a").on("click", function (e) {
         setTimeout(function () {window.location = transitionURL;}, 350);
     }
 });
+
+$('.hpg-project__item').each(function(){
+    st = ScrollTrigger.create({
+        trigger: this,
+        start: 'top top',
+        end: 'bottom top',
+        markers : true,
+        invalidateOnRefresh: true,
+        onEnter: function(){
+        },
+        onEnterBack: function(){
+        },
+        onLeave: function(){
+        },
+        onLeaveBack: function(){
+        }
+    });
+});
+
 // On Back Button Tap
 window.onpageshow = function(event) {if (event.persisted) {window.location.reload()}};
