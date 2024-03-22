@@ -155,21 +155,18 @@ $("a").on("click", function (e) {
 });
 
 $('.hpg-project__item').each(function(){
-    st = ScrollTrigger.create({
-        trigger: this,
-        start: 'top top',
-        end: 'bottom top',
-        markers : true,
-        invalidateOnRefresh: true,
-        onEnter: function(){
-        },
-        onEnterBack: function(){
-        },
-        onLeave: function(){
-        },
-        onLeaveBack: function(){
-        }
-    });
+    gsap.to(this, {
+        y: "-5%",
+        duration: 2,
+    })
+
+    // st = ScrollTrigger.create({
+    //     trigger: this,
+    //     start: 'top top',
+    //     end: 'bottom bottom',
+    //     markers : true,
+    //     invalidateOnRefresh: true,
+    // });
 });
 
 // On Back Button Tap
