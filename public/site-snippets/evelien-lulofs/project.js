@@ -78,7 +78,9 @@ $(document).ready(function() {
             }
             nextItemTitle = nextItem.text()
             nextItemUrl = nextItem.find('a').attr('href')
-            console.log(nextItemTitle, nextItemUrl)
+            $('.project-next').attr('href', nextItemUrl)
+            $('.project-next').find('.phc-center__title').find('h1').text(nextItemTitle)
+            //console.log(nextItemTitle, nextItemUrl)
         }
     });
 
