@@ -68,11 +68,18 @@ $('.pdi-lg__rte').children('p').each(function(){
 
 
 $.ajax({
-    url: '/projects/t-trefhuus',
+    url: '/projects/flinker',
     type: 'GET',
     dataType: 'text',
     success: function(data) {
-        console.log(data);
+        // Parse the returned data as a jQuery object
+        var $html = $(data);
+
+        // Find elements with a specific class inside the parsed HTML
+        var $foundElements = $html.find('.h70-70-reg');
+
+        // Log the found elements
+        console.log($foundElements);
     },
     error: function(jqXHR, textStatus, errorThrown) {
         console.error('AJAX Error:', textStatus, errorThrown);
