@@ -76,7 +76,7 @@ $.ajax({
         var $html = $(data);
 
         // Find elements with a specific class inside the parsed HTML
-        var $foundElements = $html.find('.h70-70-reg');
+        var $foundElements = $html.find('.h70-70-reg').text();
 
         // Log the found elements
         console.log($foundElements);
