@@ -66,6 +66,19 @@ $('.pdi-lg__rte').children('p').each(function(){
     }
 })
 
+$(document).ready(function() {
+    var currentPath = window.location.pathname;
+    $('.pnd-item__link').each(function() {
+        var linkPath = $(this).attr('href');
+        if (currentPath === linkPath) {
+            $(this).addClass('current-item')
+            let nextItem = $(this).parent().next();
+            console.log(nextItem)
+        }
+    });
+});
+
+$('')
 
 $.ajax({
     url: '/projects/flinker',
