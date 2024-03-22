@@ -49,10 +49,6 @@ $('.pdi-lg__rte').children('p').each(function(){
         if (lastIndex !== -1 && lastIndex < inputString.length - 1) {
             v = inputString.substring(lastIndex + 1).trim();
         }
-        console.log("k:", k);
-        console.log("v:", v);
-
-
         $(
             '<div class="pdi-detail">' +
             '<div class="pdi-detail__titlewrap">' +
@@ -61,8 +57,6 @@ $('.pdi-lg__rte').children('p').each(function(){
             '<div class="pdi-detail__desc"><p class="p12-18-reg">' + v + '</p></div>' +
             '</div>'
         ).appendTo('.pdi-left__grid');
-
-        console.log($(this).text());
     }
 })
 
@@ -80,7 +74,6 @@ $(document).ready(function() {
             nextItemUrl = nextItem.find('a').attr('href')
             $('.project-next').attr('href', nextItemUrl)
             $('.project-next').find('.phc-center__title').find('h1').text(nextItemTitle)
-            //console.log(nextItemTitle, nextItemUrl)
         }
     });
 
@@ -96,7 +89,6 @@ $(document).ready(function() {
             $('.project-next').find('img').attr('src', nextBackgroundSrc)
             $('.project-next').find('img').attr('srcset', nextBackgroundSrcSet)
             $('.project-next').find('.phc-center__desc').find('p').text(nextProjectDesc)
-            //console.log(nextBackgroundImage);
         },
         error: function(jqXHR, textStatus, errorThrown) {
             console.error('AJAX Error:', textStatus, errorThrown);
