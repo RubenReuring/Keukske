@@ -44,13 +44,16 @@ $(document).ready(function(){
         {y: "-100%", duration: .65, ease: "power3.in"},
         1.95
     );
+
+
+
+    $(window).on("popstate", function (event, state) {
+        // Here comes the code to execute when the back button is pressed
+        console.log('hello')
+    } );
 })
 
 
-$(window).on("popstate", function (event, state) {
-    // Here comes the code to execute when the back button is pressed
-    console.log('hello')
-} );
 
 // Function to map values from one range to another
 function mapValue(value, fromMin, fromMax, toMin, toMax) {
