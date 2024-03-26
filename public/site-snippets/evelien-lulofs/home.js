@@ -45,12 +45,6 @@ $(document).ready(function(){
         1.95
     );
 
-
-
-    $(window).on("popstate", function (event, state) {
-        // Here comes the code to execute when the back button is pressed
-        console.log('hello')
-    } );
 })
 
 
