@@ -1,8 +1,8 @@
 let blurStickySection = ScrollTrigger.create({
     trigger: $('.pc-image__collection'),
-    start: () => 'top ' + centerNav,
-    end: () => 'bottom ' + centerNav,
-    //markers : true,
+    start: () => 'top bottom',
+    end: () => 'bottom top',
+    markers : true,
     invalidateOnRefresh: true,
     onEnter: function(){
         console.log('a')
