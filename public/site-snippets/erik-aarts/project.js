@@ -6,9 +6,9 @@ let blurStickySection = ScrollTrigger.create({
     invalidateOnRefresh: true,
     onEnter: function(){
         console.log('a')
-        $('.ps-image__blur').addClass('visibile')
+        $('.ps-image__blur').addClass('visible')
     },
     onLeaveBack: function(){
-        $('.ps-image__blur').removeClass('visibile')
+        $('.ps-image__blur').removeClass('visible')
     }
 });
