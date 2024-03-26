@@ -56,11 +56,11 @@ window.addEventListener('popstate', function(event) {
 
 // Function to log "foo" or "bar" based on whether back button was clicked
 function logFunction() {
-    if (!ignoreNextPopstate) {
-        console.log("foo");
-    } else {
+    if (ignoreNextPopstate) {
         console.log("bar");
         ignoreNextPopstate = false; // Reset the flag for future use
+    } else {
+        console.log("foo");
     }
 }
 
