@@ -25,10 +25,6 @@ $(document).ready(function() {
         .35
     );
 
-
-    function isAtTop() {
-        return $(window).scrollTop() === 0;
-    }
     function collapsNav() {
         navbarTransition.play();
     }
