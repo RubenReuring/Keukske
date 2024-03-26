@@ -46,6 +46,27 @@ $(document).ready(function(){
     );
 })
 
+
+let ignoreNextPopstate = false;
+
+// Event listener for popstate
+window.addEventListener('popstate', function(event) {
+    ignoreNextPopstate = true; // Set the flag to ignore the next popstate event
+});
+
+// Function to log "foo" or "bar" based on whether back button was clicked
+function logFunction() {
+    if (!ignoreNextPopstate) {
+        console.log("foo");
+    } else {
+        console.log("bar");
+        ignoreNextPopstate = false; // Reset the flag for future use
+    }
+}
+
+// Example usage
+logFunction(); // This will initially log "foo"
+
 // Function to map values from one range to another
 function mapValue(value, fromMin, fromMax, toMin, toMax) {
     return toMin + ((value - fromMin) * (toMax - toMin)) / (fromMax - fromMin);
