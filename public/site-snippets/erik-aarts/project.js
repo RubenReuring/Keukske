@@ -6,7 +6,7 @@ $(document).ready(function() {
         trigger: $('.pc-image__collection'),
         start: () => 'top bottom',
         end: () => 'bottom top',
-        markers: true,
+        // markers: true,
         invalidateOnRefresh: true,
         onEnter: function () {
             $('.ps-image__blur').addClass('visible')
