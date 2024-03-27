@@ -18,8 +18,6 @@ function toggleAccordion(timeline) {
     timeline.reversed() ? timeline.play() : timeline.reverse();
 }
 
-$(".link16-16-med").addClass('clickable')
-
     const voorwaardenTimeline = gsap.timeline({reversed: true, paused: true})
         .to($('.voorwaarden').find(".vi-content__wrap"), {
             height: "auto",
@@ -27,8 +25,6 @@ $(".link16-16-med").addClass('clickable')
             ease: "power3.inOut",
         });
     $('.voorwaarden').find(".link16-16-med.clickable").on("click", () => {
-        $(this).removeClass('clickable');
-        $(this).removeClass('non-clickable');
         toggleVoorwaarden(voorwaardenTimeline);
     });
 
