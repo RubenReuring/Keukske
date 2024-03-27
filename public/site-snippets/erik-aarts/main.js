@@ -26,7 +26,11 @@ function toggleAccordion(timeline) {
             duration: 1,
             ease: "power3.inOut",
         });
-    $('.voorwaarden').find(".link16-16-med").on("click", () => toggleVoorwaarden(voorwaardenTimeline));
+    $('.voorwaarden').find(".link16-16-med.clickable").on("click", () => {
+        $(this).removeClass('clickable');
+        $(this).removeClass('non-clickable');
+        toggleVoorwaarden(voorwaardenTimeline);
+    });
 
 function toggleVoorwaarden(timeline) {
     timeline.reversed() ? timeline.play() : timeline.reverse();
