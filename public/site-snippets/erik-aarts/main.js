@@ -18,7 +18,7 @@ function toggleAccordion(timeline) {
     timeline.reversed() ? timeline.play() : timeline.reverse();
 }
 
-
+$(".link16-16-med.clickable").addClass('clickable')
 
     const voorwaardenTimeline = gsap.timeline({reversed: true, paused: true})
         .to($('.voorwaarden').find(".vi-content__wrap"), {
