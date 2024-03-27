@@ -24,7 +24,7 @@ function toggleAccordion(timeline) {
             duration: 1,
             ease: "power3.inOut",
         });
-    $('.voorwaarden').find(".link16-16-med.clickable").on("click", () => {
+    $('.voorwaarden').find(".link16-16-med").on("click", () => {
         toggleVoorwaarden(voorwaardenTimeline);
     });
 
