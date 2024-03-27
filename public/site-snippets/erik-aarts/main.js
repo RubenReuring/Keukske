@@ -12,7 +12,7 @@ $(".ab-item").each(function (i) {
             duration: 1,
             ease: "power3.inOut",
         });
-    $(this).find(".hws-si__ah-trigger").on("click", () => toggleAccordion(accordionTimeline));
+    $(this).find(".ab-accordion__head).on("click", () => toggleAccordion(accordionTimeline));
 });
 
 function toggleAccordion(timeline) {
