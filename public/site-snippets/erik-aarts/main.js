@@ -23,6 +23,8 @@ function toggleAccordion(timeline) {
     $('.voorwaarden').find(".link16-16-med").on("click", () => {
         if($(this).hasClass('enabled')){
             toggleVoorwaarden(voorwaardenTimeline);
+        } else  {
+            console.log('nope')
         }
     });
 
