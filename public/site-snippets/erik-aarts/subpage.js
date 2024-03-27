@@ -45,4 +45,8 @@ $(document).ready(function() {
 
 });
 
+$('.inline-filter__link').on('click', function(){
+    $(this).hasClass('disabled') ? console.log('Find and trigger on') : console.log('Find and trigger off')
+})
+
 
