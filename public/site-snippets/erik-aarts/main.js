@@ -29,8 +29,11 @@ function toggleAccordion(timeline) {
     });
 
 function toggleVoorwaarden(timeline) {
+    let buttonEnabled;
     timeline.reversed() ? timeline.play() : timeline.reverse();
-    timeline.reversed() ? console.log('Enable button') : console.log('Disable button');
+    timeline.reversed() ? buttonEnabled = true : buttonEnabled = false;
+
+    console.log(buttonEnabled)
     $('.voorwaarden').hasClass('open') ? $('.voorwaarden').removeClass('open') : $('.voorwaarden').addClass('open');
 }
 
