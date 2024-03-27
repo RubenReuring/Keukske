@@ -29,11 +29,8 @@ function toggleAccordion(timeline) {
     });
 
 function toggleVoorwaarden(timeline) {
-    let buttonEnabled;
     timeline.reversed() ? timeline.play() : timeline.reverse();
-    timeline.reversed() ? buttonEnabled = true : buttonEnabled = false;
-
-    console.log(buttonEnabled)
+    $('.voorwaarden').find(".link16-16-med").hasClass('enabled') ? $('.voorwaarden').find(".link16-16-med").removeClass('enabled') : $('.voorwaarden').find(".link16-16-med").addClass('enabled');
     $('.voorwaarden').hasClass('open') ? $('.voorwaarden').removeClass('open') : $('.voorwaarden').addClass('open');
 }
 
