@@ -30,6 +30,7 @@ function toggleAccordion(timeline) {
 
 function toggleVoorwaarden(timeline) {
     timeline.reversed() ? timeline.play() : timeline.reverse();
+    $('.voorwaarden').hasClass('open') ? $('.voorwaarden').addClass('open') : $('.voorwaarden').removeClass('open');
 }
 
 
