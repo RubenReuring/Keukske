@@ -19,13 +19,11 @@ function toggleAccordion(timeline) {
 }
 
     const voorwaardenTimeline = gsap.timeline({reversed: true, paused: true})
-        .to($('.voorwaarden').find(".vi-content__wrap"), {
-            height: "auto",
-            duration: 1,
-            ease: "power3.inOut",
-        });
-    $('.voorwaarden').find(".link16-16-med.enabled").on("click", () => {
-        toggleVoorwaarden(voorwaardenTimeline);
+        .to($('.voorwaarden').find(".vi-content__wrap"), {height: "auto", duration: 1, ease: "power3.inOut",});
+    $('.voorwaarden').find(".link16-16-med").on("click", () => {
+        if($(this).hasClass('enabled')){
+            toggleVoorwaarden(voorwaardenTimeline);
+        }
     });
 
 function toggleVoorwaarden(timeline) {
