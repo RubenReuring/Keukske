@@ -44,16 +44,13 @@ $(document).ready(function() {
     });
 
     $('.inline-filter__link').on('click', function(){
+        let currentType = $(this).attr('data-filter');
+        $('.pff-checkbox.' + currentType).find('input').click();
         if ($(this).hasClass('disabled')) {
-            let currentType = $(this).attr('data-filter');
-            $('.pff-checkbox.' + currentType).find('input').click();
             $(this).removeClass('disabled')
         } else {
-            let currentType = $(this).attr('data-filter');
-            $('.pff-checkbox.' + currentType).find('input').click();
             $(this).addClass('disabled')
         }
-
     })
 
 });
