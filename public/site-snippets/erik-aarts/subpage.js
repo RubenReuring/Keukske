@@ -46,7 +46,7 @@ $(document).ready(function() {
     $('.inline-filter__link').on('click', function(){
         if ($(this).hasClass('disabled')) {
             let currentType = $(this).attr('data-filter');
-            $('.pff-checkbox').hasClass(currentType).click();
+            $('.pff-checkbox').hasClass(currentType).find('input').click();
             console.log(currentType);
             //Run the code which enabled the button and filter
         } else {
