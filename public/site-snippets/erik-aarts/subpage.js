@@ -4,15 +4,15 @@ $(document).ready(function() {
     let navbarTransition = gsap.timeline({paused: true});
     let navbarWordArray = $('.hln-word__secondary');
     let navbarWordWrapArray = $('.hln-word__secondary--wrap');
-    navbarTransition.to(
-        navbarWordArray,
-        {y: "100%", stagger: 0.075, duration: .8, ease: "power4.inOut"}
-    );
-    navbarTransition.to(
-        navbarWordWrapArray,
-        {width: "0", duration: .8, ease: "power4.inOut"},
-        .65
-    );
+    // navbarTransition.to(
+    //     navbarWordArray,
+    //     {y: "100%", stagger: 0.075, duration: .8, ease: "power4.inOut"}
+    // );
+    // navbarTransition.to(
+    //     navbarWordWrapArray,
+    //     {width: "0", duration: .8, ease: "power4.inOut"},
+    //     .65
+    // );
     navbarTransition.to(
         '.home-link__name',
         {gridColumnGap: "0.075em", duration: .9, ease: "power4.inOut"},
