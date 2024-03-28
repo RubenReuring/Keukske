@@ -44,12 +44,15 @@ $(document).ready(function() {
     });
 
     $('.inline-filter__link').on('click', function(){
-        $(this).hasClass('disabled') ? (
-            console.log($(this).attr('data-filter') + ' toggle'),
-            console.log('hello')
-            )
-            :
+        if ($(this).hasClass('disabled')) {
+            let currentType = $(this).attr('data-filter');
+            $('.pff-checkbox').hasClass(currentType).click();
+            console.log(currentType);
+            //Run the code which enabled the button and filter
+        } else {
             console.log($(this).attr('data-filter') + ' toggle');
+        }
+
     })
 
 });
