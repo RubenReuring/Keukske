@@ -22,7 +22,6 @@ if ($(".voorwaarden")[0]){
     voorwaardenTimeline = gsap.timeline({reversed: true, paused: true}).to($('.voorwaarden').find(".vi-content__wrap"), {height: "auto", duration: 1, ease: "power3.inOut",});
 }
 
-
     $('.voorwaarden').find(".link16-16-med").on("click", () => {
         if(!$('.voorwaarden').find(".link16-16-med").hasClass('disabled')){ toggleVoorwaarden(voorwaardenTimeline);}
     });
