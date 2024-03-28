@@ -17,9 +17,9 @@ $(".ab-item").each(function (i) {
 function toggleAccordion(timeline) {
     timeline.reversed() ? timeline.play() : timeline.reverse();
 }
-
+let voorwaardenTimeline;
 if ($(".voorwaarden")[0]){
-    const voorwaardenTimeline = gsap.timeline({reversed: true, paused: true}).to($('.voorwaarden').find(".vi-content__wrap"), {height: "auto", duration: 1, ease: "power3.inOut",});
+    voorwaardenTimeline = gsap.timeline({reversed: true, paused: true}).to($('.voorwaarden').find(".vi-content__wrap"), {height: "auto", duration: 1, ease: "power3.inOut",});
 }
 
 
