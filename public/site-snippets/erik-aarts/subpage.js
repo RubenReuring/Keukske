@@ -47,10 +47,11 @@ $(document).ready(function() {
         if ($(this).hasClass('disabled')) {
             let currentType = $(this).attr('data-filter');
             $('.pff-checkbox.' + currentType).find('input').click();
-            console.log(currentType);
-            //Run the code which enabled the button and filter
+            $(this).removeClass('disabled')
         } else {
-            console.log($(this).attr('data-filter') + ' toggle');
+            let currentType = $(this).attr('data-filter');
+            $('.pff-checkbox.' + currentType).find('input').click();
+            $(this).addClass('disabled')
         }
 
     })
