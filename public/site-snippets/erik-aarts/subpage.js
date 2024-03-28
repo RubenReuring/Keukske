@@ -44,7 +44,12 @@ $(document).ready(function() {
     });
 
     $('.inline-filter__link').on('click', function(){
-        $(this).hasClass('disabled') ? console.log($(this).attr('data-filter') + ' toggle') : console.log($(this).attr('data-filter') + ' toggle');
+        $(this).hasClass('disabled') ? (
+            console.log($(this).attr('data-filter') + ' toggle'),
+            console.log('hello')
+            )
+            :
+            console.log($(this).attr('data-filter') + ' toggle');
     })
 
 });
