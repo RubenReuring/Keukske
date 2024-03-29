@@ -68,18 +68,16 @@ $(document).ready(function() {
                 queryParams[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
             }
         }
+        $('.inline-filter__link').each(function(){
+            if($(this).attr('data-filter') === queryParams.t) {
+                console.log($(this))
+            }
+        });
         return queryParams;
     }
 
     // Get query strings and save them in a variable
     var queryStringParams = getQueryStrings();
-
-    // Print the query strings to console for verification
-    console.log(queryStringParams.t);
-
-    // Now you can use the queryStringParams variable to access the query string parameters
-    // For example:
-    // var paramValue = queryStringParams['paramName'];
 });
 
 
