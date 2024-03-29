@@ -75,7 +75,7 @@ $(document).ready(function() {
     var queryStringParams = getQueryStrings();
 
     // Print the query strings to console for verification
-    console.log(queryStringParams);
+    console.log(queryStringParams.t);
 
     // Now you can use the queryStringParams variable to access the query string parameters
     // For example:
