@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 
     $( window ).on( "resize", function() {
-        navbarTransition.refresh();
+        navbarTransition.invalidate();
     } );
 
 });
