@@ -37,3 +37,6 @@ function toggleVoorwaarden(timeline) {
 }
 
 
+$( window ).on( "resize", function() {
+    navbarTransition.refresh();
+} );
