@@ -80,3 +80,6 @@ $(document).ready(function() {
 
 
 
+$( window ).on( "resize", function() {
+    navbarTransition.refresh();
+} );
