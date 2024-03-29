@@ -8,10 +8,9 @@ $(document).ready(function() {
         navbarWordArray,
         {y: "100%", stagger: 0.075, duration: .8, ease: "power4.inOut"}
     );
-    navbarTransition.fromTo(
+    navbarTransition.to(
         navbarWordWrapArray,
-        { width: "100%" },
-        {width: "0", duration: .8, ease: "power4.inOut"},
+        { width: "0%", duration: .8, ease: "power4.inOut"},
         .65
     );
     navbarTransition.to(
