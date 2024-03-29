@@ -70,14 +70,12 @@ $(document).ready(function() {
         }
         $('.inline-filter__link').each(function(){
             if($(this).attr('data-filter') === queryParams.t) {
-                console.log($(this))
+                $(this).click();
             }
         });
         return queryParams;
     }
-
-    // Get query strings and save them in a variable
-    var queryStringParams = getQueryStrings();
+    getQueryStrings();
 });
 
 
