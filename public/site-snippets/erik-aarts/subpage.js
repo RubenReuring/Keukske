@@ -56,4 +56,31 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function() {
+    // Function to get query strings from URL
+    function getQueryStrings() {
+        var queryString = window.location.search;
+        var queryParams = {};
+        if (queryString !== "") {
+            var pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+            for (var i = 0; i < pairs.length; i++) {
+                var pair = pairs[i].split('=');
+                queryParams[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+            }
+        }
+        return queryParams;
+    }
+
+    // Get query strings and save them in a variable
+    var queryStringParams = getQueryStrings();
+
+    // Print the query strings to console for verification
+    console.log(queryStringParams);
+
+    // Now you can use the queryStringParams variable to access the query string parameters
+    // For example:
+    // var paramValue = queryStringParams['paramName'];
+});
+
+
 
