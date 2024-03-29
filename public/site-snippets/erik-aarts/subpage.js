@@ -10,7 +10,7 @@ $(document).ready(function() {
     );
     navbarTransition.to(
         navbarWordWrapArray,
-        { width: "0%", duration: .8, ease: "power4.inOut"},
+        { width: "0", duration: .8, ease: "power4.inOut"},
         .65
     );
     navbarTransition.to(
