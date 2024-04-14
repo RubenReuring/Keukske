@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     const $images = $('.hvc-inner .hvc-imagewrap');
     let currentIndex = 0;
-    const intervalTime = 2000; // Change this value to adjust the delay between image changes
+    const intervalTime = 1000; // Change this value to adjust the delay between image changes
 
     function toggleVisibility() {
         $images.eq(currentIndex).addClass('visible');
