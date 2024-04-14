@@ -9,12 +9,12 @@ $(document).ready(function(){
     );
     loader.to(
         '.hvl-line',
-        {width: "0em", duration: .55, ease: "power3.inOut"},
+        {width: "0em", duration: .65, ease: "power3.inOut"},
         .4
     );
     loader.to(
         '.hvl-inner',
-        {width: "100%", duration: 1, ease: "power4.inOut"},
+        {width: "100%", duration: 1.2, ease: "power4.inOut"},
         .5
     );
 
