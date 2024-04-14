@@ -3,9 +3,8 @@ $(document).ready(function(){
 
     console.log('moka')
     let loader = gsap.timeline();
-    loader.fromTo(
+    loader.to(
         '.hvl-inner',
-        {opacity: "0"},
         {opacity: "1", duration: .45, ease: "power1.inOut"}
     );
     loader.to(
