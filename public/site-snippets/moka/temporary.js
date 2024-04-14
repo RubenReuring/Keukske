@@ -23,5 +23,20 @@ $(document).ready(function(){
         1.75
     );
 
+});
+
+$(document).ready(function() {
+
+    const $images = $('.hvc-inner .hvc-imagewrap');
+    let currentIndex = 0;
+    const intervalTime = 2000; // Change this value to adjust the delay between image changes
+
+    function toggleVisibility() {
+        $images.eq(currentIndex).addClass('visible');
+        $images.not($images.eq(currentIndex)).removeClass('visible');
+        currentIndex = (currentIndex + 1) % $images.length;
+    }
+
+    setInterval(toggleVisibility, intervalTime);
 
 });
