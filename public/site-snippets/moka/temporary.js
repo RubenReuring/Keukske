@@ -17,6 +17,11 @@ $(document).ready(function(){
         {width: "100%", duration: 1.2, ease: "power4.inOut"},
         .6
     );
+    loader.to(
+        '.hero-content',
+        {opacity: "1", duration: .45, ease: "power1.inOut"},
+        1.75
+    );
 
 
 });
