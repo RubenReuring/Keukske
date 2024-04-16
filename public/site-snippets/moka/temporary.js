@@ -5,27 +5,27 @@ $(document).ready(function(){
     let loader = gsap.timeline();
     loader.to(
         '.hvl-inner',
-        {opacity: "1", duration: .45, ease: "power1.inOut", delay: 2.2}
+        {opacity: "1", duration: .45, ease: "power1.inOut", delay: .3}
     );
     loader.to(
         '.hvl-line',
         {width: "0em", duration: .65, ease: "power3.inOut"},
-        .5
+        .8
     );
     loader.to(
         '.hvl-inner',
         {width: "100%", duration: 1.2, ease: "power4.inOut"},
-        .6
+        .9
     );
     loader.to(
         '.hero-content',
         {opacity: "1", duration: .55, ease: "power2.inOut"},
-        1.75
+        2
     );
     loader.to(
         '.hvc-inner',
         {opacity: "1", duration: .45, ease: "power1.inOut", delay: .1},
-        1.75
+        2.1
     );
 
 });
