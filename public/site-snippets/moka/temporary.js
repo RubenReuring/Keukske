@@ -21,12 +21,12 @@ $(document).ready(function(){
     loader.to(
         '.hero-content',
         {opacity: "1", duration: .55, ease: "power2.inOut"},
-        1.8
+        1.9
     );
     loader.to(
         '.hvc-inner',
         {opacity: "1", duration: .45, ease: "power1.inOut", delay: .1},
-        2
+        1.7
     );
 
 });
