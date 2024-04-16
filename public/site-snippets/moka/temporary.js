@@ -54,11 +54,11 @@ $(document).ready(function() {
 
     startTicker(); // Start the ticker initially
 
-    $('.image-container').on('mouseenter', function() {
+    $('.hvc-inner').on('mouseenter', function() {
         stopTicker();
     });
 
-    $('.image-container').on('mouseleave', function() {
+    $('.hvc-inner').on('mouseleave', function() {
         startTicker();
     });
 });
