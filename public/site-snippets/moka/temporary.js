@@ -5,7 +5,7 @@ $(document).ready(function(){
     let loader = gsap.timeline();
     loader.to(
         '.hvl-inner',
-        {opacity: "1", duration: .45, ease: "power1.inOut", delay: .2}
+        {opacity: "1", duration: .45, ease: "power1.inOut", delay: 2.2}
     );
     loader.to(
         '.hvl-line',
