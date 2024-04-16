@@ -31,11 +31,12 @@ $(document).ready(function(){
 
 });
 
-$(document).ready(function() {
 
+$(document).ready(function() {
     const $images = $('.hvc-inner .hvc-imagewrap');
     let currentIndex = 0;
-    const intervalTime = 1000; // Change this value to adjust the delay between image changes
+    const intervalTime = 2000; // Change this value to adjust the delay between image changes
+    let tickerInterval;
 
     function toggleVisibility() {
         $images.eq(currentIndex).addClass('visible');
@@ -43,6 +44,21 @@ $(document).ready(function() {
         currentIndex = (currentIndex + 1) % $images.length;
     }
 
-    setInterval(toggleVisibility, intervalTime);
+    function startTicker() {
+        tickerInterval = setInterval(toggleVisibility, intervalTime);
+    }
 
+    function stopTicker() {
+        clearInterval(tickerInterval);
+    }
+
+    startTicker(); // Start the ticker initially
+
+    $('.image-container').on('mouseenter', function() {
+        stopTicker();
+    });
+
+    $('.image-container').on('mouseleave', function() {
+        startTicker();
+    });
 });
