@@ -13,7 +13,7 @@ $(document).ready(function(){
     );
     loader.to(
         '.hvl-inner',
-        {width: "100%", duration: 1.2, ease: "power4.inOut"},
+        {width: "100%", height: "100%", duration: 1.2, ease: "power4.inOut"},
         1.2
     );
     loader.to(
