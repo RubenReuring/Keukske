@@ -25,7 +25,7 @@ $(document).ready(function(){
     );
     loader.to(
         '.hvc-inner',
-        {opacity: "1", duration: .45, ease: "power1.inOut", delay: .1},
+        {opacity: "1", duration: .55, ease: "power1.inOut", delay: .1},
         2
     );
 
