@@ -1,7 +1,5 @@
 
 $(document).ready(function(){
-
-    console.log('moka')
     let loader = gsap.timeline();
     loader.to(
         '.hvl-inner',
@@ -28,9 +26,7 @@ $(document).ready(function(){
         {opacity: "1", duration: .55, ease: "power1.inOut", delay: .1},
         2
     );
-
 });
-
 
 $(document).ready(function() {
     const $images = $('.hvc-inner .hvc-imagewrap');
@@ -43,21 +39,16 @@ $(document).ready(function() {
         $images.not($images.eq(currentIndex)).removeClass('visible');
         currentIndex = (currentIndex + 1) % $images.length;
     }
-
     function startTicker() {
         tickerInterval = setInterval(toggleVisibility, intervalTime);
     }
-
     function stopTicker() {
         clearInterval(tickerInterval);
     }
-
     startTicker(); // Start the ticker initially
-
     $('.hvc-inner').on('mouseenter', function() {
         stopTicker();
     });
-
     $('.hvc-inner').on('mouseleave', function() {
         startTicker();
     });
