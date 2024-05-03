@@ -24,7 +24,7 @@ $(document).ready(function(){
     loader.to(
         '.hero-content',
         {opacity: "1", duration: .55, ease: "power2.inOut"},
-        2.2
+        2
     );
     loader.to(
         '.hvc-inner',
