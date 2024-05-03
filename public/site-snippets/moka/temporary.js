@@ -3,8 +3,7 @@ $(document).ready(function(){
     let loader = gsap.timeline();
     loader.to(
         '.body',
-        {backgroundColor: "#ffffff", duration: .55, ease: "power1.inOut"},
-        .6
+        {backgroundColor: "#ffffff", duration: .55, ease: "power1.inOut"}
     );
     loader.to(
         '.hvl-inner',
