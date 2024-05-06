@@ -13,12 +13,12 @@ $(document).ready(function(){
         2
     );
     loader.to(
-        '.hvl-line',
+        '.hvl-letterblock',
         {color: "#485250", duration: 1.55, ease: "power1.inOut"},
         2
     );
     loader.to(
-        '.hvl-letterblock',
+        '.hvl-line',
         {backgroundColor: "#485250", duration: 1.55, ease: "power1.inOut"},
         2
     );
