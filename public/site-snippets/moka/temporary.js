@@ -4,11 +4,11 @@ $(document).ready(function(){
     loader.to(
         '.body',
         {backgroundColor: "#ffffff", duration: 1.55, ease: "power1.inOut"},
-        .6
+        2.6
     );
     loader.to(
         '.hvl-letterblock',
-        {backgroundColor: "#485250", duration: 1.55, ease: "power1.inOut"},
+        {color: "#485250", duration: 1.55, ease: "power1.inOut"},
         2.6
     );
     loader.to(
