@@ -11,28 +11,28 @@ $(document).ready(function(){
     loader.to(
         '.hvl-line',
         {width: "0em", duration: .65, ease: "power3.inOut"},
-        1
+        1.25
     );
     loader.to(
         '.hvl-inner',
         {width: "100%", height: "100%", duration: 1.2, ease: "power4.inOut"},
-        1
+        1.25
     );
     // Content show
     loader.to(
         '.body',
         {backgroundColor: "#ffffff", duration: 1.55, ease: "power1.inOut"},
-        1.5
+        2
     );
     loader.to(
         '.hvl-letterblock',
         {color: "#485250", duration: 1.55, ease: "power1.inOut"},
-        1.5
+        2
     );
     loader.to(
         '.hvl-line',
         {backgroundColor: "#485250", duration: 1.55, ease: "power1.inOut"},
-        1.5
+        2
     );
 
 
