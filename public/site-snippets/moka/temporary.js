@@ -1,12 +1,24 @@
 
 $(document).ready(function(){
     let loader = gsap.timeline();
+    //Start
     loader.to(
         '.hvl-inner',
         {opacity: "1", duration: .55, ease: "power1.inOut"},
         .75
     );
-
+    // Positioning
+    loader.to(
+        '.hvl-line',
+        {width: "0em", duration: .65, ease: "power3.inOut"},
+        .85
+    );
+    loader.to(
+        '.hvl-inner',
+        {width: "100%", height: "100%", duration: 1.2, ease: "power4.inOut"},
+        .85
+    );
+    // Content show
     loader.to(
         '.body',
         {backgroundColor: "#ffffff", duration: 1.55, ease: "power1.inOut"},
@@ -23,16 +35,8 @@ $(document).ready(function(){
         2
     );
 
-    // loader.to(
-    //     '.hvl-line',
-    //     {width: "0em", duration: .65, ease: "power3.inOut"},
-    //     1.1
-    // );
-    // loader.to(
-    //     '.hvl-inner',
-    //     {width: "100%", height: "100%", duration: 1.2, ease: "power4.inOut"},
-    //     1.2
-    // );
+
+
     // loader.to(
     //     '.hero-content',
     //     {opacity: "1", duration: .55, ease: "power2.inOut"},
