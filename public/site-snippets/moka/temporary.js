@@ -10,12 +10,12 @@ $(document).ready(function(){
     // Positioning
     loader.to(
         '.hvl-line',
-        {width: "0em", duration: .65, ease: "power3.inOut"},
+        {width: "0em", duration: .75, ease: "power3.inOut"},
         1
     );
     loader.to(
         '.hvl-inner',
-        {width: "100%", height: "100%", duration: 1.2, ease: "power4.inOut"},
+        {width: "100%", height: "100%", duration: 1.35, ease: "power4.inOut"},
         1
     );
     // Content show
