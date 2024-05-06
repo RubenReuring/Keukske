@@ -11,12 +11,12 @@ $(document).ready(function(){
     loader.to(
         '.hvl-line',
         {width: "0em", duration: .65, ease: "power3.inOut"},
-        1.25
+        1
     );
     loader.to(
         '.hvl-inner',
         {width: "100%", height: "100%", duration: 1.2, ease: "power4.inOut"},
-        1.25
+        1
     );
     // Content show
     loader.to(
