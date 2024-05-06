@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     let loader = gsap.timeline();
-    oader.to(
+    loader.to(
         '.hvl-inner',
         {opacity: "1", duration: .55, ease: "power1.inOut"},
         .75
