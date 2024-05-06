@@ -27,22 +27,22 @@ $(document).ready(function(){
     loader.to(
         '.hvl-letterblock',
         {color: "#485250", duration: 1.55, ease: "power1.inOut"},
-        2
+        2.25
     );
     loader.to(
         '.hvl-line',
         {backgroundColor: "#485250", duration: 1.55, ease: "power1.inOut"},
-        2
+        2.25
     );
     loader.to(
         '.hero-content',
         {opacity: "1", duration: .55, ease: "power2.inOut"},
-        2.25
+        2.5
     );
     loader.to(
         '.hvc-inner',
         {opacity: "1", duration: .55, ease: "power1.inOut", delay: .1},
-        2.25
+        2.5
     );
 });
 
