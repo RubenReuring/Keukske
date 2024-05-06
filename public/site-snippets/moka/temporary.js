@@ -7,6 +7,11 @@ $(document).ready(function(){
         .6
     );
     loader.to(
+        '.hvl-letterblock',
+        {backgroundColor: "#485250", duration: 1.55, ease: "power1.inOut"},
+        2.6
+    );
+    loader.to(
         '.hvl-inner',
         {opacity: "1", duration: .55, ease: "power1.inOut"},
         .6
