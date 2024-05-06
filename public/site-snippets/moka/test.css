@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 992px) {
     .w-container {
         max-width: 728px;
     }
@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 992px) {
     .w--nav-dropdown-list-open {
         position: static;
 
@@ -81,7 +81,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 992px) {
     .hero {
         flex-flow: column;
         height: auto;
