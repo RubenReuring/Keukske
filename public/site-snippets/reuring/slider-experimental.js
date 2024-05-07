@@ -23,6 +23,10 @@ $(document).ready(function(){
     $('.mc-splide__item').on('click', function(){
         if(!$(this).hasClass('item-active')){
             $(this).addClass('item-active')
+            $(this).css("height", "6em")
+            $(this).prev().css("height", "5.5em")
+            $(this).next().css("height", "5.5em");
+
             $(this).siblings().removeClass('item-active')
         } else if($(this).hasClass('item-active')){
             //$(this).removeClass('item-active')
