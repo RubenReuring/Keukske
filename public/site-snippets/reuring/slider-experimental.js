@@ -20,11 +20,11 @@ $(document).ready(function(){
             $(this).next().addClass("sibling-active")
         }
 
-        if($(this).hasClass('item-active')){
-            $(this).removeClass('item-active')
-            $(this).prev().removeClass("sibling-active")
-            $(this).next().removeClass("sibling-active")
-        }
+        // if($(this).hasClass('item-active')){
+        //     $(this).removeClass('item-active')
+        //     $(this).prev().removeClass("sibling-active")
+        //     $(this).next().removeClass("sibling-active")
+        // }
 
     });
 })
