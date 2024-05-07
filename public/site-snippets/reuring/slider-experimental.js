@@ -28,7 +28,7 @@ $(document).ready(function(){
                     let imageURL = $(this).find('img').attr('src');
                     $('.main-content').append('<div class="main-content__imagewrap overlay"><img src="" loading="lazy" alt="" class="mci-image"></div>');
                     $('.main-content__imagewrap.overlay:last').find('img').on('load', function(){
-                        $('.main-content__imagewrap.overlay:last').css('height', '65vh')
+                        $('.main-content__imagewrap.overlay:last').css('height', '65svh')
                         $('.main-content__imagewrap.overlay:last').addClass('transitioning')
                     });
                     $('.main-content__imagewrap.overlay:last').find('img').attr('src', imageURL)
