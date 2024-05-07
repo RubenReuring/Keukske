@@ -4,9 +4,11 @@ $(document).ready(function(){
         if (event.type === "mouseenter") {
             $(this).css("opacity", "1")
             $(this).prev().css("opacity", ".5");
+            $(this).next().css("opacity", ".5");
         } else if (event.type === "mouseleave") {
             $(this).css("opacity", ".1")
             $(this).prev().css("opacity", ".1")
+            $(this).next().css("opacity", ".1");
         }
     });
 })
