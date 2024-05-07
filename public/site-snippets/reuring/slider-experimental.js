@@ -21,7 +21,7 @@ $(document).ready(function(){
             $(this).next().addClass("sibling-active")
 
             let imageURL = $(this).find('img').attr('src');
-            $('.main-content').append('<div className="main-content__imagewrap overlay"><img src="" loading="lazy" alt="" className="mci-image"></div>');
+            $('.main-content').append('<div class="main-content__imagewrap overlay"><img src="" loading="lazy" alt="" class="mci-image"></div>');
             // $('.main-content__imagewrap.overlay').find('img').on('load', function(){
             //     $('.main-content__imagewrap.overlay').css('height', '65vh')
             // });
