@@ -31,12 +31,5 @@ $(document).ready(function(){
                 $('.main-content__imagewrap.overlay:last').prev().prevAll('.main-content__imagewrap.overlay').remove();
             }
         }
-
-        // if($(this).hasClass('item-active')){
-        //     $(this).removeClass('item-active')
-        //     $(this).prev().removeClass("sibling-active")
-        //     $(this).next().removeClass("sibling-active")
-        // }
-
     });
 })
