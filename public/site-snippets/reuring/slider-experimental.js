@@ -28,7 +28,9 @@ $(document).ready(function(){
             });
             $('.main-content__imagewrap.overlay:last').find('img').attr('src', imageURL)
             if($('.main-content').find('.main-content__imagewrap.overlay').length > 2){
-                $('.main-content__imagewrap.overlay:last').prev().prevAll('.main-content__imagewrap.overlay').remove();
+                setTimeout(function(){
+                    $('.main-content__imagewrap.overlay:last').prev().prevAll('.main-content__imagewrap.overlay').remove();
+                }, 1500)
             }
         }
     });
