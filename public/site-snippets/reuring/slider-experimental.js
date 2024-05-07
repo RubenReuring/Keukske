@@ -5,10 +5,18 @@ $(document).ready(function(){
             $(this).css("opacity", "1")
             $(this).prev().css("opacity", ".5");
             $(this).next().css("opacity", ".5");
+
+            $(this).css("height", "6em")
+            $(this).prev().css("height", "5.5em")
+            $(this).next().css("height", "5.5em");
         } else if (event.type === "mouseleave") {
             $(this).css("opacity", ".1")
             $(this).prev().css("opacity", ".1")
             $(this).next().css("opacity", ".1");
+
+            $(this).css("height", "5em")
+            $(this).prev().css("height", "5em")
+            $(this).next().css("height", "5em");
         }
     });
 })
