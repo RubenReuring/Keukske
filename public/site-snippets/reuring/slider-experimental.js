@@ -13,7 +13,8 @@ $(document).ready(function(){
     });
 
     $('.mc-splide__item').on('click', function(){
-
+        $('.mc-splide__item').removeClass('item-active')
+        $('.mc-splide__item').removeClass('sibling-active')
         if(!$(this).hasClass('item-active')){
             $(this).addClass('item-active')
             $(this).prev().addClass("sibling-active")
