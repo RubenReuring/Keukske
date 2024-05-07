@@ -22,13 +22,14 @@ $(document).ready(function(){
 
             let imageURL = $(this).find('img').attr('src');
             $('.main-content').append('<div class="main-content__imagewrap overlay"><img src="" loading="lazy" alt="" class="mci-image"></div>');
-
             //$('.main-content').find('.main-content__imagewrap.overlay:last')
             $('.main-content__imagewrap.overlay:last').find('img').on('load', function(){
                 $('.main-content__imagewrap.overlay:last').css('height', '65vh')
             });
             $('.main-content__imagewrap.overlay:last').find('img').attr('src', imageURL)
-
+            if($('.main-content').find('.main-content__imagewrap.overlay').length > 2){
+                $('.main-content__imagewrap.overlay:last').prev().prevAll('.main-content__imagewrap.overlay').remove();
+            }
         }
 
         // if($(this).hasClass('item-active')){
