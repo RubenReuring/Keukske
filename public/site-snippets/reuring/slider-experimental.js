@@ -23,8 +23,9 @@ $(document).ready(function(){
     $('.mc-splide__item').on('click', function(){
         if(!$(this).hasClass('item-active')){
             $(this).addClass('item-active')
+            $(this).siblings().removeClass('item-active')
         } else if($(this).hasClass('item-active')){
-            $(this).removeClass('item-active')
+            //$(this).removeClass('item-active')
         }
 
     });
