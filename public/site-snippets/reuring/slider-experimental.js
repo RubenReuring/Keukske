@@ -17,9 +17,15 @@ $(document).ready(function(){
         $('.mc-splide__item').removeClass('sibling-active')
         if(!$(this).hasClass('item-active')){
             $(this).addClass('item-active')
-            console.log($(this).find('img').attr('src'))
             $(this).prev().addClass("sibling-active")
             $(this).next().addClass("sibling-active")
+
+            console.log($(this).find('img').attr('src'))
+            $('.main-content__imagewrap.overlay').css('height', '65vh')
+            //Set dom item
+            //Set image to dom item
+            //Scale animation
+            //
         }
 
         // if($(this).hasClass('item-active')){
