@@ -23,16 +23,12 @@ $(document).ready(function(){
             let imageURL = $(this).find('img').attr('src');
             $('.main-content').append('<div class="main-content__imagewrap overlay"><img src="" loading="lazy" alt="" class="mci-image"></div>');
 
-            $('.main-content').find('.main-content__imagewrap.overlay:last').css('opacity', '.5')
-            // $('.main-content__imagewrap.overlay').find('img').on('load', function(){
-            //     $('.main-content__imagewrap.overlay').css('height', '65vh')
-            // });
-            // $('.main-content__imagewrap.overlay').find('img').attr('src', imageURL)
+            //$('.main-content').find('.main-content__imagewrap.overlay:last')
+            $('.main-content__imagewrap.overlay:last').find('img').on('load', function(){
+                $('.main-content__imagewrap.overlay:last').css('height', '65vh')
+            });
+            $('.main-content__imagewrap.overlay:last').find('img').attr('src', imageURL)
 
-            //Set dom item
-            //Set image to dom item
-            //Scale animation
-            //
         }
 
         // if($(this).hasClass('item-active')){
