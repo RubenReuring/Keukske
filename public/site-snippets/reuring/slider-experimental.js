@@ -19,4 +19,13 @@ $(document).ready(function(){
             $(this).next().css("height", "5em");
         }
     });
+
+    $('.mc-splide__item').on('click', function(){
+        if(!$(this).hasClass('item-active')){
+            $(this).addClass('item-active')
+        } else if($(this).hasClass('item-active')){
+            $(this).removeClass('item-active')
+        }
+
+    });
 })
