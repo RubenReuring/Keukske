@@ -20,7 +20,8 @@ $(document).ready(function(){
             $(this).prev().addClass("sibling-active")
             $(this).next().addClass("sibling-active")
 
-            console.log($(this).find('img').attr('src'))
+            let imageURL = $(this).find('img').attr('src');
+            $('.main-content__imagewrap.overlay').find('img').attr('src', imageURL)
             $('.main-content__imagewrap.overlay').css('height', '65vh')
             //Set dom item
             //Set image to dom item
