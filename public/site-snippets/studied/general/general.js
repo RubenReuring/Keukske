@@ -20,9 +20,12 @@ if (isAtTop()) {
 }
 
 $(window).scroll(function() {
+    console.log('scroll')
     if (isAtTop()) {
+        console.log('top')
         navbarTransition.reverse();
     } else {
+        console.log('not top')
         navbarTransition.play();
     }
 });
