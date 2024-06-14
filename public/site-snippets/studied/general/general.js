@@ -18,3 +18,11 @@ if (isAtTop()) {
 } else {
     navbarTransition.play();
 }
+
+$(window).scroll(function() {
+    if (isAtTop()) {
+        navbarTransition.reverse();
+    } else {
+        navbarTransition.play();
+    }
+});
