@@ -5,7 +5,7 @@ $(document).ready(function() {
     navbarTransition.fromTo(
         '.nav',
         {y: '0%'},
-        {y: "-100%", duration: .34, ease: "power3.out"},
+        {y: "-100%", duration: .8, ease: "power3.out"},
     );
 
     $(window).scroll(function() {
