@@ -6,7 +6,7 @@ let navbarTransition = gsap.timeline({paused: true});
 navbarTransition.fromTo(
     '.nav',
     {backgroundColor: 'rgba(250,248,245,0)'},
-    {paddingTop: ".75em", paddingBottom: ".75em", backgroundColor: 'rgba(250,248,245,1)',duration: .35, ease: "power2.out"},
+    {paddingTop: "0.75em", paddingBottom: "0.75em", backgroundColor: 'rgba(250,248,245,1)',duration: .35, ease: "power2.out"},
 );
 
 function collapsNav() {
@@ -20,12 +20,9 @@ if (isAtTop()) {
 }
 
 $(window).scroll(function() {
-    console.log('scroll')
     if (isAtTop()) {
-        console.log('top')
         navbarTransition.reverse();
     } else {
-        console.log('not top')
         navbarTransition.play();
     }
 });
