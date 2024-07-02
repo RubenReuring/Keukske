@@ -36,7 +36,7 @@ $(document).ready(function() {
 
         // Template HTML block
         var template = `
-        <div class="cc-block__row accordion">
+        <a href="#" class="cc-block__row accordion">
             <div class="ccb-accordion__head">
                 <div class="ccb-accordion__title">
                     <p class="p13-1-bold">00</p>
@@ -65,7 +65,7 @@ $(document).ready(function() {
                     </div>
                 </div>
             </div>
-        </div>`;
+        </a>`;
 
         // Iterate over dataArray and populate the template
         dataArray.forEach(function(data, index) {
