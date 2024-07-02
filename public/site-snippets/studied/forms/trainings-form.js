@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    $('.cc-block__top.accordion').click(function() {
+    $('.cc-block__top.accordion').on('click', function() {
         $(this).toggleClass('accordion-active');
         $(this).next('.cc-block__body').toggleClass('accordion-body-active');
     });
-    $('.ccb-accordion__head').click(function() {
+    $('.ccb-accordion__head').on('click', function() {
         $(this).toggleClass('row-accordion-active');
         $(this).next('.ccb-accordion__body').toggleClass('row-accordion-body-active');
     });
