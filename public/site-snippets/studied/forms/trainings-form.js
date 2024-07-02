@@ -3,6 +3,10 @@ $(document).ready(function() {
         $(this).toggleClass('accordion-active');
         $(this).next('.cc-block__body').toggleClass('accordion-body-active');
     });
+    $('.ccb-accordion__head').click(function() {
+        $(this).toggleClass('row-accordion-active');
+        $(this).next('.ccb-accordion__body').toggleClass('row-accordion-body-active');
+    });
 
     $('.cc-block.program').each(function() {
         var dataArray = [];
