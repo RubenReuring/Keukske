@@ -1,9 +1,21 @@
 $(document).ready(function() {
-    $('.cc-block__top.accordion').click(function() {
-        $(this).toggleClass('accordion-active');
-        $(this).next('.cc-block__body').toggleClass('accordion-body-active');
+    $('.cc-block__top.accordion').each(function (i) {
+        const accordionTimeline = gsap.timeline({reversed: true, paused: true})
+            .to($(this).next('.cc-block__body'), {
+                height: "auto",
+                duration: 1,
+                ease: "power3.inOut",
+            });
+        $(this).on("click", function(){
+            toggleAccordion(accordionTimeline)
+            $(this).toggleClass('accordion-active');
+            $(this).next('.cc-block__body').toggleClass('accordion-body-active');
+        });
     });
 
+    function toggleAccordion(timeline) {
+        timeline.reversed() ? timeline.play() : timeline.reverse();
+    }
 
     $('.cc-block.program').each(function() {
         var dataArray = [];
