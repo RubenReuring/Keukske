@@ -3,7 +3,7 @@ $(document).ready(function() {
         $(this).toggleClass('accordion-active');
         $(this).next('.cc-block__body').toggleClass('accordion-body-active');
     });
-    $('.ccb-accordion__head').on('click', function() {
+    $(document).on('click', '.ccb-accordion__head', function() {
         $(this).toggleClass('row-accordion-active');
         $(this).next('.ccb-accordion__body').toggleClass('row-accordion-body-active');
     });
