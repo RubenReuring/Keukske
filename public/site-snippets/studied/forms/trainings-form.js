@@ -8,6 +8,7 @@ $(document).ready(function() {
             });
         $(this).on("click", function(){
             toggleAccordion(accordionTimeline)
+            accordionTimeline.refresh();
             $(this).toggleClass('accordion-active');
             $(this).next('.cc-block__body').toggleClass('accordion-body-active');
         });
