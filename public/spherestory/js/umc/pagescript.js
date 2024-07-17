@@ -92,8 +92,8 @@ let viewer = pannellum.viewer("panorama", {
                     clickHandlerArgs: {hotspot: "sphere-hotspot_video-1", type: "video-modal"}
                 },
                 {
-                    pitch: -4.4,
-                    yaw: 43.29,
+                    pitch: -6.4,
+                    yaw: 42.29,
                     type: "info",
                     cssClass: "custom-hotspot sphere-hotspot_video-2",
                     clickHandlerFunc: hotspotAction,
