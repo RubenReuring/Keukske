@@ -89,6 +89,66 @@
                     </div>
                 </div>
             </div>
+            <div class="_360videocontainer">
+                <div class="_360vc_inner">
+                    <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-3" class="video-js vjs-16-9" playsinline="" preload="auto">
+                            <source src="/spherestory/assets/munckhof-01/Munckhof-01-01.mp4" type="video/mp4">
+                        </video></div>
+                    <div class="_360videocontrols">
+                        <div class="_360vc-cb play videocontrolinactive">
+                            <div class="playiconembed w-embed"><svg class="playbtn-icon" width="16" height="18" viewbox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8.13398C16.1667 8.51888 16.1667 9.48113 15.5 9.86603L2 17.6603C1.33334 18.0452 0.500001 17.564 0.500001 16.7942L0.500002 1.20577C0.500002 0.435972 1.33334 -0.0451547 2 0.339746L15.5 8.13398Z" fill="white" fill-opacity="0.75"></path>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="_360vc-subcontrols">
+                        <div class="_360vc-cb pause">
+                            <div class="pauzeiconembed w-embed"><svg class="pauzebtn-icon" width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="5" height="15" rx="1" fill="#E9E0DE"></rect>
+                                    <rect x="9" width="5" height="15" rx="1" fill="#E9E0DE"></rect>
+                                </svg></div>
+                        </div>
+                        <div class="_360vc_close">
+                            <p class="ch_p16-m">Sluiten</p>
+                        </div>
+                    </div>
+                    <div class="_360vc-cta_wrap">
+                        <a target="_parent" href="https://www.chauffeurbijmunckhof.nl/?id=sollicitatieformulier/#solliciteer" class="_360vc_btn w-inline-block">
+                            <p class="ch_p16-m">Solliciteer direct</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="_360videocontainer">
+                <div class="_360vc_inner">
+                    <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-4" class="video-js vjs-16-9" playsinline="" preload="auto">
+                            <source src="/spherestory/assets/munckhof-01/Munckhof-01-01.mp4" type="video/mp4">
+                        </video></div>
+                    <div class="_360videocontrols">
+                        <div class="_360vc-cb play videocontrolinactive">
+                            <div class="playiconembed w-embed"><svg class="playbtn-icon" width="16" height="18" viewbox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 8.13398C16.1667 8.51888 16.1667 9.48113 15.5 9.86603L2 17.6603C1.33334 18.0452 0.500001 17.564 0.500001 16.7942L0.500002 1.20577C0.500002 0.435972 1.33334 -0.0451547 2 0.339746L15.5 8.13398Z" fill="white" fill-opacity="0.75"></path>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <div class="_360vc-subcontrols">
+                        <div class="_360vc-cb pause">
+                            <div class="pauzeiconembed w-embed"><svg class="pauzebtn-icon" width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="5" height="15" rx="1" fill="#E9E0DE"></rect>
+                                    <rect x="9" width="5" height="15" rx="1" fill="#E9E0DE"></rect>
+                                </svg></div>
+                        </div>
+                        <div class="_360vc_close">
+                            <p class="ch_p16-m">Sluiten</p>
+                        </div>
+                    </div>
+                    <div class="_360vc-cta_wrap">
+                        <a target="_parent" href="https://www.chauffeurbijmunckhof.nl/?id=sollicitatieformulier/#solliciteer" class="_360vc_btn w-inline-block">
+                            <p class="ch_p16-m">Solliciteer direct</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="icons">
             <div class="w-embed"><svg class="compass-icon" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +161,7 @@
 <div class="hotspot-wrapper demo">
     <div id="ch-wrapper_company" class="ch-wrapper">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="/spherestory/assets/munckhof-01/Munckhof-Logo-2.png" loading="lazy" alt="" class="avatar"></div>
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/umc/umc-logo.png" loading="lazy" alt="" class="avatar"></div>
             <div class="ch-details">
                 <div class="ch-details-title">
                     <p class="ch_p20-r">UMC Utrecht</p>
@@ -114,7 +174,7 @@
     </div>
     <div id="ch-wrapper_video-1" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="/spherestory/assets/munckhof-01/Munckhof-Logo-2.png" loading="lazy" alt="" class="avatar">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/umc/umc-logo.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
                     <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
@@ -135,7 +195,7 @@
     </div>
     <div id="ch-wrapper_video-2" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="/spherestory/assets/munckhof-01/Munckhof-Logo-2.png" loading="lazy" alt="" class="avatar">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/umc/umc-logo.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
                     <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
@@ -156,7 +216,7 @@
     </div>
     <div id="ch-wrapper_video-3" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="/spherestory/assets/munckhof-01/Munckhof-Logo-2.png" loading="lazy" alt="" class="avatar">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/umc/umc-logo.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
                     <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
@@ -177,7 +237,7 @@
     </div>
     <div id="ch-wrapper_video-4" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="/spherestory/assets/munckhof-01/Munckhof-Logo-2.png" loading="lazy" alt="" class="avatar">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/umc/umc-logo.png" loading="lazy" alt="" class="avatar">
                 <div class="ch-avatar-actionicon">
                     <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
