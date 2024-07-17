@@ -32,7 +32,7 @@
             <div class="_360videocontainer">
                 <div class="_360vc_inner">
                     <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-1" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="/spherestory/assets/munckhof-01/Munckhof-01-02.mp4" type="video/mp4">
+                            <source src="/spherestory/assets/umc/Audrey_V1.1.mp4" type="video/mp4">
                         </video></div>
                     <div class="_360videocontrols">
                         <div class="_360vc-cb play videocontrolinactive">
@@ -62,7 +62,7 @@
             <div class="_360videocontainer">
                 <div class="_360vc_inner">
                     <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-2" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="/spherestory/assets/munckhof-01/Munckhof-01-01.mp4" type="video/mp4">
+                            <source src="/spherestory/assets/umc/Johan_V1.1.mp4"" type="video/mp4">
                         </video></div>
                     <div class="_360videocontrols">
                         <div class="_360vc-cb play videocontrolinactive">
@@ -92,7 +92,7 @@
             <div class="_360videocontainer">
                 <div class="_360vc_inner">
                     <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-3" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="/spherestory/assets/munckhof-01/Munckhof-01-01.mp4" type="video/mp4">
+                            <source src="/spherestory/assets/umc/Stefanie_V1.1.mp4"" type="video/mp4">
                         </video></div>
                     <div class="_360videocontrols">
                         <div class="_360vc-cb play videocontrolinactive">
@@ -122,7 +122,7 @@
             <div class="_360videocontainer">
                 <div class="_360vc_inner">
                     <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-4" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="/spherestory/assets/munckhof-01/Munckhof-01-01.mp4" type="video/mp4">
+                            <source src="/spherestory/assets/umc/Wouter_V1.1.mp4"" type="video/mp4">
                         </video></div>
                     <div class="_360videocontrols">
                         <div class="_360vc-cb play videocontrolinactive">
