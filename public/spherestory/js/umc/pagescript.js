@@ -137,6 +137,8 @@ viewer.on("load", function () {
     $("#ch-wrapper_company").clone().appendTo(".sphere-hotspot_company");
     $("#ch-wrapper_video-1").clone().appendTo(".sphere-hotspot_video-1");
     $("#ch-wrapper_video-2").clone().appendTo(".sphere-hotspot_video-2");
+    $("#ch-wrapper_video-3").clone().appendTo(".sphere-hotspot_video-3");
+    $("#ch-wrapper_video-4").clone().appendTo(".sphere-hotspot_video-4");
     let currentScene = viewer.getScene();
 });
 $('.compass-icon').clone().appendTo('.pnlm-orientation-button');
