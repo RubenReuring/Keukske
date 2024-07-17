@@ -104,7 +104,7 @@
             <div class="ch-avatar-wrap"><img src="/spherestory/assets/munckhof-01/Munckhof-Logo-2.png" loading="lazy" alt="" class="avatar"></div>
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">Munckhof</p>
+                    <p class="ch_p20-r">UMC Utrecht</p>
                 </div>
                 <div class="ch-details-desc">
                     <p class="ch_p14-m">Wordt dit jouw nieuwe werkplek?</p>
@@ -123,10 +123,10 @@
             </div>
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">Rick de Oude</p>
+                    <p class="ch_p20-r">Audrey</p>
                 </div>
                 <div class="ch-details-desc">
-                    <p class="ch_p14-m">Bedrijfsleider</p>
+                    <p class="ch_p14-m">Operatieassistent</p>
                 </div>
             </div>
         </div>
@@ -144,10 +144,52 @@
             </div>
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">Cyril Hunte</p>
+                    <p class="ch_p20-r">Johan</p>
                 </div>
                 <div class="ch-details-desc">
-                    <p class="ch_p14-m">Chauffeur</p>
+                    <p class="ch_p14-m">Anesthesiemedewerker</p>
+                </div>
+            </div>
+        </div>
+        <div class="ch-clickable_tint hover"></div>
+        <div class="ch-clickable_tint animate"></div>
+    </div>
+    <div id="ch-wrapper_video-3" class="ch-wrapper clickable">
+        <div class="ch-inner">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/munckhof-01/Munckhof-Logo-2.png" loading="lazy" alt="" class="avatar">
+                <div class="ch-avatar-actionicon">
+                    <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
+                        </svg></div>
+                </div>
+            </div>
+            <div class="ch-details">
+                <div class="ch-details-title">
+                    <p class="ch_p20-r">Stefanie</p>
+                </div>
+                <div class="ch-details-desc">
+                    <p class="ch_p14-m">Operatieassistent</p>
+                </div>
+            </div>
+        </div>
+        <div class="ch-clickable_tint animate"></div>
+        <div class="ch-clickable_tint hover"></div>
+    </div>
+    <div id="ch-wrapper_video-4" class="ch-wrapper clickable">
+        <div class="ch-inner">
+            <div class="ch-avatar-wrap"><img src="/spherestory/assets/munckhof-01/Munckhof-Logo-2.png" loading="lazy" alt="" class="avatar">
+                <div class="ch-avatar-actionicon">
+                    <div class="html-embed-2 w-embed"><svg class="action-icon-play" style="width:.5em;height:auto;" width="8" height="9" viewbox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.82564 8.39667L7.53246 5.03087C7.96372 4.79114 7.95369 4.20188 7.53246 3.96218L1.82564 0.596361C1.39439 0.336691 0.822754 0.53644 0.822754 1.02584V7.96722C0.822754 8.44657 1.35434 8.67628 1.82564 8.39667Z" fill="white" fill-opacity="0.85"></path>
+                        </svg></div>
+                </div>
+            </div>
+            <div class="ch-details">
+                <div class="ch-details-title">
+                    <p class="ch_p20-r">Wouter</p>
+                </div>
+                <div class="ch-details-desc">
+                    <p class="ch_p14-m">Anesthesiemedewerker</p>
                 </div>
             </div>
         </div>
