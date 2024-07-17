@@ -12,7 +12,7 @@
     <link href="/spherestory/css/flexibility-limburg/components.css" rel="stylesheet" type="text/css">
     <link href="/spherestory/css/flexibility-limburg/apply-360.css" rel="stylesheet" type="text/css">
     <link href="/spherestory/css/flexibility-limburg/pagecode.css" rel="stylesheet" type="text/css">
-    <link href="/spherestory/css/munckhof/colors.css" rel="stylesheet" type="text/css">
+    <link href="/spherestory/css/umc/colors.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
@@ -161,6 +161,6 @@
 <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js" integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="/spherestory/js/munckhof-01/pagescript.js" type="text/javascript"></script>
+<script src="/spherestory/js/umc/pagescript.js" type="text/javascript"></script>
 </body>
 </html>

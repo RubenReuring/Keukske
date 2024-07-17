@@ -68,7 +68,7 @@ let viewer = pannellum.viewer("panorama", {
         main: {
             type: "equirectangular",
             panorama:
-                "/spherestory/assets/munckhof-01/Munckhof-360-75WEBP.webp",
+                "/spherestory/assets/umc/IMG_20240424_083228_00_011_PureShot.webp",
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
