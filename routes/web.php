@@ -29,3 +29,4 @@ Route::get('/ama-group/2K23-QR-002', function () { return redirect('https://www.
 Route::get('/spherestory/flexibility-limburg', function () { return view('spherestory/flexibility-limburg'); });
 Route::get('/spherestory/munckhof-01', function () { return view('spherestory/munckhof-01'); });
 Route::get('/spherestory/janssengroep-01', function () { return view('spherestory/janssen-01'); });
+Route::get('/spherestory/umc-utrecht', function () { return view('spherestory/umc-utrecht'); });
