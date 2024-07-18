@@ -127,8 +127,8 @@ $(document).ready(function() {
                         `;
     let summaryRowTemplate = `
     <div class="cc-fb__summarylist-item">
-        <p class="p13-1-reg">00</p>
-        <p class="p13-1-reg">Naam van de les</p>
+        <p class="p13-1-reg number">00</p>
+        <p class="p13-1-reg title">Naam van de les</p>
     </div> `
 
     function showClassSelector(){
@@ -144,8 +144,8 @@ $(document).ready(function() {
                     let itemTitle = $(this).siblings('.checkboxblock-textwrap').find('.p13-1-reg').text();
                     console.log($(this),itemNumber,itemTitle)
                     var newSummaryRow = $(summaryRowTemplate);
-                    newSummaryRow.find('.cc-fb__summarylist-item').children().eq(0).text(itemNumber);
-                    newSummaryRow.find('.cc-fb__summarylist-item').children().eq(1).text(itemTitle);
+                    newSummaryRow.find('.p13-1-reg.number').text(itemNumber);
+                    newSummaryRow.find('.p13-1-reg.title').text(itemTitle);
                     $('.cc-fb_summarylist__content').append(newSummaryRow);
                 });
             });
