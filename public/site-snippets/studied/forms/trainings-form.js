@@ -160,10 +160,16 @@ $(document).ready(function() {
 
     $('input[name="Pakket"]').change(function() {
         showClassSelector()
+        $(this).is(':checked');
+        console.log($(this).is(':checked'))
     });
 
     $('input[name="Programma"]').change(function() {
         showClassSelector()
+    });
+
+    $('input[name="Type-begeleiding"]').change(function() {
+        $()
     });
 
 
