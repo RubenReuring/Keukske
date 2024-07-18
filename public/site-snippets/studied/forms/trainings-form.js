@@ -143,7 +143,6 @@ $(document).ready(function() {
             if($('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'block');
                 numberSections();
-
                 if($('#Volledig-programma').is(':checked')){
                     let classes = $('#base-program-content').find('.cc-block__body.program').children();
                     setClassList(classes);
@@ -154,6 +153,7 @@ $(document).ready(function() {
             } else if(!$('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'none');
                 numberSections();
+                $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').empty();
             }
         }
     };
