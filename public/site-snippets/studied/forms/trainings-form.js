@@ -183,10 +183,8 @@ $(document).ready(function() {
 
     $('.cc-form__inner').submit(function(event) {
         event.preventDefault();
-        var formData = $(this).serialize();
-
         $('#form-training-name').val($('#vakcode-form-data').text());
-
+        var formData = $(this).serialize();
         $.ajax({
             type: 'POST',
             url: 'https://hook.us1.make.com/7km1f8r2k8uob9i1tc52gbmllop0yd2z',
