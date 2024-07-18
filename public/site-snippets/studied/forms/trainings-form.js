@@ -81,4 +81,14 @@ $(document).ready(function() {
             programBody.append(newRow);
         });
     });
+
+    $('input[name="Programma"]').change(function() {
+        $('.classes-selector').css('display', 'block');
+        if ($('#base-program').is(':checked')) {
+            console.log('Lijst met Basis programma lessen');
+        } else if ($('#short-program').is(':checked')) {
+            console.log('Lijst met verkort programma lessen');
+        }
+    });
+
 });
