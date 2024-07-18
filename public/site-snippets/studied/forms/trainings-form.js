@@ -101,7 +101,7 @@ $(document).ready(function() {
                             <label class="w-checkbox checkboxblock-button">
 
                                 <div class="w-checkbox-input w-checkbox-input--inputType-custom radioblock-buttonelem"></div>
-                                <input type="checkbox" name="Les" id="Les" data-name="Les" style="opacity:0;position:absolute;z-index:-1">
+                                <input type="checkbox" name="class[]" id="Les" data-name="Les" style="opacity:0;position:absolute;z-index:-1">
 
                                 <div class="checkboxblock-textwrap">
                                     <p class="p13-1-bold">01</p>
@@ -116,7 +116,7 @@ $(document).ready(function() {
                                         </div>
                                     </div>
                                 </div>
-                                <span class="radioblock-label hidden w-form-label" for="Les">Checkbox</span>
+                                <span class="radioblock-label hidden w-form-label" for="class[]">Checkbox</span>
                             </label>
                         </div>
                         `;
@@ -129,11 +129,12 @@ $(document).ready(function() {
                 let itemNumber = $(this).find('.ccb-accordion__title').find('p').text();
                 let itemTitle = $(this).find('h3').text();
                 var newClassCheckbox = $(classCheckboxTemplate);
-                newClassCheckbox.find('input').first().attr('name', 'class[]')
-                    .attr('data-name', itemTitle || 'Error')
+                newClassCheckbox.find('input').first().attr('data-name', itemTitle || 'Error')
                     .attr('id', itemTitle || 'Error');
+                newClassCheckbox.find('span.radioblock-label.hidden').text(itemTitle || 'Error');
                 newClassCheckbox.find('.checkboxblock-textwrap').children().eq(0).text(itemNumber || '00');
                 newClassCheckbox.find('.checkboxblock-textwrap').children().eq(1).text(itemTitle || 'Error');
+
                 $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').append(newClassCheckbox);
             });
         };
