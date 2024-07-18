@@ -142,7 +142,7 @@ $(document).ready(function() {
                         // newClassCheckbox.find('.ccb-accordion__labels .p13-1-5-reg').text(data.duur || "45 minuten");
 
                         // Append the new row to the program body
-                        $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').append(newRow);
+                        $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').append(newClassCheckbox);
 
                         console.log(itemNumber, itemTitle)
                     });
