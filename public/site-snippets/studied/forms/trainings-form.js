@@ -155,6 +155,7 @@ $(document).ready(function() {
             if($('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'block');
                 $('.summary-list').css('display', 'block');
+                $('.cc-fb_summarylist__content').empty();
                 numberSections();
                 if($('#Volledig-programma').is(':checked')){
                     let classes = $('#base-program-content').find('.cc-block__body.program').children();
