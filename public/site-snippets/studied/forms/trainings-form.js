@@ -160,7 +160,8 @@ $(document).ready(function() {
 
     $('input[name="Pakket"]').change(function() {
         showClassSelector()
-        console.log($(this).val())
+        let currentVal = $(this).val()
+        $('.summary-package').find('p').text(currentVal)
     });
 
     $('input[name="Programma"]').change(function() {
@@ -168,7 +169,8 @@ $(document).ready(function() {
     });
 
     $('input[name="Type-begeleiding"]').change(function() {
-        console.log($(this).val())
+        let currentVal = $(this).val()
+        $('.summary-grouptype').find('p').text(currentVal)
     });
 
 
