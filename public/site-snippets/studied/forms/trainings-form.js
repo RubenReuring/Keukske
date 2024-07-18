@@ -42,9 +42,6 @@ $(document).ready(function() {
             }
         });
 
-        // Log the array for the current program block
-        console.log(dataArray);
-
         // Find the program body and empty it
         var programBody = $(this).find('.cc-block__body');
         programBody.empty();
