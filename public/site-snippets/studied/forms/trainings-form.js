@@ -85,7 +85,7 @@ $(document).ready(function() {
     $('input[name="Pakket"]').change(function() {
         if($('#Losse-lessen').is(':checked')){
             $('.classes-selector').css('display', 'block');
-        } else {
+        } else if(!$('#Losse-lessen').is(':checked')){
             $('.classes-selector').css('display', 'none');
         }
         if ($('#Volledig-programma').is(':checked')) {
