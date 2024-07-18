@@ -82,7 +82,8 @@ $(document).ready(function() {
         });
     });
 
-    $('input[name="Programma"]').change(function() {
+    $('input[name="Pakket"]').change(function() {
+
         $('.classes-selector').css('display', 'block');
         if ($('#base-program').is(':checked')) {
             console.log('Lijst met Basis programma lessen');
@@ -90,5 +91,6 @@ $(document).ready(function() {
             console.log('Lijst met verkort programma lessen');
         }
     });
+
 
 });
