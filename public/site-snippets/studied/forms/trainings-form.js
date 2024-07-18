@@ -142,7 +142,7 @@ $(document).ready(function() {
                 $('input[name="lessons[]"]:checked').each(function(){
                     let itemNumber = $(this).siblings('.checkboxblock-textwrap').find('.p13-1-bold').text();
                     let itemTitle = $(this).siblings('.checkboxblock-textwrap').find('.p13-1-reg').text();
-                    console.log($(this))
+                    console.log($(this),itemNumber,itemTitle)
                     var newSummaryRow = $(summaryRowTemplate);
                     newSummaryRow.find('.cc-fb__summarylist-item').children().eq(0).text(itemNumber);
                     newSummaryRow.find('.cc-fb__summarylist-item').children().eq(1).text(itemTitle);
