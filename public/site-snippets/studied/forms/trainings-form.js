@@ -133,6 +133,23 @@ $(document).ready(function() {
 
     function showClassSelector(){
 
+        function setSummaryList(){
+            $('.summary-list').css('display', 'block');
+            $('.cc-fb_summarylist__content').empty();
+
+            $(document).on('change', 'input[name="lessons[]"]', function(){
+                $('.cc-fb_summarylist__content').empty();
+                $('input[name="lessons[]"]:checked').each(function(){
+                    let itemNumber = $(this).find('.p13-1-bold').text();
+                    let itemTitle = $(this).find('.p13-1-reg').text();
+                    var newSummaryRow = $(summaryRowTemplate);
+                    newSummaryRow.children().eq(0).text(itemNumber);
+                    newSummaryRow.children().eq(1).text(itemTitle);
+                    $('.cc-fb_summarylist__content').append(newSummaryRow);
+                });
+            });
+        };
+
         function setClassList(items){
             $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').empty();
             $(items).each(function(){
@@ -151,22 +168,6 @@ $(document).ready(function() {
             });
         };
 
-        function setSummaryList(){
-            $('.summary-list').css('display', 'block');
-            $('.cc-fb_summarylist__content').empty();
-
-            $(document).on('change', 'input[name="lessons[]"]', function(){
-                $('.cc-fb_summarylist__content').empty();
-                $('input[name="lessons[]"]:checked').each(function(){
-                    let itemNumber = $(this).find('.p13-1-bold').text();
-                    let itemTitle = $(this).find('.p13-1-reg').text();
-                    var newSummaryRow = $(summaryRowTemplate);
-                    newSummaryRow.find('.cc-fb__summarylist-item').children().eq(0).text(itemNumber);
-                    newSummaryRow.find('.cc-fb__summarylist-item').children().eq(1).text(itemTitle);
-                    $('.cc-fb_summarylist__content').append(newSummaryRow);
-                });
-            });
-        };
 
         if($('#Volledig-programma').is(':checked') || $('#Verkort-programma').is(':checked')){
             if($('#Losse-lessen').is(':checked')){
