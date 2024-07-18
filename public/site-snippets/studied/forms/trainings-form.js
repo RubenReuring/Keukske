@@ -158,8 +158,8 @@ $(document).ready(function() {
             $(document).on('change', 'input[name="lessons[]"]', function(){
                 $('.cc-fb_summarylist__content').empty();
                 $('input[name="lessons[]"]:checked').each(function(){
-                    let itemNumber = $(this).find('p13-1-bold').text();
-                    let itemTitle = $(this).find('p13-1-reg').text();
+                    let itemNumber = $(this).find('.p13-1-bold').text();
+                    let itemTitle = $(this).find('.p13-1-reg').text();
                     var newSummaryRow = $(summaryRowTemplate);
                     newSummaryRow.find('.cc-fb__summarylist-item').children().eq(0).text(itemNumber);
                     newSummaryRow.find('.cc-fb__summarylist-item').children().eq(1).text(itemTitle);
