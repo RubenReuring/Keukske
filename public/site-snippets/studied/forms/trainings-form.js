@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('.cc-fb__num').each(function(index) {
         if ($(this).closest('.cc-form__block').is(':visible')) {
+            console.log(index + 1)
             var num = (index + 1).toString().padStart(2, '0');
             $(this).find('p').text(num);
         }
