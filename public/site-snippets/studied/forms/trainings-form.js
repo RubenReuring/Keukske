@@ -101,7 +101,7 @@ $(document).ready(function() {
                             <label class="w-checkbox checkboxblock-button">
 
                                 <div class="w-checkbox-input w-checkbox-input--inputType-custom radioblock-buttonelem"></div>
-                                <input type="checkbox" name="class[]" id="Les" data-name="Les" style="opacity:0;position:absolute;z-index:-1">
+                                <input type="checkbox" name="lessons[]" id="Les" data-name="Les" style="opacity:0;position:absolute;z-index:-1">
 
                                 <div class="checkboxblock-textwrap">
                                     <p class="p13-1-bold">01</p>
