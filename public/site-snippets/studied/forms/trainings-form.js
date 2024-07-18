@@ -96,7 +96,31 @@ $(document).ready(function() {
     });
 
 
+    let classCheckboxTemplate = `
+                        <div class="cc-fb__content-inner__flexitem">
+                            <label class="w-checkbox checkboxblock-button">
+                                <div class="w-checkbox-input w-checkbox-input--inputType-custom radioblock-buttonelem"></div>
+                                    <input type="checkbox" name="Les" id="Les" data-name="Les" style="opacity:0;position:absolute;z-index:-1"><div class="checkboxblock-textwrap">
+                                    <p class="p13-1-bold">01</p>
+                                    <p class="p13-1-reg">Titel</p>
+                                </div>
+                                <div class="checkboxblock-icon">
+                                    <div class="checkboxblock-icon_wrap">
+                                        <div class="iconembed w-embed">
+                                            <svg class="checkboxblock-checkmark" width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.6255 1.21497C11.5775 1.32638 11.47 1.46687 11.303 1.63749C9.18804 3.79746 7.07307 5.95689 4.95863 8.11686C4.69413 8.38652 4.36323 8.47371 4.01759 8.33323C3.90431 8.28748 3.76731 8.18306 3.60766 8.01997C2.68348 7.07751 1.76036 6.13451 0.837756 5.18989C0.570091 4.91539 0.443109 4.65865 0.524251 4.28941C0.559554 4.12794 0.639115 3.9853 0.762936 3.86151C1.07908 3.54448 1.61493 3.50465 1.95373 3.85343C2.73512 4.65918 3.52072 5.46117 4.30949 6.25884C4.32372 6.27284 4.33742 6.27284 4.35111 6.25884C6.27693 4.30018 8.19905 2.3372 10.117 0.370464C10.2619 0.221909 10.391 0.122873 10.5042 0.0728161C11.2082 -0.236135 11.9385 0.493722 11.6255 1.21497Z" fill="white"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="radioblock-label hidden w-form-label" for="Les">Checkbox</span>
+                            </label>
+                        </div>
+                        `;
+
     function showClassSelector(){
+
+
         if($('#Volledig-programma').is(':checked') || $('#Verkort-programma').is(':checked')){
             if($('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'block');
@@ -105,15 +129,28 @@ $(document).ready(function() {
                 if($('#Volledig-programma').is(':checked')){
                     let classes = $('#base-program-content').find('.cc-block__body.program').children();
                     $(classes).each(function(){
-                        let itemNumber = $(this).find('.ccb-accordion__title').find('p');
-                        let itemTitle = $(this).find('h3');
+                        let itemNumber = $(this).find('.ccb-accordion__title').find('p').text();
+                        let itemTitle = $(this).find('h3').text();
+
+                        var newClassCheckbox = $(classCheckboxTemplate);
+                        newClassCheckbox.find('input').first().attr('name', itemTitle)
+                            .attr('data-name', itemTitle)
+                            .attr('id', itemTitle);
+                        // newClassCheckbox.find('.p13-1-reg').first().text(data.titel || "Title");
+                        // newClassCheckbox.find('.p13-1-5-reg').first().text(data.datum || "Date");
+                        // newClassCheckbox.find('.ccb-accordion__desc .p13-1-5-reg').text(data.beschrijving || "Hier komt een korte beschrijving.");
+                        // newClassCheckbox.find('.ccb-accordion__labels .p13-1-5-reg').text(data.duur || "45 minuten");
+
+                        // Append the new row to the program body
+                        $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').append(newRow);
+
                         console.log(itemNumber, itemTitle)
                     });
                 } else if ($('#Verkort-programma').is(':checked')){
                     let classes = $('#short-program-content').find('.cc-block__body.program').children();
                     $(classes).each(function(){
-                        let itemNumber = $(this).find('.ccb-accordion__title').find('p');
-                        let itemTitle = $(this).find('h3');
+                        let itemNumber = $(this).find('.ccb-accordion__title').find('p').text();
+                        let itemTitle = $(this).find('h3').text();
                         console.log(itemNumber, itemTitle)
                     });
                 }
