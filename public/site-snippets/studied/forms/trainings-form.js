@@ -140,8 +140,8 @@ $(document).ready(function() {
             $(document).on('change', 'input[name="lessons[]"]', function(){
                 $('.cc-fb_summarylist__content').empty();
                 $('input[name="lessons[]"]:checked').each(function(){
-                    let itemNumber = $(this).next('.checkboxblock-textwrap').find('.p13-1-bold').text();
-                    let itemTitle = $(this).next('.checkboxblock-textwrap').find('.p13-1-reg').text();
+                    let itemNumber = $(this).siblings('.checkboxblock-textwrap').find('.p13-1-bold').text();
+                    let itemTitle = $(this).siblings('.checkboxblock-textwrap').find('.p13-1-reg').text();
                     console.log($(this))
                     var newSummaryRow = $(summaryRowTemplate);
                     newSummaryRow.find('.cc-fb__summarylist-item').children().eq(0).text(itemNumber);
