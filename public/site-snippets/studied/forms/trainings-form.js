@@ -1,5 +1,16 @@
 $(document).ready(function() {
 
+    $(function(){
+        var requiredCheckboxes = $('.checkboxblock-button :checkbox[required]');
+        requiredCheckboxes.change(function(){
+            if(requiredCheckboxes.is(':checked')) {
+                requiredCheckboxes.removeAttr('required');
+            } else {
+                requiredCheckboxes.attr('required', 'required');
+            }
+        });
+    });
+
     function numberSections(){
         let visibleIndex = 1;
         $('.cc-fb__num').each(function(index) {
