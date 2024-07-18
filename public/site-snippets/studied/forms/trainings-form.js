@@ -101,16 +101,16 @@ $(document).ready(function() {
             if($('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'block');
                 numberSections();
+
+                if($('#Volledig-programma').is(':checked')){
+                    console.log('Fill full')
+                } else if ($('#Verkort-programma').is(':checked')){
+                    console.log('Fill short')
+                }
             } else if(!$('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'none');
                 numberSections();
             }
-
-            // if ($('#Volledig-programma').is(':checked')) {
-            //     console.log('Lijst met Basis programma lessen');
-            // } else if ($('#Verkort-programma').is(':checked')) {
-            //     console.log('Lijst met verkort programma lessen');
-            // }
         }
     };
 
