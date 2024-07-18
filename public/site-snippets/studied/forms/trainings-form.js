@@ -165,7 +165,7 @@ $(document).ready(function() {
                     var newSummaryRow = $(summaryRowTemplate);
                     newSummaryRow.find('.cc-fb__summarylist-item').children().eq(0).text(itemNumber);
                     newSummaryRow.find('.cc-fb__summarylist-item').children().eq(1).text(itemTitle);
-                    $('.cc-fb_summarylist__content').append(newClassCheckbox);
+                    $('.cc-fb_summarylist__content').append(newSummaryRow);
                 });
             });
         };
