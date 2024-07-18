@@ -131,6 +131,7 @@ $(document).ready(function() {
 
                 if($('#Volledig-programma').is(':checked')){
                     let classes = $('#base-program-content').find('.cc-block__body.program').children();
+                    $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').empty();
                     $(classes).each(function(){
                         let itemNumber = $(this).find('.ccb-accordion__title').find('p').text();
                         let itemTitle = $(this).find('h3').text();
@@ -140,7 +141,6 @@ $(document).ready(function() {
                             .attr('id', itemTitle || 'Error');
                         newClassCheckbox.find('.checkboxblock-textwrap').children().eq(0).text(itemNumber || '00');
                         newClassCheckbox.find('.checkboxblock-textwrap').children().eq(1).text(itemTitle || 'Error');
-                        $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').empty();
                         $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').append(newClassCheckbox);
                     });
                 } else if ($('#Verkort-programma').is(':checked')){
