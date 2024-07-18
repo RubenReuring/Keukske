@@ -99,9 +99,11 @@ $(document).ready(function() {
 
         if($('#Volledig-programma').is(':checked') || $('#Verkort-programma').is(':checked')){
             if($('#Losse-lessen').is(':checked')){
+                numberSections();
                 $('.classes-selector').css('display', 'block');
             } else if(!$('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'none');
+                numberSections();
             }
 
             // if ($('#Volledig-programma').is(':checked')) {
@@ -115,9 +117,11 @@ $(document).ready(function() {
     $('input[name="Programma"]').change(function() {
 
             if($('#Losse-lessen').is(':checked')){
+                numberSections();
                 $('.classes-selector').css('display', 'block');
             } else if(!$('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'none');
+                numberSections();
             }
     });
 
