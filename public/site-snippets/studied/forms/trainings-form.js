@@ -83,8 +83,11 @@ $(document).ready(function() {
     });
 
     $('input[name="Pakket"]').change(function() {
-
-        $('.classes-selector').css('display', 'block');
+        if($('#Losse-lessen').is(':checked')){
+            $('.classes-selector').css('display', 'block');
+        } else {
+            $('.classes-selector').css('display', 'none');
+        }
         if ($('#Volledig-programma').is(':checked')) {
             console.log('Lijst met Basis programma lessen');
         } else if ($('#Verkort-programma').is(':checked')) {
