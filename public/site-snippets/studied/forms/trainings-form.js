@@ -95,8 +95,8 @@ $(document).ready(function() {
         });
     });
 
-    $('input[name="Pakket"]').change(function() {
 
+    function showClassSelector(){
         if($('#Volledig-programma').is(':checked') || $('#Verkort-programma').is(':checked')){
             if($('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'block');
@@ -112,17 +112,14 @@ $(document).ready(function() {
             //     console.log('Lijst met verkort programma lessen');
             // }
         }
+    };
+
+    $('input[name="Pakket"]').change(function() {
+        showClassSelector()
     });
 
     $('input[name="Programma"]').change(function() {
-
-            if($('#Losse-lessen').is(':checked')){
-                $('.classes-selector').css('display', 'block');
-                numberSections();
-            } else if(!$('#Losse-lessen').is(':checked')){
-                $('.classes-selector').css('display', 'none');
-                numberSections();
-            }
+        showClassSelector()
     });
 
 
