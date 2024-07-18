@@ -156,6 +156,7 @@ $(document).ready(function() {
                 $('.summary-list').css('display', 'none');
                 numberSections();
                 $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').empty();
+                $('.cc-fb_summarylist__content').empty();
             }
         }
     };
