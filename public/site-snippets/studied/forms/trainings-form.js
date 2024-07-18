@@ -98,6 +98,11 @@ $(document).ready(function() {
     });
     $(document).on('change', 'input[name="lessons[]"]', function(){
         console.log('abc')
+        if($('input[name="lessons[]"]').is(':checked')) {
+            console.log('a')
+        } else {
+            console.log('b')
+        }
     });
 
     let classCheckboxTemplate = `
