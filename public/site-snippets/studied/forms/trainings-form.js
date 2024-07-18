@@ -97,7 +97,6 @@ $(document).ready(function() {
         });
     });
     $(document).on('change', 'input[name="lessons[]"]', function(){
-        console.log('abc')
         if($('input[name="lessons[]"]').is(':checked')) {
             $('input[name="lessons[]"]').removeAttr('required');
         } else {
@@ -129,6 +128,11 @@ $(document).ready(function() {
                             </label>
                         </div>
                         `;
+    let summaryRowTemplate = `
+    <div className="cc-fb__summarylist-item">
+        <p className="p13-1-reg">00</p>
+        <p className="p13-1-reg">Naam van de les</p>
+    </div> `
 
     function showClassSelector(){
 
@@ -150,12 +154,27 @@ $(document).ready(function() {
             });
         };
 
+        function setSummaryList(){
+            $('.summary-list').css('display', 'block');
+            $('.cc-fb_summarylist__content').empty();
+
+            $(document).on('change', 'input[name="lessons[]"]', function(){
+                $('input[name="lessons[]"]:checked').each(function(){
+                    let itemNumber = $(this).find('p13-1-bold').text();
+                    let itemTitle = $(this).find('p13-1-reg').text();
+                    var newSummaryRow = $(summaryRowTemplate);
+                    newSummaryRow.find('.cc-fb__summarylist-item').children().eq(0).text(itemNumber);
+                    newSummaryRow.find('.cc-fb__summarylist-item').children().eq(1).text(itemTitle);
+                    $('.cc-fb_summarylist__content').append(newClassCheckbox);
+                });
+            });
+        };
 
         if($('#Volledig-programma').is(':checked') || $('#Verkort-programma').is(':checked')){
             if($('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'block');
-                $('.summary-list').css('display', 'block');
-                $('.cc-fb_summarylist__content').empty();
+                setSummaryList()
+
                 numberSections();
                 if($('#Volledig-programma').is(':checked')){
                     let classes = $('#base-program-content').find('.cc-block__body.program').children();
@@ -165,10 +184,10 @@ $(document).ready(function() {
                     setClassList(classes);
                 }
             } else if(!$('#Losse-lessen').is(':checked')){
-                $('.classes-selector').css('display', 'none');
-                $('.summary-list').css('display', 'none');
                 numberSections();
+                $('.classes-selector').css('display', 'none');
                 $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').empty();
+                $('.summary-list').css('display', 'none');
                 $('.cc-fb_summarylist__content').empty();
             }
         }
@@ -200,12 +219,12 @@ $(document).ready(function() {
             url: 'https://hook.us1.make.com/7km1f8r2k8uob9i1tc52gbmllop0yd2z',
             data: formData,
             success: function(response) {
-                console.log('Form data successfully posted.');
+                // console.log('Form data successfully posted.');
                 // Ga door met de standaard submit actie van Webflow
                 $('#myForm').off('submit').submit();
             },
             error: function(error) {
-                console.error('Error posting form data:', error);
+                // console.error('Error posting form data:', error);
                 // Optioneel: voeg foutafhandelingslogica toe
             }
         });
