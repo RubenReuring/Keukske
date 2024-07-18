@@ -103,9 +103,11 @@ $(document).ready(function() {
                 numberSections();
 
                 if($('#Volledig-programma').is(':checked')){
-                    console.log('Fill full')
+                    let classes = $('#base-program-content').find('.cc-block__body.program').children();
+                    console.log(classes)
                 } else if ($('#Verkort-programma').is(':checked')){
-                    console.log('Fill short')
+                    let classes = $('#short-program-content').find('.cc-block__body.program').children();
+                    console.log(classes)
                 }
             } else if(!$('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'none');
