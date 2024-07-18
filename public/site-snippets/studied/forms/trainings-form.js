@@ -139,8 +139,8 @@ $(document).ready(function() {
                         newClassCheckbox.find('input').first().attr('name', itemTitle || 'Error')
                             .attr('data-name', itemTitle || 'Error')
                             .attr('id', itemTitle || 'Error');
-                        newClassCheckbox.find('.checkboxblock-textwrap').children().eq(1).text(itemNumber || '00');
-                        newClassCheckbox.find('.checkboxblock-textwrap').children().eq(2).text(itemTitle || 'Error');
+                        newClassCheckbox.find('.checkboxblock-textwrap').children().eq(0).text(itemNumber || '00');
+                        newClassCheckbox.find('.checkboxblock-textwrap').children().eq(1).text(itemTitle || 'Error');
                         // newClassCheckbox.find('.p13-1-reg').first().text(data.titel || "Title");
                         // newClassCheckbox.find('.p13-1-5-reg').first().text(data.datum || "Date");
                         // newClassCheckbox.find('.ccb-accordion__desc .p13-1-5-reg').text(data.beschrijving || "Hier komt een korte beschrijving.");
