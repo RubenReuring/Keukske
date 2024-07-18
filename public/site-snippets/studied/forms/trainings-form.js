@@ -96,14 +96,9 @@ $(document).ready(function() {
             programBody.append(newRow);
         });
     });
-
-    $('input[name="lessons[]"]').change(function(){
-        if($('input[name="lessons[]"]').is(':checked')) {
-            $('input[name="lessons[]"]').removeAttr('required');
-        } else {
-            $('input[name="lessons[]"]').attr('required', 'required');
-        }
-    });
+    $(document).on('change', 'input[name="Pakket"]', function(){
+        console.log('abc')
+    };
 
     let classCheckboxTemplate = `
                         <div class="cc-fb__content-inner__flexitem">
