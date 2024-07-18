@@ -99,8 +99,11 @@ $(document).ready(function() {
     let classCheckboxTemplate = `
                         <div class="cc-fb__content-inner__flexitem">
                             <label class="w-checkbox checkboxblock-button">
+
                                 <div class="w-checkbox-input w-checkbox-input--inputType-custom radioblock-buttonelem"></div>
-                                    <input type="checkbox" name="Les" id="Les" data-name="Les" style="opacity:0;position:absolute;z-index:-1"><div class="checkboxblock-textwrap">
+                                <input type="checkbox" name="Les" id="Les" data-name="Les" style="opacity:0;position:absolute;z-index:-1">
+
+                                <div class="checkboxblock-textwrap">
                                     <p class="p13-1-bold">01</p>
                                     <p class="p13-1-reg">Titel</p>
                                 </div>
@@ -136,8 +139,8 @@ $(document).ready(function() {
                         newClassCheckbox.find('input').first().attr('name', itemTitle || 'Error')
                             .attr('data-name', itemTitle || 'Error')
                             .attr('id', itemTitle || 'Error');
-                        newClassCheckbox.find('.w-checkbox-input').children().eq(2).text(itemNumber || '00');
-                        newClassCheckbox.find('.w-checkbox-input').children().eq(3).text(itemTitle || 'Error');
+                        newClassCheckbox.find('.checkboxblock-textwrap').children().eq(1).text(itemNumber || '00');
+                        newClassCheckbox.find('.checkboxblock-textwrap').children().eq(2).text(itemTitle || 'Error');
                         // newClassCheckbox.find('.p13-1-reg').first().text(data.titel || "Title");
                         // newClassCheckbox.find('.p13-1-5-reg').first().text(data.datum || "Date");
                         // newClassCheckbox.find('.ccb-accordion__desc .p13-1-5-reg').text(data.beschrijving || "Hier komt een korte beschrijving.");
