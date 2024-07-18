@@ -140,12 +140,12 @@ $(document).ready(function() {
             $(document).on('change', 'input[name="lessons[]"]', function(){
                 $('.cc-fb_summarylist__content').empty();
                 $('input[name="lessons[]"]:checked').each(function(){
-                    let itemNumber = $(this).find('.checkboxblock-textwrap').find('.p13-1-bold').text();
-                    let itemTitle = $(this).find('.checkboxblock-textwrap').find('.p13-1-reg').text();
+                    let itemNumber = $(this).next('.checkboxblock-textwrap').find('.p13-1-bold').text();
+                    let itemTitle = $(this).next('.checkboxblock-textwrap').find('.p13-1-reg').text();
                     console.log($(this))
                     var newSummaryRow = $(summaryRowTemplate);
-                    newSummaryRow.children().eq(0).text(itemNumber);
-                    newSummaryRow.children().eq(1).text(itemTitle);
+                    newSummaryRow.find('.cc-fb__summarylist-item').children().eq(0).text(itemNumber);
+                    newSummaryRow.find('.cc-fb__summarylist-item').children().eq(1).text(itemTitle);
                     $('.cc-fb_summarylist__content').append(newSummaryRow);
                 });
             });
