@@ -85,9 +85,9 @@ $(document).ready(function() {
     $('input[name="Pakket"]').change(function() {
 
         $('.classes-selector').css('display', 'block');
-        if ($('#base-program').is(':checked')) {
+        if ($('#Volledig-programma').is(':checked')) {
             console.log('Lijst met Basis programma lessen');
-        } else if ($('#short-program').is(':checked')) {
+        } else if ($('#Verkort-programma').is(':checked')) {
             console.log('Lijst met verkort programma lessen');
         }
     });
