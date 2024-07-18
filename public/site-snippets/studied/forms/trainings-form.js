@@ -180,4 +180,25 @@ $(document).ready(function() {
     });
 
 
+
+    $('.cc-form__inner').submit(function(event) {
+        event.preventDefault();
+        var formData = $(this).serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: 'https://hook.us1.make.com/7km1f8r2k8uob9i1tc52gbmllop0yd2z',
+            data: formData,
+            success: function(response) {
+                console.log('Form data successfully posted.');
+                // Ga door met de standaard submit actie van Webflow
+                $('#myForm').off('submit').submit();
+            },
+            error: function(error) {
+                console.error('Error posting form data:', error);
+                // Optioneel: voeg foutafhandelingslogica toe
+            }
+        });
+    });
+
 });
