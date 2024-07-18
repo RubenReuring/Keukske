@@ -140,6 +140,7 @@ $(document).ready(function() {
                             .attr('id', itemTitle || 'Error');
                         newClassCheckbox.find('.checkboxblock-textwrap').children().eq(0).text(itemNumber || '00');
                         newClassCheckbox.find('.checkboxblock-textwrap').children().eq(1).text(itemTitle || 'Error');
+                        $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').empty();
                         $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').append(newClassCheckbox);
                     });
                 } else if ($('#Verkort-programma').is(':checked')){
