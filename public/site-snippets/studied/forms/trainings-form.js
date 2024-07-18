@@ -161,7 +161,7 @@ $(document).ready(function() {
     $('input[name="Pakket"]').change(function() {
         showClassSelector()
         $(this).is(':checked');
-        console.log($(this).is(':checked'))
+        console.log($(this).attr('name'))
     });
 
     $('input[name="Programma"]').change(function() {
