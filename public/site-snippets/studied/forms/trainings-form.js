@@ -96,7 +96,7 @@ $(document).ready(function() {
             programBody.append(newRow);
         });
     });
-    $(document).on('change', 'input[name="Pakket"]', function(){
+    $(document).on('change', 'input[name="lessons[]"]', function(){
         console.log('abc')
     });
 
