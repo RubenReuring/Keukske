@@ -160,7 +160,6 @@ $(document).ready(function() {
 
     $('input[name="Pakket"]').change(function() {
         showClassSelector()
-        $(this).is(':checked');
         console.log($(this).val())
     });
 
@@ -169,7 +168,7 @@ $(document).ready(function() {
     });
 
     $('input[name="Type-begeleiding"]').change(function() {
-        $()
+        console.log($(this).val())
     });
 
 
