@@ -123,6 +123,21 @@ $(document).ready(function() {
 
     function showClassSelector(){
 
+        function setClassList(items){
+            $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').empty();
+            $(items).each(function(){
+                let itemNumber = $(this).find('.ccb-accordion__title').find('p').text();
+                let itemTitle = $(this).find('h3').text();
+                var newClassCheckbox = $(classCheckboxTemplate);
+                newClassCheckbox.find('input').first().attr('name', itemTitle || 'Error')
+                    .attr('data-name', itemTitle || 'Error')
+                    .attr('id', itemTitle || 'Error');
+                newClassCheckbox.find('.checkboxblock-textwrap').children().eq(0).text(itemNumber || '00');
+                newClassCheckbox.find('.checkboxblock-textwrap').children().eq(1).text(itemTitle || 'Error');
+                $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').append(newClassCheckbox);
+            });
+        };
+
 
         if($('#Volledig-programma').is(':checked') || $('#Verkort-programma').is(':checked')){
             if($('#Losse-lessen').is(':checked')){
@@ -131,25 +146,10 @@ $(document).ready(function() {
 
                 if($('#Volledig-programma').is(':checked')){
                     let classes = $('#base-program-content').find('.cc-block__body.program').children();
-                    $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').empty();
-                    $(classes).each(function(){
-                        let itemNumber = $(this).find('.ccb-accordion__title').find('p').text();
-                        let itemTitle = $(this).find('h3').text();
-                        var newClassCheckbox = $(classCheckboxTemplate);
-                        newClassCheckbox.find('input').first().attr('name', itemTitle || 'Error')
-                            .attr('data-name', itemTitle || 'Error')
-                            .attr('id', itemTitle || 'Error');
-                        newClassCheckbox.find('.checkboxblock-textwrap').children().eq(0).text(itemNumber || '00');
-                        newClassCheckbox.find('.checkboxblock-textwrap').children().eq(1).text(itemTitle || 'Error');
-                        $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').append(newClassCheckbox);
-                    });
+                    setClassList(classes);
                 } else if ($('#Verkort-programma').is(':checked')){
                     let classes = $('#short-program-content').find('.cc-block__body.program').children();
-                    $(classes).each(function(){
-                        let itemNumber = $(this).find('.ccb-accordion__title').find('p').text();
-                        let itemTitle = $(this).find('h3').text();
-                        console.log(itemNumber, itemTitle)
-                    });
+                    setClassList(classes);
                 }
             } else if(!$('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'none');
