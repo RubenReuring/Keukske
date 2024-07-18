@@ -142,7 +142,7 @@ $(document).ready(function() {
         if($('#Volledig-programma').is(':checked') || $('#Verkort-programma').is(':checked')){
             if($('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'block');
-                $('.summary-classes').css('display', 'block');
+                $('.summary-list').css('display', 'block');
                 numberSections();
                 if($('#Volledig-programma').is(':checked')){
                     let classes = $('#base-program-content').find('.cc-block__body.program').children();
@@ -153,7 +153,7 @@ $(document).ready(function() {
                 }
             } else if(!$('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'none');
-                $('.summary-classes').css('display', 'none');
+                $('.summary-list').css('display', 'none');
                 numberSections();
                 $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').empty();
             }
