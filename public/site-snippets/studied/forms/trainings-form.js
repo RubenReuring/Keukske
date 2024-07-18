@@ -126,9 +126,9 @@ $(document).ready(function() {
                         </div>
                         `;
     let summaryRowTemplate = `
-    <div className="cc-fb__summarylist-item">
-        <p className="p13-1-reg">00</p>
-        <p className="p13-1-reg">Naam van de les</p>
+    <div class="cc-fb__summarylist-item">
+        <p class="p13-1-reg">00</p>
+        <p class="p13-1-reg">Naam van de les</p>
     </div> `
 
     function showClassSelector(){
