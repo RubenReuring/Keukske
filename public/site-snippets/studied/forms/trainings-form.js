@@ -1,7 +1,9 @@
 $(document).ready(function() {
     $('.cc-fb__num').each(function(index) {
-        var num = (index + 1).toString().padStart(2, '0');
-        $(this).find('p').text(num);
+        if ($(this).closest('.cc-form__block').is(':visible')) {
+            var num = (index + 1).toString().padStart(2, '0');
+            $(this).find('p').text(num);
+        }
     });
 
     $('.cc-block__top.accordion').on('click', function() {
