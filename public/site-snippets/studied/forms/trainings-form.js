@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $(function(){
-        var requiredCheckboxes = $('.checkboxblock-button :checkbox[required]');
+        var requiredCheckboxes = $('.radioblock-buttonelem :checkbox[required]');
         requiredCheckboxes.change(function(){
             if(requiredCheckboxes.is(':checked')) {
                 requiredCheckboxes.removeAttr('required');
