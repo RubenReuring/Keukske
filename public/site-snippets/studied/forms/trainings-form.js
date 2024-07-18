@@ -1,13 +1,16 @@
 $(document).ready(function() {
     let visibleIndex = 1;
-    $('.cc-fb__num').each(function(index) {
-        if ($(this).closest('.cc-form__block').is(':visible')) {
-            console.log(index + 1)
-            var num = visibleIndex.toString().padStart(2, '0');
-            $(this).find('p').text(num);
-            visibleIndex++;
-        }
-    });
+    function numberSections(){
+        $('.cc-fb__num').each(function(index) {
+            if ($(this).closest('.cc-form__block').is(':visible')) {
+                console.log(index + 1)
+                var num = visibleIndex.toString().padStart(2, '0');
+                $(this).find('p').text(num);
+                visibleIndex++;
+            }
+        });
+    };
+    numberSections();
 
     $('.cc-block__top.accordion').on('click', function() {
         $(this).toggleClass('accordion-active');
