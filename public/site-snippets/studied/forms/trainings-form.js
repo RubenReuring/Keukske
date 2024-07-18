@@ -98,7 +98,7 @@ $(document).ready(function() {
     });
     $(document).on('change', 'input[name="Pakket"]', function(){
         console.log('abc')
-    };
+    });
 
     let classCheckboxTemplate = `
                         <div class="cc-fb__content-inner__flexitem">
