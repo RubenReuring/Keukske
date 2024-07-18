@@ -129,7 +129,7 @@ $(document).ready(function() {
                 let itemNumber = $(this).find('.ccb-accordion__title').find('p').text();
                 let itemTitle = $(this).find('h3').text();
                 var newClassCheckbox = $(classCheckboxTemplate);
-                newClassCheckbox.find('input').first().attr('name', 'class-checkbox[]')
+                newClassCheckbox.find('input').first().attr('name', 'class[]')
                     .attr('data-name', itemTitle || 'Error')
                     .attr('id', itemTitle || 'Error');
                 newClassCheckbox.find('.checkboxblock-textwrap').children().eq(0).text(itemNumber || '00');
