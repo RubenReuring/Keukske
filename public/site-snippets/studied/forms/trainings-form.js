@@ -142,7 +142,7 @@ $(document).ready(function() {
                 $('input[name="lessons[]"]:checked').each(function(){
                     let itemNumber = $(this).find('.checkboxblock-textwrap').find('.p13-1-bold').text();
                     let itemTitle = $(this).find('.checkboxblock-textwrap').find('.p13-1-reg').text();
-                    console.log(itemNumber,itemTitle)
+                    console.log($(this))
                     var newSummaryRow = $(summaryRowTemplate);
                     newSummaryRow.children().eq(0).text(itemNumber);
                     newSummaryRow.children().eq(1).text(itemTitle);
