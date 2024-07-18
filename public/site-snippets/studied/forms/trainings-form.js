@@ -104,10 +104,18 @@ $(document).ready(function() {
 
                 if($('#Volledig-programma').is(':checked')){
                     let classes = $('#base-program-content').find('.cc-block__body.program').children();
-                    console.log(classes)
+                    $(classes).each(function(){
+                        let itemNumber = $(this).find('.ccb-accordion__title').find('p');
+                        let itemTitle = $(this).find('h3');
+                        console.log(itemNumber, itemTitle)
+                    });
                 } else if ($('#Verkort-programma').is(':checked')){
                     let classes = $('#short-program-content').find('.cc-block__body.program').children();
-                    console.log(classes)
+                    $(classes).each(function(){
+                        let itemNumber = $(this).find('.ccb-accordion__title').find('p');
+                        let itemTitle = $(this).find('h3');
+                        console.log(itemNumber, itemTitle)
+                    });
                 }
             } else if(!$('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'none');
