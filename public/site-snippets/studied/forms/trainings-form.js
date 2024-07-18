@@ -96,15 +96,19 @@ $(document).ready(function() {
     });
 
     $('input[name="Pakket"]').change(function() {
-        if($('#Losse-lessen').is(':checked')){
-            $('.classes-selector').css('display', 'block');
-        } else if(!$('#Losse-lessen').is(':checked')){
-            $('.classes-selector').css('display', 'none');
-        }
-        if ($('#Volledig-programma').is(':checked')) {
-            console.log('Lijst met Basis programma lessen');
-        } else if ($('#Verkort-programma').is(':checked')) {
-            console.log('Lijst met verkort programma lessen');
+
+        if($('#Volledig-programma').is(':checked') || $('#Verkort-programma').is(':checked')){
+            if($('#Losse-lessen').is(':checked')){
+                $('.classes-selector').css('display', 'block');
+            } else if(!$('#Losse-lessen').is(':checked')){
+                $('.classes-selector').css('display', 'none');
+            }
+
+            if ($('#Volledig-programma').is(':checked')) {
+                console.log('Lijst met Basis programma lessen');
+            } else if ($('#Verkort-programma').is(':checked')) {
+                console.log('Lijst met verkort programma lessen');
+            }
         }
     });
 
