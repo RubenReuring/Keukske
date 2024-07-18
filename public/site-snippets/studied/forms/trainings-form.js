@@ -134,22 +134,13 @@ $(document).ready(function() {
                     $(classes).each(function(){
                         let itemNumber = $(this).find('.ccb-accordion__title').find('p').text();
                         let itemTitle = $(this).find('h3').text();
-
                         var newClassCheckbox = $(classCheckboxTemplate);
                         newClassCheckbox.find('input').first().attr('name', itemTitle || 'Error')
                             .attr('data-name', itemTitle || 'Error')
                             .attr('id', itemTitle || 'Error');
                         newClassCheckbox.find('.checkboxblock-textwrap').children().eq(0).text(itemNumber || '00');
                         newClassCheckbox.find('.checkboxblock-textwrap').children().eq(1).text(itemTitle || 'Error');
-                        // newClassCheckbox.find('.p13-1-reg').first().text(data.titel || "Title");
-                        // newClassCheckbox.find('.p13-1-5-reg').first().text(data.datum || "Date");
-                        // newClassCheckbox.find('.ccb-accordion__desc .p13-1-5-reg').text(data.beschrijving || "Hier komt een korte beschrijving.");
-                        // newClassCheckbox.find('.ccb-accordion__labels .p13-1-5-reg').text(data.duur || "45 minuten");
-
-                        // Append the new row to the program body
                         $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').append(newClassCheckbox);
-
-                        console.log(itemNumber, itemTitle)
                     });
                 } else if ($('#Verkort-programma').is(':checked')){
                     let classes = $('#short-program-content').find('.cc-block__body.program').children();
