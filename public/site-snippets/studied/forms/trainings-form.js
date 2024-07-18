@@ -130,7 +130,8 @@ $(document).ready(function() {
                 let itemTitle = $(this).find('h3').text();
                 var newClassCheckbox = $(classCheckboxTemplate);
                 newClassCheckbox.find('input').first().attr('data-name', itemTitle || 'Error')
-                    .attr('id', itemTitle || 'Error');
+                    .attr('id', itemTitle || 'Error')
+                    .attr('value', itemTitle || 'Error');
                 newClassCheckbox.find('span.radioblock-label.hidden').text(itemTitle || 'Error');
                 newClassCheckbox.find('span.radioblock-label.hidden').attr('for', itemTitle || 'Error')
                 newClassCheckbox.find('.checkboxblock-textwrap').children().eq(0).text(itemNumber || '00');
