@@ -101,7 +101,7 @@ $(document).ready(function() {
         if($('input[name="lessons[]"]').is(':checked')) {
             $('input[name="lessons[]"]').removeAttr('required');
         } else {
-            $('input[name="lessons[]"]').attr('required');
+            $('input[name="lessons[]"]').attr('required', 'required');
         }
     });
 
