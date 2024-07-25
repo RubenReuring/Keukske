@@ -17,4 +17,30 @@ $('.classes-period').each(function() {
         }
     });
     console.log(dataArray)
+
+    var periodBody = $(this).find('.cpm-wrap');
+    periodBody.empty();
+
+    var periodLessonTemplate = `<div className="cpm-card">
+        <div class="cpm-left">
+            <p class="p14-14-med">Moment 1</p>
+            <p class="p12-12-reg">Kleine omschrijving</p>
+        </div>
+        <div class="card-tags">
+            <div class="card-tag"><p class="p12-12-med cpm-date-value">18 januari</p></div>
+            <div class="card-tag"><p class="p12-12-med cpm-time-value">13:00-15:00</p></div>
+        </div>
+    </div>`
+
+    dataArray.forEach(function(data, index) {
+        var newRow = $(template);
+        var numberText = (index + 1).toString().padStart(2, '0'); // Add leading zero for numbers < 10
+        newRow.find('.p14-14-med').text(data.titel || "Title");
+        newRow.find('.p13-1-5-reg').text(data.beschrijving || "Beschrijving");
+        newRow.find('.cpm-date-value').text(data.datum || "Datum");
+        newRow.find('.cpm-time-value').text(data.tijdvak || "Tijdvak");
+
+        // Append the new row to the program body
+        periodBody.append(newRow);
+    });
 });
