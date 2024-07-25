@@ -33,14 +33,11 @@ $('.classes-period').each(function() {
     </div>`
 
     dataArray.forEach(function(data, index) {
-        var newRow = $(template);
-        var numberText = (index + 1).toString().padStart(2, '0'); // Add leading zero for numbers < 10
+        var newRow = $(periodLessonTemplate);
         newRow.find('.p14-14-med').text(data.titel || "Title");
         newRow.find('.p13-1-5-reg').text(data.beschrijving || "Beschrijving");
         newRow.find('.cpm-date-value').text(data.datum || "Datum");
         newRow.find('.cpm-time-value').text(data.tijdvak || "Tijdvak");
-
-        // Append the new row to the program body
         periodBody.append(newRow);
     });
 });
