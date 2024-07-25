@@ -21,7 +21,7 @@ $('.classes-period').each(function() {
     var periodBody = $(this).find('.cpm-wrap');
     periodBody.empty();
 
-    var periodLessonTemplate = `<div className="cpm-card">
+    var periodLessonTemplate = `<div class="cpm-card">
         <div class="cpm-left">
             <p class="p14-14-med">Moment 1</p>
             <p class="p12-12-reg">Kleine omschrijving</p>
