@@ -16,7 +16,6 @@ $('.classes-period').each(function() {
             dataArray.push(dataObject);
         }
     });
-    console.log(dataArray)
 
     var periodBody = $(this).find('.cpm-wrap');
     periodBody.empty();
