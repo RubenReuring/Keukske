@@ -18,6 +18,7 @@ $(document).ready(function(){
 
     function populateSecondLayer(items) {
         $('#second-layer').empty();
+        $('#third-layer').empty(); // Clear third layer when second layer is being repopulated
 
         items.forEach(function(item) {
             var template = `
@@ -40,7 +41,6 @@ $(document).ready(function(){
             $('#second-layer').append(template);
         });
 
-        // Bind change event to the newly created radios in the second layer
         $('input[name="opleiding-radio"]').change(function(){
             if($(this).is(':checked')){
                 currentDataLevelLink = $(this).siblings('.sfb-content__item-data').attr('href');
@@ -66,7 +66,7 @@ $(document).ready(function(){
     }
 
     function populateThirdLayer(items) {
-        $('#third-layer').empty();
+        $('#third-layer').empty(); // Clear the third layer before repopulating
 
         items.forEach(function(item) {
             var template = `
@@ -89,6 +89,8 @@ $(document).ready(function(){
         if($(this).is(':checked')){
             currentDataTypeLink = $(this).siblings('.sfb-content__item-data').attr('href');
         }
+        $('#second-layer').empty(); // Clear second layer when first layer changes
+        $('#third-layer').empty(); // Clear third layer when first layer changes
         var fullUrl = baseUrl + currentDataTypeLink;
         $.ajax({
             url: fullUrl,
