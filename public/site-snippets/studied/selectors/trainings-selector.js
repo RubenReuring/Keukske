@@ -1,7 +1,8 @@
 $(document).ready(function(){
-    let currentDataTypeLink, currentDataLevelLink, currentDataClassLink;
+    let currentDataTypeLink, currentDataLevelLink;
     var currentUrl = window.location.href;
     var baseUrl = currentUrl.split(/[.](com|io|nl)/)[0] + currentUrl.match(/[.](com|io|nl)/)[0];
+    let currentAjaxRequest = null;
 
     function extractItems(parsedHTML) {
         var datasetList = parsedHTML.find('.dataset-list');
@@ -17,8 +18,8 @@ $(document).ready(function(){
     }
 
     function populateSecondLayer(items) {
-        $('#second-layer').empty();
         $('#third-layer').empty(); // Clear third layer when second layer is being repopulated
+        $('#second-layer').empty(); // Clear the second layer right before populating
 
         items.forEach(function(item) {
             var template = `
@@ -51,7 +52,14 @@ $(document).ready(function(){
 
     function loadThirdLayer(link) {
         var fullUrl = baseUrl + link;
-        $.ajax({
+
+        if (currentAjaxRequest) {
+            currentAjaxRequest.abort(); // Abort the previous request
+        }
+
+        $('input[name="onderwijsniveau-radio"], input[name="opleiding-radio"]').prop('disabled', true);
+
+        currentAjaxRequest = $.ajax({
             url: fullUrl,
             method: 'GET',
             success: function(data) {
@@ -60,7 +68,12 @@ $(document).ready(function(){
                 populateThirdLayer(items);
             },
             error: function(jqXHR, textStatus, errorThrown) {
-                console.error('AJAX request failed:', textStatus, errorThrown);
+                if (textStatus !== 'abort') {
+                    console.error('AJAX request failed:', textStatus, errorThrown);
+                }
+            },
+            complete: function() {
+                $('input[name="onderwijsniveau-radio"], input[name="opleiding-radio"]').prop('disabled', false);
             }
         });
     }
@@ -91,8 +104,13 @@ $(document).ready(function(){
         }
         $('#second-layer').empty(); // Clear second layer when first layer changes
         $('#third-layer').empty(); // Clear third layer when first layer changes
+
+        if (currentAjaxRequest) {
+            currentAjaxRequest.abort(); // Abort any previous requests
+        }
+
         var fullUrl = baseUrl + currentDataTypeLink;
-        $.ajax({
+        currentAjaxRequest = $.ajax({
             url: fullUrl,
             method: 'GET',
             success: function(data) {
@@ -101,7 +119,9 @@ $(document).ready(function(){
                 populateSecondLayer(items);
             },
             error: function(jqXHR, textStatus, errorThrown) {
-                console.error('AJAX request failed:', textStatus, errorThrown);
+                if (textStatus !== 'abort') {
+                    console.error('AJAX request failed:', textStatus, errorThrown);
+                }
             }
         });
     });
