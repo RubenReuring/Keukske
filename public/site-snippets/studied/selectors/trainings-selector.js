@@ -17,6 +17,14 @@ $(document).ready(function(){
         return items;
     }
 
+    function checkOverflow(element) {
+        if (element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth) {
+            element.classList.add('list-overflowing');
+        } else {
+            element.classList.remove('list-overflowing');
+        }
+    }
+
     function populateSecondLayer(items) {
         $('#third-layer').empty(); // Clear third layer when second layer is being repopulated
         $('#second-layer').empty(); // Clear the second layer right before populating
@@ -41,6 +49,9 @@ $(document).ready(function(){
             `;
             $('#second-layer').append(template);
         });
+
+        // Check if the second layer is overflowing
+        checkOverflow(document.getElementById('second-layer'));
 
         $('input[name="opleiding-radio"]').change(function(){
             if($(this).is(':checked')){
@@ -96,6 +107,9 @@ $(document).ready(function(){
             `;
             $('#third-layer').append(template);
         });
+
+        // Check if the third layer is overflowing
+        checkOverflow(document.getElementById('third-layer'));
     }
 
     $('input[name="onderwijsniveau-radio"]').change(function(){
@@ -125,4 +139,8 @@ $(document).ready(function(){
             }
         });
     });
+
+    // Initial check for overflow on page load
+    checkOverflow(document.getElementById('second-layer'));
+    checkOverflow(document.getElementById('third-layer'));
 });
