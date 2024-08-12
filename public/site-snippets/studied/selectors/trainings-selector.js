@@ -3,22 +3,42 @@ $(document).ready(function(){
     var currentUrl = window.location.href;
     var baseUrl = currentUrl.split(/[.](com|io|nl)/)[0] + currentUrl.match(/[.](com|io|nl)/)[0];
 
-    console.log(baseUrl);
+    function extractItems(parsedHTML) {
+        var items = [];
+
+        // Find all .dataset-item elements within .dataset-list
+        parsedHTML.find('.dataset-list .dataset-item').each(function() {
+            // Extract the vakcode, name, and href from each item
+            var vakcode = $(this).find('.dataset-item_vakcode p').text().trim();
+            var name = $(this).find('.dataset-item_name p').text().trim();
+            var href = $(this).find('.dataset-item__link').attr('href');
+
+            // Create an object and push it to the items array
+            items.push({
+                vakcode: vakcode,
+                name: name,
+                link: href
+            });
+        });
+
+        // Log the items array to the console
+        console.log(items);
+    }
 
     $('input[name="onderwijsniveau-radio"]').change(function(){
         if($(this).is(':checked')){
             currentDataTypeLink = $(this).siblings('.sfb-content__item-data').attr('href')
-            console.log(currentDataTypeLink)
         }
         var fullUrl = baseUrl + currentDataTypeLink;
         $.ajax({
-            url: fullUrl,  // The URL to send the request to
-            method: 'GET', // The HTTP method to use (GET is the default)
+            url: fullUrl,
+            method: 'GET',
             success: function(data) {
-                console.log(data); // Log the response data to the console
+                var parsedHTML = $(data);
+                extractItems(parsedHTML);
             },
             error: function(jqXHR, textStatus, errorThrown) {
-                console.error('AJAX request failed:', textStatus, errorThrown); // Log any errors to the console
+                console.error('AJAX request failed:', textStatus, errorThrown);
             }
         });
     });
