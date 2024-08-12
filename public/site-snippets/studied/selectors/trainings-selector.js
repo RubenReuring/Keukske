@@ -50,8 +50,11 @@ $(document).ready(function(){
             $('#second-layer').append(template);
         });
 
-        // Check if the second layer is overflowing
-        checkOverflow(document.getElementById('second-layer'));
+        // Check if the grandparent of second-layer is overflowing
+        const grandparent = document.querySelector('#second-layer').closest('.tm-selector-fields_wrap');
+        if (grandparent) {
+            checkOverflow(grandparent);
+        }
 
         $('input[name="opleiding-radio"]').change(function(){
             if($(this).is(':checked')){
@@ -108,8 +111,11 @@ $(document).ready(function(){
             $('#third-layer').append(template);
         });
 
-        // Check if the third layer is overflowing
-        checkOverflow(document.getElementById('third-layer'));
+        // Check if the grandparent of third-layer is overflowing
+        const grandparent = document.querySelector('#third-layer').closest('.tm-selector-fields_wrap');
+        if (grandparent) {
+            checkOverflow(grandparent);
+        }
     }
 
     $('input[name="onderwijsniveau-radio"]').change(function(){
@@ -141,6 +147,13 @@ $(document).ready(function(){
     });
 
     // Initial check for overflow on page load
-    checkOverflow(document.getElementById('second-layer'));
-    checkOverflow(document.getElementById('third-layer'));
+    const grandparentSecondLayer = document.querySelector('#second-layer').closest('.tm-selector-fields_wrap');
+    if (grandparentSecondLayer) {
+        checkOverflow(grandparentSecondLayer);
+    }
+
+    const grandparentThirdLayer = document.querySelector('#third-layer').closest('.tm-selector-fields_wrap');
+    if (grandparentThirdLayer) {
+        checkOverflow(grandparentThirdLayer);
+    }
 });
