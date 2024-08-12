@@ -1,7 +1,7 @@
 $(document).ready(function(){
     let currentDataTypeLink, currentDataLevelLink, currentDataClassLink;
     var currentUrl = window.location.href;
-    var baseUrl = currentUrl.split('.com')[0] + '.com';
+    var baseUrl = currentUrl.split('.io')[0] + '.io';
 
     console.log(baseUrl);
 
