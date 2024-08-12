@@ -17,7 +17,6 @@ $(document).ready(function(){
     }
 
     function populateSecondLayer(items) {
-        // Clear any existing content in the second-layer
         $('#second-layer').empty();
 
         items.forEach(function(item) {
@@ -39,6 +38,50 @@ $(document).ready(function(){
                 </div>
             `;
             $('#second-layer').append(template);
+        });
+
+        // Bind change event to the newly created radios in the second layer
+        $('input[name="opleiding-radio"]').change(function(){
+            if($(this).is(':checked')){
+                currentDataLevelLink = $(this).siblings('.sfb-content__item-data').attr('href');
+                loadThirdLayer(currentDataLevelLink);
+            }
+        });
+    }
+
+    function loadThirdLayer(link) {
+        var fullUrl = baseUrl + link;
+        $.ajax({
+            url: fullUrl,
+            method: 'GET',
+            success: function(data) {
+                var parsedHTML = $(data);
+                var items = extractItems(parsedHTML);
+                populateThirdLayer(items);
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.error('AJAX request failed:', textStatus, errorThrown);
+            }
+        });
+    }
+
+    function populateThirdLayer(items) {
+        $('#third-layer').empty();
+
+        items.forEach(function(item) {
+            var template = `
+                <a href="${item.link}" class="tm-sl-link w-inline-block">
+                    <p class="p14-1-book">${item.name}</p>
+                    <div class="tm-sll-iconwrap">
+                        <div class="iconembed w-embed">
+                            <svg class="tm-sll-arrow" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.12796 0.75L10.1726 4.79462L6.12796 8.83924L5.53871 8.24999L8.57742 5.21129L0 5.21129L0 4.37796L8.57742 4.37796L5.53871 1.33926L6.12796 0.75Z" fill="#23272A"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            `;
+            $('#third-layer').append(template);
         });
     }
 
