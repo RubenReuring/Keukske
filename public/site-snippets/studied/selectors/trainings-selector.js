@@ -1,7 +1,9 @@
 $(document).ready(function(){
+    let currentDataTypeLink, currentDataLevelLink, currentDataClassLink;
     $('input[name="onderwijsniveau-radio"]').change(function(){
         if($(this).is(':checked')){
-            $(this).siblings('.sfb-content__item-data')
+            currentDataTypeLink = $(this).siblings('.sfb-content__item-data').attr('href')
+            console.log(currentDataTypeLink)
         }
     });
 
