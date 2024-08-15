@@ -40,6 +40,7 @@ function logHighestVisibleUl(element) {
     if (highestUl) {
         console.log('Highest <ul>: ', highestUl, ' with height: ', maxHeight);
         console.log(element)
+        $(element).parents('.menu-item--depth-1').children('ul').css('min-height', maxHeight)
     } else {
         console.log('No visible <ul> found.');
     }
@@ -73,7 +74,7 @@ function logCurrentOrParentUlHeight(element) {
 
     if (targetUl) {
         console.log('Current or Parent <ul>: ', targetUl, ' with height: ', maxHeight);
-        console.log(element)
+        $(element).parents('.menu-item--depth-1').children('ul').css('min-height', 0)
     } else {
         console.log('No appropriate <ul> found.');
     }
