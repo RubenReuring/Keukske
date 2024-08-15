@@ -92,14 +92,15 @@ for (let i = 1; i <= 10; i++) {
 
             // Wait for a short period to allow the CSS transition to complete
             hoverTimeout = setTimeout(() => {
-                logAndSetMinHeight(this);
+                logHighestOriginalMinHeight(this);
             }, delay);
         }
-    }).on('mouseleave', function() {
-        // Clear the timeout if the user hovers out before it completes
-        clearTimeout(hoverTimeout);
-
-        // Immediately check and log the height of the current or parent <ul> on mouseleave
-        logCurrentOrParentUlHeight(this);
-    });
+    })
+    //     .on('mouseleave', function() {
+    //     // Clear the timeout if the user hovers out before it completes
+    //     clearTimeout(hoverTimeout);
+    //
+    //     // Immediately check and log the height of the current or parent <ul> on mouseleave
+    //     logCurrentOrParentUlHeight(this);
+    // });
 }
