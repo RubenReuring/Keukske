@@ -41,42 +41,37 @@ function logHighestOriginalMinHeight(element) {
 
     if (highestUl) {
         console.log('Highest original data-height <ul>: ', highestUl, ' with height: ', maxHeight);
+        $(element).parents('.menu-item--depth-1').children('ul'),css('min-height', maxHeight);
     } else {
         console.log('No visible <ul> found.');
     }
 }
 
 // Function to calculate and log the height of the current or parent <ul> on mouseleave
-function logCurrentOrParentUlHeight(element) {
+function logHighestOriginalMinHeightOnLeave(element) {
     let maxHeight = 0;
     let targetUl = null;
 
-    // Check the current element's own <ul> height
-    const currentUlHeight = $(element).outerHeight() || $(element).height();
-    if (currentUlHeight > maxHeight) {
-        maxHeight = currentUlHeight;
-        targetUl = element;
-    }
-
-    // Check the closest visible parent <ul> if applicable
-    $(element).parents('ul').each(function() {
-        const parentUl = $(this);
+    // Check the current element's own <ul> and its parents' <ul> heights
+    $(element).find('ul').addBack().parents('ul').each(function() {
+        const ul = $(this);
         const computedStyle = window.getComputedStyle(this);
 
+        // Check if the ul is visible
         if (computedStyle.visibility === 'visible' && computedStyle.opacity === '1') {
-            const parentUlHeight = parentUl.outerHeight() || parentUl.height();
-            if (parentUlHeight > maxHeight) {
-                maxHeight = parentUlHeight;
+            const originalHeight = parseFloat(ul.attr('data-original-height'));
+            if (originalHeight > maxHeight) {
+                maxHeight = originalHeight;
                 targetUl = this;
             }
         }
     });
 
     if (targetUl) {
-        console.log('Current or Parent <ul>: ', targetUl, ' with height: ', maxHeight);
-        console.log(element)
+        console.log('Highest original data-height <ul> on leave: ', targetUl, ' with height: ', maxHeight);
+        $(element).parents('.menu-item--depth-1').children('ul'),css('min-height', maxHeight);
     } else {
-        console.log('No appropriate <ul> found.');
+        console.log('No appropriate <ul> found on leave.');
     }
 }
 
@@ -94,13 +89,13 @@ for (let i = 1; i <= 10; i++) {
             hoverTimeout = setTimeout(() => {
                 logHighestOriginalMinHeight(this);
             }, delay);
+
         }
-    })
-    //     .on('mouseleave', function() {
-    //     // Clear the timeout if the user hovers out before it completes
-    //     clearTimeout(hoverTimeout);
-    //
-    //     // Immediately check and log the height of the current or parent <ul> on mouseleave
-    //     logCurrentOrParentUlHeight(this);
-    // });
+    }).on('mouseleave', function() {
+        // Clear the timeout if the user hovers out before it completes
+        clearTimeout(hoverTimeout);
+
+        // Immediately check and log the height of the current or parent <ul> on mouseleave
+        logHighestOriginalMinHeightOnLeave(this);
+    });
 }
