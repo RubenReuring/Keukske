@@ -3,23 +3,25 @@ for (let i = 1; i < 99999; i++) {
     window.clearInterval(i);
 }
 
-// Step 2: Remove the --min-height styles and set transition to none for all relevant elements
+// Step 2: Remove the --min-height styles and reset data-height attributes
 $(".site-header__nav-wrapper > ul > li ul").each(function() {
     this.style.removeProperty("--min-height");
     this.style.transition = "none"; // Disable any transitions
     $(this).removeAttr("data-height");
-    console.log("Removed --min-height, transition, and data-height for:", this);
+    $(this).removeAttr("data-original-height");
+    console.log("Reset min-height, transition, and data-height for:", this);
 });
 
-// Step 3: Disable the original setHeight function if it exists
-if (typeof window.setHeight === 'function') {
-    window.setHeight = function() {
-        console.log("setHeight function disabled for debugging purposes");
-    };
-}
+// Step 3: Set the original heights in a data attribute for later use
+$(".site-header__nav-wrapper > ul > li ul").each(function() {
+    const originalHeight = this.offsetHeight || this.clientHeight;
+    $(this).attr("data-original-height", originalHeight);
+    console.log("Set data-original-height for:", this);
+});
 
-// Function to calculate and log the tallest visible <ul> on mouseenter
-function logHighestVisibleUl(element) {
+
+// Function to log the highest original data-height of visible <ul> on mouseenter
+function logHighestOriginalMinHeight(element) {
     let maxHeight = 0;
     let highestUl = null;
 
@@ -29,18 +31,16 @@ function logHighestVisibleUl(element) {
 
         // Check if the ul is visible
         if (computedStyle.visibility === 'visible' && computedStyle.opacity === '1') {
-            const ulHeight = ul.outerHeight() || ul.height();
-            if (ulHeight > maxHeight) {
-                maxHeight = ulHeight;
+            const originalHeight = parseFloat(ul.attr('data-original-height'));
+            if (originalHeight > maxHeight) {
+                maxHeight = originalHeight;
                 highestUl = this;
             }
         }
     });
 
     if (highestUl) {
-        console.log('Highest <ul>: ', highestUl, ' with height: ', maxHeight);
-        console.log(element)
-        $(element).parents('.menu-item--depth-1').children('ul').css('min-height', maxHeight)
+        console.log('Highest original data-height <ul>: ', highestUl, ' with height: ', maxHeight);
     } else {
         console.log('No visible <ul> found.');
     }
@@ -74,7 +74,7 @@ function logCurrentOrParentUlHeight(element) {
 
     if (targetUl) {
         console.log('Current or Parent <ul>: ', targetUl, ' with height: ', maxHeight);
-        $(element).parents('.menu-item--depth-1').children('ul').css('min-height', 0)
+        console.log(element)
     } else {
         console.log('No appropriate <ul> found.');
     }
@@ -92,7 +92,7 @@ for (let i = 1; i <= 10; i++) {
 
             // Wait for a short period to allow the CSS transition to complete
             hoverTimeout = setTimeout(() => {
-                logHighestVisibleUl(this);
+                logAndSetMinHeight(this);
             }, delay);
         }
     }).on('mouseleave', function() {
