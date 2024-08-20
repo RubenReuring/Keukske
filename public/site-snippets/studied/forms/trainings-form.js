@@ -195,16 +195,14 @@ $(document).ready(function() {
 
     $('input[name="Pakket"]').change(function() {
         let currentVal = $(this).val()
-        $('.summary-program').find('p').text(currentVal)
-
+        $('.summary-package').find('p').text(currentVal)
         showClassSelector()
-
     });
 
     $('input[name="Programma"]').change(function() {
-        showClassSelector()
         let currentVal = $(this).val()
-        $('.summary-grouptype').find('p').text(currentVal)
+        $('.summary-program').find('p').text(currentVal)
+        showClassSelector()
     });
 
 
