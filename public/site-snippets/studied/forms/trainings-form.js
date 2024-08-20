@@ -196,18 +196,14 @@ $(document).ready(function() {
     $('input[name="Pakket"]').change(function() {
         showClassSelector()
         let currentVal = $(this).val()
-        $('.summary-package').find('p').text(currentVal)
+        $('.summary-program').find('p').text(currentVal)
     });
 
     $('input[name="Programma"]').change(function() {
         showClassSelector()
-    });
-
-    $('input[name="Type-begeleiding"]').change(function() {
         let currentVal = $(this).val()
         $('.summary-grouptype').find('p').text(currentVal)
     });
-
 
 
     $('.cc-form__inner').submit(function(event) {
