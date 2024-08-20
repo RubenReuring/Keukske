@@ -194,9 +194,11 @@ $(document).ready(function() {
     };
 
     $('input[name="Pakket"]').change(function() {
-        showClassSelector()
         let currentVal = $(this).val()
         $('.summary-program').find('p').text(currentVal)
+
+        showClassSelector()
+
     });
 
     $('input[name="Programma"]').change(function() {
