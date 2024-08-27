@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Structure</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        .outer-table, .inner-table {
+            border: 1px solid black;
+        }
+        .inner-table {
+            border: 1px solid red;
+        }
+        .outer-table td {
+            border: 1px solid black;
+            width: 200px; /* Adjust width as needed */
+        }
+        .inner-table td {
+            border: 1px solid red;
+            width: 50px; /* Adjust width as needed */
+        }
+    </style>
+</head>
+<body>
+
+<table class="outer-table">
+    <tr>
+        <td rowspan="5"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <table class="inner-table">
+                <tr>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+
+</body>
+</html>
