@@ -41,12 +41,14 @@ $(document).ready(function() {
     $('.locale-item:not(.w--current)').each(function() {
         var $locale = $(this);
         var hreflang = $locale.attr('hreflang');
+        var href = $locale.attr('href');
         var name = $locale.text().trim();
         var imgSrc = $locale.next('img').attr('src');
 
         languages.push({
             hreflang: hreflang,
             name: name,
+            url: href,
             imgSrc: imgSrc
         });
     });
