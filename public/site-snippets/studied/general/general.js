@@ -32,6 +32,7 @@ $(document).ready(function() {
     var currentLocaleText = $('.nav-locale .w--current').text();
     $('.nav-ld-text.current').find('.p14-1-reg').text(currentLocaleText);
     var currentImgSrc = $('.nav-locale .w--current').next('img').attr('src');
-    $('.nav-ld_flagwrap.current').find('img').attr('src', currentImgSrc);
+    $('.nav-ld_flagwrap.current').find('img').attr('src', currentImgSrc)
+        .attr('srcset','');
 
 });
