@@ -29,20 +29,20 @@ $(window).scroll(function() {
 
 $(document).ready(function() {
 
-    var currentLocaleText = $('.nav-locale .w--current').text();
+    var currentLocaleText = $('.locale-item.w--current').text();
     $('.nav-ld-text.current').find('.p14-1-reg').text(currentLocaleText);
-    var currentImgSrc = $('.nav-locale .w--current').next('img').attr('src');
+    var currentImgSrc = $('.locale-item.w--current').next('img').attr('src');
     $('.nav-ld_flagwrap.current').find('img').attr('src', currentImgSrc)
         .attr('srcset','');
 
 
     var languages = [];
 
-    $('.nav-locale:not(.w--current)').each(function() {
+    $('.locale-item:not(.w--current)').each(function() {
         var $locale = $(this);
-        var hreflang = $locale.find('a').attr('hreflang');
-        var name = $locale.find('a').text().trim();
-        var imgSrc = $locale.find('img').attr('src');
+        var hreflang = $locale.attr('hreflang');
+        var name = $locale.text().trim();
+        var imgSrc = $locale.next('img').attr('src');
 
         languages.push({
             hreflang: hreflang,
