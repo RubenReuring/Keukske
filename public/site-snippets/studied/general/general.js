@@ -28,11 +28,9 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
-    // Find the current active locale
-    var $currentLocale = $('.nav-locale .w--current');
-    var currentLocale = $currentLocale.attr('hreflang');
-    var currentLocaleText = $currentLocale.text();
-    $('.nav-ld-text.current').find('p').text(currentLocaleText);
+
+    var currentLocaleText = $('.nav-locale .w--current').text();
+    $('.nav-ld-text.current').find('.p14-1-reg').text(currentLocaleText);
     var currentImgSrc = $currentLocale.find('img').attr('src');
     $('.nav-ld_flagwrap.current img').attr('src', currentImgSrc);
 
