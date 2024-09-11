@@ -35,4 +35,21 @@ $(document).ready(function() {
     $('.nav-ld_flagwrap.current').find('img').attr('src', currentImgSrc)
         .attr('srcset','');
 
+
+    var languages = [];
+
+    $('.nav-locale:not(.w--current)').each(function() {
+        var $locale = $(this);
+        var hreflang = $locale.find('a').attr('hreflang');
+        var name = $locale.find('a').text().trim();
+        var imgSrc = $locale.find('img').attr('src');
+
+        languages.push({
+            hreflang: hreflang,
+            name: name,
+            imgSrc: imgSrc
+        });
+    });
+
+    console.log(languages); // Log the array to verify
 });
