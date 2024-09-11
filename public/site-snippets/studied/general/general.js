@@ -30,20 +30,10 @@ $(window).scroll(function() {
 $(document).ready(function() {
     // Find the current active locale
     var $currentLocale = $('.nav-locale .w--current');
-
-    // Grab the current locale hreflang (nl or en)
     var currentLocale = $currentLocale.attr('hreflang');
-
-    // Grab the current language text (e.g., 'Nederlands' or 'English')
     var currentLocaleText = $currentLocale.text().trim();
-
-    // Set the text inside the <p> tag within the '.nav-ld-text.current' element
-    $('.nav-ld-text.current p').text(currentLocaleText);
-
-    // Grab the current locale image source (assuming <img> tag is within the <a> tag)
+    $('.nav-ld-text.current').find('p').text(currentLocaleText);
     var currentImgSrc = $currentLocale.find('img').attr('src');
-
-    // Set the image source to the '.nav-ld_flagwrap.current' element
     $('.nav-ld_flagwrap.current img').attr('src', currentImgSrc);
 
     // Log the locale
