@@ -53,5 +53,28 @@ $(document).ready(function() {
         });
     });
 
-    console.log(languages); // Log the array to verify
+    // Define the template
+    var template = `
+        <a href="{{url}}" class="nav-ld__link w-inline-block" tabindex="0">
+            <div class="nav-ld_flagwrap">
+                <img src="{{imgSrc}}" loading="lazy" alt="" class="nav-ld-flag">
+            </div>
+            <div class="nav-ld-text list">
+                <p class="p14-1-reg">{{name}}</p>
+            </div>
+        </a>
+    `;
+
+    // Clear existing content
+    $('.nav-ld__list').empty();
+
+    // Create and append new elements based on the languages array
+    languages.forEach(function(language) {
+        var itemHtml = template
+            .replace('{{url}}', language.url)
+            .replace('{{imgSrc}}', language.imgSrc)
+            .replace('{{name}}', language.name);
+
+        $('.nav-ld__list').append(itemHtml);
+    });
 });
