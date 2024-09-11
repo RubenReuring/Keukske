@@ -30,9 +30,9 @@ $(window).scroll(function() {
 $(document).ready(function() {
     var currentLocale = $('.nav-locale .w--current').attr('hreflang');
     if (currentLocale === 'nl') {
-        console.log('nl');
+        $('.nav-ld-text.current').text('Nederlands')
     } else if (currentLocale === 'en') {
-        console.log('en');
+        $('.nav-ld-text.current').text('English')
     } else {
         console.log('Locale not found');
     }
