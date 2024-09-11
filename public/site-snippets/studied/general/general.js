@@ -31,15 +31,7 @@ $(document).ready(function() {
 
     var currentLocaleText = $('.nav-locale .w--current').text();
     $('.nav-ld-text.current').find('.p14-1-reg').text(currentLocaleText);
-    var currentImgSrc = $currentLocale.find('img').attr('src');
+    var currentImgSrc = $('.nav-locale .w--current').siblings('img').attr('src');
     $('.nav-ld_flagwrap.current img').attr('src', currentImgSrc);
 
-    // Log the locale
-    if (currentLocale === 'nl') {
-        console.log('nl');
-    } else if (currentLocale === 'en') {
-        console.log('en');
-    } else {
-        console.log('Locale not found');
-    }
 });
