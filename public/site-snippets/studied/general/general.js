@@ -28,16 +28,25 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
-    // Check for the locale element with class 'w--current' indicating the current locale
-    var currentLocale = $('.nav-locale .w--current').attr('hreflang');
+    // Find the current active locale
+    var $currentLocale = $('.nav-locale .w--current');
+
+    // Grab the current locale hreflang (nl or en)
+    var currentLocale = $currentLocale.attr('hreflang');
 
     // Grab the current language text (e.g., 'Nederlands' or 'English')
-    var currentLocaleText = $('.nav-locale .w--current').text();
+    var currentLocaleText = $currentLocale.text().trim();
 
-    // Set the current language text to the '.nav-ld-text.current' element
-    $('.nav-ld-text.current').text(currentLocaleText);
+    // Set the text inside the <p> tag within the '.nav-ld-text.current' element
+    $('.nav-ld-text.current p').text(currentLocaleText);
 
-    // Check if the locale is 'nl' or 'en' and log the result
+    // Grab the current locale image source (assuming <img> tag is within the <a> tag)
+    var currentImgSrc = $currentLocale.find('img').attr('src');
+
+    // Set the image source to the '.nav-ld_flagwrap.current' element
+    $('.nav-ld_flagwrap.current img').attr('src', currentImgSrc);
+
+    // Log the locale
     if (currentLocale === 'nl') {
         console.log('nl');
     } else if (currentLocale === 'en') {
@@ -46,4 +55,3 @@ $(document).ready(function() {
         console.log('Locale not found');
     }
 });
-
