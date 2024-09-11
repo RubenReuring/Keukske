@@ -28,11 +28,20 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
+    // Check for the locale element with class 'w--current' indicating the current locale
     var currentLocale = $('.nav-locale .w--current').attr('hreflang');
+
+    // Grab the current language text (e.g., 'Nederlands' or 'English')
+    var currentLocaleText = $('.nav-locale .w--current').text();
+
+    // Set the current language text to the '.nav-ld-text.current' element
+    $('.nav-ld-text.current').text(currentLocaleText);
+
+    // Check if the locale is 'nl' or 'en' and log the result
     if (currentLocale === 'nl') {
-        $('.nav-ld-text.current').text('Nederlands')
+        console.log('nl');
     } else if (currentLocale === 'en') {
-        $('.nav-ld-text.current').text('English')
+        console.log('en');
     } else {
         console.log('Locale not found');
     }
