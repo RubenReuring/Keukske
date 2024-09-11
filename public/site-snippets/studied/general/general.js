@@ -26,3 +26,15 @@ $(window).scroll(function() {
         navbarTransition.play();
     }
 });
+
+$(document).ready(function() {
+    var currentLocale = $('.nav-locale .w--current').attr('hreflang');
+    if (currentLocale === 'nl') {
+        console.log('nl');
+    } else if (currentLocale === 'en') {
+        console.log('en');
+    } else {
+        console.log('Locale not found');
+    }
+});
+
