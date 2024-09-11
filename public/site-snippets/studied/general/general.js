@@ -31,7 +31,7 @@ $(document).ready(function() {
     // Find the current active locale
     var $currentLocale = $('.nav-locale .w--current');
     var currentLocale = $currentLocale.attr('hreflang');
-    var currentLocaleText = $currentLocale.text().trim();
+    var currentLocaleText = $currentLocale.text();
     $('.nav-ld-text.current').find('p').text(currentLocaleText);
     var currentImgSrc = $currentLocale.find('img').attr('src');
     $('.nav-ld_flagwrap.current img').attr('src', currentImgSrc);
