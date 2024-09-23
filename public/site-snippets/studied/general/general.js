@@ -80,5 +80,5 @@ $(document).ready(function() {
 
     // Logos loop
     $('.marquee-content').clone().appendTo('.marquee-collection')
-    let bannerLoop = gsap.to('.marquee-content', { duration: 35, ease: "none", x: "-=100%", repeat: -1 })
+    let bannerLoop = gsap.to('.marquee-content', { duration: 5, ease: "none", x: "-=100%", repeat: -1 })
 });
