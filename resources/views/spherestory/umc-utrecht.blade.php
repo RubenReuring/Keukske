@@ -53,8 +53,8 @@
                         </div>
                     </div>
                     <div class="_360vc-cta_wrap">
-                        <a target="_parent" href="https://www.chauffeurbijmunckhof.nl/?id=sollicitatieformulier/#solliciteer" class="_360vc_btn w-inline-block">
-                            <p class="ch_p16-m">Lees meer</p>
+                        <a target="_parent" href="https://www.werkenbijumcutrecht.nl/operatieassistent-worden" class="_360vc_btn w-inline-block">
+                            <p class="ch_p16-m">Ontdek meer</p>
                         </a>
                     </div>
                 </div>
@@ -83,8 +83,8 @@
                         </div>
                     </div>
                     <div class="_360vc-cta_wrap">
-                        <a target="_parent" href="https://www.chauffeurbijmunckhof.nl/?id=sollicitatieformulier/#solliciteer" class="_360vc_btn w-inline-block">
-                            <p class="ch_p16-m">Lees meer</p>
+                        <a target="_parent" href="https://www.werkenbijumcutrecht.nl/anesthesiemedewerker-worden" class="_360vc_btn w-inline-block">
+                            <p class="ch_p16-m">Ontdek meer</p>
                         </a>
                     </div>
                 </div>
@@ -113,8 +113,8 @@
                         </div>
                     </div>
                     <div class="_360vc-cta_wrap">
-                        <a target="_parent" href="https://www.chauffeurbijmunckhof.nl/?id=sollicitatieformulier/#solliciteer" class="_360vc_btn w-inline-block">
-                            <p class="ch_p16-m">Lees meer</p>
+                        <a target="_parent" href="https://www.werkenbijumcutrecht.nl/operatieassistent-worden" class="_360vc_btn w-inline-block">
+                            <p class="ch_p16-m">Ontdek meer</p>
                         </a>
                     </div>
                 </div>
@@ -143,8 +143,8 @@
                         </div>
                     </div>
                     <div class="_360vc-cta_wrap">
-                        <a target="_parent" href="" class="_360vc_btn w-inline-block">
-                            <p class="ch_p16-m">Lees meer</p>
+                        <a target="_parent" href="https://www.werkenbijumcutrecht.nl/anesthesiemedewerker-worden" class="_360vc_btn w-inline-block">
+                            <p class="ch_p16-m">Ontdek meer</p>
                         </a>
                     </div>
                 </div>
