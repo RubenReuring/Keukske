@@ -34,7 +34,7 @@ $('.classes-period').each(function() {
     dataArray.forEach(function(data, index) {
         var newRow = $(periodLessonTemplate);
         newRow.find('.p14-14-med').text(data.titel || "Title");
-        newRow.find('.p13-1-5-reg').text(data.beschrijving || "Beschrijving");
+        newRow.find('.p12-12-reg).text(data.beschrijving || "Beschrijving");
         newRow.find('.cpm-date-value').text(data.datum || "Datum");
         newRow.find('.cpm-time-value').text(data.tijdvak || "Tijdvak");
         periodBody.append(newRow);
