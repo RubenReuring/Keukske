@@ -81,4 +81,8 @@ $(document).ready(function() {
     // Logos loop
     $('.marquee-content').clone().appendTo('.marquee-collection')
     let bannerLoop = gsap.to('.marquee-content', { duration: 25, ease: "none", x: "-=100%", repeat: -1 })
+
+    $('.mma-head').on('click', function() {
+        $(this).parent().toggleClass('mma-active');
+    });
 });
