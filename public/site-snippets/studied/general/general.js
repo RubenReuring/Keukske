@@ -1,31 +1,63 @@
-function isAtTop() {
-    return $(window).scrollTop() === 0;
-}
+$(document).ready(function() {
 
-let navbarTransition = gsap.timeline({paused: true});
-navbarTransition.fromTo(
-    '.nav',
-    {backgroundColor: 'rgba(245, 242, 235, 0)', paddingTop: "1.25em"},
-    {paddingTop: "1em", backgroundColor: 'rgba(245, 242, 235,1)',duration: .55, ease: "power2.inOut"},
-);
-
-function collapsNav() {
-    navbarTransition.play();
-}
-
-if (isAtTop()) {
-    navbarTransition.reverse();
-} else {
-    navbarTransition.play();
-}
-
-$(window).scroll(function() {
-    if (isAtTop()) {
-        navbarTransition.reverse();
-    } else {
-        navbarTransition.play();
+    // Function to check if window is at top
+    function isAtTop() {
+        return $(window).scrollTop() === 0;
     }
+
+    // GSAP timeline for 992px and above
+    let navbarTransitionLarge = gsap.timeline({ paused: true });
+    navbarTransitionLarge.fromTo(
+        '.nav',
+        { backgroundColor: 'rgba(245, 242, 235, 0)', paddingTop: "1.25em" },
+        { paddingTop: "1em", backgroundColor: 'rgba(245, 242, 235, 1)', duration: 0.55, ease: "power2.inOut" }
+    );
+
+    // GSAP timeline for 991px and below (no paddingTop change)
+    let navbarTransitionSmall = gsap.timeline({ paused: true });
+    navbarTransitionSmall.fromTo(
+        '.nav',
+        { backgroundColor: 'rgba(245, 242, 235, 0)' },
+        { backgroundColor: 'rgba(245, 242, 235, 1)', duration: 0.55, ease: "power2.inOut" }
+    );
+
+    // Function to check screen width
+    function isLargeScreen() {
+        return window.matchMedia('(min-width: 992px)').matches;
+    }
+
+    // Function to handle navbar transition based on scroll position and screen size
+    function handleNavbarTransition() {
+        if (isLargeScreen()) {
+            if (isAtTop()) {
+                navbarTransitionLarge.reverse();
+            } else {
+                navbarTransitionLarge.play();
+            }
+        } else {
+            if (isAtTop()) {
+                navbarTransitionSmall.reverse();
+            } else {
+                navbarTransitionSmall.play();
+            }
+        }
+    }
+
+    // Initial load check
+    handleNavbarTransition();
+
+    // On scroll, handle the transition
+    $(window).scroll(function() {
+        handleNavbarTransition();
+    });
+
+    // On window resize, reset the navbar transition for the new size
+    $(window).resize(function() {
+        handleNavbarTransition();
+    });
+
 });
+
 
 $(document).ready(function() {
 
