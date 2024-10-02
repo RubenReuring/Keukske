@@ -92,7 +92,7 @@ $(document).ready(function() {
                 <img src="{{imgSrc}}" loading="lazy" alt="" class="nav-ld-flag">
             </div>
             <div class="nav-ld-text list">
-                <p class="p14-1-reg">{{name}}</p>
+                <p class="p14-1-reg to16">{{name}}</p>
             </div>
         </a>
     `;
