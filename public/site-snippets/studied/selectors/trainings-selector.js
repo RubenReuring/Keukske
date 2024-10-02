@@ -97,7 +97,7 @@ $(document).ready(function(){
 
         items.forEach(function(item) {
             var template = `
-                <a href="${item.link}" class="tm-sl-link w-inline-block">
+                <a href="${item.link}" target="_blank" class="tm-sl-link w-inline-block">
                     <p class="p14-1-book">${item.name}</p>
                     <div class="tm-sll-iconwrap">
                         <div class="iconembed w-embed">
