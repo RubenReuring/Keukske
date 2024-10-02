@@ -9,7 +9,7 @@ $(document).ready(function() {
     let navbarTransitionLarge = gsap.timeline({ paused: true });
     navbarTransitionLarge.fromTo(
         '.nav',
-        { backgroundColor: 'rgba(245, 242, 235, 0)', paddingTop: "1.25em" },
+        { backgroundColor: 'rgba(245, 242, 235, 0)', paddingTop: "1.45em" },
         { paddingTop: "1em", backgroundColor: 'rgba(245, 242, 235, 1)', duration: 0.55, ease: "power2.inOut" }
     );
 
