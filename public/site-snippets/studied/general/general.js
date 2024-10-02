@@ -85,4 +85,7 @@ $(document).ready(function() {
     $('.mma-head').on('click', function() {
         $(this).parent().toggleClass('mma-active');
     });
+    $('.mobile-menu').on('click', function() {
+        $(this).parent().toggleClass('menu-active');
+    });
 });
