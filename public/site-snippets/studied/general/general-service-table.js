@@ -35,7 +35,6 @@ $(document).ready(function() {
                 newRow.find('.ttm-row__detail').html(this.field2);
             }
             $(currentBlock).append(newRow)
-            console.log(newRow)
         })
     })
 });
