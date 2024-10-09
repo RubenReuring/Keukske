@@ -26,7 +26,7 @@ $(document).ready(function() {
         var formData = $(this).serialize();
         $.ajax({
             type: 'POST',
-            url: 'https://hook.us1.make.com/gx5u1axpfy5isstxbhladhpn35uu5ikv',
+            url: 'https://hook.us1.make.com/zwhtjcnvd9tlnix3fnea84k8vyou4qmk',
             data: formData,
             success: function(response) {
                 // console.log('Form data successfully posted.');
