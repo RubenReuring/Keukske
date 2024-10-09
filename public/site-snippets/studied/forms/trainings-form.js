@@ -170,13 +170,13 @@ $(document).ready(function() {
             });
         };
 
-        if($('#Volledig-programma').is(':checked') || $('#Verkort-programma').is(':checked')){
+        if($('#Basis-programma').is(':checked') || $('#Verkort-programma').is(':checked')){
             if($('#Losse-lessen').is(':checked')){
                 $('.classes-selector').css('display', 'block');
                 setSummaryList()
 
                 numberSections();
-                if($('#Volledig-programma').is(':checked')){
+                if($('#Basis-programma').is(':checked')){
                     let classes = $('#base-program-content').find('.cc-block__body.program').children();
                     setClassList(classes);
                 } else if ($('#Verkort-programma').is(':checked')){
