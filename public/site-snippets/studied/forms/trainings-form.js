@@ -212,7 +212,7 @@ $(document).ready(function() {
         var formData = $(this).serialize();
         $.ajax({
             type: 'POST',
-            url: 'https://hook.us1.make.com/7km1f8r2k8uob9i1tc52gbmllop0yd2z',
+            url: 'https://hook.us1.make.com/r88w7o6dpbo9gd79cikdkn8mgdeg8l0e',
             data: formData,
             success: function(response) {
                 // console.log('Form data successfully posted.');
