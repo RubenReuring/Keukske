@@ -21,4 +21,23 @@ $(document).ready(function() {
 
     });
 
+    $('.cc-form__inner').submit(function(event) {
+        event.preventDefault();
+        var formData = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: 'https://hook.us1.make.com/gx5u1axpfy5isstxbhladhpn35uu5ikv',
+            data: formData,
+            success: function(response) {
+                // console.log('Form data successfully posted.');
+                // Ga door met de standaard submit actie van Webflow
+                $('#myForm').off('submit').submit();
+            },
+            error: function(error) {
+                // console.error('Error posting form data:', error);
+                // Optioneel: voeg foutafhandelingslogica toe
+            }
+        });
+    });
+
 });
