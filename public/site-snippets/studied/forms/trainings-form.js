@@ -134,7 +134,6 @@ $(document).ready(function() {
     function showClassSelector(){
 
         function setSummaryList(){
-            console.log('test')
             $('.summary-list').css('display', 'block');
             $('.cc-fb_summarylist__content').empty();
 
@@ -196,7 +195,6 @@ $(document).ready(function() {
     $('input[name="Pakket"]').change(function() {
         let currentVal = $(this).val()
         $('.summary-package').find('p').text(currentVal)
-        console.log(currentVal)
         showClassSelector()
     });
 
@@ -209,7 +207,6 @@ $(document).ready(function() {
 
     $('.cc-form__inner').submit(function(event) {
         event.preventDefault();
-        $('#form-training-name').val($('#vakcode-form-data').text());
         var formData = $(this).serialize();
         $.ajax({
             type: 'POST',
