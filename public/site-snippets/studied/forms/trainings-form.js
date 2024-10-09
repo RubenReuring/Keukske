@@ -196,6 +196,7 @@ $(document).ready(function() {
     $('input[name="Pakket"]').change(function() {
         let currentVal = $(this).val()
         $('.summary-package').find('p').text(currentVal)
+        console.log(currentVal)
         showClassSelector()
     });
 
