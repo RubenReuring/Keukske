@@ -132,8 +132,9 @@ $(document).ready(function() {
     </div> `
 
     function showClassSelector(){
-        console.log('test')
+
         function setSummaryList(){
+            console.log('test')
             $('.summary-list').css('display', 'block');
             $('.cc-fb_summarylist__content').empty();
 
