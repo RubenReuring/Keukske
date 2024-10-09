@@ -151,6 +151,7 @@ $(document).ready(function() {
                 });
             });
         };
+        setSummaryList();
 
         function setClassList(items){
             $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').empty();
@@ -169,7 +170,7 @@ $(document).ready(function() {
                 $('.cc-form__block.classes-selector').find('.cc-fb__content-inner.flexvertical').append(newClassCheckbox);
             });
         };
-
+        setClassList();
 
         if($('#Volledig-programma').is(':checked') || $('#Verkort-programma').is(':checked')){
             if($('#Losse-lessen').is(':checked')){
