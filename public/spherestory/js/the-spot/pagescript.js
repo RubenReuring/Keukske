@@ -67,8 +67,7 @@ let viewer = pannellum.viewer("panorama", {
     scenes: {
         voorkant: {
             type: "equirectangular",
-            panorama:
-                "/spherestory/assets/the-spot/Scene 1.webp",
+            panorama: "/spherestory/assets/the-spot/Scene 1.webp",
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
@@ -88,8 +87,7 @@ let viewer = pannellum.viewer("panorama", {
         },
         achterkant: {
             type: "equirectangular",
-            panorama:
-                "/spherestory/assets/the-spot/Scene 2.webp",
+            panorama: "/spherestory/assets/the-spot/Scene 2.webp",
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
@@ -99,12 +97,18 @@ let viewer = pannellum.viewer("panorama", {
             maxHfov: 90,
             hotSpots: [
                 {
-                    pitch: -6.15,
-                    yaw: 153.7,
-                    type: "info",
-                    cssClass: "custom-hotspot flexibility-hotspot_lunchroom",
-                    clickHandlerFunc: hotspotAction,
-                    clickHandlerArgs: {hotspot: "flexibility-hotspot_lunchroom", type: "video-modal"}
+                    pitch: -17,
+                    yaw: 181,
+                    type: "scene",
+                    cssClass: "custom-hotspot achterkant",
+                    sceneId: 'achterkant'
+                },
+                {
+                    pitch: -18,
+                    yaw: 29,
+                    type: "scene",
+                    cssClass: "custom-hotspot voorkant",
+                    sceneId: 'voorkant'
                 }
             ]
         },
@@ -121,12 +125,18 @@ let viewer = pannellum.viewer("panorama", {
             maxHfov: 90,
             hotSpots: [
                 {
-                    pitch: -6.15,
-                    yaw: 153.7,
-                    type: "info",
-                    cssClass: "custom-hotspot flexibility-hotspot_lunchroom",
-                    clickHandlerFunc: hotspotAction,
-                    clickHandlerArgs: {hotspot: "flexibility-hotspot_lunchroom", type: "video-modal"}
+                    pitch: -17,
+                    yaw: 181,
+                    type: "scene",
+                    cssClass: "custom-hotspot achterkant",
+                    sceneId: 'achterkant'
+                },
+                {
+                    pitch: -18,
+                    yaw: 29,
+                    type: "scene",
+                    cssClass: "custom-hotspot voorkant",
+                    sceneId: 'voorkant'
                 }
             ]
         },
@@ -215,8 +225,8 @@ mm.add("(max-width: 768px)", function() {
 viewer.on("load", function () {
     // $("#ch-wrapper_company").clone().appendTo(".sphere-hotspot_company");
     $("#ch-wrapper_video-1").clone().appendTo(".opdebar");
-    $("#ch-wrapper_video-2").clone().appendTo(".sphere-hotspot_video-2");
-    $("#ch-wrapper_video-3").clone().appendTo(".sphere-hotspot_video-3");
+    $("#ch-wrapper_video-2").clone().appendTo(".voorkant");
+    $("#ch-wrapper_video-3").clone().appendTo(".achterkant");
     $("#ch-wrapper_video-4").clone().appendTo(".sphere-hotspot_video-4");
     let currentScene = viewer.getScene();
 });

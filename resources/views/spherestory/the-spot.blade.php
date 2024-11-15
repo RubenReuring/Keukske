@@ -52,7 +52,7 @@
         <div class="ch-inner">
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">Op de bar</p>
+                    <p class="ch_p20-r">Voorkant</p>
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@
         <div class="ch-inner">
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">Op de bar</p>
+                    <p class="ch_p20-r">Achterkant</p>
                 </div>
             </div>
         </div>
