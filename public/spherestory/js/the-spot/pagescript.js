@@ -71,8 +71,8 @@ let viewer = pannellum.viewer("panorama", {
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
-            pitch: -1.3,
-            yaw: 121.5,
+            pitch: -3.8,
+            yaw: 292,
             hfov: 120,
             maxHfov: 120,
             hotSpots: [
@@ -91,8 +91,8 @@ let viewer = pannellum.viewer("panorama", {
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
-            pitch: -1.3,
-            yaw: 121.5,
+            pitch: 4,
+            yaw: 147,
             hfov: 120,
             maxHfov: 120,
             hotSpots: [
@@ -112,8 +112,8 @@ let viewer = pannellum.viewer("panorama", {
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
-            pitch: -1.3,
-            yaw: 121.5,
+            pitch: -21,
+            yaw: 123,
             hfov: 120,
             maxHfov: 120,
             hotSpots: [
@@ -140,28 +140,6 @@ let viewer = pannellum.viewer("panorama", {
                 }
             ]
         },
-        achterdebar: {
-            type: "equirectangular",
-            panorama:
-                "/spherestory/assets/the-spot/Scene 3.webp",
-            autoLoad: true,
-            showZoomCtrl: false,
-            showFullscreenCtrl: false,
-            pitch: -1.3,
-            yaw: 121.5,
-            hfov: 120,
-            maxHfov: 120,
-            hotSpots: [
-                {
-                    pitch: -6.15,
-                    yaw: 153.7,
-                    type: "info",
-                    cssClass: "custom-hotspot flexibility-hotspot_lunchroom",
-                    clickHandlerFunc: hotspotAction,
-                    clickHandlerArgs: {hotspot: "flexibility-hotspot_lunchroom", type: "video-modal"}
-                }
-            ]
-        },
         opslag: {
             type: "equirectangular",
             panorama:
@@ -169,8 +147,8 @@ let viewer = pannellum.viewer("panorama", {
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
-            pitch: -1.3,
-            yaw: 121.5,
+            pitch: -1.7,
+            yaw: 6,
             hfov: 120,
             maxHfov: 120,
             hotSpots: [
