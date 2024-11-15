@@ -58,7 +58,7 @@ $('.video-js').each(function(){
 
 let viewer = pannellum.viewer("panorama", {
     default: {
-        firstScene: "office",
+        firstScene: "voorkant",
         sceneFadeDuration: 1000,
         //hotSpotDebug: true,
         mouseZoom: false,
