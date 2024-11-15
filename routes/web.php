@@ -30,3 +30,4 @@ Route::get('/spherestory/flexibility-limburg', function () { return view('sphere
 Route::get('/spherestory/munckhof-01', function () { return view('spherestory/munckhof-01'); });
 Route::get('/spherestory/janssengroep-01', function () { return view('spherestory/janssen-01'); });
 Route::get('/spherestory/umc-utrecht', function () { return view('spherestory/umc-utrecht'); });
+Route::get('/spherestory/the-spot', function () { return view('spherestory/the-spot'); });
