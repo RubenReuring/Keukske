@@ -78,12 +78,11 @@ let viewer = pannellum.viewer("panorama", {
             maxHfov: 120,
             hotSpots: [
                 {
-                    pitch: -6.15,
-                    yaw: 153.7,
-                    type: "info",
-                    cssClass: "custom-hotspot flexibility-hotspot_lunchroom",
-                    clickHandlerFunc: hotspotAction,
-                    clickHandlerArgs: {hotspot: "flexibility-hotspot_lunchroom", type: "video-modal"}
+                    pitch: 4.2,
+                    yaw: 292,
+                    type: "scene",
+                    cssClass: "custom-hotspot opdebar",
+                    sceneId: 'opdebar'
                 }
             ]
         },
@@ -215,7 +214,7 @@ mm.add("(max-width: 768px)", function() {
 });
 viewer.on("load", function () {
     // $("#ch-wrapper_company").clone().appendTo(".sphere-hotspot_company");
-    $("#ch-wrapper_video-1").clone().appendTo(".sphere-hotspot_video-1");
+    $("#ch-wrapper_video-1").clone().appendTo(".opdebar");
     $("#ch-wrapper_video-2").clone().appendTo(".sphere-hotspot_video-2");
     $("#ch-wrapper_video-3").clone().appendTo(".sphere-hotspot_video-3");
     $("#ch-wrapper_video-4").clone().appendTo(".sphere-hotspot_video-4");
