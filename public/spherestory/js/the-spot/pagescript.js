@@ -68,7 +68,7 @@ let viewer = pannellum.viewer("panorama", {
         voorkant: {
             type: "equirectangular",
             panorama:
-                "https://uploads-ssl.webflow.com/63dcc9351dd74501c9a884ef/649ebef14fe3311048450833_REURING_FLEXIBILITY_360(3).webp",
+                "/spherestory/assets/the-spot/Scene 1.webp",
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
@@ -90,7 +90,7 @@ let viewer = pannellum.viewer("panorama", {
         achterkant: {
             type: "equirectangular",
             panorama:
-                "https://uploads-ssl.webflow.com/63dcc9351dd74501c9a884ef/649ebef14fe3311048450833_REURING_FLEXIBILITY_360(3).webp",
+                "/spherestory/assets/the-spot/Scene 2.webp",
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
@@ -112,7 +112,7 @@ let viewer = pannellum.viewer("panorama", {
         opdebar: {
             type: "equirectangular",
             panorama:
-                "https://uploads-ssl.webflow.com/63dcc9351dd74501c9a884ef/649ebef14fe3311048450833_REURING_FLEXIBILITY_360(3).webp",
+                "/spherestory/assets/the-spot/Scene 4.webp",
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
@@ -134,7 +134,7 @@ let viewer = pannellum.viewer("panorama", {
         achterdebar: {
             type: "equirectangular",
             panorama:
-                "https://uploads-ssl.webflow.com/63dcc9351dd74501c9a884ef/649ebef14fe3311048450833_REURING_FLEXIBILITY_360(3).webp",
+                "/spherestory/assets/the-spot/Scene 3.webp",
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
@@ -156,7 +156,7 @@ let viewer = pannellum.viewer("panorama", {
         opslag: {
             type: "equirectangular",
             panorama:
-                "https://uploads-ssl.webflow.com/63dcc9351dd74501c9a884ef/649ebef14fe3311048450833_REURING_FLEXIBILITY_360(3).webp",
+                "/spherestory/assets/the-spot/Scene 5.webp",
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
@@ -178,7 +178,7 @@ let viewer = pannellum.viewer("panorama", {
         toilet: {
             type: "equirectangular",
             panorama:
-                "https://uploads-ssl.webflow.com/63dcc9351dd74501c9a884ef/649ebef14fe3311048450833_REURING_FLEXIBILITY_360(3).webp",
+                "/spherestory/assets/the-spot/Scene 6.webp",
             autoLoad: true,
             showZoomCtrl: false,
             showFullscreenCtrl: false,
