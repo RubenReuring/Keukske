@@ -28,128 +28,6 @@
 <div class="pagewrap">
     <div class="_360wrapper demo">
         <div id="panorama" class="_360viewer demo"></div>
-        <div class="room-videos inactive">
-            <div class="_360videocontainer">
-                <div class="_360vc_inner">
-                    <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-1" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="/spherestory/assets/umc/Audrey_V1.1.mp4" type="video/mp4">
-                        </video></div>
-                    <div class="_360videocontrols">
-                        <div class="_360vc-cb play videocontrolinactive">
-                            <div class="playiconembed w-embed"><svg class="playbtn-icon" width="16" height="18" viewbox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.5 8.13398C16.1667 8.51888 16.1667 9.48113 15.5 9.86603L2 17.6603C1.33334 18.0452 0.500001 17.564 0.500001 16.7942L0.500002 1.20577C0.500002 0.435972 1.33334 -0.0451547 2 0.339746L15.5 8.13398Z" fill="white" fill-opacity="0.75"></path>
-                                </svg></div>
-                        </div>
-                    </div>
-                    <div class="_360vc-subcontrols">
-                        <div class="_360vc-cb pause">
-                            <div class="pauzeiconembed w-embed"><svg class="pauzebtn-icon" width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                    <rect x="9" width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                </svg></div>
-                        </div>
-                        <div class="_360vc_close">
-                            <p class="ch_p16-m">Sluiten</p>
-                        </div>
-                    </div>
-                    <div class="_360vc-cta_wrap">
-                        <a target="_blank" href="https://www.werkenbijumcutrecht.nl/operatieassistent-worden" class="_360vc_btn w-inline-block">
-                            <p class="ch_p16-m">Ontdek meer</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="_360videocontainer">
-                <div class="_360vc_inner">
-                    <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-2" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="/spherestory/assets/umc/Johan_V1.1.mp4" type="video/mp4">
-                        </video></div>
-                    <div class="_360videocontrols">
-                        <div class="_360vc-cb play videocontrolinactive">
-                            <div class="playiconembed w-embed"><svg class="playbtn-icon" width="16" height="18" viewbox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.5 8.13398C16.1667 8.51888 16.1667 9.48113 15.5 9.86603L2 17.6603C1.33334 18.0452 0.500001 17.564 0.500001 16.7942L0.500002 1.20577C0.500002 0.435972 1.33334 -0.0451547 2 0.339746L15.5 8.13398Z" fill="white" fill-opacity="0.75"></path>
-                                </svg></div>
-                        </div>
-                    </div>
-                    <div class="_360vc-subcontrols">
-                        <div class="_360vc-cb pause">
-                            <div class="pauzeiconembed w-embed"><svg class="pauzebtn-icon" width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                    <rect x="9" width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                </svg></div>
-                        </div>
-                        <div class="_360vc_close">
-                            <p class="ch_p16-m">Sluiten</p>
-                        </div>
-                    </div>
-                    <div class="_360vc-cta_wrap">
-                        <a target="_blank" href="https://www.werkenbijumcutrecht.nl/anesthesiemedewerker-worden" class="_360vc_btn w-inline-block">
-                            <p class="ch_p16-m">Ontdek meer</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="_360videocontainer">
-                <div class="_360vc_inner">
-                    <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-3" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="/spherestory/assets/umc/Stefanie_V1.1.mp4" type="video/mp4">
-                        </video></div>
-                    <div class="_360videocontrols">
-                        <div class="_360vc-cb play videocontrolinactive">
-                            <div class="playiconembed w-embed"><svg class="playbtn-icon" width="16" height="18" viewbox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.5 8.13398C16.1667 8.51888 16.1667 9.48113 15.5 9.86603L2 17.6603C1.33334 18.0452 0.500001 17.564 0.500001 16.7942L0.500002 1.20577C0.500002 0.435972 1.33334 -0.0451547 2 0.339746L15.5 8.13398Z" fill="white" fill-opacity="0.75"></path>
-                                </svg></div>
-                        </div>
-                    </div>
-                    <div class="_360vc-subcontrols">
-                        <div class="_360vc-cb pause">
-                            <div class="pauzeiconembed w-embed"><svg class="pauzebtn-icon" width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                    <rect x="9" width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                </svg></div>
-                        </div>
-                        <div class="_360vc_close">
-                            <p class="ch_p16-m">Sluiten</p>
-                        </div>
-                    </div>
-                    <div class="_360vc-cta_wrap">
-                        <a target="_blank" href="https://www.werkenbijumcutrecht.nl/operatieassistent-worden" class="_360vc_btn w-inline-block">
-                            <p class="ch_p16-m">Ontdek meer</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="_360videocontainer">
-                <div class="_360vc_inner">
-                    <div class="_360videoembed w-embed"><video id="sphere-hotspot_video-4" class="video-js vjs-16-9" playsinline="" preload="auto">
-                            <source src="/spherestory/assets/umc/Wouter_V1.1.mp4" type="video/mp4">
-                        </video></div>
-                    <div class="_360videocontrols">
-                        <div class="_360vc-cb play videocontrolinactive">
-                            <div class="playiconembed w-embed"><svg class="playbtn-icon" width="16" height="18" viewbox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.5 8.13398C16.1667 8.51888 16.1667 9.48113 15.5 9.86603L2 17.6603C1.33334 18.0452 0.500001 17.564 0.500001 16.7942L0.500002 1.20577C0.500002 0.435972 1.33334 -0.0451547 2 0.339746L15.5 8.13398Z" fill="white" fill-opacity="0.75"></path>
-                                </svg></div>
-                        </div>
-                    </div>
-                    <div class="_360vc-subcontrols">
-                        <div class="_360vc-cb pause">
-                            <div class="pauzeiconembed w-embed"><svg class="pauzebtn-icon" width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                    <rect x="9" width="5" height="15" rx="1" fill="#E9E0DE"></rect>
-                                </svg></div>
-                        </div>
-                        <div class="_360vc_close">
-                            <p class="ch_p16-m">Sluiten</p>
-                        </div>
-                    </div>
-                    <div class="_360vc-cta_wrap">
-                        <a target="_blank" href="https://www.werkenbijumcutrecht.nl/anesthesiemedewerker-worden" class="_360vc_btn w-inline-block">
-                            <p class="ch_p16-m">Ontdek meer</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="icons">
             <div class="w-embed"><svg class="compass-icon" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.75693 7.76822C7.25583 8.26363 7.25583 9.07793 7.75693 9.58473C8.25804 10.0801 9.07233 10.0801 9.56774 9.57903C10.0805 9.06628 10.0713 8.26606 9.57344 7.76822C9.07327 7.26802 8.27465 7.2505 7.75693 7.76822Z" fill="currentColor"></path>
@@ -159,30 +37,49 @@
     </div>
 </div>
 <div class="hotspot-wrapper demo">
-    <div id="ch-wrapper_company" class="ch-wrapper">
+    <div id="ch-wrapper_video-1" class="ch-wrapper clickable">
         <div class="ch-inner">
-            <div class="ch-avatar-wrap"><img src="/spherestory/assets/umc/umc-logo.png" loading="lazy" alt="" class="avatar"></div>
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">UMC Utrecht</p>
-                </div>
-                <div class="ch-details-desc">
-                    <p class="ch_p14-m">Wordt dit jouw nieuwe werkplek?</p>
+                    <p class="ch_p20-r">Op de bar</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="ch-wrapper_video-1" class="ch-wrapper clickable">
-        Click me
+        <div class="ch-clickable_tint hover"></div>
+        <div class="ch-clickable_tint animate"></div>
     </div>
     <div id="ch-wrapper_video-2" class="ch-wrapper clickable">
-        Click me
+        <div class="ch-inner">
+            <div class="ch-details">
+                <div class="ch-details-title">
+                    <p class="ch_p20-r">Op de bar</p>
+                </div>
+            </div>
+        </div>
+        <div class="ch-clickable_tint hover"></div>
+        <div class="ch-clickable_tint animate"></div>
     </div>
     <div id="ch-wrapper_video-3" class="ch-wrapper clickable">
-        Click me
+        <div class="ch-inner">
+            <div class="ch-details">
+                <div class="ch-details-title">
+                    <p class="ch_p20-r">Op de bar</p>
+                </div>
+            </div>
+        </div>
+        <div class="ch-clickable_tint hover"></div>
+        <div class="ch-clickable_tint animate"></div>
     </div>
     <div id="ch-wrapper_video-4" class="ch-wrapper clickable">
-        Click me
+        <div class="ch-inner">
+            <div class="ch-details">
+                <div class="ch-details-title">
+                    <p class="ch_p20-r">Op de bar</p>
+                </div>
+            </div>
+        </div>
+        <div class="ch-clickable_tint hover"></div>
+        <div class="ch-clickable_tint animate"></div>
     </div>
 </div>
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64be6439dcf898bf389bbc80" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -191,6 +88,6 @@
 <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js" integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="/spherestory/js/umc/pagescript.js" type="text/javascript"></script>
+<script src="/spherestory/js/the-spot/pagescript.js" type="text/javascript"></script>
 </body>
 </html>
