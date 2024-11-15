@@ -203,12 +203,11 @@ let viewer = pannellum.viewer("panorama", {
             maxHfov: 120,
             hotSpots: [
                 {
-                    pitch: -6.15,
-                    yaw: 153.7,
-                    type: "info",
-                    cssClass: "custom-hotspot flexibility-hotspot_lunchroom",
-                    clickHandlerFunc: hotspotAction,
-                    clickHandlerArgs: {hotspot: "flexibility-hotspot_lunchroom", type: "video-modal"}
+                    pitch: 6,
+                    yaw: 0,
+                    type: "scene",
+                    cssClass: "custom-hotspot opdebar2",
+                    sceneId: 'opdebar'
                 }
             ]
         },
