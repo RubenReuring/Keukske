@@ -93,8 +93,8 @@ let viewer = pannellum.viewer("panorama", {
             showFullscreenCtrl: false,
             pitch: -1.3,
             yaw: 121.5,
-            hfov: 90,
-            maxHfov: 90,
+            hfov: 120,
+            maxHfov: 120,
             hotSpots: [
                 {
                     pitch: -17,
@@ -121,8 +121,8 @@ let viewer = pannellum.viewer("panorama", {
             showFullscreenCtrl: false,
             pitch: -1.3,
             yaw: 121.5,
-            hfov: 90,
-            maxHfov: 90,
+            hfov: 120,
+            maxHfov: 120,
             hotSpots: [
                 {
                     pitch: -17,
@@ -137,6 +137,13 @@ let viewer = pannellum.viewer("panorama", {
                     type: "scene",
                     cssClass: "custom-hotspot voorkant",
                     sceneId: 'voorkant'
+                },
+                {
+                    pitch: -36,
+                    yaw: 87,
+                    type: "scene",
+                    cssClass: "custom-hotspot opslag",
+                    sceneId: 'opslag'
                 }
             ]
         },
@@ -149,8 +156,8 @@ let viewer = pannellum.viewer("panorama", {
             showFullscreenCtrl: false,
             pitch: -1.3,
             yaw: 121.5,
-            hfov: 90,
-            maxHfov: 90,
+            hfov: 120,
+            maxHfov: 120,
             hotSpots: [
                 {
                     pitch: -6.15,
@@ -171,8 +178,8 @@ let viewer = pannellum.viewer("panorama", {
             showFullscreenCtrl: false,
             pitch: -1.3,
             yaw: 121.5,
-            hfov: 90,
-            maxHfov: 90,
+            hfov: 120,
+            maxHfov: 120,
             hotSpots: [
                 {
                     pitch: -6.15,
@@ -193,8 +200,8 @@ let viewer = pannellum.viewer("panorama", {
             showFullscreenCtrl: false,
             pitch: -1.3,
             yaw: 121.5,
-            hfov: 90,
-            maxHfov: 90,
+            hfov: 120,
+            maxHfov: 120,
             hotSpots: [
                 {
                     pitch: -6.15,
@@ -227,7 +234,8 @@ viewer.on("load", function () {
     $("#ch-wrapper_video-1").clone().appendTo(".opdebar");
     $("#ch-wrapper_video-2").clone().appendTo(".voorkant");
     $("#ch-wrapper_video-3").clone().appendTo(".achterkant");
-    $("#ch-wrapper_video-4").clone().appendTo(".sphere-hotspot_video-4");
+    $("#ch-wrapper_video-4").clone().appendTo(".opdebar2");
+    $("#ch-wrapper_video-5").clone().appendTo(".opslag");
     let currentScene = viewer.getScene();
 });
 $('.compass-icon').clone().appendTo('.pnlm-orientation-button');

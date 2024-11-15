@@ -81,6 +81,17 @@
         <div class="ch-clickable_tint hover"></div>
         <div class="ch-clickable_tint animate"></div>
     </div>
+    <div id="ch-wrapper_video-5" class="ch-wrapper clickable">
+        <div class="ch-inner">
+            <div class="ch-details">
+                <div class="ch-details-title">
+                    <p class="ch_p20-r">Berging</p>
+                </div>
+            </div>
+        </div>
+        <div class="ch-clickable_tint hover"></div>
+        <div class="ch-clickable_tint animate"></div>
+    </div>
 </div>
 <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64be6439dcf898bf389bbc80" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="/spherestory/js/flexibility-limburg/apply-360.js" type="text/javascript"></script>
