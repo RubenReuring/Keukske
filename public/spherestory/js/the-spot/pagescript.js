@@ -97,18 +97,11 @@ let viewer = pannellum.viewer("panorama", {
             maxHfov: 120,
             hotSpots: [
                 {
-                    pitch: -17,
-                    yaw: 181,
+                    pitch: 7,
+                    yaw: 183,
                     type: "scene",
-                    cssClass: "custom-hotspot achterkant",
-                    sceneId: 'achterkant'
-                },
-                {
-                    pitch: -18,
-                    yaw: 29,
-                    type: "scene",
-                    cssClass: "custom-hotspot voorkant",
-                    sceneId: 'voorkant'
+                    cssClass: "custom-hotspot opdebar3",
+                    sceneId: 'opdebar'
                 }
             ]
         },
@@ -235,6 +228,7 @@ viewer.on("load", function () {
     $("#ch-wrapper_video-4").clone().appendTo(".opdebar2");
     $("#ch-wrapper_video-5").clone().appendTo(".opslag");
     $("#ch-wrapper_video-6").clone().appendTo(".toilet");
+    $("#ch-wrapper_video-7").clone().appendTo(".opdebar3");
     let currentScene = viewer.getScene();
 });
 $('.compass-icon').clone().appendTo('.pnlm-orientation-button');

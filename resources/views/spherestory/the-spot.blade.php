@@ -91,11 +91,23 @@
         </div>
         <div class="ch-clickable_tint hover"></div>
         <div class="ch-clickable_tint animate"></div>
-    </div><div id="ch-wrapper_video-6" class="ch-wrapper clickable">
+    </div>
+    <div id="ch-wrapper_video-6" class="ch-wrapper clickable">
         <div class="ch-inner">
             <div class="ch-details">
                 <div class="ch-details-title">
-                    <p class="ch_p20-r">toilet</p>
+                    <p class="ch_p20-r">Toilet</p>
+                </div>
+            </div>
+        </div>
+        <div class="ch-clickable_tint hover"></div>
+        <div class="ch-clickable_tint animate"></div>
+    </div>
+    <div id="ch-wrapper_video-7" class="ch-wrapper clickable">
+        <div class="ch-inner">
+            <div class="ch-details">
+                <div class="ch-details-title">
+                    <p class="ch_p20-r">Op de bar</p>
                 </div>
             </div>
         </div>
