@@ -3,7 +3,7 @@
 <html data-wf-page="64c12511563b2b75278a04b1" data-wf-site="64be6439dcf898bf389bbc80">
 <head>
     <meta charset="utf-8">
-    <title>Flexibility Limburg</title>
+    <title>The Spot</title>
     <meta content="Flexibility Limburg" property="og:title">
     <meta content="Flexibility Limburg" property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
