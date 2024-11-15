@@ -182,12 +182,11 @@ let viewer = pannellum.viewer("panorama", {
             maxHfov: 120,
             hotSpots: [
                 {
-                    pitch: -6.15,
-                    yaw: 153.7,
-                    type: "info",
-                    cssClass: "custom-hotspot flexibility-hotspot_lunchroom",
-                    clickHandlerFunc: hotspotAction,
-                    clickHandlerArgs: {hotspot: "flexibility-hotspot_lunchroom", type: "video-modal"}
+                    pitch: -7,
+                    yaw: 183,
+                    type: "scene",
+                    cssClass: "custom-hotspot toilet",
+                    sceneId: 'toilet'
                 }
             ]
         },
@@ -236,6 +235,7 @@ viewer.on("load", function () {
     $("#ch-wrapper_video-3").clone().appendTo(".achterkant");
     $("#ch-wrapper_video-4").clone().appendTo(".opdebar2");
     $("#ch-wrapper_video-5").clone().appendTo(".opslag");
+    $("#ch-wrapper_video-6").clone().appendTo(".toilet");
     let currentScene = viewer.getScene();
 });
 $('.compass-icon').clone().appendTo('.pnlm-orientation-button');
