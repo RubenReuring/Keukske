@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>The Spot</title>
-    <meta content="Flexibility Limburg" property="og:title">
-    <meta content="Flexibility Limburg" property="twitter:title">
+    <meta content="The Spot" property="og:title">
+    <meta content="The Spot" property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <link href="/spherestory/css/flexibility-limburg/normalize.css" rel="stylesheet" type="text/css">
