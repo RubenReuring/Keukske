@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [2023-03-07 19:09:55] local.ERROR: Undefined variable $APP_NAME {"view":{"view":"/var/www/laravel/resources/views/welcome.blade.php","data":[]},"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Undefined variable $APP_NAME at /var/www/laravel/resources/views/welcome.blade.php:7)
 [stacktrace]
 #0 /var/www/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(250): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -7483,3 +7484,5 @@ Did you mean one of these?
 #36 /var/www/laravel/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
 #37 {main}
 "} 
+=======
+>>>>>>> 927fcd89d56826f572586892c9d5ffabab73a383
