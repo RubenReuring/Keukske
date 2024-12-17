@@ -19,4 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/webflow-webhook', [WebhookController::class, 'handleWebhook']);
+Route::post('/erik-aarts/webflow-instagram', [WebhookController::class, 'handleInstagram']);
+Route::post('/erik-aarts/webflow-facebook', [WebhookController::class, 'handleFacebook']);
+Route::post('/erik-aarts/webflow-linkedin', [WebhookController::class, 'handleLinkedin']);

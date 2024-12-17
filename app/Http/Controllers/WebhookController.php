@@ -6,8 +6,16 @@ use Illuminate\Http\Request;
 
 class WebhookController extends Controller
 {
-    public function handleWebhook(Request $request)
+    public function handleInstagram(Request $request)
     {
-        return response()->json(['message' => 'Hello, Webhook is working!']);
+        return response()->json(['message' => 'Hello, Instagram is working!']);
+    }
+    public function handleFacebook(Request $request)
+    {
+        return response()->json(['message' => 'Hello, Facebook is working!']);
+    }
+    public function handleLinkedin(Request $request)
+    {
+        return response()->json(['message' => 'Hello, Linkedin is working!']);
     }
 }
