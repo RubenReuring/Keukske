@@ -19,11 +19,11 @@ class WebhookController extends Controller
     public function handleLinkedin(Request $request)
     {
         // Log de volledige payload
-        Log::info('Webhook Payload:', $request->all());
+        //Log::info('Webhook Payload:', $request->all());
         // Log de headers
         Log::info('Webhook Headers:', $request->header());
         // Optioneel: Log de raw content van de request
-        Log::info('Raw Payload:', ['content' => $request->getContent()]);
+        //Log::info('Raw Payload:', ['content' => $request->getContent()]);
         return response()->json(['message' => 'Webhook data received and logged.']);
 
     }
