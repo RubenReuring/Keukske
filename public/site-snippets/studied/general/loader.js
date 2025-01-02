@@ -49,11 +49,11 @@ loaderTimeline.fromTo(
     '.page-loader__bg',
     {y: "0%"},
     {y: "-100%", duration: .6, ease: "power1.inOut"},
-    3.1
+    3.3
 );
 loaderTimeline.fromTo(
     '.page-loader',
     {y: "0%"},
     {y: "-100%", duration: .6, ease: "power1.inOut"},
-    3.25
+    3.35
 );
