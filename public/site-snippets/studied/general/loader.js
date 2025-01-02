@@ -33,4 +33,9 @@ loaderTimeline.fromTo(
     {opacity: "1", duration: 1.35, ease: "power3.out"},
     1
 );
+loaderTimeline.fromTo(
+    '.pli-inner',
+    {width: "0em", height: "0em"},
+    {width: "40.8571em", height: "40.8571em", duration: 1.35, ease: "power3.out"},
+);
 
