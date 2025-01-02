@@ -223,4 +223,29 @@ $(document).ready(function() {
 
     });
 
+
+    $('.cc-form__inner').submit(function(event) {
+        event.preventDefault();
+        var formData = $(this).serialize();
+
+        var ajaxUrl = taalcursus
+            ? 'https://hook.us1.make.com/ys22zkj2xbqus99cib92dmxn45gdmv3q'
+            : 'https://hook.us1.make.com/r88w7o6dpbo9gd79cikdkn8mgdeg8l0e';
+
+        $.ajax({
+            type: 'POST',
+            url: ajaxUrl,
+            data: formData,
+            success: function(response) {
+                // console.log('Form data successfully posted.');
+                // Ga door met de standaard submit actie van Webflow
+                $('#myForm').off('submit').submit();
+            },
+            error: function(error) {
+                // console.error('Error posting form data:', error);
+                // Optioneel: voeg foutafhandelingslogica toe
+            }
+        });
+    });
+
 });
