@@ -11,7 +11,7 @@ let loaderSloganTargets = gsap.utils.toArray(
 );
 
 loaderTimeline.fromTo(
-    '.page-loader',
+    '.page-loader__bg',
     {backgroundColor: "#ffffff"},
     {backgroundColor: "#23272a", duration: .95, ease: "power1.inOut"}
 );
