@@ -209,7 +209,7 @@ $(document).ready(function() {
         event.preventDefault();
         var formData = $(this).serialize();
 
-        var ajaxUrl = taalcursus
+        var ajaxUrl = window.taalcursus
             ? 'https://hook.us1.make.com/ys22zkj2xbqus99cib92dmxn45gdmv3q'
             : 'https://hook.us1.make.com/r88w7o6dpbo9gd79cikdkn8mgdeg8l0e';
 
