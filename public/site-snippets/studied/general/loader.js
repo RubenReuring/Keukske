@@ -51,3 +51,9 @@ loaderTimeline.fromTo(
     {y: "-100%", duration: .95, ease: "power1.inOut"},
     3.1
 );
+loaderTimeline.fromTo(
+    '.page-loader',
+    {y: "0%"},
+    {y: "-100%", duration: .95, ease: "power1.inOut"},
+    3.25
+);
