@@ -48,12 +48,12 @@ loaderTimeline.fromTo(
 loaderTimeline.fromTo(
     '.page-loader__bg',
     {y: "0%"},
-    {y: "-100%", duration: .6, ease: "power3.out"},
+    {y: "-100%", duration: .7, ease: "power2.out"},
     3.3
 );
 loaderTimeline.fromTo(
     '.page-loader',
     {y: "0%"},
-    {y: "-100%", duration: .6, ease: "power3.out"},
+    {y: "-100%", duration: .7, ease: "power2.out"},
     3.35
 );
