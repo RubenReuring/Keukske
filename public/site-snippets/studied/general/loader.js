@@ -42,12 +42,12 @@ loaderTimeline.fromTo(
 loaderTimeline.fromTo(
     '.page-loader__inner',
     {opacity: "1"},
-    {opacity: "0", duration: .5, ease: "power1.inOut"},
+    {opacity: "0", duration: .7, ease: "power1.inOut"},
     2.95
 );
 loaderTimeline.fromTo(
     '.page-loader__bg',
     {y: "0%"},
     {y: "-100%", duration: .95, ease: "power1.inOut"},
-    3.3
+    3.1
 );
