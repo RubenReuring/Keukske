@@ -21,3 +21,8 @@ loaderTimeline.fromTo(
     {y: "0%", stagger: 0.15, duration: 1.35, ease: "power3.out"},
     .4
 );
+loaderTimeline.fromTo(
+    '.pli-embed',
+    {y: "125%"},
+    {y: "0%", stagger: 0.15, duration: 1.35, ease: "power3.out"}
+);
