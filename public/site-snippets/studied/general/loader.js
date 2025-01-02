@@ -7,11 +7,11 @@ $(".pli-bottom__text").find("p").children("div").wrapInner('<span style="display
 
 let loaderTimeline = gsap.timeline();
 let loaderSloganTargets = gsap.utils.toArray(
-    $(".ls-inner").find('span')
+    $(".pli-bottom__text").find('span')
 );
 
 loaderTimeline.fromTo(
-    '.loader',
+    '.page-loader',
     {backgroundColor: "#ffffff"},
     {backgroundColor: "#fe9963", duration: .75, ease: "power1.inOut"}
 );
