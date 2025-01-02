@@ -36,7 +36,7 @@ loaderTimeline.fromTo(
 loaderTimeline.fromTo(
     '.pli-inner',
     {width: "0em", height: "0em"},
-    {width: "40.8571em", height: "40.8571em", duration: 1.35, ease: "power3.inOut"},
+    {width: "15em", height: "15em", duration: 1.35, ease: "power3.inOut"},
     1
 );
 
