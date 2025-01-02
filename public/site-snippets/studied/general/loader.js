@@ -27,3 +27,10 @@ loaderTimeline.fromTo(
     {y: "0%", duration: 1.35, ease: "power3.out"},
     1
 );
+loaderTimeline.fromTo(
+    '.pli-bottom__visual',
+    {opacity: "0"},
+    {opacity: "1", duration: 1.35, ease: "power3.out"},
+    1
+);
+
