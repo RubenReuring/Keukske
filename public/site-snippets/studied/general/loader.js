@@ -39,4 +39,8 @@ loaderTimeline.fromTo(
     {width: "15em", height: "15em", duration: 1.75, ease: "power3.inOut"},
     1.2
 );
-
+loaderTimeline.fromTo(
+    '.page-loader',
+    {opacity: "1"},
+    {opacity: "0", duration: .95, ease: "power1.inOut"}
+);
