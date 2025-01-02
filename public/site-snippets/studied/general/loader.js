@@ -42,7 +42,7 @@ loaderTimeline.fromTo(
 loaderTimeline.fromTo(
     '.page-loader__inner',
     {opacity: "1"},
-    {opacity: "0", duration: .95, ease: "power1.inOut"},
+    {opacity: "0", duration: .5, ease: "power1.inOut"},
     2.95
 );
 loaderTimeline.fromTo(
