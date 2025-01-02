@@ -18,7 +18,7 @@ loaderTimeline.fromTo(
 loaderTimeline.fromTo(
     loaderSloganTargets,
     {y: "125%"},
-    {y: "0%", stagger: 0.15, duration: 1.45, ease: "power3.out"},
+    {y: "0%", stagger: 0.1, duration: 1.45, ease: "power3.out"},
     .8
 );
 loaderTimeline.fromTo(
