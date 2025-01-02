@@ -18,25 +18,25 @@ loaderTimeline.fromTo(
 loaderTimeline.fromTo(
     loaderSloganTargets,
     {y: "125%"},
-    {y: "0%", stagger: 0.15, duration: 1.35, ease: "power3.out"},
-    .6
+    {y: "0%", stagger: 0.15, duration: 1.45, ease: "power3.out"},
+    .8
 );
 loaderTimeline.fromTo(
     '.pli-embed',
     {y: "125%"},
-    {y: "0%", duration: 1.35, ease: "power3.out"},
-    1
+    {y: "0%", duration: 1.45, ease: "power3.out"},
+    .8
 );
 loaderTimeline.fromTo(
     '.pli-bottom__visual',
     {opacity: "0"},
-    {opacity: "1", duration: 1.35, ease: "power3.out"},
+    {opacity: "1", duration: 1.55, ease: "power3.out"},
     1
 );
 loaderTimeline.fromTo(
     '.pli-inner',
     {width: "0em", height: "0em"},
-    {width: "15em", height: "15em", duration: 1.35, ease: "power3.inOut"},
-    1
+    {width: "15em", height: "15em", duration: 1.75, ease: "power3.inOut"},
+    1.2
 );
 
