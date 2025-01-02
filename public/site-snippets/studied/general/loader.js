@@ -46,7 +46,7 @@ loaderTimeline.fromTo(
     2.95
 );
 loaderTimeline.fromTo(
-    '.page-loader__inner',
+    '.page-loader__bg',
     {y: "0%"},
     {y: "-100%", duration: .95, ease: "power1.inOut"},
     3.3
