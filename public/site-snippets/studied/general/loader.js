@@ -13,7 +13,7 @@ let loaderSloganTargets = gsap.utils.toArray(
 loaderTimeline.fromTo(
     '.page-loader',
     {backgroundColor: "#ffffff"},
-    {backgroundColor: "#fe9963", duration: .75, ease: "power1.inOut"}
+    {backgroundColor: "#23272a", duration: .75, ease: "power1.inOut"}
 );
 loaderTimeline.fromTo(
     loaderSloganTargets,
