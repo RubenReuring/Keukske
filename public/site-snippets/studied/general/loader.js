@@ -40,7 +40,7 @@ loaderTimeline.fromTo(
     1.2
 );
 loaderTimeline.fromTo(
-    '.page-loader',
+    '.page-loader__inner',
     {opacity: "1"},
     {opacity: "0", duration: .95, ease: "power1.inOut"}
 );
