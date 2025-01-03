@@ -223,6 +223,10 @@ $(document).ready(function() {
 
     });
 
+    if(taalcursus){
+        $('#Onderwijsinsteling-3').removeAttr('required');
+        $('#Opleiding-En-Leerjaar-3').removeAttr('required');
+    }
 
     $('.cc-form__inner').submit(function(event) {
         event.preventDefault();
