@@ -9,7 +9,7 @@ $(document).ready(function() {
     navbarTransitionLarge.fromTo(
         '.nav',
         { backgroundColor: 'rgba(245, 242, 235, 0)'},
-        { backgroundColor: 'rgba(245, 242, 235, 1)',  duration: 0.55, ease: "power2.inOut", onStart(){ console.log('started') }  }
+        { backgroundColor: 'rgba(245, 242, 235, 1)',  duration: 0.55, ease: "power2.inOut", onStart(){ $('.nav').removeClass('navAtTop') }  }
     );
 
     // GSAP timeline for 991px and below (no paddingTop change)
@@ -29,15 +29,19 @@ $(document).ready(function() {
     function handleNavbarTransition() {
         if (isLargeScreen()) {
             if (isAtTop()) {
+                $('.nav').addClass('navAtTop');
                 navbarTransitionLarge.reverse();
             } else {
                 navbarTransitionLarge.play();
+                $('.nav').removeClass('navAtTop');
             }
         } else {
             if (isAtTop()) {
+                $('.nav').addClass('navAtTop');
                 navbarTransitionSmall.reverse();
             } else {
                 navbarTransitionSmall.play();
+                $('.nav').removeClass('navAtTop');
             }
         }
     }
