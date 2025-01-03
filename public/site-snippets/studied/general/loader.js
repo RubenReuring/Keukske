@@ -18,12 +18,14 @@ loaderTimeline.fromTo(
 loaderTimeline.fromTo(
     '.pli-visual',
     {opacity: "0"},
-    {opacity: "1", duration: .35, ease: "power1.inOut"}
+    {opacity: "1", duration: .35, ease: "power1.inOut"},
+    .25
 );
 loaderTimeline.fromTo(
     '.pli-bottom__text',
     {opacity: "0"},
-    {opacity: "1", duration: .35, ease: "power1.inOut"}
+    {opacity: "1", duration: .35, ease: "power1.inOut"},
+    .25
 );
 loaderTimeline.fromTo(
     loaderSloganTargets,
