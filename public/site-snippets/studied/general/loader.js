@@ -63,3 +63,9 @@ loaderTimeline.fromTo(
     {y: "-100%", duration: .8, ease: "power2.inOut"},
     3.35
 );
+loaderTimeline.fromTo(
+    '.page-loader',
+    {y: "-100%"},
+    {y: "105%", duration: 0},
+    4.15
+);
