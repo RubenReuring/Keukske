@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    gsap.registerPlugin(ScrollTrigger);
     // Function to check if window is at top
     function isAtTop() {
         return $(window).scrollTop() === 0;
