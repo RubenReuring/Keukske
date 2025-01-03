@@ -8,16 +8,16 @@ $(document).ready(function() {
     let navbarTransitionLarge = gsap.timeline({ paused: true });
     navbarTransitionLarge.fromTo(
         '.nav',
-        { backgroundColor: 'rgba(245, 242, 235, 0)'},
-        { backgroundColor: 'rgba(245, 242, 235, 1)',  duration: 0.55, ease: "power2.inOut", onStart(){ $('.nav').removeClass('navAtTop') }  }
+        { autoAlpha: 1 },
+        { duration: 0.55, ease: "power2.inOut", onStart(){ $('.nav').removeClass('navAtTop') }  }
     );
 
     // GSAP timeline for 991px and below (no paddingTop change)
     let navbarTransitionSmall = gsap.timeline({ paused: true });
     navbarTransitionSmall.fromTo(
         '.nav',
-        { backgroundColor: 'rgba(245, 242, 235, 0)' },
-        { backgroundColor: 'rgba(245, 242, 235, 1)', duration: 0.55, ease: "power2.inOut" }
+        { autoAlpha: 1 },
+        { duration: 0.55, ease: "power2.inOut", onStart(){ $('.nav').removeClass('navAtTop') }  }
     );
 
     // Function to check screen width
