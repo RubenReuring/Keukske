@@ -66,34 +66,34 @@ loaderTimeline.fromTo(
 
 
 
-$('a').on('click', function (e) {
-    const link = $(this).attr('href');
-    if (link.startsWith('http') && !link.startsWith(window.location.origin)) {
-        return; // Allow external links to behave normally
-    }
-
-    if (link.startsWith('#')) {
-        return; // Allow anchor links to behave normally
-    }
-    e.preventDefault();
-    exitTimeline.play();
-    setTimeout(() => {
-        window.location.href = link;
-    }, 2000); // 2000 ms = 2 seconds
-});
-
-
-
-let exitTimeline = gsap.timeline({ paused: true });
-
-exitTimeline.fromTo(
-    '.page-loader__bg',
-    {y: "100%"},
-    {y: "0%", duration: .8, ease: "power2.inOut"}
-);
-exitTimeline.fromTo(
-    '.page-loader',
-    {y: "100%"},
-    {y: "0%", duration: .8, ease: "power2.inOut"},
-    .05
-);
+// $('a').on('click', function (e) {
+//     const link = $(this).attr('href');
+//     if (link.startsWith('http') && !link.startsWith(window.location.origin)) {
+//         return; // Allow external links to behave normally
+//     }
+//
+//     if (link.startsWith('#')) {
+//         return; // Allow anchor links to behave normally
+//     }
+//     e.preventDefault();
+//     exitTimeline.play();
+//     setTimeout(() => {
+//         window.location.href = link;
+//     }, 2000); // 2000 ms = 2 seconds
+// });
+//
+//
+//
+// let exitTimeline = gsap.timeline({ paused: true });
+//
+// exitTimeline.fromTo(
+//     '.page-loader__bg',
+//     {y: "100%"},
+//     {y: "0%", duration: .8, ease: "power2.inOut"}
+// );
+// exitTimeline.fromTo(
+//     '.page-loader',
+//     {y: "100%"},
+//     {y: "0%", duration: .8, ease: "power2.inOut"},
+//     .05
+// );
