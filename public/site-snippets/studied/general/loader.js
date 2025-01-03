@@ -19,55 +19,49 @@ loaderTimeline.fromTo(
     '.pli-visual',
     {opacity: "0"},
     {opacity: "1", duration: .35, ease: "power1.inOut"},
-    .25
-);
-loaderTimeline.fromTo(
-    '.pli-bottom__text',
-    {opacity: "0"},
-    {opacity: "1", duration: .35, ease: "power1.inOut"},
-    .25
+    0.25
 );
 loaderTimeline.fromTo(
     loaderSloganTargets,
     {y: "125%"},
     {y: "0%", stagger: 0.1, duration: 1.45, ease: "power3.out"},
-    .55
+    .8
 );
 loaderTimeline.fromTo(
     '.pli-embed',
     {y: "125%"},
     {y: "0%", duration: 1.45, ease: "power3.out"},
-    .55
+    .8
 );
 loaderTimeline.fromTo(
     '.pli-bottom__visual',
     {opacity: "0"},
     {opacity: "1", duration: 1.55, ease: "power3.out"},
-    .75
+    1
 );
 loaderTimeline.fromTo(
     '.pli-inner',
     {width: "0em", height: "0em"},
     {width: "20em", height: "20em", duration: 1.75, ease: "power3.inOut"},
-    .95
+    1.2
 );
 loaderTimeline.fromTo(
     '.page-loader__inner',
     {opacity: "1"},
     {opacity: "0", duration: .7, ease: "power1.inOut"},
-    2.70
+    2.95
 );
 loaderTimeline.fromTo(
     '.page-loader__bg',
     {y: "0%"},
     {y: "-100%", duration: .8, ease: "power2.inOut"},
-    3.05
+    3.3
 );
 loaderTimeline.fromTo(
     '.page-loader',
     {y: "0%"},
     {y: "-100%", duration: .8, ease: "power2.inOut"},
-    3.10
+    3.35
 );
 
 
