@@ -10,11 +10,11 @@ let loaderSloganTargets = gsap.utils.toArray(
     $(".pli-bottom__text").find('span')
 );
 
-// loaderTimeline.fromTo(
-//     '.page-loader__bg',
-//     {backgroundColor: "#ffffff"},
-//     {backgroundColor: "#23272a", duration: .95, ease: "power1.inOut"}
-// );
+loaderTimeline.fromTo(
+    '.page-loader__bg',
+    {backgroundColor: "#ffffff"},
+    {backgroundColor: "#23272a", duration: .95, ease: "power1.inOut"}
+);
 loaderTimeline.fromTo(
     '.pli-visual',
     {opacity: "0"},
