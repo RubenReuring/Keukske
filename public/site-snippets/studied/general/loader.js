@@ -18,8 +18,7 @@ let loaderSloganTargets = gsap.utils.toArray(
 loaderTimeline.fromTo(
     '.pli-visual',
     {opacity: "0"},
-    {opacity: "1", duration: .35, ease: "power1.inOut"},
-    0
+    {opacity: "1", duration: .35, ease: "power1.inOut"}
 );
 loaderTimeline.fromTo(
     loaderSloganTargets,
@@ -61,6 +60,6 @@ loaderTimeline.fromTo(
     '.page-loader',
     {y: "0%"},
     {y: "-100%", duration: .8, ease: "power2.inOut"},
-    3.05
+    3.10
 );
 
