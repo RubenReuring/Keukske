@@ -16,6 +16,12 @@ loaderTimeline.fromTo(
     {backgroundColor: "#23272a", duration: .95, ease: "power1.inOut"}
 );
 loaderTimeline.fromTo(
+    '.pli-visual',
+    {opacity: "0"},
+    {opacity: "1", duration: .35, ease: "power1.inOut"},
+    0.25
+);
+loaderTimeline.fromTo(
     loaderSloganTargets,
     {y: "125%"},
     {y: "0%", stagger: 0.1, duration: 1.45, ease: "power3.out"},
