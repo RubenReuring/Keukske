@@ -30,13 +30,13 @@ loaderTimeline.fromTo(
 loaderTimeline.fromTo(
     '.pli-pulse',
     {opacity: "1", width: '20em', height: '20em'},
-    {opacity: "0", width: '27.5em', height: '27.5em', duration: 1, ease: "power1.out"},
+    {opacity: "0", width: '27.5em', height: '27.5em', duration: 1.2, ease: "power1.out"},
     1.75
 );
 loaderTimeline.fromTo(
     '.pli-pulse',
     {opacity: "1", width: '20em', height: '20em'},
-    {opacity: "0", width: '27.5em', height: '27.5em', duration: 1, ease: "power1.out"},
+    {opacity: "0", width: '27.5em', height: '27.5em', duration: 1.2, ease: "power1.out"},
     2.5
 );
 loaderTimeline.fromTo(
