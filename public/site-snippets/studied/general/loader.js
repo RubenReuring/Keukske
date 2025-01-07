@@ -34,28 +34,34 @@ loaderTimeline.fromTo(
     2
 );
 loaderTimeline.fromTo(
+    '.pli-pulse',
+    {opacity: "1", width: '20em', height: '20em'},
+    {opacity: "0", width: '27.5em', height: '27.5em', duration: 1, ease: "power1.out"},
+    3
+);
+loaderTimeline.fromTo(
     '.pli-inner',
     {width: "0em", height: "0em"},
     {width: "20em", height: "20em", duration: 1.75, ease: "power3.inOut"},
-    2.95
+    4.25
 );
 loaderTimeline.fromTo(
     '.page-loader__inner',
     {opacity: "1"},
     {opacity: "0", duration: .7, ease: "power1.inOut"},
-    4.70
+    5.70
 );
 loaderTimeline.fromTo(
     '.page-loader__bg',
     {y: "0%"},
     {y: "-100%", duration: .8, ease: "power2.inOut"},
-    5.05
+    6.05
 );
 loaderTimeline.fromTo(
     '.page-loader',
     {y: "0%"},
     {y: "-100%", duration: .8, ease: "power2.inOut"},
-    5.10
+    6.10
 );
 
 
