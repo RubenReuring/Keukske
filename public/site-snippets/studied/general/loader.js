@@ -43,25 +43,25 @@ loaderTimeline.fromTo(
     '.pli-inner',
     {width: "0em", height: "0em"},
     {width: "20em", height: "20em", duration: 1.75, ease: "power3.inOut"},
-    4
+    3.8
 );
 loaderTimeline.fromTo(
     '.page-loader__inner',
     {opacity: "1"},
     {opacity: "0", duration: .7, ease: "power1.inOut"},
-    5.5
+    5.2
 );
 loaderTimeline.fromTo(
     '.page-loader__bg',
     {y: "0%"},
     {y: "-100%", duration: .8, ease: "power2.inOut"},
-    6
+    5.8
 );
 loaderTimeline.fromTo(
     '.page-loader',
     {y: "0%"},
     {y: "-100%", duration: .8, ease: "power2.inOut"},
-    6.05
+    8.85
 );
 
 
