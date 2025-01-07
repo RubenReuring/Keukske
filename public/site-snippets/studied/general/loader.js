@@ -22,40 +22,40 @@ loaderTimeline.fromTo(
     .25
 );
 loaderTimeline.fromTo(
-    '.pli-pulse',
-    {opacity: "0", width: '20em', height: '20em'},
-    {opacity: "1", width: '25em', height: '25em', duration: .35, ease: "power1.inOut"},
-    .5
-);
-loaderTimeline.fromTo(
     '.pli-bottom__visual',
     {opacity: "0"},
     {opacity: "1", duration: 1.55, ease: "power3.out"},
     .75
 );
 loaderTimeline.fromTo(
+    '.pli-pulse',
+    {opacity: "0", width: '20em', height: '20em'},
+    {opacity: "1", width: '25em', height: '25em', duration: .35, ease: "power1.inOut"},
+    2.5
+);
+loaderTimeline.fromTo(
     '.pli-inner',
     {width: "0em", height: "0em"},
     {width: "20em", height: "20em", duration: 1.75, ease: "power3.inOut"},
-    .95
+    2.95
 );
 loaderTimeline.fromTo(
     '.page-loader__inner',
     {opacity: "1"},
     {opacity: "0", duration: .7, ease: "power1.inOut"},
-    2.70
+    4.70
 );
 loaderTimeline.fromTo(
     '.page-loader__bg',
     {y: "0%"},
     {y: "-100%", duration: .8, ease: "power2.inOut"},
-    3.05
+    5.05
 );
 loaderTimeline.fromTo(
     '.page-loader',
     {y: "0%"},
     {y: "-100%", duration: .8, ease: "power2.inOut"},
-    3.10
+    5.10
 );
 
 
