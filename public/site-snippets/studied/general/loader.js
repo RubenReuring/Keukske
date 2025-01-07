@@ -54,14 +54,14 @@ loaderTimeline.fromTo(
 loaderTimeline.fromTo(
     '.page-loader__bg',
     {y: "0%"},
-    {y: "-100%", duration: .8, ease: "power2.inOut"},
-    5.8
+    {y: "-100%", duration: .9, ease: "power2.inOut"},
+    5.9
 );
 loaderTimeline.fromTo(
     '.page-loader',
     {y: "0%"},
-    {y: "-100%", duration: .8, ease: "power2.inOut"},
-    5.85
+    {y: "-100%", duration: .9, ease: "power2.inOut"},
+    5.95
 );
 
 
