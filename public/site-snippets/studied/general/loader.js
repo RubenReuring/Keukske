@@ -61,7 +61,7 @@ loaderTimeline.fromTo(
     '.page-loader',
     {y: "0%"},
     {y: "-100%", duration: .8, ease: "power2.inOut"},
-    8.85
+    5.85
 );
 
 
