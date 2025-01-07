@@ -30,8 +30,8 @@ loaderTimeline.fromTo(
 loaderTimeline.fromTo(
     '.pli-pulse',
     {opacity: "1", width: '20em', height: '20em'},
-    {opacity: "0", width: '27.5em', height: '27.5em', duration: .85, ease: "power2.out"},
-    2.5
+    {opacity: "0", width: '27.5em', height: '27.5em', duration: 1.25, ease: "power2.out"},
+    2
 );
 loaderTimeline.fromTo(
     '.pli-inner',
