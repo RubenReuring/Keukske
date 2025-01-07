@@ -55,13 +55,13 @@ loaderTimeline.fromTo(
     '.page-loader__bg',
     {y: "0%"},
     {y: "-100%", duration: .9, ease: "power2.inOut"},
-    5.9
+    6
 );
 loaderTimeline.fromTo(
     '.page-loader',
     {y: "0%"},
     {y: "-100%", duration: .9, ease: "power2.inOut"},
-    5.95
+    6.05
 );
 
 
