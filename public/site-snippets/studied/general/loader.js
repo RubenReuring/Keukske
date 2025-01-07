@@ -49,7 +49,7 @@ loaderTimeline.fromTo(
     '.page-loader__inner',
     {opacity: "1"},
     {opacity: "0", duration: .7, ease: "power1.inOut"},
-    5.2
+    5.4
 );
 loaderTimeline.fromTo(
     '.page-loader__bg',
