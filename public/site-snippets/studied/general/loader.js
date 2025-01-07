@@ -22,22 +22,10 @@ loaderTimeline.fromTo(
     .25
 );
 loaderTimeline.fromTo(
-    '.pli-bottom__text',
-    {opacity: "0"},
-    {opacity: "1", duration: .35, ease: "power1.inOut"},
-    .25
-);
-loaderTimeline.fromTo(
-    loaderSloganTargets,
-    {y: "125%"},
-    {y: "0%", stagger: 0.1, duration: 1.45, ease: "power3.out"},
-    .55
-);
-loaderTimeline.fromTo(
-    '.pli-embed',
-    {y: "125%"},
-    {y: "0%", duration: 1.45, ease: "power3.out"},
-    .55
+    '.pli-pulse',
+    {opacity: "0", width: '20em', height: '20em'},
+    {opacity: "1", width: '25em', height: '25em', duration: .35, ease: "power1.inOut"},
+    .5
 );
 loaderTimeline.fromTo(
     '.pli-bottom__visual',
