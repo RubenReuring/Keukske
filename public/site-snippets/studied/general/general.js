@@ -122,6 +122,6 @@ $(document).ready(function() {
     });
     $('.nav-mobile-button').on('click', function() {
         $(this).parents('.nav').toggleClass('menu-active');
-        $(body).toggleClass('bodyscroll-off')
+        $('body').toggleClass('bodyscroll-off')
     });
 });
