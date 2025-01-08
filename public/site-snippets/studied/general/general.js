@@ -20,7 +20,7 @@ $(document).ready(function() {
     }
 
     function isAtTop() {
-        return $(window).scrollTop() <= 10;
+        return $(window).scrollTop() <= 20;
     }
 
     // Function to handle navbar transition based on scroll position and screen size
