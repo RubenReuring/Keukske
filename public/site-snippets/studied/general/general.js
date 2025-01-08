@@ -1,10 +1,4 @@
 $(document).ready(function() {
-    // Function to check if window is at top
-    function isAtTop() {
-        return $(window).scrollTop() === 0;
-    }
-
-    // GSAP timeline for 992px and above
     let navbarTransitionLarge = gsap.timeline({ paused: true });
     navbarTransitionLarge.fromTo(
         '.nav',
@@ -23,6 +17,10 @@ $(document).ready(function() {
     // Function to check screen width
     function isLargeScreen() {
         return window.matchMedia('(min-width: 992px)').matches;
+    }
+
+    function isAtTop() {
+        return $(window).scrollTop() <= 10;
     }
 
     // Function to handle navbar transition based on scroll position and screen size
