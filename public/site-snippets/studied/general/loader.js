@@ -18,14 +18,14 @@ let loaderSloganTargets = gsap.utils.toArray(
 loaderTimeline.fromTo(
     '.pli-visual',
     {opacity: "0"},
-    {opacity: "1", duration: .35, ease: "power1.inOut"},
-    .1
+    {opacity: "1", duration: .3, ease: "power1.inOut"},
+    .05
 );
 loaderTimeline.fromTo(
     '.pli-bottom__visual',
     {opacity: "0"},
-    {opacity: "1", duration: 1.55, ease: "power3.out"},
-    .6
+    {opacity: "1", duration: 1.25, ease: "power3.out"},
+    .4
 );
 loaderTimeline.fromTo(
     '.pli-pulse',
