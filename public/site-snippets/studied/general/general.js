@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Function to check if window is at top
     function isAtTop() {
-        return $(window).scrollTop() === 15;
+        return $(window).scrollTop() === 0;
     }
 
     // GSAP timeline for 992px and above
