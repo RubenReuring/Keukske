@@ -19,6 +19,9 @@ mm.add("(max-width: 767px)", () => {
 
     heroChecks.go(0);
     console.log(heroChecks.Components.Controller.getEnd())
+    heroChecks.on('dragging', function(){
+
+    })
 });
 mm.add("(min-width: 768px)", () => {
     if($('.huiswerk-splide').hasClass('splide')){
