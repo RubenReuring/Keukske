@@ -10,11 +10,6 @@ let loaderSloganTargets = gsap.utils.toArray(
     $(".pli-bottom__text").find('span')
 );
 
-// loaderTimeline.fromTo(
-//     '.page-loader__bg',
-//     {backgroundColor: "#ffffff"},
-//     {backgroundColor: "#23272a", duration: .95, ease: "power1.inOut"}
-// );
 loaderTimeline.fromTo(
     '.pli-bottom__visual',
     {opacity: "0"},
@@ -25,13 +20,13 @@ loaderTimeline.fromTo(
     '.pli-pulse',
     {opacity: "1", width: '20em', height: '20em'},
     {opacity: "0", width: '27.5em', height: '27.5em', duration: 1.6, ease: "power1.out"},
-    1.6
+    .6
 );
 loaderTimeline.fromTo(
     '.pli-pulse',
     {opacity: "1", width: '20em', height: '20em'},
     {opacity: "0", width: '30em', height: '30em', duration: 1.6, ease: "power1.out"},
-    2.85
+    1.2
 );
 loaderTimeline.fromTo(
     '.pli-inner',
