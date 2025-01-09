@@ -19,7 +19,7 @@ mm.add("(max-width: 767px)", () => {
 
     heroChecks.go(0);
     heroChecks.on('dragging', function(){
-        var scrollPercentage = getScrollPercentage(splide);
+        var scrollPercentage = getScrollPercentage(heroChecks);
         console.log('Scroll Percentage:', scrollPercentage + '%');
     })
 
