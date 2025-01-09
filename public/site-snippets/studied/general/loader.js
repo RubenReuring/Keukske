@@ -32,25 +32,25 @@ loaderTimeline.fromTo(
     '.pli-inner',
     {width: "0em", height: "0em"},
     {width: "20em", height: "20em", duration: 1.75, ease: "power3.inOut"},
-    3.8
+    3
 );
 loaderTimeline.fromTo(
     '.page-loader__inner',
     {opacity: "1"},
     {opacity: "0", duration: .7, ease: "power1.inOut"},
-    5.4
+    4.75
 );
 loaderTimeline.fromTo(
     '.page-loader__bg',
     {y: "0%"},
     {y: "-100%", duration: .9, ease: "power2.inOut"},
-    6
+    5
 );
 loaderTimeline.fromTo(
     '.page-loader',
     {y: "0%"},
     {y: "-100%", duration: .9, ease: "power2.inOut"},
-    6.05
+    5.05
 );
 
 
