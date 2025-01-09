@@ -18,24 +18,6 @@ mm.add("(max-width: 767px)", () => {
     } ).mount();
 
     heroChecks.go(0);
-    heroChecks.on('dragging', function(){
-        var scrollPercentage = getScrollPercentage(heroChecks);
-        console.log('Scroll Percentage:', scrollPercentage + '%');
-    })
-
-
-    function getScrollPercentage(splideInstance) {
-        var track = $(splideInstance.Components.Elements.track);
-        var scrollLeft = track.scrollLeft();
-        var maxScrollLeft = track[0].scrollWidth - track.outerWidth();
-        console.log(track, scrollLeft, maxScrollLeft)
-        // Ensure no divide by zero errors
-        if (maxScrollLeft === 0) return 0;
-
-        // Calculate and return the scroll percentage
-        return Math.round((scrollLeft / maxScrollLeft) * 100);
-    }
-
 });
 mm.add("(min-width: 768px)", () => {
     if($('.huiswerk-splide').hasClass('splide')){
