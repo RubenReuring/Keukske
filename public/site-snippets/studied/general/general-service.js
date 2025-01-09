@@ -28,7 +28,7 @@ mm.add("(max-width: 767px)", () => {
         var track = $(splideInstance.Components.Elements.track);
         var scrollLeft = track.scrollLeft();
         var maxScrollLeft = track[0].scrollWidth - track.outerWidth();
-
+        console.log(track, scrollLeft, maxScrollLeft)
         // Ensure no divide by zero errors
         if (maxScrollLeft === 0) return 0;
 
