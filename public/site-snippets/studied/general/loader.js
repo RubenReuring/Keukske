@@ -16,16 +16,10 @@ let loaderSloganTargets = gsap.utils.toArray(
 //     {backgroundColor: "#23272a", duration: .95, ease: "power1.inOut"}
 // );
 loaderTimeline.fromTo(
-    '.pli-visual',
-    {opacity: "0"},
-    {opacity: "1", duration: .3, ease: "power1.inOut"},
-    .05
-);
-loaderTimeline.fromTo(
     '.pli-bottom__visual',
     {opacity: "0"},
-    {opacity: "1", duration: 1.25, ease: "power3.out"},
-    .4
+    {opacity: "1", duration: .5, ease: "power3.out"},
+    .2
 );
 loaderTimeline.fromTo(
     '.pli-pulse',
