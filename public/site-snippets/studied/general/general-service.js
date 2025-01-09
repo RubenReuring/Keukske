@@ -21,6 +21,7 @@ mm.add("(max-width: 767px)", () => {
     console.log(heroChecks.Components.Controller.getEnd())
     heroChecks.on('dragging', function(){
         console.log('hello')
+        console.log(heroChecks.Components.Controller.getEnd())
     })
 });
 mm.add("(min-width: 768px)", () => {
