@@ -26,7 +26,7 @@ loaderTimeline.fromTo(
     '.pli-pulse',
     {opacity: "1", width: '20em', height: '20em'},
     {opacity: "0", width: '30em', height: '30em', duration: 1.6, ease: "power1.out"},
-    1.2
+    2.25
 );
 loaderTimeline.fromTo(
     '.pli-inner',
