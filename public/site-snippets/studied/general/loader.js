@@ -1,9 +1,3 @@
-let heroTitleSplit = new SplitText($(".pli-bottom__text").find("p"), {
-    type: "words",
-    wordsClass: "ls-line-mask",
-});
-
-$(".pli-bottom__text").find("p").children("div").wrapInner('<span style="display: block; text-align: center; position: relative;"></span>');
 
 let loaderTimeline = gsap.timeline();
 let loaderSloganTargets = gsap.utils.toArray(
