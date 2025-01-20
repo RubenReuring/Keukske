@@ -47,8 +47,8 @@
 /////////////////// PAGE LOADER V2 ///////////////////
 let loaderTimeline = gsap.timeline();
 loaderTimeline.fromTo( '.pli-bottom__visual', {opacity: "0"},  {opacity: "1", duration: .3, ease: "power3.out"});
-loaderTimeline.fromTo( '.pli-pulse', {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '25em', height: '25em', duration: 1, ease: "power2.out"}, .2 );
-loaderTimeline.fromTo( '.pli-pulse', {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '25em', height: '25em', duration: 1, ease: "power2.out"}, 1 );
+loaderTimeline.fromTo( '.pli-pulse', {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '25em', height: '25em', duration: 1.25, ease: "power2.out"}, .2 );
+loaderTimeline.fromTo( '.pli-pulse', {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '25em', height: '25em', duration: 1.25, ease: "power2.out"}, 1.25 );
 
 $('a').on('click', function (e) {
     const link = $(this).attr('href');
