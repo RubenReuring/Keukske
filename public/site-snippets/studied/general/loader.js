@@ -46,7 +46,7 @@
 
 /////////////////// PAGE LOADER V2 ///////////////////
 let loaderTimeline = gsap.timeline();
-loaderTimeline.fromTo( '.pli-bottom__visual', {opacity: "0"},  {opacity: "1", duration: .2, ease: "power3.out"});
+loaderTimeline.fromTo( '.pli-bottom__visual', {opacity: "0"},  {opacity: "1", duration: .3, ease: "power3.out"});
 
 
 
