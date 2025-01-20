@@ -47,8 +47,7 @@
 /////////////////// PAGE LOADER V2 ///////////////////
 let loaderTimeline = gsap.timeline();
 loaderTimeline.fromTo( '.pli-bottom__visual', {opacity: "0"},  {opacity: "1", duration: .3, ease: "power3.out"});
-
-
+loaderTimeline.fromTo( '.pli-pulse', {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '27.5em', height: '27.5em', duration: 1.6, ease: "power1.out"}, .2 );
 
 $('a').on('click', function (e) {
     const link = $(this).attr('href');
