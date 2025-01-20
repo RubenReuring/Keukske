@@ -48,10 +48,10 @@
 let loaderTimeline = gsap.timeline();
 loaderTimeline.fromTo( '.pli-bottom__visual',   {opacity: "0"},  {opacity: "1", duration: .3, ease: "power3.out"});
 loaderTimeline.fromTo( '.pli-pulse',            {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '25em', height: '25em', duration: 1.25, ease: "power1.out"}, .2 );
-loaderTimeline.fromTo( '.pli-pulse',            {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '25em', height: '25em', duration: 1.25, ease: "power1.out"}, 1.25 );
-loaderTimeline.fromTo( '.page-loader__bg',      {y: "0%"}, {y: "-100%", duration: .6, ease: "power2.inOut"}, 2.15);
-loaderTimeline.fromTo( '.page-loader',          {y: "0%"}, {y: "-100%", duration: .6, ease: "power2.inOut"}, 2.25 );
-loaderTimeline.to( '.pli-bottom__visual',       {opacity: "0", duration: 0, ease: "power3.out"}, 2.9);
+// loaderTimeline.fromTo( '.pli-pulse',            {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '25em', height: '25em', duration: 1.25, ease: "power1.out"}, 1.25 );
+loaderTimeline.fromTo( '.page-loader__bg',      {y: "0%"}, {y: "-100%", duration: .6, ease: "power2.inOut"}, 1.3);
+loaderTimeline.fromTo( '.page-loader',          {y: "0%"}, {y: "-100%", duration: .6, ease: "power2.inOut"}, 1.4 );
+loaderTimeline.to( '.pli-bottom__visual',       {opacity: "0", duration: 0, ease: "power3.out"}, 2.5);
 
 $('a').on('click', function (e) {
     const link = $(this).attr('href');
