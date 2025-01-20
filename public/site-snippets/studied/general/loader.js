@@ -85,6 +85,8 @@ $('a').on('click', function (e) {
     }, 805); // 2000 ms = 2 seconds
 });
 
+// On Back Button Tap
+window.onpageshow = function(event) {if (event.persisted) {window.location.reload()}};
 
 
 
