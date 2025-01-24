@@ -47,11 +47,11 @@
 /////////////////// PAGE LOADER V2 ///////////////////
 let loaderTimeline = gsap.timeline();
 loaderTimeline.fromTo( '.pli-bottom__visual',   {opacity: "0"},  {opacity: "1", duration: .2, ease: "power1.out"});
-loaderTimeline.fromTo( '.pli-pulse',            {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '25em', height: '25em', duration: 1.35, ease: "power1.out"}, .35 );
-loaderTimeline.fromTo( '.pli-pulse',            {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '25em', height: '25em', duration: 1.35, ease: "power1.out"}, 1.45 );
-loaderTimeline.to( '.pli-bottom__visual',       {opacity: "0", duration: 0.35, ease: "power1.out"}, 1.9);
-loaderTimeline.fromTo( '.page-loader__bg',      {y: "0%"}, {y: "-100%", duration: .7, ease: "power2.inOut"}, 2.45 );
-loaderTimeline.fromTo( '.page-loader',          {y: "0%"}, {y: "-100%", duration: .7, ease: "power2.inOut"}, 2.55 );
+loaderTimeline.fromTo( '.pli-pulse',            {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '25em', height: '25em', duration: 1.3, ease: "power1.out"}, .35 );
+loaderTimeline.fromTo( '.pli-pulse',            {opacity: "1", width: '17.5em', height: '17.5em'}, {opacity: "0", width: '25em', height: '25em', duration: 1.35, ease: "power1.out"}, 1.5 );
+loaderTimeline.to( '.pli-bottom__visual',       {opacity: "0", duration: 0.35, ease: "power1.out"}, 2.2);
+loaderTimeline.fromTo( '.page-loader__bg',      {y: "0%"}, {y: "-100%", duration: .7, ease: "power2.inOut"}, 2.5 );
+loaderTimeline.fromTo( '.page-loader',          {y: "0%"}, {y: "-100%", duration: .7, ease: "power2.inOut"}, 2.65 );
 
 
 $('a').on('click', function (e) {
