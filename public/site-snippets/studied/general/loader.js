@@ -63,9 +63,11 @@ $('a').on('click', function (e) {
     if (link.startsWith('#')) {
         return; // Allow anchor links to behave normally
     }
-    if (link.hasClass('w-pagination-next') || link.hasClass('w-pagination-previous')) {
-        return; // Allow anchor links to behave normally
+
+    if ($(this).hasClass('w-pagination-next') || $(this).hasClass('w-pagination-previous')) {
+        return; // Allow pagination links to behave normally
     }
+
     e.preventDefault();
 
     ////
