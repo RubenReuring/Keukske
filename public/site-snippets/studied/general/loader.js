@@ -56,28 +56,34 @@ loaderTimeline.fromTo( '.page-loader',          {y: "0%"}, {y: "-100%", duration
 
 $('a').on('click', function (e) {
     const link = $(this).attr('href');
+    const target = $(this).attr('target');
 
-    // If the link is an external link, let the default behavior happen
+    // Allow external links to behave normally
     if (link.startsWith('http') && !link.startsWith(window.location.origin)) {
         return;
     }
 
-    // If it's an anchor link, let the default behavior happen
+    // Allow anchor links to behave normally
     if (link.startsWith('#')) {
         return;
     }
 
-    // If it's a pagination link, let the default behavior happen
+    // Allow pagination links to behave normally
     if ($(this).hasClass('w-pagination-next') || $(this).hasClass('w-pagination-previous')) {
         return;
     }
 
-    // If the user is using Cmd+Click (Mac) or Ctrl+Click (Windows), open in new tab
+    // Allow links with target="_blank" to open in a new tab
+    if (target === "_blank") {
+        return;
+    }
+
+    // Allow Cmd+Click (Mac) and Ctrl+Click (Windows) to open in a new tab
     if (e.metaKey || e.ctrlKey) {
         return;
     }
 
-    // Prevent the default action only if it's a normal click
+    // Prevent the default action only for normal clicks
     e.preventDefault();
 
     // GSAP Exit Animation
@@ -107,6 +113,7 @@ window.onpageshow = function(event) {
         window.location.reload();
     }
 };
+
 
 
 
