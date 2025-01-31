@@ -56,42 +56,58 @@ loaderTimeline.fromTo( '.page-loader',          {y: "0%"}, {y: "-100%", duration
 
 $('a').on('click', function (e) {
     const link = $(this).attr('href');
+
+    // If the link is an external link, let the default behavior happen
     if (link.startsWith('http') && !link.startsWith(window.location.origin)) {
-        return; // Allow external links to behave normally
+        return;
     }
 
+    // If it's an anchor link, let the default behavior happen
     if (link.startsWith('#')) {
-        return; // Allow anchor links to behave normally
+        return;
     }
 
+    // If it's a pagination link, let the default behavior happen
     if ($(this).hasClass('w-pagination-next') || $(this).hasClass('w-pagination-previous')) {
-        return; // Allow pagination links to behave normally
+        return;
     }
 
+    // If the user is using Cmd+Click (Mac) or Ctrl+Click (Windows), open in new tab
+    if (e.metaKey || e.ctrlKey) {
+        return;
+    }
+
+    // Prevent the default action only if it's a normal click
     e.preventDefault();
 
-    ////
+    // GSAP Exit Animation
     let exitTimeline = gsap.timeline({ paused: true });
     exitTimeline.fromTo(
         '.page-loader__bg',
-        {y: "100%"},
-        {y: "0%", duration: .7, ease: "power2.inOut"}
+        { y: "100%" },
+        { y: "0%", duration: 0.7, ease: "power2.inOut" }
     );
     exitTimeline.fromTo(
         '.page-loader',
-        {y: "100%"},
-        {y: "0%", duration: .7, ease: "power2.inOut"},
-        .05
+        { y: "100%" },
+        { y: "0%", duration: 0.7, ease: "power2.inOut" },
+        0.05
     );
     exitTimeline.play();
-    ////
+
+    // Delay navigation to allow animation to play
     setTimeout(() => {
         window.location.href = link;
-    }, 805); // 2000 ms = 2 seconds
+    }, 805);
 });
 
 // On Back Button Tap
-window.onpageshow = function(event) {if (event.persisted) {window.location.reload()}};
+window.onpageshow = function(event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+};
+
 
 
 
