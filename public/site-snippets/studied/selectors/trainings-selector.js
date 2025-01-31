@@ -29,6 +29,8 @@ $(document).ready(function(){
         $('#third-layer').empty(); // Clear third layer when second layer is being repopulated
         $('#second-layer').empty(); // Clear the second layer right before populating
 
+        items.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
+
         items.forEach(function(item) {
             var template = `
                 <div role="listitem" class="sfb-content__item w-dyn-item">
@@ -94,6 +96,8 @@ $(document).ready(function(){
 
     function populateThirdLayer(items) {
         $('#third-layer').empty(); // Clear the third layer before repopulating
+
+        items.sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 
         items.forEach(function(item) {
             var template = `
