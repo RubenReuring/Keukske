@@ -1,2 +1,6 @@
-.busy-indicator-container { background-color: white; }
 footer { display: none; }
+
+.mat-toolbar-row, .mat-toolbar-single-row,
+.busy-indicator-container
+{ background-color: white !important; }
+
