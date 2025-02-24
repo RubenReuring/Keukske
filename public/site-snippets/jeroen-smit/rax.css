@@ -1,7 +1,17 @@
-footer { display: none; }
-.mat-toolbar { box-shadow: none; border-bottom: solid 1px #c0c0c080; }
-#logo-container { background-color: transparent !important; }
+footer {
+    display: none;
+}
+.mat-toolbar {
+    box-shadow: none; border-bottom: solid 1px #c0c0c080;
+}
+#logo-container {
+    background-color: transparent !important;
+}
 .mat-toolbar-row, .mat-toolbar-single-row,
-.busy-indicator-container
-{ background-color: white !important; }
-
+.busy-indicator-container {
+    background-color: white !important;
+}
+.cms-part-checkout-bar-container {
+    background: white;
+    border: solid 1px #c0c0c080;
+}
