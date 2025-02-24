@@ -16,7 +16,7 @@ footer {
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
-.busy-indicator-container:has(.mat-drawer-container) {
+.busy-indicator-container:has(rax-check-out-container) {
     background-image: none !important;
 }
 .cms-part-checkout-bar-container {
