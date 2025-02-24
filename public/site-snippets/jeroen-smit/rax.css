@@ -1,5 +1,6 @@
 footer { display: none; }
 .mat-toolbar { box-shadow: none; border-bottom: solid 1px #c0c0c080; }
+#logo-container { background-color: transparent; }
 .mat-toolbar-row, .mat-toolbar-single-row,
 .busy-indicator-container
 { background-color: white !important; }
