@@ -26,3 +26,9 @@ rax-shell-side-menu {
     background: white;
     border: solid 1px #c0c0c080;
 }
+@media screen and (max-width: 768px) {
+    .toolbar-logo-link img {
+        height: 26px;
+    }
+}
+
