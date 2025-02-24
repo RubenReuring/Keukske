@@ -1,6 +1,5 @@
 footer { display: none; }
-.mat-toolbar { box-shadow: none; }
-rax-shell-toolbar {border-bottom: solid 1px #c0c0c080;}
+.mat-toolbar { box-shadow: none; border-bottom: solid 1px #c0c0c080; }
 .mat-toolbar-row, .mat-toolbar-single-row,
 .busy-indicator-container
 { background-color: white !important; }
