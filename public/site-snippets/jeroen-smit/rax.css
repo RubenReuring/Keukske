@@ -28,7 +28,7 @@ rax-shell-side-menu {
 }
 @media screen and (max-width: 768px) {
     .toolbar-logo-link img {
-        height: 26px;
+        height: 26px !important;
     }
 }
 
