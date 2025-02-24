@@ -19,6 +19,9 @@ footer {
 .busy-indicator-container:has(rax-check-out-container) {
     background-image: none !important;
 }
+rax-shell-side-menu {
+    border: solid 21px white;
+}
 .cms-part-checkout-bar-container {
     background: white;
     border: solid 1px #c0c0c080;
