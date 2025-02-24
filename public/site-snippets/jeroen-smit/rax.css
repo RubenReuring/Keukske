@@ -15,6 +15,8 @@ footer {
     background-image: url("https://cdn.prod.website-files.com/666ffb86771f14d0c05ec05a/669f9d1f9f9a5d9be1e54789_img_3196-p-1600.webp") !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    background-clip: padding-box; /* Ensures the background image doesn't extend into the padding */
+    padding: 20px; /* Creates the white border effect */
 }
 .busy-indicator-container:has(rax-check-out-container) {
     background-image: none !important;
