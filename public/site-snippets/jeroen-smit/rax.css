@@ -29,9 +29,9 @@ rax-shell-side-menu {
 }
 
 .checkout-bar[_ngcontent-ng-c2711708803] {
-    box-shadow: none;
-    background-color: #515954;
-    border: solid 1px #c0c0c080;
+    box-shadow: none !important;
+    background-color: #515954 !important;
+    border: solid 1px #c0c0c080 !important;
 }
 
 @media screen and (max-width: 768px) {
