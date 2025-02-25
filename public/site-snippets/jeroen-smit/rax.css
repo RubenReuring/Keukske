@@ -28,7 +28,7 @@ rax-shell-side-menu {
     border: solid 1px #c0c0c080;
 }
 
-.checkout-bar[_ngcontent-ng-c2711708803] {
+.checkout-bar {
     box-shadow: none !important;
     background-color: #515954 !important;
     border: solid 1px #c0c0c080 !important;
