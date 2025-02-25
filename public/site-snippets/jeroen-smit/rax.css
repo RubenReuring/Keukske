@@ -39,9 +39,40 @@ rax-shell-side-menu {
     display: none;
 }
 
+.checkout-bar[_ngcontent-ng-c2711708803] .checkout-steps[_ngcontent-ng-c2711708803] .mat-divider[_ngcontent-ng-c2711708803] {
+    border-top-color: #c0c0c080;
+    border-right-color: #c0c0c080;
+}
+
+.finish-image[_ngcontent-ng-c2711708803] {
+    display: none;
+}
+
+.primary-thick-border-container {
+    background-color: white;
+    border: 1px solid #c0c0c080;
+    margin-top: 21px;
+}
+
+.border-form-field .mat-mdc-text-field-wrapper {
+    border: 1px solid black;
+    color: #c0c0c080;
+    background-color: #fff !important;
+    border-radius: .25em;
+    min-height: 52px;
+}
+
 @media screen and (max-width: 768px) {
     .toolbar-logo-link img {
         height: 26px !important;
+    }
+    .checkout-bar[_ngcontent-ng-c2711708803] {
+        padding: 8px;
+    }
+    [_nghost-ng-c415878082] {
+        background-color: white;
+        border: 1px solid #c0c0c080;
+        box-shadow: none;
     }
 
 }
