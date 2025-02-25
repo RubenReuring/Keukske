@@ -24,14 +24,19 @@ rax-shell-side-menu {
     border: solid 14px white;
 }
 .cms-part-checkout-bar-container {
-    background: pink;
+    background: white;
     border: solid 1px #c0c0c080;
 }
 
-.checkout-bar {
-    box-shadow: none !important;
-    background-color: #515954 !important;
-    border: solid 1px #c0c0c080 !important;
+.checkout-bar[_ngcontent-ng-c2711708803] {
+    box-shadow: none;
+    background-color: white;
+    border: solid 1px #c0c0c080;
+    padding: 12px;
+}
+
+.checkout-bar[_ngcontent-ng-c2711708803] .checkout-steps[_ngcontent-ng-c2711708803] .step[_ngcontent-ng-c2711708803] .progress-image[_ngcontent-ng-c2711708803] {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
