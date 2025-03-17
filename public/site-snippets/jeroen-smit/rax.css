@@ -55,18 +55,11 @@ rax-shell-side-menu {
 }
 
 .border-form-field .mat-mdc-text-field-wrapper {
-    border: 1px solid black;
-    color: #c0c0c080;
-    background-color: #fff !important;
-    border-radius: .25em;
-    min-height: 52px;
-}
-
-.border-form-field .mat-mdc-text-field-wrapper {
     border: 1px solid #c0c0c080 !important;
     color: black !important;
     background-color: #fff !important;
     border-radius: .185em !important;
+    min-height: 52px;
 }
 
 @media screen and (max-width: 768px) {
