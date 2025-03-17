@@ -63,7 +63,7 @@ rax-shell-side-menu {
 }
 
 .flex.gap-4.flex-col {
-    color: black;
+    color: black !important;
 }
 
 @media screen and (max-width: 768px) {
