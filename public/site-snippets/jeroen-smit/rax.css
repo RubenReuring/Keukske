@@ -66,6 +66,15 @@ rax-shell-side-menu {
     color: black !important;
 }
 
+rax-check-out-payment-success .h-full {
+    background-color: #515954 !important;
+}
+rax-check-out-payment-success .w-full {
+    background: #515954 !important;
+    color: #333 !important;
+    padding: 2.5em !important;
+}
+
 @media screen and (max-width: 768px) {
     .toolbar-logo-link img {
         height: 26px !important;
@@ -78,6 +87,18 @@ rax-shell-side-menu {
         border: 1px solid #c0c0c080;
         box-shadow: none;
     }
-
+    rax-check-out-payment-success .w-full {
+        padding: 1em !important;
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+    .title.medium {
+        font-size: 24px !important;
+        line-height: 1.25 !important;
+    }
+    .sub-title.medium {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+    }
 }
 
