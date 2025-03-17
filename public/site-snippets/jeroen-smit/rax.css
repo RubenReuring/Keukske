@@ -29,10 +29,10 @@ rax-shell-side-menu {
 }
 
 .checkout-bar[_ngcontent-ng-c2711708803] {
-    box-shadow: none;
-    background-color: white;
-    border: solid 1px #c0c0c080;
-    padding: 12px;
+    box-shadow: none !important;
+    background-color: white !important;
+    border: solid 1px #c0c0c080 !important;
+    padding: 12px !important;
 }
 
 .checkout-bar[_ngcontent-ng-c2711708803] .checkout-steps[_ngcontent-ng-c2711708803] .step[_ngcontent-ng-c2711708803] .progress-image[_ngcontent-ng-c2711708803] {
