@@ -62,6 +62,13 @@ rax-shell-side-menu {
     min-height: 52px;
 }
 
+.border-form-field .mat-mdc-text-field-wrapper {
+    border: 1px solid #c0c0c080 !important;
+    color: black !important;
+    background-color: #fff !important;
+    border-radius: .185em !important;
+}
+
 @media screen and (max-width: 768px) {
     .toolbar-logo-link img {
         height: 26px !important;
