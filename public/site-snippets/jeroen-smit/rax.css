@@ -62,6 +62,10 @@ rax-shell-side-menu {
     min-height: 52px;
 }
 
+.flex.gap-4.flex-col {
+    color: black;
+}
+
 @media screen and (max-width: 768px) {
     .toolbar-logo-link img {
         height: 26px !important;
